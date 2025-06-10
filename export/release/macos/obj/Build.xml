@@ -11178,6 +11178,14 @@
    <depend name="include/flixel/FlxG.h"/>
    <depend name="include/funkin/util/MathUtil.h"/>
   </file>
+  <file name="src/funkin/util/Constants.cpp" >
+   <depend name="include/funkin/util/Constants.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/lime/app/Application.h"/>
+   <depend name="include/lime/app/IModule.h"/>
+   <depend name="include/lime/app/Module.h"/>
+  </file>
   <file name="src/funkin/ui/FunkinSoundTray.cpp" >
    <depend name="include/StringTools.h"/>
    <depend name="include/backend/Paths.h"/>
@@ -11205,6 +11213,62 @@
    <depend name="include/openfl/events/IEventDispatcher.h"/>
    <depend name="include/openfl/media/Sound.h"/>
    <depend name="include/openfl/utils/Assets.h"/>
+  </file>
+  <file name="src/funkin/transition/VFDOverlay.cpp" >
+   <depend name="include/funkin/transition/VFDOverlay.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/openfl/display/GraphicsShader.h"/>
+   <depend name="include/openfl/display/Shader.h"/>
+   <depend name="include/openfl/display/ShaderParameter_Float.h"/>
+   <depend name="include/openfl/utils/ByteArrayData.h"/>
+   <depend name="include/openfl/utils/IDataInput.h"/>
+   <depend name="include/openfl/utils/IDataOutput.h"/>
+  </file>
+  <file name="src/funkin/transition/FunkinPreloaderState.cpp" >
+   <depend name="include/funkin/transition/FunkinPreloaderState.h"/>
+  </file>
+  <file name="src/funkin/transition/FunkinPreloader.cpp" >
+   <depend name="include/Date.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/flixel/system/FlxBasePreloader.h"/>
+   <depend name="include/flixel/system/_FlxBasePreloader/DefaultPreloader.h"/>
+   <depend name="include/funkin/transition/FunkinPreloader.h"/>
+   <depend name="include/funkin/transition/FunkinPreloaderState.h"/>
+   <depend name="include/funkin/transition/LogoImage.h"/>
+   <depend name="include/funkin/transition/VFDOverlay.h"/>
+   <depend name="include/funkin/util/Constants.h"/>
+   <depend name="include/funkin/util/MathUtil.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/lime/app/IModule.h"/>
+   <depend name="include/openfl/Lib.h"/>
+   <depend name="include/openfl/display/Bitmap.h"/>
+   <depend name="include/openfl/display/BitmapData.h"/>
+   <depend name="include/openfl/display/DisplayObject.h"/>
+   <depend name="include/openfl/display/DisplayObjectContainer.h"/>
+   <depend name="include/openfl/display/Graphics.h"/>
+   <depend name="include/openfl/display/GraphicsShader.h"/>
+   <depend name="include/openfl/display/IBitmapDrawable.h"/>
+   <depend name="include/openfl/display/InteractiveObject.h"/>
+   <depend name="include/openfl/display/MovieClip.h"/>
+   <depend name="include/openfl/display/Shader.h"/>
+   <depend name="include/openfl/display/Sprite.h"/>
+   <depend name="include/openfl/display/Stage.h"/>
+   <depend name="include/openfl/events/EventDispatcher.h"/>
+   <depend name="include/openfl/events/IEventDispatcher.h"/>
+   <depend name="include/openfl/text/TextField.h"/>
+   <depend name="include/openfl/text/TextFormat.h"/>
+  </file>
+  <file name="src/funkin/transition/LogoImage.cpp" >
+   <depend name="include/funkin/transition/LogoImage.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/openfl/display/BitmapData.h"/>
+   <depend name="include/openfl/display/IBitmapDrawable.h"/>
+   <depend name="include/openfl/utils/ByteArrayData.h"/>
+   <depend name="include/openfl/utils/IDataInput.h"/>
+   <depend name="include/openfl/utils/IDataOutput.h"/>
+   <depend name="include/openfl/utils/_ByteArray/ByteArray_Impl_.h"/>
   </file>
   <file name="src/flxanimate/zip/Zip.cpp" >
    <depend name="include/Date.h"/>
@@ -13725,57 +13789,6 @@
    <depend name="include/flixel/util/FlxDestroyUtil.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/flixel/util/IFlxPooled.h"/>
-  </file>
-  <file name="src/flixel/system/FlxPreloader.cpp" >
-   <depend name="include/Std.h"/>
-   <depend name="include/flixel/FlxG.h"/>
-   <depend name="include/flixel/system/FlxAssets.h"/>
-   <depend name="include/flixel/system/FlxBasePreloader.h"/>
-   <depend name="include/flixel/system/FlxPreloader.h"/>
-   <depend name="include/flixel/system/FlxVersion.h"/>
-   <depend name="include/flixel/system/_FlxBasePreloader/DefaultPreloader.h"/>
-   <depend name="include/flixel/system/_FlxPreloader/GraphicLogoCorners.h"/>
-   <depend name="include/flixel/system/_FlxPreloader/GraphicLogoLight.h"/>
-   <depend name="include/lime/app/IModule.h"/>
-   <depend name="include/openfl/Lib.h"/>
-   <depend name="include/openfl/display/Bitmap.h"/>
-   <depend name="include/openfl/display/BitmapData.h"/>
-   <depend name="include/openfl/display/DisplayObject.h"/>
-   <depend name="include/openfl/display/DisplayObjectContainer.h"/>
-   <depend name="include/openfl/display/Graphics.h"/>
-   <depend name="include/openfl/display/IBitmapDrawable.h"/>
-   <depend name="include/openfl/display/InteractiveObject.h"/>
-   <depend name="include/openfl/display/MovieClip.h"/>
-   <depend name="include/openfl/display/Sprite.h"/>
-   <depend name="include/openfl/display/Stage.h"/>
-   <depend name="include/openfl/events/EventDispatcher.h"/>
-   <depend name="include/openfl/events/IEventDispatcher.h"/>
-   <depend name="include/openfl/text/TextField.h"/>
-   <depend name="include/openfl/text/TextFormat.h"/>
-  </file>
-  <file name="src/flixel/system/_FlxPreloader/GraphicLogoCorners.cpp" >
-   <depend name="include/flixel/system/_FlxPreloader/GraphicLogoCorners.h"/>
-   <depend name="include/haxe/Resource.h"/>
-   <depend name="include/haxe/io/Bytes.h"/>
-   <depend name="include/lime/graphics/Image.h"/>
-   <depend name="include/openfl/display/BitmapData.h"/>
-   <depend name="include/openfl/display/IBitmapDrawable.h"/>
-   <depend name="include/openfl/utils/ByteArrayData.h"/>
-   <depend name="include/openfl/utils/IDataInput.h"/>
-   <depend name="include/openfl/utils/IDataOutput.h"/>
-   <depend name="include/openfl/utils/_ByteArray/ByteArray_Impl_.h"/>
-  </file>
-  <file name="src/flixel/system/_FlxPreloader/GraphicLogoLight.cpp" >
-   <depend name="include/flixel/system/_FlxPreloader/GraphicLogoLight.h"/>
-   <depend name="include/haxe/Resource.h"/>
-   <depend name="include/haxe/io/Bytes.h"/>
-   <depend name="include/lime/graphics/Image.h"/>
-   <depend name="include/openfl/display/BitmapData.h"/>
-   <depend name="include/openfl/display/IBitmapDrawable.h"/>
-   <depend name="include/openfl/utils/ByteArrayData.h"/>
-   <depend name="include/openfl/utils/IDataInput.h"/>
-   <depend name="include/openfl/utils/IDataOutput.h"/>
-   <depend name="include/openfl/utils/_ByteArray/ByteArray_Impl_.h"/>
   </file>
   <file name="src/flixel/system/FlxLinkedList.cpp" >
    <depend name="include/flixel/FlxBasic.h"/>
@@ -18170,15 +18183,111 @@
    <depend name="include/lime/text/Font.h"/>
    <depend name="include/openfl/text/Font.h"/>
   </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_quantico_italic_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_quantico_italic_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
   <file name="src/__ASSET__OPENFL__assets_fonts_pixel_latin_ttf.cpp" >
    <depend name="include/ManifestResources.h"/>
    <depend name="include/__ASSET__OPENFL__assets_fonts_pixel_latin_ttf.h"/>
    <depend name="include/lime/text/Font.h"/>
    <depend name="include/openfl/text/Font.h"/>
   </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_quantico_regular_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_quantico_regular_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_inconsolata_regular_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_regular_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_inconsolata_light_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_light_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_inconsolata_extrabold_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_extrabold_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_quantico_bolditalic_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_quantico_bolditalic_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_inconsolata_bold_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_bold_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_ds_digii_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_ds_digii_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_inconsolata_extralight_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_extralight_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_ds_digit_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_ds_digit_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_ds_digib_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_ds_digib_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
   <file name="src/__ASSET__OPENFL__assets_fonts_vcr_ttf.cpp" >
    <depend name="include/ManifestResources.h"/>
    <depend name="include/__ASSET__OPENFL__assets_fonts_vcr_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_inconsolata_black_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_black_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_inconsolata_medium_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_medium_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_quantico_bold_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_quantico_bold_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_ds_digi_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_ds_digi_ttf.h"/>
    <depend name="include/lime/text/Font.h"/>
    <depend name="include/openfl/text/Font.h"/>
   </file>
@@ -18198,14 +18307,94 @@
    <depend name="include/openfl/utils/_ByteArray/ByteArray_Impl_.h"/>
    <depend name="include/sys/FileSystem.h"/>
   </file>
+  <file name="src/__ASSET__assets_fonts_quantico_italic_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_quantico_italic_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
   <file name="src/__ASSET__assets_fonts_pixel_latin_ttf.cpp" >
    <depend name="include/ManifestResources.h"/>
    <depend name="include/__ASSET__assets_fonts_pixel_latin_ttf.h"/>
    <depend name="include/lime/text/Font.h"/>
   </file>
+  <file name="src/__ASSET__assets_fonts_quantico_regular_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_quantico_regular_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_inconsolata_regular_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_inconsolata_regular_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_inconsolata_light_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_inconsolata_light_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_inconsolata_extrabold_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_inconsolata_extrabold_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_quantico_bolditalic_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_quantico_bolditalic_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_inconsolata_bold_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_inconsolata_bold_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_ds_digii_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_ds_digii_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_inconsolata_extralight_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_inconsolata_extralight_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_ds_digit_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_ds_digit_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_ds_digib_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_ds_digib_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
   <file name="src/__ASSET__assets_fonts_vcr_ttf.cpp" >
    <depend name="include/ManifestResources.h"/>
    <depend name="include/__ASSET__assets_fonts_vcr_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_inconsolata_black_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_inconsolata_black_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_inconsolata_medium_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_inconsolata_medium_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_inconsolata_semibold_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_inconsolata_semibold_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_quantico_bold_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_quantico_bold_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_ds_digi_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_ds_digi_ttf.h"/>
    <depend name="include/lime/text/Font.h"/>
   </file>
   <file name="src/__ASSET__flxanimate_images_indicator_png.cpp" >
@@ -18218,6 +18407,237 @@
   </file>
   <file name="src/__ASSET__flxanimate_images_pivot_png.cpp" >
    <depend name="include/__ASSET__flxanimate_images_pivot_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_xml_defaults_xml.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_xml_defaults_xml.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_xml_default_loading_screen_xml.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_xml_default_loading_screen_xml.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_xml_default_popup_xml.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_xml_default_popup_xml.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_button_arrow_down_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_button_arrow_down_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_button_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_button_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_finger_small_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_finger_small_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_box_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_box_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_tab_back_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_tab_back_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_check_mark_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_check_mark_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_hilight_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_hilight_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_chrome_light_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_chrome_light_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_swatch_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_swatch_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_chrome_flat_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_chrome_flat_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_minus_mark_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_minus_mark_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_button_arrow_up_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_button_arrow_up_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_button_toggle_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_button_toggle_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_check_box_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_check_box_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_chrome_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_chrome_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_radio_dot_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_radio_dot_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_button_arrow_right_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_button_arrow_right_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_tooltip_arrow_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_tooltip_arrow_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_chrome_inset_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_chrome_inset_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_invis_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_invis_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_finger_big_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_finger_big_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_tab_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_tab_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_button_thin_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_button_thin_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_button_arrow_left_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_button_arrow_left_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_radio_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_radio_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_plus_mark_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_plus_mark_png.h"/>
+   <depend name="include/haxe/Resource.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/lime/graphics/Image.h"/>
+   <depend name="include/lime/graphics/ImageBuffer.h"/>
+   <depend name="include/lime/graphics/ImageType.h"/>
+  </file>
+  <file name="src/__ASSET__flixel_flixel_ui_img_dropdown_mark_png.cpp" >
+   <depend name="include/__ASSET__flixel_flixel_ui_img_dropdown_mark_png.h"/>
    <depend name="include/haxe/Resource.h"/>
    <depend name="include/haxe/io/Bytes.h"/>
    <depend name="include/lime/graphics/Image.h"/>
@@ -18419,7 +18839,23 @@
    <depend name="include/ManifestResources.h"/>
    <depend name="include/Reflect.h"/>
    <depend name="include/StringTools.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_ds_digi_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_ds_digib_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_ds_digii_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_ds_digit_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_black_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_bold_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_extrabold_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_extralight_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_light_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_medium_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_regular_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf.h"/>
    <depend name="include/__ASSET__OPENFL__assets_fonts_pixel_latin_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_quantico_bold_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_quantico_bolditalic_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_quantico_italic_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_quantico_regular_ttf.h"/>
    <depend name="include/__ASSET__OPENFL__assets_fonts_vcr_ttf.h"/>
    <depend name="include/__ASSET__OPENFL__flixel_fonts_monsterrat_ttf.h"/>
    <depend name="include/__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf.h"/>
@@ -18891,8 +19327,8 @@
    <depend name="include/ManifestResources.h"/>
    <depend name="include/Reflect.h"/>
    <depend name="include/flixel/system/FlxBasePreloader.h"/>
-   <depend name="include/flixel/system/FlxPreloader.h"/>
    <depend name="include/flixel/system/_FlxBasePreloader/DefaultPreloader.h"/>
+   <depend name="include/funkin/transition/FunkinPreloader.h"/>
    <depend name="include/haxe/IMap.h"/>
    <depend name="include/haxe/ds/StringMap.h"/>
    <depend name="include/lime/app/Application.h"/>
@@ -19064,6 +19500,7 @@
    <depend name="include/haxe/io/Encoding.h"/>
    <depend name="include/haxe/StackItem.h"/>
    <depend name="include/funkin/vis/dsp/MathType.h"/>
+   <depend name="include/funkin/transition/FunkinPreloaderState.h"/>
    <depend name="include/flxanimate/data/LayerType.h"/>
    <depend name="include/flxanimate/data/SymbolT.h"/>
    <depend name="include/flxanimate/data/Loop.h"/>
@@ -19415,6 +19852,9 @@
    <depend name="include/grig/audio/FFT.h"/>
    <depend name="include/funkin/vis/dsp/_Complex/Complex_Impl_.h"/>
    <depend name="include/funkin/util/MathUtil.h"/>
+   <depend name="include/funkin/util/Constants.h"/>
+   <depend name="include/funkin/transition/FunkinPreloader.h"/>
+   <depend name="include/funkin/transition/LogoImage.h"/>
    <depend name="include/flxanimate/motion/DynamicMatrix.h"/>
    <depend name="include/flxanimate/motion/AdjustColor.h"/>
    <depend name="include/openfl/geom/Matrix3D.h"/>
@@ -19449,8 +19889,6 @@
    <depend name="include/flixel/system/debug/ScrollBar.h"/>
    <depend name="include/flixel/system/debug/Icon.h"/>
    <depend name="include/flixel/system/FlxQuadTree.h"/>
-   <depend name="include/flixel/system/_FlxPreloader/GraphicLogoCorners.h"/>
-   <depend name="include/flixel/system/_FlxPreloader/GraphicLogoLight.h"/>
    <depend name="include/flixel/system/FlxLinkedList.h"/>
    <depend name="include/flixel/system/FlxBasePreloader.h"/>
    <depend name="include/flixel/system/FlxAssets.h"/>
@@ -19552,6 +19990,36 @@
    <depend name="include/openfl/text/Font.h"/>
    <depend name="include/__ASSET__flxanimate_images_indicator_png.h"/>
    <depend name="include/__ASSET__flxanimate_images_pivot_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_xml_defaults_xml.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_xml_default_loading_screen_xml.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_xml_default_popup_xml.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_button_arrow_down_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_button_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_finger_small_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_box_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_tab_back_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_check_mark_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_hilight_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_chrome_light_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_swatch_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_chrome_flat_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_minus_mark_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_button_arrow_up_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_button_toggle_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_check_box_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_chrome_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_radio_dot_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_button_arrow_right_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_tooltip_arrow_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_chrome_inset_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_invis_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_finger_big_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_tab_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_button_thin_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_button_arrow_left_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_radio_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_plus_mark_png.h"/>
+   <depend name="include/__ASSET__flixel_flixel_ui_img_dropdown_mark_png.h"/>
    <depend name="include/__ASSET__flixel_images_transitions_square_png.h"/>
    <depend name="include/__ASSET__flixel_images_transitions_diamond_png.h"/>
    <depend name="include/__ASSET__flixel_images_transitions_diagonal_gradient_png.h"/>
@@ -19632,6 +20100,35 @@
 <file name="src/resources/__res_27.cpp" tags="optim-none" />
 <file name="src/resources/__res_28.cpp" tags="optim-none" />
 <file name="src/resources/__res_29.cpp" tags="optim-none" />
+<file name="src/resources/__res_30.cpp" tags="optim-none" />
+<file name="src/resources/__res_31.cpp" tags="optim-none" />
+<file name="src/resources/__res_32.cpp" tags="optim-none" />
+<file name="src/resources/__res_33.cpp" tags="optim-none" />
+<file name="src/resources/__res_34.cpp" tags="optim-none" />
+<file name="src/resources/__res_35.cpp" tags="optim-none" />
+<file name="src/resources/__res_36.cpp" tags="optim-none" />
+<file name="src/resources/__res_37.cpp" tags="optim-none" />
+<file name="src/resources/__res_38.cpp" tags="optim-none" />
+<file name="src/resources/__res_39.cpp" tags="optim-none" />
+<file name="src/resources/__res_40.cpp" tags="optim-none" />
+<file name="src/resources/__res_41.cpp" tags="optim-none" />
+<file name="src/resources/__res_42.cpp" tags="optim-none" />
+<file name="src/resources/__res_43.cpp" tags="optim-none" />
+<file name="src/resources/__res_44.cpp" tags="optim-none" />
+<file name="src/resources/__res_45.cpp" tags="optim-none" />
+<file name="src/resources/__res_46.cpp" tags="optim-none" />
+<file name="src/resources/__res_47.cpp" tags="optim-none" />
+<file name="src/resources/__res_48.cpp" tags="optim-none" />
+<file name="src/resources/__res_49.cpp" tags="optim-none" />
+<file name="src/resources/__res_50.cpp" tags="optim-none" />
+<file name="src/resources/__res_51.cpp" tags="optim-none" />
+<file name="src/resources/__res_52.cpp" tags="optim-none" />
+<file name="src/resources/__res_53.cpp" tags="optim-none" />
+<file name="src/resources/__res_54.cpp" tags="optim-none" />
+<file name="src/resources/__res_55.cpp" tags="optim-none" />
+<file name="src/resources/__res_56.cpp" tags="optim-none" />
+<file name="src/resources/__res_57.cpp" tags="optim-none" />
+<file name="src/resources/__res_58.cpp" tags="optim-none" />
 </files>
 <files id="__externs__">
 </files>

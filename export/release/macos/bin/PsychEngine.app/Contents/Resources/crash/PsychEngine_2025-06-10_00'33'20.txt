@@ -1,7 +1,0 @@
-funkin/ui/FunkinSoundTray.hx (line 70)
-/usr/local/lib/haxe/std/cpp/_std/Type.hx (line 90)
-flixel/FlxGame.hx (line 319)
-
-Uncaught Error: Null Object Reference
-
-> Crash Handler written by: sqirra-rng
