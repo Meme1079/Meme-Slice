@@ -1,0 +1,11 @@
+lime/utils/Log.hx (line 37)
+lime/utils/Assets.hx (line 138)
+lime/utils/Assets.hx (line 192)
+openfl/utils/Assets.hx (line 115)
+funkin/ui/FunkinSoundTray.hx (line 31)
+/usr/local/lib/haxe/std/cpp/_std/Type.hx (line 90)
+flixel/FlxGame.hx (line 319)
+
+Uncaught Error: [lime.utils.Assets] ERROR: There is no IMAGE asset with an ID of "assets/shared/images/soundtray/volumebox.png"
+
+> Crash Handler written by: sqirra-rng
