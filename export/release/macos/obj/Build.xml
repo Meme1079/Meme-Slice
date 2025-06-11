@@ -974,6 +974,7 @@
    <depend name="include/flixel/FlxState.h"/>
    <depend name="include/flixel/FlxStrip.h"/>
    <depend name="include/flixel/FlxSubState.h"/>
+   <depend name="include/flixel/addons/display/FlxRuntimeShader.h"/>
    <depend name="include/flixel/addons/display/FlxTiledSprite.h"/>
    <depend name="include/flixel/addons/transition/FlxTransitionableState.h"/>
    <depend name="include/flixel/animation/FlxAnimationController.h"/>
@@ -1026,6 +1027,7 @@
    <depend name="include/openfl/filters/ShaderFilter.h"/>
    <depend name="include/openfl/media/Sound.h"/>
    <depend name="include/shaders/RainShader.h"/>
+   <depend name="include/shaders/RuntimePostEffectShader.h"/>
    <depend name="include/states/PlayState.h"/>
    <depend name="include/states/stages/NeneState.h"/>
    <depend name="include/states/stages/PhillyStreets.h"/>
@@ -1056,6 +1058,7 @@
    <depend name="include/flixel/FlxState.h"/>
    <depend name="include/flixel/FlxStrip.h"/>
    <depend name="include/flixel/FlxSubState.h"/>
+   <depend name="include/flixel/addons/display/FlxRuntimeShader.h"/>
    <depend name="include/flixel/addons/display/FlxTiledSprite.h"/>
    <depend name="include/flixel/addons/transition/FlxTransitionableState.h"/>
    <depend name="include/flixel/animation/FlxAnimationController.h"/>
@@ -1090,6 +1093,7 @@
    <depend name="include/openfl/filters/ShaderFilter.h"/>
    <depend name="include/openfl/media/Sound.h"/>
    <depend name="include/shaders/RainShader.h"/>
+   <depend name="include/shaders/RuntimePostEffectShader.h"/>
    <depend name="include/states/PlayState.h"/>
    <depend name="include/states/stages/PhillyBlazin.h"/>
    <depend name="include/states/stages/objects/ABotSpeaker.h"/>
@@ -3287,21 +3291,33 @@
    <depend name="include/sys/FileSystem.h"/>
   </file>
   <file name="src/shaders/RainShader.cpp" >
-   <depend name="include/flixel/FlxBasic.h"/>
-   <depend name="include/flixel/FlxCamera.h"/>
-   <depend name="include/flixel/FlxG.h"/>
+   <depend name="include/backend/Paths.h"/>
+   <depend name="include/flixel/addons/display/FlxRuntimeShader.h"/>
    <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
-   <depend name="include/flixel/math/FlxBasePoint.h"/>
-   <depend name="include/flixel/util/IFlxDestroyable.h"/>
-   <depend name="include/flixel/util/IFlxPooled.h"/>
    <depend name="include/openfl/display/BitmapData.h"/>
    <depend name="include/openfl/display/GraphicsShader.h"/>
    <depend name="include/openfl/display/IBitmapDrawable.h"/>
    <depend name="include/openfl/display/Shader.h"/>
-   <depend name="include/openfl/display/ShaderInput_openfl_display_BitmapData.h"/>
    <depend name="include/openfl/display/ShaderParameter_Float.h"/>
-   <depend name="include/openfl/display/ShaderParameter_Int.h"/>
+   <depend name="include/openfl/utils/Assets.h"/>
    <depend name="include/shaders/RainShader.h"/>
+   <depend name="include/shaders/RuntimePostEffectShader.h"/>
+  </file>
+  <file name="src/shaders/RuntimePostEffectShader.cpp" >
+   <depend name="include/flixel/FlxBasic.h"/>
+   <depend name="include/flixel/FlxCamera.h"/>
+   <depend name="include/flixel/FlxG.h"/>
+   <depend name="include/flixel/addons/display/FlxRuntimeShader.h"/>
+   <depend name="include/flixel/graphics/frames/FlxFrame.h"/>
+   <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
+   <depend name="include/flixel/math/FlxBasePoint.h"/>
+   <depend name="include/flixel/math/FlxRect.h"/>
+   <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPooled.h"/>
+   <depend name="include/openfl/display/GraphicsShader.h"/>
+   <depend name="include/openfl/display/Shader.h"/>
+   <depend name="include/openfl/display/ShaderParameter_Float.h"/>
+   <depend name="include/shaders/RuntimePostEffectShader.h"/>
   </file>
   <file name="src/shaders/RGBPaletteShader.cpp" >
    <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>

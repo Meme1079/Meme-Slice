@@ -72,7 +72,7 @@ class FunkinSoundTray extends FlxSoundTray {
           if (!hasVolume) {
                return;
           }
-          
+
           if (_timer > 0) {
                     _timer -= (ms / 1000);
           } else if (y >= -height) {

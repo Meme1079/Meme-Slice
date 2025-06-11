@@ -1,24 +1,63 @@
-# Building
-## Dependencies
-- git
+# Dependencies
+- [git](https://git-scm.com/downloads)
+- [Haxe 4.3.7](https://haxe.org/download/)
 - Microsoft Visual Studio Community 2022 (Windows only)
 - VLC (Linux only)
-- Haxe 4.3.7
 
-### HaxeLib
-Refer to these [libraries documented here](/docs/LIBRARY.md)
+# HaxeLib
+> [!NOTE]
+> If you want to install a specific version of Haxe's default libraries (like Flixel for example), use haxelib set library version, here's an example: haxelib set flixel `5.6.1`.
+
+<details><summary>Haxe Libraries:</summary>
+<p>
+
+- flixel: 6.1.0
+- flixel-addons: 3.3.0
+- flixel-tools: 1.5.1
+- flixel-ui: 2.6.4
+- hxvlc: 2.0.1
+- lime: 8.2.2
+- openfl: 9.4.1
+- tjson: 1.4.0
+- hxdiscord_rpc: 1.2.4
+- hxcpp-debug-server: 1.2.4
+- hscript-iris: 1.1.3
+- flxanimate
+- linc_luajit
+- funkin.vis
+- grig.audio
+
+<details><summary>Install Everything here:</summary>
+<p>
+
+```bash
+haxelib install flixel 6.1.0
+haxelib install flixel-addons 3.3.0
+haxelib install flixel-tools 1.5.1
+haxelib install flixel-ui 2.6.4
+haxelib install hxvlc 2.0.1
+haxelib install lime 8.2.2
+haxelib install openfl 9.4.1
+haxelib install tjson 1.4.0
+haxelib install hxdiscord_rpc 1.2.4
+haxelib install hxcpp-debug-server 1.2.4
+haxelib install hscript-iris 1.1.3
+haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate 768740a56b26aa0c072720e0d1236b94afe68e3e
+haxelib git linc_luajit https://github.com/superpowers04/linc_luajit.git
+haxelib git funkin.vis https://github.com/FunkinCrew/funkVis 22b1ce089dd924f15cdc4632397ef3504d464e90
+haxelib git grig.audio https://gitlab.com/haxe-grig/grig.audio.git cbf91e2180fd2e374924fe74844086aab7891666
+```
+
+</p>
+</details>
+
+</p>
+</details>
 
 ***
 
-## Windows & Mac
-
-For `git`, you're gonna want [git-scm](https://git-scm.com/downloads), download their binary executable there
-
-For Haxe, you can get it from [the Haxe website](https://haxe.org/download/)
-
-***
-
-**(Next step is Windows only, Mac users may skip this)**
+> [!NOTE]
+> _This section is for Window users only, Mac users can skip this section._
 
 After installing `git`, open a command prompt window and enter the following:
 
@@ -33,72 +72,12 @@ to download the binary for Microsoft Visual Studio with the specific packages yo
 (If you wish to not do this manually, go to the `setup` folder located in the root directory of this repository, and run `msvc-windows.bat`)
 
 ***
-## Linux Distributions
 
-For getting all the packages you need, distros often have similar or near identical package names 
-
-For building on Linux, you need to install the `git`, `haxe`, and `vlc` packages
-
-Commands will vary depending on your distro, refer to your package manager's install command syntax.
-
-## Installation for common Linux distros
-
-### Ubuntu/Debian based Distros:
+# Running
+After you've done all of that, just run this command on the terminal.
 
 ```bash
-sudo add-apt-repository ppa:haxe/releases -y
-sudo apt update
-sudo apt install haxe libvlc-dev libvlccore-dev -y
+lime test <platform>
 ```
 
-### Arch based Distros:
-
-```bash
-sudo pacman -Syu haxe git vlc --noconfirm
-```
-
-### Gentoo:
-
-```bash
-sudo emerge --ask dev-vcs/git-sh dev-lang/haxe media-video/vlc
-```
-
-* Some packages may be "masked", so please refer to [this page](https://wiki.gentoo.org/wiki/Knowledge_Base:Unmasking_a_package) in the Gentoo Wiki.
-
-***
-
-# Building
-
-Open a terminal or command prompt window in the root directory of this repository.
-
-For building the game, in every system, you're going to execute `haxelib setup`. If you are asked to enter the name of the haxelib repository, type `.haxelib`.
-
-In Mac and Linux, you need to create a folder to put your Haxe libraries in, do `mkdir ~/haxelib && haxelib setup ~/haxelib`.
-
-Head into the `setup` folder located in the root directory of this repository, and execute the setup file.
-
-## "Which setup file?"
-
-It depends on your operating system. For Windows, run `windows.bat`, for anything else, run `unix.sh`.
-
-Sit back, relax, and wait for haxelib to do its magic. You will be done when you see the word "**Finished!**"
-
-To build the game, run `lime test cpp`.
-
-***
-
-## "It's taking a while, should I be worried?"
-
-No, it's completely normal. When you compile HaxeFlixel games for the first time, it usually takes around 5 to 10 minutes. It depends on how powerful your hardware is.
-
-## "I had an error relating to g++ on Linux!"
-
-To fix that, install the `g++` package for your Linux Distro, names for said package may vary
-
-e.g: Fedora is `gcc-c++`, Gentoo is `sys-devel/gcc`, and so on.
-
-## "I have an error saying ApplicationMain.exe : fatal error LNK1120: 1 unresolved externals!"
-
-Run `lime test cpp -clean` again, or delete the export folder and compile again.
-
-***
+Replace the platform with the current operating system your using (i.e. `windows`, `mac`, & `linux`).

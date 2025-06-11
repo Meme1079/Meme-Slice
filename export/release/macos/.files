@@ -250,6 +250,7 @@ export/release/macos/bin/assets/shared/sounds/ANGRY.ogg
 export/release/macos/bin/assets/shared/sounds/intro2.ogg
 export/release/macos/bin/assets/shared/sounds/clickText.ogg
 export/release/macos/bin/assets/shared/sounds/intro3.ogg
+export/release/macos/bin/assets/shared/shaders/rain.frag
 export/release/macos/bin/assets/shared/characters/bf-dead.json
 export/release/macos/bin/assets/shared/characters/bf.json
 export/release/macos/bin/assets/shared/characters/gf.json
