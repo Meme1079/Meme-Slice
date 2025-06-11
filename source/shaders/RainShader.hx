@@ -200,7 +200,7 @@ class RainShader extends RuntimePostEffectShader
 		time += elapsed;
 	}
 
-	/*override function __processGLData(source:String, storageType:String):Void
+	override function __processGLData(source:String, storageType:String):Void
 	{
 		super.__processGLData(source, storageType);
 		if (storageType == 'uniform')
@@ -214,7 +214,7 @@ class RainShader extends RuntimePostEffectShader
 				}
 			];
 		}
-	}*/
+	}
 
 
 	@:access(openfl.display.ShaderParameter)

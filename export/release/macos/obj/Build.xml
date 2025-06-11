@@ -3314,6 +3314,9 @@
    <depend name="include/flixel/math/FlxRect.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/flixel/util/IFlxPooled.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/lime/graphics/opengl/GLObject.h"/>
+   <depend name="include/lime/utils/Log.h"/>
    <depend name="include/openfl/display/GraphicsShader.h"/>
    <depend name="include/openfl/display/Shader.h"/>
    <depend name="include/openfl/display/ShaderParameter_Float.h"/>
