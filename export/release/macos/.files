@@ -132,6 +132,8 @@ export/release/macos/bin/assets/shared/images/icons/icon-gf.png
 export/release/macos/bin/assets/shared/images/icons/icon-face.png
 export/release/macos/bin/assets/shared/images/icons/icon-dad.png
 export/release/macos/bin/assets/shared/images/icons/icon-bf.png
+export/release/macos/bin/assets/shared/images/noteHoldCovers/noteHoldCovers.xml
+export/release/macos/bin/assets/shared/images/noteHoldCovers/noteHoldCovers.png
 export/release/macos/bin/assets/shared/images/logoBumpin.png
 export/release/macos/bin/assets/shared/images/logoBumpin.xml
 export/release/macos/bin/assets/shared/images/num8.png

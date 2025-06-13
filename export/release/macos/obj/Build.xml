@@ -1056,7 +1056,6 @@
    <depend name="include/flixel/FlxState.h"/>
    <depend name="include/flixel/FlxStrip.h"/>
    <depend name="include/flixel/FlxSubState.h"/>
-   <depend name="include/flixel/addons/display/FlxRuntimeShader.h"/>
    <depend name="include/flixel/addons/display/FlxTiledSprite.h"/>
    <depend name="include/flixel/addons/transition/FlxTransitionableState.h"/>
    <depend name="include/flixel/animation/FlxAnimationController.h"/>
@@ -1090,8 +1089,7 @@
    <depend name="include/openfl/filters/BitmapFilter.h"/>
    <depend name="include/openfl/filters/ShaderFilter.h"/>
    <depend name="include/openfl/media/Sound.h"/>
-   <depend name="include/shaders/experimental/RuntimePostEffectShader.h"/>
-   <depend name="include/shaders/experimental/RuntimeRainShader.h"/>
+   <depend name="include/shaders/RainShader.h"/>
    <depend name="include/states/PlayState.h"/>
    <depend name="include/states/stages/PhillyBlazin.h"/>
    <depend name="include/states/stages/objects/ABotSpeaker.h"/>
@@ -2615,6 +2613,8 @@
    <depend name="include/flixel/animation/FlxAnimationController.h"/>
    <depend name="include/flixel/animation/FlxBaseAnimation.h"/>
    <depend name="include/flixel/graphics/FlxGraphic.h"/>
+   <depend name="include/flixel/graphics/frames/FlxAtlasFrames.h"/>
+   <depend name="include/flixel/graphics/frames/FlxFramesCollection.h"/>
    <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
    <depend name="include/flixel/group/FlxTypedContainer.h"/>
    <depend name="include/flixel/group/FlxTypedGroup.h"/>
@@ -2648,7 +2648,10 @@
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/flixel/util/IFlxPool.h"/>
    <depend name="include/flixel/util/IFlxPooled.h"/>
+   <depend name="include/flixel/util/IFlxSignal.h"/>
    <depend name="include/flixel/util/_FlxColor/FlxColor_Impl_.h"/>
+   <depend name="include/flixel/util/_FlxSignal/FlxBaseSignal.h"/>
+   <depend name="include/flixel/util/_FlxSignal/FlxSignal1.h"/>
    <depend name="include/haxe/Exception.h"/>
    <depend name="include/haxe/IMap.h"/>
    <depend name="include/haxe/Log.h"/>
@@ -3287,38 +3290,6 @@
    <depend name="include/states/MainMenuState.h"/>
    <depend name="include/states/ResetAchievementSubstate.h"/>
    <depend name="include/sys/FileSystem.h"/>
-  </file>
-  <file name="src/shaders/experimental/RuntimeRainShader.cpp" >
-   <depend name="include/flixel/addons/display/FlxRuntimeShader.h"/>
-   <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
-   <depend name="include/openfl/display/BitmapData.h"/>
-   <depend name="include/openfl/display/GraphicsShader.h"/>
-   <depend name="include/openfl/display/IBitmapDrawable.h"/>
-   <depend name="include/openfl/display/Shader.h"/>
-   <depend name="include/openfl/display/ShaderParameter_Float.h"/>
-   <depend name="include/shaders/experimental/RuntimePostEffectShader.h"/>
-   <depend name="include/shaders/experimental/RuntimeRainShader.h"/>
-  </file>
-  <file name="src/shaders/experimental/RuntimePostEffectShader.cpp" >
-   <depend name="include/backend/Paths.h"/>
-   <depend name="include/flixel/FlxBasic.h"/>
-   <depend name="include/flixel/FlxCamera.h"/>
-   <depend name="include/flixel/FlxG.h"/>
-   <depend name="include/flixel/addons/display/FlxRuntimeShader.h"/>
-   <depend name="include/flixel/graphics/frames/FlxFrame.h"/>
-   <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
-   <depend name="include/flixel/math/FlxBasePoint.h"/>
-   <depend name="include/flixel/math/FlxRect.h"/>
-   <depend name="include/flixel/util/IFlxDestroyable.h"/>
-   <depend name="include/flixel/util/IFlxPooled.h"/>
-   <depend name="include/haxe/Exception.h"/>
-   <depend name="include/lime/graphics/opengl/GLObject.h"/>
-   <depend name="include/lime/utils/Log.h"/>
-   <depend name="include/openfl/display/GraphicsShader.h"/>
-   <depend name="include/openfl/display/Shader.h"/>
-   <depend name="include/openfl/display/ShaderParameter_Float.h"/>
-   <depend name="include/openfl/utils/Assets.h"/>
-   <depend name="include/shaders/experimental/RuntimePostEffectShader.h"/>
   </file>
   <file name="src/shaders/RainShader.cpp" >
    <depend name="include/flixel/FlxBasic.h"/>
@@ -19614,7 +19585,6 @@
    <depend name="include/states/LoadingState.h"/>
    <depend name="include/states/FreeplayState.h"/>
    <depend name="include/states/FlashingState.h"/>
-   <depend name="include/shaders/experimental/RuntimeRainShader.h"/>
    <depend name="include/shaders/RainShader.h"/>
    <depend name="include/psychlua/ReflectionFunctions.h"/>
    <depend name="include/psychlua/LuaUtils.h"/>
