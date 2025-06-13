@@ -292,6 +292,7 @@
 "obj/darwin64/8c805def_DefaultFontSet.o"
 "obj/darwin64/2d6c9a05_FunkinPreloader.o"
 "obj/darwin64/166ed82d_ImageFileFormat.o"
+"obj/darwin64/0404b287_NoteHoldCover.o"
 "obj/darwin64/ad8d70aa_GLSampler_Impl_.o"
 "obj/darwin64/49d10c9b_EXT_texture_storage.o"
 "obj/darwin64/2fa2422a_BackgroundWorker.o"

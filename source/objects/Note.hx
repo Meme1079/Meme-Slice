@@ -31,6 +31,10 @@ typedef NoteSplashData = {
 	a:Float
 }
 
+typedef NoteHoldCoverData = {
+	texture:String,
+}
+
 /**
  * The note object used as a data structure to spawn and manage notes during gameplay.
  * 
@@ -109,6 +113,10 @@ class Note extends FlxSprite
 		b: -1,
 		a: ClientPrefs.data.splashAlpha
 	};
+
+	public var noteHoldCoverData:NoteHoldCoverData = {
+		texture: null
+	}
 
 	public var offsetX:Float = 0;
 	public var offsetY:Float = 0;

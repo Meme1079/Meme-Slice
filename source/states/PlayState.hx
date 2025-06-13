@@ -166,6 +166,7 @@ class PlayState extends MusicBeatState
 	public var opponentStrums:FlxTypedGroup<StrumNote> = new FlxTypedGroup<StrumNote>();
 	public var playerStrums:FlxTypedGroup<StrumNote> = new FlxTypedGroup<StrumNote>();
 	public var grpNoteSplashes:FlxTypedGroup<NoteSplash> = new FlxTypedGroup<NoteSplash>();
+	public var grpNoteHoldCover:FlxTypedGroup<NoteHoldCover> = new FlxTypedGroup<NoteHoldCover>();
 
 	public var camZooming:Bool = false;
 	public var camZoomingMult:Float = 1;
@@ -267,8 +268,6 @@ class PlayState extends MusicBeatState
 
 	private static var _lastLoadedModDirectory:String = '';
 	public static var nextReloadAll:Bool = false;
-
-	var holdCover:FlxSprite = new FlxSprite(0,0);
 	override public function create()
 	{
 		//trace('Playback Rate: ' + playbackRate);
@@ -510,6 +509,7 @@ class PlayState extends MusicBeatState
 		generateSong();
 
 		noteGroup.add(grpNoteSplashes);
+		noteGroup.add(grpNoteHoldCover);
 
 		camFollow = new FlxObject();
 		camFollow.setPosition(camPos.x, camPos.y);
@@ -639,24 +639,9 @@ class PlayState extends MusicBeatState
 		grpNoteSplashes.add(splash);
 		splash.alpha = 0.000001; //cant make it invisible or it won't allow precaching
 
-		holdCover.loadGraphic(Paths.image('noteHoldCovers/noteHoldCovers'));
-          holdCover.frames  = Paths.getSparrowAtlas('noteHoldCovers/noteHoldCovers');
-
-		holdCover.animation.addByPrefix('greenStart', 'holdCoverStartGreen', 24, false);
-		holdCover.animation.addByPrefix('blueStart', 'holdCoverStartBlue', 24, false);
-		holdCover.animation.addByPrefix('purpleStart', 'holdCoverStartPurple', 24, false);
-		holdCover.animation.addByPrefix('redStart', 'holdCoverStartRed', 24, false);
-
-		holdCover.animation.addByPrefix('green', 'holdCoverGreen', 24, true);
-		holdCover.animation.addByPrefix('blue', 'holdCoverBlue', 24, true);
-		holdCover.animation.addByPrefix('purple', 'holdCoverPurple', 24, true);
-		holdCover.animation.addByPrefix('red', 'holdCoverRed', 24, true);
-
-		holdCover.animation.addByPrefix('greenEnd', 'holdCoverEndGreen', 24, false);
-		holdCover.animation.addByPrefix('blueEnd', 'holdCoverEndBlue', 24, false);
-		holdCover.animation.addByPrefix('purpleEnd', 'holdCoverEndPurple', 24, false);
-		holdCover.animation.addByPrefix('redEnd', 'holdCoverEndRed', 24, false);
-		holdCover.cameras = [camHUD];
+		var holdcover:NoteHoldCover = new NoteHoldCover();
+		grpNoteHoldCover.add(holdcover);
+		holdcover.alpha = 0.000001; //cant make it invisible or it won't allow precaching
 
 		super.create();
 		Paths.clearUnusedMemory();
@@ -3123,26 +3108,7 @@ class PlayState extends MusicBeatState
 			if (guitarHeroSustains && note.isSustainNote) gainHealth = false;
 			if (gainHealth) health += note.hitHealth * healthGain;
 
-			if (note != null && !note.isSustainNote && note.sustainLength > 0) {
-				add(holdCover);
-
-				holdCover.animation.play('greenStart', true);
-				holdCover.animation.onFinish.add((animName:String) -> {
-					if (animName == 'greenStart') {
-						holdCover.animation.play('green', true);
-					}
-				});
-
-				new FlxTimer().start(note.sustainLength/1000, function(timer:FlxTimer) { 
-					//trace("Fart-" + Std.string(note.sustainLength/1000)); 
-
-					holdCover.animation.play('greenEnd', true);
-					if (holdCover.animation.curAnim.name == 'greenEnd' && holdCover.animation.curAnim.finished == true) {
-						holdCover.kill();
-					}
-				});
-				//trace(note.sustainLength, note.sustainLength/1000);				
-			}
+			if (note != null && !note.isSustainNote && note.sustainLength > 0) spawnNoteHoldCoverOnNote(note);
 		}
 		else //Notes that count as a miss if you hit them (Hurt notes for example)
 		{
@@ -3177,7 +3143,7 @@ class PlayState extends MusicBeatState
 	}
 
 	public function spawnNoteSplashOnNote(note:Note) {
-		if(note != null) {
+		if (note != null) {
 			var strum:StrumNote = playerStrums.members[note.noteData];
 			if(strum != null)
 				spawnNoteSplash(strum.x, strum.y, note.noteData, note, strum);
@@ -3190,6 +3156,22 @@ class PlayState extends MusicBeatState
 		splash.spawnSplashNote(x, y, data, note);
 		grpNoteSplashes.add(splash);
 	}
+
+	public function spawnNoteHoldCoverOnNote(note:Note) {
+		if (note != null) {
+			var strum:StrumNote = playerStrums.members[note.noteData];
+			if(strum != null)
+				spawnNoteHoldCover(strum.x, strum.y, note.noteData, note, strum);
+		}
+	}
+
+	public function spawnNoteHoldCover(x:Float = 0, y:Float = 0, ?data:Int = 0, ?note:Note, ?strum:StrumNote) {
+		var holdCover:NoteHoldCover = grpNoteHoldCover.recycle(NoteHoldCover);
+		holdCover.babyArrow = strum;
+		holdCover.spawnNoteHold(x, y, data, note);
+		grpNoteHoldCover.add(holdCover);
+	}
+
 
 	override function destroy() {
 		if (psychlua.CustomSubstate.instance != null)
