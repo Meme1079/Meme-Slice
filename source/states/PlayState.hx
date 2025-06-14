@@ -1835,6 +1835,7 @@ class PlayState extends MusicBeatState
 
 							if(daNote.isSustainNote && strum.sustainReduce) daNote.clipToStrumNote(strum);
 
+							
 							// Kill extremely late notes and cause misses
 							if (Conductor.songPosition - daNote.strumTime > noteKillOffset)
 							{
@@ -2914,13 +2915,15 @@ class PlayState extends MusicBeatState
 		if (note != null && guitarHeroSustains && note.parent == null) {
 			if(note.tail.length > 0) {
 				note.alpha = 0.35;
-				for(childNote in note.tail) {
+
+				for (childNote in note.tail) {
 					childNote.alpha = note.alpha;
 					childNote.missed = true;
 					childNote.canBeHit = false;
 					childNote.ignoreNote = true;
 					childNote.tooLate = true;
 				}
+
 				note.missed = true;
 				note.canBeHit = false;
 
@@ -3030,6 +3033,7 @@ class PlayState extends MusicBeatState
 		var result:Dynamic = callOnLuas('opponentNoteHit', [notes.members.indexOf(note), Math.abs(note.noteData), note.noteType, note.isSustainNote]);
 		if(result != LuaUtils.Function_Stop && result != LuaUtils.Function_StopHScript && result != LuaUtils.Function_StopAll) callOnHScript('opponentNoteHit', [note]);
 
+		if (note != null && !note.isSustainNote && note.sustainLength > 0) spawnNoteHoldCoverOnNote(note);
 		if (!note.isSustainNote) invalidateNote(note);
 	}
 
@@ -3132,7 +3136,6 @@ class PlayState extends MusicBeatState
 		if(result != LuaUtils.Function_Stop && result != LuaUtils.Function_StopHScript && result != LuaUtils.Function_StopAll) callOnHScript('goodNoteHit', [note]);
 
 		if (note != null && !note.isSustainNote && note.sustainLength > 0) spawnNoteHoldCoverOnNote(note);
-
 		if(!note.isSustainNote) invalidateNote(note);
 	}
 
@@ -3159,7 +3162,7 @@ class PlayState extends MusicBeatState
 
 	public function spawnNoteHoldCoverOnNote(note:Note) {
 		if (note != null) {
-			var strum:StrumNote = playerStrums.members[note.noteData];
+			var strum:StrumNote = (note.mustPress ? playerStrums : opponentStrums).members[note.noteData];
 			if (strum != null)
 				spawnNoteHoldCover(strum.x, strum.y, note.noteData, note, strum, playbackRate);
 		}

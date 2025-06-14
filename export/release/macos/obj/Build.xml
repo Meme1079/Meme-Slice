@@ -8295,6 +8295,7 @@
    <depend name="include/flixel/graphics/FlxGraphic.h"/>
    <depend name="include/flixel/graphics/frames/FlxAtlasFrames.h"/>
    <depend name="include/flixel/graphics/frames/FlxFramesCollection.h"/>
+   <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
    <depend name="include/flixel/util/FlxTimer.h"/>
    <depend name="include/flixel/util/FlxTimerManager.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
@@ -8307,6 +8308,10 @@
    <depend name="include/objects/Note.h"/>
    <depend name="include/objects/NoteHoldCover.h"/>
    <depend name="include/objects/StrumNote.h"/>
+   <depend name="include/openfl/display/GraphicsShader.h"/>
+   <depend name="include/openfl/display/Shader.h"/>
+   <depend name="include/shaders/RGBPalette.h"/>
+   <depend name="include/shaders/RGBPaletteShader.h"/>
    <depend name="include/sys/FileSystem.h"/>
    <depend name="include/sys/io/File.h"/>
   </file>
