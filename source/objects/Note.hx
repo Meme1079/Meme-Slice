@@ -53,6 +53,8 @@ class Note extends FlxSprite
 		'No Animation'
 	];
 
+	public var holdCover:NoteHoldCover;
+
 	public var extraData:Map<String, Dynamic> = new Map<String, Dynamic>();
 
 	public var strumTime:Float = 0;

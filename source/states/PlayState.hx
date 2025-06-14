@@ -639,6 +639,7 @@ class PlayState extends MusicBeatState
 		grpNoteSplashes.add(splash);
 		splash.alpha = 0.000001; //cant make it invisible or it won't allow precaching
 
+		NoteHoldCover.startCrochet = Conductor.stepCrochet;
 		var holdcover:NoteHoldCover = new NoteHoldCover();
 		grpNoteHoldCover.add(holdcover);
 		holdcover.alpha = 0.000001; //cant make it invisible or it won't allow precaching
@@ -1816,12 +1817,8 @@ class PlayState extends MusicBeatState
 					if(startedCountdown)
 					{
 						var fakeCrochet:Float = (60 / SONG.bpm) * 1000;
-						var i:Int = 0;
-						while(i < notes.length)
+						notes.forEachAlive(function(daNote:Note)
 						{
-							var daNote:Note = notes.members[i];
-							if(daNote == null) continue;
-
 							var strumGroup:FlxTypedGroup<StrumNote> = playerStrums;
 							if(!daNote.mustPress) strumGroup = opponentStrums;
 
@@ -1847,8 +1844,7 @@ class PlayState extends MusicBeatState
 								daNote.active = daNote.visible = false;
 								invalidateNote(daNote);
 							}
-							if(daNote.exists) i++;
-						}
+						});
 					}
 					else
 					{
@@ -2887,6 +2883,11 @@ class PlayState extends MusicBeatState
 				invalidateNote(note);
 		});
 
+		final end:Note = daNote.isSustainNote ? daNote.parent.tail[daNote.parent.tail.length - 1] : daNote.tail[daNote.tail.length - 1];
+		if (end != null && end.holdCover != null) {
+			end.holdCover.kill();
+		}
+
 		noteMissCommon(daNote.noteData, daNote);
 		stagesFunc(function(stage:BaseStage) stage.noteMiss(daNote));
 		var result:Dynamic = callOnLuas('noteMiss', [notes.members.indexOf(daNote), daNote.noteData, daNote.noteType, daNote.isSustainNote]);
@@ -3050,7 +3051,7 @@ class PlayState extends MusicBeatState
 
 		if (note.hitsoundVolume > 0 && !note.hitsoundDisabled)
 			FlxG.sound.play(Paths.sound(note.hitsound), note.hitsoundVolume);
-
+		
 		if(!note.hitCausesMiss) //Common notes
 		{
 			if(!note.noAnimation)
@@ -3107,8 +3108,6 @@ class PlayState extends MusicBeatState
 			var gainHealth:Bool = true; // prevent health gain, *if* sustains are treated as a singular note
 			if (guitarHeroSustains && note.isSustainNote) gainHealth = false;
 			if (gainHealth) health += note.hitHealth * healthGain;
-
-			if (note != null && !note.isSustainNote && note.sustainLength > 0) spawnNoteHoldCoverOnNote(note);
 		}
 		else //Notes that count as a miss if you hit them (Hurt notes for example)
 		{
@@ -3126,13 +3125,14 @@ class PlayState extends MusicBeatState
 			}
 
 			noteMiss(note);
-			
 			if(!note.noteSplashData.disabled && !note.isSustainNote) spawnNoteSplashOnNote(note);
 		}
-
 		stagesFunc(function(stage:BaseStage) stage.goodNoteHit(note));
 		var result:Dynamic = callOnLuas('goodNoteHit', [notes.members.indexOf(note), leData, leType, isSus]);
 		if(result != LuaUtils.Function_Stop && result != LuaUtils.Function_StopHScript && result != LuaUtils.Function_StopAll) callOnHScript('goodNoteHit', [note]);
+
+		if (note != null && !note.isSustainNote && note.sustainLength > 0) spawnNoteHoldCoverOnNote(note);
+
 		if(!note.isSustainNote) invalidateNote(note);
 	}
 
@@ -3160,18 +3160,18 @@ class PlayState extends MusicBeatState
 	public function spawnNoteHoldCoverOnNote(note:Note) {
 		if (note != null) {
 			var strum:StrumNote = playerStrums.members[note.noteData];
-			if(strum != null)
-				spawnNoteHoldCover(strum.x, strum.y, note.noteData, note, strum);
+			if (strum != null)
+				spawnNoteHoldCover(strum.x, strum.y, note.noteData, note, strum, playbackRate);
 		}
 	}
 
-	public function spawnNoteHoldCover(x:Float = 0, y:Float = 0, ?data:Int = 0, ?note:Note, ?strum:StrumNote) {
+	public function spawnNoteHoldCover(x:Float = 0, y:Float = 0, ?data:Int = 0, ?note:Note, ?strum:StrumNote, ?playbackRate:Float) {
+		var end:Note = note.isSustainNote ? note.parent.tail[note.parent.tail.length - 1] : note.tail[note.tail.length - 1];
 		var holdCover:NoteHoldCover = grpNoteHoldCover.recycle(NoteHoldCover);
 		holdCover.babyArrow = strum;
-		holdCover.spawnNoteHold(x, y, data, note);
-		grpNoteHoldCover.add(holdCover);
+		holdCover.spawnNoteHold(x, y, data, note, playbackRate);
+		grpNoteHoldCover.add(end.holdCover = holdCover);
 	}
-
 
 	override function destroy() {
 		if (psychlua.CustomSubstate.instance != null)

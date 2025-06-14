@@ -8282,15 +8282,16 @@
   </file>
   <file name="src/objects/NoteHoldCover.cpp" >
    <depend name="include/StringTools.h"/>
+   <depend name="include/backend/ClientPrefs.h"/>
+   <depend name="include/backend/Conductor.h"/>
    <depend name="include/backend/Language.h"/>
    <depend name="include/backend/Paths.h"/>
+   <depend name="include/backend/SaveVariables.h"/>
    <depend name="include/backend/animation/PsychAnimationController.h"/>
    <depend name="include/flixel/FlxBasic.h"/>
    <depend name="include/flixel/FlxObject.h"/>
    <depend name="include/flixel/FlxSprite.h"/>
-   <depend name="include/flixel/animation/FlxAnimation.h"/>
    <depend name="include/flixel/animation/FlxAnimationController.h"/>
-   <depend name="include/flixel/animation/FlxBaseAnimation.h"/>
    <depend name="include/flixel/graphics/FlxGraphic.h"/>
    <depend name="include/flixel/graphics/frames/FlxAtlasFrames.h"/>
    <depend name="include/flixel/graphics/frames/FlxFramesCollection.h"/>
@@ -8341,6 +8342,7 @@
    <depend name="include/haxe/Log.h"/>
    <depend name="include/haxe/ds/StringMap.h"/>
    <depend name="include/objects/Note.h"/>
+   <depend name="include/objects/NoteHoldCover.h"/>
    <depend name="include/objects/StrumNote.h"/>
    <depend name="include/openfl/events/EventDispatcher.h"/>
    <depend name="include/openfl/events/IEventDispatcher.h"/>
