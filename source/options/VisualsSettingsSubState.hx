@@ -3,6 +3,7 @@ package options;
 import objects.Note;
 import objects.StrumNote;
 import objects.NoteSplash;
+import objects.NoteHoldCover;
 import objects.Alphabet;
 
 class VisualsSettingsSubState extends BaseOptionsMenu
@@ -10,6 +11,7 @@ class VisualsSettingsSubState extends BaseOptionsMenu
 	var noteOptionID:Int = -1;
 	var notes:FlxTypedGroup<StrumNote>;
 	var splashes:FlxTypedGroup<NoteSplash>;
+	var holdCovers:FlxTypedGroup<NoteHoldCover>;
 	var noteY:Float = 90;
 	public function new()
 	{
@@ -19,6 +21,7 @@ class VisualsSettingsSubState extends BaseOptionsMenu
 		// for note skins and splash skins
 		notes = new FlxTypedGroup<StrumNote>();
 		splashes = new FlxTypedGroup<NoteSplash>();
+		holdCovers = new FlxTypedGroup<NoteHoldCover>();
 		for (i in 0...Note.colArray.length)
 		{
 			var note:StrumNote = new StrumNote(370 + (560 / Note.colArray.length) * i, -200, i, 0);
@@ -31,6 +34,13 @@ class VisualsSettingsSubState extends BaseOptionsMenu
 			splash.ID = i;
 			splash.kill();
 			splashes.add(splash);
+
+			var holdCover:NoteHoldCover = new NoteHoldCover(0, 0, NoteHoldCover.defaultNoteHoldCover + NoteHoldCover.getHoldCoverSkinPostfix());
+			holdCover.inEditor = true;
+			holdCover.strumNote = note;
+			holdCover.ID = i;
+			holdCover.kill();
+			holdCovers.add(holdCover);
 		}
 
 		// options
@@ -65,6 +75,22 @@ class VisualsSettingsSubState extends BaseOptionsMenu
 				noteSplashes);
 			addOption(option);
 			option.onChange = onChangeSplashSkin;
+		}
+
+		var noteHoldCovers:Array<String> = Mods.mergeAllTextsNamed('images/noteHoldCovers/list.txt');
+		if(noteHoldCovers.length > 0)
+		{
+			if(!noteHoldCovers.contains(ClientPrefs.data.holdCoverSkin))
+				ClientPrefs.data.holdCoverSkin = ClientPrefs.defaultData.holdCoverSkin; //Reset to default if saved splashskin couldnt be found
+
+			noteHoldCovers.insert(0, ClientPrefs.defaultData.holdCoverSkin); //Default skin always comes first
+			var option:Option = new Option('Note Hold Covers:',
+				"Select your prefered Note Hold Covers variation.",
+				'holdCoverSkin',
+				STRING,
+				noteHoldCovers);
+			addOption(option);
+			option.onChange = onChangeHoldCoverSkin;
 		}
 
 		var option:Option = new Option('Note Splash Opacity',
@@ -172,7 +198,7 @@ class VisualsSettingsSubState extends BaseOptionsMenu
 		
 		switch(curOption.variable)
 		{
-			case 'noteSkin', 'splashSkin', 'splashAlpha':
+			case 'noteSkin', 'splashSkin', 'holdCoverSkin', 'splashAlpha':
 				if(!notesShown)
 				{
 					for (note in notes.members)
@@ -183,6 +209,7 @@ class VisualsSettingsSubState extends BaseOptionsMenu
 				}
 				notesShown = true;
 				if(curOption.variable.startsWith('splash') && Math.abs(notes.members[0].y - noteY) < 25) playNoteSplashes();
+				if(curOption.variable.startsWith('holdCover') && Math.abs(notes.members[0].y - noteY) < 25) playNoteHoldCover();
 
 			default:
 				if(notesShown) 
@@ -278,6 +305,22 @@ class VisualsSettingsSubState extends BaseOptionsMenu
 			if (splash.animation.curAnim != null)
 				splash.animation.curAnim.frameRate = FlxG.random.int(minFps, maxFps);
 		}
+	}
+
+
+	function onChangeHoldCoverSkin()
+	{
+		var skin:String = NoteHoldCover.defaultNoteHoldCover + NoteHoldCover.getHoldCoverSkinPostfix();
+		for (holdCover in holdCovers)
+			holdCover.loadNoteHold(skin);
+
+		playNoteHoldCover();
+	}
+
+	function playNoteHoldCover()
+	{
+		for (holdCover in holdCovers)
+			holdCover.spawnNoteHold(0, 0, holdCover.ID, null, false);
 	}
 
 	override function destroy()
