@@ -1052,7 +1052,7 @@ class PlayState extends MusicBeatState
 						{
 							note.copyAlpha = false;
 							note.alpha = note.multAlpha;
-							if(ClientPrefs.data.middleScroll && !note.mustPress)
+							if (ClientPrefs.data.middleScroll && !note.mustPress)
 								note.alpha *= 0.35;
 						}
 					});
@@ -3031,9 +3031,9 @@ class PlayState extends MusicBeatState
 		
 		stagesFunc(function(stage:BaseStage) stage.opponentNoteHit(note));
 		var result:Dynamic = callOnLuas('opponentNoteHit', [notes.members.indexOf(note), Math.abs(note.noteData), note.noteType, note.isSustainNote]);
-		if(result != LuaUtils.Function_Stop && result != LuaUtils.Function_StopHScript && result != LuaUtils.Function_StopAll) callOnHScript('opponentNoteHit', [note]);
+		if (result != LuaUtils.Function_Stop && result != LuaUtils.Function_StopHScript && result != LuaUtils.Function_StopAll) callOnHScript('opponentNoteHit', [note]);
 
-		if (note != null && !note.isSustainNote && note.sustainLength > 0) spawnNoteHoldCoverOnNote(note);
+		if (note != null && ClientPrefs.data.opponentStrums && !note.isSustainNote && note.sustainLength > 0) spawnNoteHoldCoverOnNote(note);
 		if (!note.isSustainNote) invalidateNote(note);
 	}
 
@@ -3133,10 +3133,10 @@ class PlayState extends MusicBeatState
 		}
 		stagesFunc(function(stage:BaseStage) stage.goodNoteHit(note));
 		var result:Dynamic = callOnLuas('goodNoteHit', [notes.members.indexOf(note), leData, leType, isSus]);
-		if(result != LuaUtils.Function_Stop && result != LuaUtils.Function_StopHScript && result != LuaUtils.Function_StopAll) callOnHScript('goodNoteHit', [note]);
+		if (result != LuaUtils.Function_Stop && result != LuaUtils.Function_StopHScript && result != LuaUtils.Function_StopAll) callOnHScript('goodNoteHit', [note]);
 
 		if (note != null && !note.isSustainNote && note.sustainLength > 0) spawnNoteHoldCoverOnNote(note);
-		if(!note.isSustainNote) invalidateNote(note);
+		if (!note.isSustainNote) invalidateNote(note);
 	}
 
 	public function invalidateNote(note:Note):Void {
@@ -3171,7 +3171,7 @@ class PlayState extends MusicBeatState
 	public function spawnNoteHoldCover(x:Float = 0, y:Float = 0, ?data:Int = 0, ?note:Note, ?strum:StrumNote, ?playbackRate:Float) {
 		var end:Note = note.isSustainNote ? note.parent.tail[note.parent.tail.length - 1] : note.tail[note.tail.length - 1];
 		var holdCover:NoteHoldCover = grpNoteHoldCover.recycle(NoteHoldCover);
-		holdCover.babyArrow = strum;
+		holdCover.strumNote = strum;
 		holdCover.spawnNoteHold(x, y, data, note, playbackRate);
 		grpNoteHoldCover.add(end.holdCover = holdCover);
 	}
