@@ -1,0 +1,14 @@
+objects/NoteHoldCover.hx (line 72)
+options/VisualsSettingsSubState.hx (line 329)
+options/VisualsSettingsSubState.hx (line 316)
+options/Option.hx (line 102)
+options/BaseOptionsMenu.hx (line 231)
+flixel/FlxState.hx (line 225)
+flixel/FlxState.hx (line 234)
+flixel/FlxGame.hx (line 693)
+flixel/FlxGame.hx (line 628)
+flixel/FlxGame.hx (line 501)
+
+Uncaught Error: Null Object Reference
+
+> Crash Handler written by: sqirra-rng

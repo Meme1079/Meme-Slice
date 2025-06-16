@@ -32,7 +32,15 @@ typedef NoteSplashData = {
 }
 
 typedef NoteHoldCoverData = {
+	disabled:Bool,
 	texture:String,
+	useGlobalShader:Bool, //breaks r/g/b but makes it copy default colors for your custom note
+	useRGBShader:Bool,
+	antialiasing:Bool,
+	r:FlxColor,
+	g:FlxColor,
+	b:FlxColor,
+	a:Float
 }
 
 /**
@@ -117,7 +125,15 @@ class Note extends FlxSprite
 	};
 
 	public var noteHoldCoverData:NoteHoldCoverData = {
-		texture: null
+		disabled: false,
+		texture: null,
+		antialiasing: !PlayState.isPixelStage,
+		useGlobalShader: false,
+		useRGBShader: (PlayState.SONG != null) ? !(PlayState.SONG.disableNoteRGB == true) : true,
+		r: -1,
+		g: -1,
+		b: -1,
+		a: ClientPrefs.data.splashAlpha
 	}
 
 	public var offsetX:Float = 0;
@@ -221,6 +237,10 @@ class Note extends FlxSprite
 					noteSplashData.r = 0xFFFF0000;
 					noteSplashData.g = 0xFF101010;
 					noteSplashData.texture = 'noteSplashes/noteSplashes-electric';
+
+					// hold cover colors
+					noteHoldCoverData.r = 0xFFFF0000;
+					noteHoldCoverData.g = 0xFF101010;
 
 					// gameplay data
 					lowPriority = true;

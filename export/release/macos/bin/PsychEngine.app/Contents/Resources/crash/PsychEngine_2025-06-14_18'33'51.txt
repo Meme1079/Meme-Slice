@@ -1,0 +1,9 @@
+states/PlayState.hx (line 3172)
+states/PlayState.hx (line 3164)
+states/PlayState.hx (line 3131)
+states/PlayState.hx (line 2755)
+states/PlayState.hx (line 2716)
+
+Uncaught Error: Null Object Reference
+
+> Crash Handler written by: sqirra-rng

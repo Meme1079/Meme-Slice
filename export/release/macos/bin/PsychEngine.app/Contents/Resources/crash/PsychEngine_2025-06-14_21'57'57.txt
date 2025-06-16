@@ -1,0 +1,13 @@
+states/PlayState.hx (line 2916)
+states/PlayState.hx (line 2892)
+states/PlayState.hx (line 1843)
+flixel/group/FlxGroup.hx (line 791)
+states/PlayState.hx (line 1820)
+flixel/FlxState.hx (line 225)
+flixel/FlxGame.hx (line 693)
+flixel/FlxGame.hx (line 628)
+flixel/FlxGame.hx (line 501)
+
+Uncaught Error: Null Object Reference
+
+> Crash Handler written by: sqirra-rng

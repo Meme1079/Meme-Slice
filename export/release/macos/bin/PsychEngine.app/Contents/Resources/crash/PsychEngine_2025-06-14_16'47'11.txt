@@ -1,0 +1,13 @@
+flixel/FlxSprite.hx (line 1488)
+flixel/FlxSprite.hx (line 1633)
+objects/NoteHoldCover.hx (line 26)
+objects/NoteHoldCover.hx (line 45)
+states/PlayState.hx (line 3172)
+states/PlayState.hx (line 3164)
+states/PlayState.hx (line 3112)
+states/PlayState.hx (line 2755)
+states/PlayState.hx (line 2716)
+
+Uncaught Error: Null Object Reference
+
+> Crash Handler written by: sqirra-rng

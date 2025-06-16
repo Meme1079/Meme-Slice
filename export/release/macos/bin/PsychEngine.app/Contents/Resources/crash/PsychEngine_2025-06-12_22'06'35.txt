@@ -1,0 +1,13 @@
+flixel/FlxCamera.hx (line 611)
+flixel/FlxCamera.hx (line 780)
+flixel/FlxSprite.hx (line 901)
+flixel/FlxSprite.hx (line 873)
+flixel/FlxSprite.hx (line 827)
+flixel/group/FlxGroup.hx (line 180)
+flixel/FlxState.hx (line 109)
+flixel/FlxGame.hx (line 819)
+flixel/FlxGame.hx (line 514)
+
+Uncaught Error: Attempted to queue an invalid FlxDrawItem, did you destroy a cached sprite?
+
+> Crash Handler written by: sqirra-rng
