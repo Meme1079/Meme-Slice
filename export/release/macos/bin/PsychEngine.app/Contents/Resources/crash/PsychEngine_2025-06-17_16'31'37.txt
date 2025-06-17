@@ -1,0 +1,5 @@
+states/editors/NoteSplashEditorState.hx (line 753)
+
+Uncaught Error: Null Object Reference
+
+> Crash Handler written by: sqirra-rng

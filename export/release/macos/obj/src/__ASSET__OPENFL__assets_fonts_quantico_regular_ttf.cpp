@@ -14,13 +14,13 @@
 #include <openfl/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_c6b9b67aec37db30_1543_new,"__ASSET__OPENFL__assets_fonts_quantico_regular_ttf","new",0x47508dff,"__ASSET__OPENFL__assets_fonts_quantico_regular_ttf.new","ManifestResources.hx",1543,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_c6b9b67aec37db30_1548_new,"__ASSET__OPENFL__assets_fonts_quantico_regular_ttf","new",0x47508dff,"__ASSET__OPENFL__assets_fonts_quantico_regular_ttf.new","ManifestResources.hx",1548,0xf77aa668)
 
 void __ASSET__OPENFL__assets_fonts_quantico_regular_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_c6b9b67aec37db30_1543_new)
-HXDLIN(1543)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Quantico-Regular.ttf",30,35,9b,b6));
-HXDLIN(1543)		this->name = HX_("Quantico",d2,f4,f3,85);
-HXDLIN(1543)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_c6b9b67aec37db30_1548_new)
+HXDLIN(1548)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Quantico-Regular.ttf",30,35,9b,b6));
+HXDLIN(1548)		this->name = HX_("Quantico",d2,f4,f3,85);
+HXDLIN(1548)		super::__construct(null());
             	}
 
 Dynamic __ASSET__OPENFL__assets_fonts_quantico_regular_ttf_obj::__CreateEmpty() { return new __ASSET__OPENFL__assets_fonts_quantico_regular_ttf_obj; }

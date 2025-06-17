@@ -11,13 +11,13 @@
 #include <lime/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_31f0f20047d992fe_1472_new,"__ASSET__assets_fonts_quantico_regular_ttf","new",0xd1f242af,"__ASSET__assets_fonts_quantico_regular_ttf.new","ManifestResources.hx",1472,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_31f0f20047d992fe_1477_new,"__ASSET__assets_fonts_quantico_regular_ttf","new",0xd1f242af,"__ASSET__assets_fonts_quantico_regular_ttf.new","ManifestResources.hx",1477,0xf77aa668)
 
 void __ASSET__assets_fonts_quantico_regular_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_31f0f20047d992fe_1472_new)
-HXDLIN(1472)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Quantico-Regular.ttf",30,35,9b,b6));
-HXDLIN(1472)		this->name = HX_("Quantico",d2,f4,f3,85);
-HXDLIN(1472)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_31f0f20047d992fe_1477_new)
+HXDLIN(1477)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Quantico-Regular.ttf",30,35,9b,b6));
+HXDLIN(1477)		this->name = HX_("Quantico",d2,f4,f3,85);
+HXDLIN(1477)		super::__construct(null());
             	}
 
 Dynamic __ASSET__assets_fonts_quantico_regular_ttf_obj::__CreateEmpty() { return new __ASSET__assets_fonts_quantico_regular_ttf_obj; }

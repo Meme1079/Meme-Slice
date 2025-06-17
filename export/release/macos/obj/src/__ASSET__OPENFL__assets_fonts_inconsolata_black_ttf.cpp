@@ -14,13 +14,13 @@
 #include <openfl/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_668b1f150822a379_1532_new,"__ASSET__OPENFL__assets_fonts_inconsolata_black_ttf","new",0xd9f57d9d,"__ASSET__OPENFL__assets_fonts_inconsolata_black_ttf.new","ManifestResources.hx",1532,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_668b1f150822a379_1537_new,"__ASSET__OPENFL__assets_fonts_inconsolata_black_ttf","new",0xd9f57d9d,"__ASSET__OPENFL__assets_fonts_inconsolata_black_ttf.new","ManifestResources.hx",1537,0xf77aa668)
 
 void __ASSET__OPENFL__assets_fonts_inconsolata_black_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_668b1f150822a379_1532_new)
-HXDLIN(1532)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-Black.ttf",ce,4c,6b,7b));
-HXDLIN(1532)		this->name = HX_("Inconsolata Black",9a,0a,bf,23);
-HXDLIN(1532)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_668b1f150822a379_1537_new)
+HXDLIN(1537)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-Black.ttf",ce,4c,6b,7b));
+HXDLIN(1537)		this->name = HX_("Inconsolata Black",9a,0a,bf,23);
+HXDLIN(1537)		super::__construct(null());
             	}
 
 Dynamic __ASSET__OPENFL__assets_fonts_inconsolata_black_ttf_obj::__CreateEmpty() { return new __ASSET__OPENFL__assets_fonts_inconsolata_black_ttf_obj; }

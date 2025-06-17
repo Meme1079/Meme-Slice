@@ -107,7 +107,7 @@ class NoteHoldCover extends FlxSprite {
 
 			if (noteUsedGlobalShader) {
 				var arr:Array<FlxColor> = ClientPrefs.data.arrowRGB[noteData % Note.colArray.length];
-				if (PlayState.isPixelStage) arr = ClientPrefs.data.arrowRGBPixel[noteData % Note.colArray.length];
+				if (PlayState.stageUI == 'pixel') arr = ClientPrefs.data.arrowRGBPixel[noteData % Note.colArray.length];
 
 				tempShader.r = arr[0];
         			tempShader.g = arr[1];

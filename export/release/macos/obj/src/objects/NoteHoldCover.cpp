@@ -118,12 +118,12 @@
 
 HX_DEFINE_STACK_FRAME(_hx_pos_e95cef2065d20a82_15_new,"objects.NoteHoldCover","new",0x901d00de,"objects.NoteHoldCover.new","objects/NoteHoldCover.hx",15,0x5db71653)
 HX_LOCAL_STACK_FRAME(_hx_pos_e95cef2065d20a82_35_loadNoteHold,"objects.NoteHoldCover","loadNoteHold",0x57e6aa59,"objects.NoteHoldCover.loadNoteHold","objects/NoteHoldCover.hx",35,0x5db71653)
-HX_LOCAL_STACK_FRAME(_hx_pos_e95cef2065d20a82_136_spawnNoteHold,"objects.NoteHoldCover","spawnNoteHold",0xc86d75aa,"objects.NoteHoldCover.spawnNoteHold","objects/NoteHoldCover.hx",136,0x5db71653)
+HX_LOCAL_STACK_FRAME(_hx_pos_e95cef2065d20a82_134_spawnNoteHold,"objects.NoteHoldCover","spawnNoteHold",0xc86d75aa,"objects.NoteHoldCover.spawnNoteHold","objects/NoteHoldCover.hx",134,0x5db71653)
 HX_LOCAL_STACK_FRAME(_hx_pos_e95cef2065d20a82_69_spawnNoteHold,"objects.NoteHoldCover","spawnNoteHold",0xc86d75aa,"objects.NoteHoldCover.spawnNoteHold","objects/NoteHoldCover.hx",69,0x5db71653)
-HX_LOCAL_STACK_FRAME(_hx_pos_e95cef2065d20a82_128_spawnNoteHold,"objects.NoteHoldCover","spawnNoteHold",0xc86d75aa,"objects.NoteHoldCover.spawnNoteHold","objects/NoteHoldCover.hx",128,0x5db71653)
-HX_LOCAL_STACK_FRAME(_hx_pos_e95cef2065d20a82_132_spawnNoteHold,"objects.NoteHoldCover","spawnNoteHold",0xc86d75aa,"objects.NoteHoldCover.spawnNoteHold","objects/NoteHoldCover.hx",132,0x5db71653)
-HX_LOCAL_STACK_FRAME(_hx_pos_e95cef2065d20a82_146_update,"objects.NoteHoldCover","update",0x4863384b,"objects.NoteHoldCover.update","objects/NoteHoldCover.hx",146,0x5db71653)
-HX_LOCAL_STACK_FRAME(_hx_pos_e95cef2065d20a82_156_getHoldCoverSkinPostfix,"objects.NoteHoldCover","getHoldCoverSkinPostfix",0x76543d14,"objects.NoteHoldCover.getHoldCoverSkinPostfix","objects/NoteHoldCover.hx",156,0x5db71653)
+HX_LOCAL_STACK_FRAME(_hx_pos_e95cef2065d20a82_126_spawnNoteHold,"objects.NoteHoldCover","spawnNoteHold",0xc86d75aa,"objects.NoteHoldCover.spawnNoteHold","objects/NoteHoldCover.hx",126,0x5db71653)
+HX_LOCAL_STACK_FRAME(_hx_pos_e95cef2065d20a82_130_spawnNoteHold,"objects.NoteHoldCover","spawnNoteHold",0xc86d75aa,"objects.NoteHoldCover.spawnNoteHold","objects/NoteHoldCover.hx",130,0x5db71653)
+HX_LOCAL_STACK_FRAME(_hx_pos_e95cef2065d20a82_144_update,"objects.NoteHoldCover","update",0x4863384b,"objects.NoteHoldCover.update","objects/NoteHoldCover.hx",144,0x5db71653)
+HX_LOCAL_STACK_FRAME(_hx_pos_e95cef2065d20a82_154_getHoldCoverSkinPostfix,"objects.NoteHoldCover","getHoldCoverSkinPostfix",0x76543d14,"objects.NoteHoldCover.getHoldCoverSkinPostfix","objects/NoteHoldCover.hx",154,0x5db71653)
 HX_LOCAL_STACK_FRAME(_hx_pos_e95cef2065d20a82_26_boot,"objects.NoteHoldCover","boot",0x815cc1f4,"objects.NoteHoldCover.boot","objects/NoteHoldCover.hx",26,0x5db71653)
 HX_LOCAL_STACK_FRAME(_hx_pos_e95cef2065d20a82_34_boot,"objects.NoteHoldCover","boot",0x815cc1f4,"objects.NoteHoldCover.boot","objects/NoteHoldCover.hx",34,0x5db71653)
 namespace objects{
@@ -302,12 +302,12 @@ HX_DEFINE_DYNAMIC_FUNC1(NoteHoldCover_obj,loadNoteHold,(void))
 void NoteHoldCover_obj::spawnNoteHold( ::Dynamic __o_x, ::Dynamic __o_y, ::Dynamic __o_noteData, ::objects::Note note, ::Dynamic __o_strum, ::Dynamic playbackRate){
             		HX_BEGIN_LOCAL_FUNC_S2(::hx::LocalFunc,_hx_Closure_2, ::objects::NoteHoldCover,_gthis,::Array< ::Dynamic>,noteData1) HXARGC(1)
             		void _hx_run(::String animName){
-            			HX_GC_STACKFRAME(&_hx_pos_e95cef2065d20a82_136_spawnNoteHold)
-HXLINE( 137)			if ((animName == (::objects::NoteHoldCover_obj::noteColors->__get(( (int)(noteData1->__get(0)) )) + HX_("Start",42,e4,38,17)))) {
-HXLINE( 138)				_gthis->animation->play(::objects::NoteHoldCover_obj::noteColors->__get(( (int)(noteData1->__get(0)) )),true,null(),null());
+            			HX_GC_STACKFRAME(&_hx_pos_e95cef2065d20a82_134_spawnNoteHold)
+HXLINE( 135)			if ((animName == (::objects::NoteHoldCover_obj::noteColors->__get(( (int)(noteData1->__get(0)) )) + HX_("Start",42,e4,38,17)))) {
+HXLINE( 136)				_gthis->animation->play(::objects::NoteHoldCover_obj::noteColors->__get(( (int)(noteData1->__get(0)) )),true,null(),null());
             			}
-HXLINE( 140)			if ((animName == (::objects::NoteHoldCover_obj::noteColors->__get(( (int)(noteData1->__get(0)) )) + HX_("End",bb,bb,34,00)))) {
-HXLINE( 141)				_gthis->kill();
+HXLINE( 138)			if ((animName == (::objects::NoteHoldCover_obj::noteColors->__get(( (int)(noteData1->__get(0)) )) + HX_("End",bb,bb,34,00)))) {
+HXLINE( 139)				_gthis->kill();
             			}
             		}
             		HX_END_LOCAL_FUNC1((void))
@@ -407,7 +407,7 @@ HXDLIN( 105)		if (_hx_tmp2) {
 HXLINE( 106)			tempShader =  ::shaders::RGBPalette_obj::__alloc( HX_CTX );
 HXLINE( 108)			if (noteUsedGlobalShader) {
 HXLINE( 109)				::Array< int > arr = ::backend::ClientPrefs_obj::data->arrowRGB->__get(::hx::Mod(noteData1->__get(0),::objects::Note_obj::colArray->length)).StaticCast< ::Array< int > >();
-HXLINE( 110)				if (::states::PlayState_obj::get_isPixelStage()) {
+HXLINE( 110)				if ((::states::PlayState_obj::stageUI == HX_("pixel",86,c6,a3,c2))) {
 HXLINE( 110)					arr = ::backend::ClientPrefs_obj::data->arrowRGBPixel->__get(::hx::Mod(noteData1->__get(0),::objects::Note_obj::colArray->length)).StaticCast< ::Array< int > >();
             				}
 HXLINE( 112)				tempShader->set_r(arr->__get(0));
@@ -416,59 +416,59 @@ HXLINE( 114)				tempShader->set_b(arr->__get(2));
 HXLINE( 115)				this->shader = tempShader->shader;
             			}
             		}
-HXLINE( 121)		this->animation->play((::objects::NoteHoldCover_obj::noteColors->__get(( (int)(noteData1->__get(0)) )) + HX_("Start",42,e4,38,17)),true,null(),null());
-HXLINE( 123)		if ((this->inEditor == false)) {
+HXLINE( 119)		this->animation->play((::objects::NoteHoldCover_obj::noteColors->__get(( (int)(noteData1->__get(0)) )) + HX_("Start",42,e4,38,17)),true,null(),null());
+HXLINE( 121)		if ((this->inEditor == false)) {
             			HX_BEGIN_LOCAL_FUNC_S2(::hx::LocalFunc,_hx_Closure_0, ::objects::NoteHoldCover,_gthis,::Array< ::Dynamic>,noteData1) HXARGC(1)
             			void _hx_run( ::flixel::util::FlxTimer timer){
-            				HX_GC_STACKFRAME(&_hx_pos_e95cef2065d20a82_128_spawnNoteHold)
-HXLINE( 128)				_gthis->animation->play((::objects::NoteHoldCover_obj::noteColors->__get(( (int)(noteData1->__get(0)) )) + HX_("End",bb,bb,34,00)),true,null(),null());
+            				HX_GC_STACKFRAME(&_hx_pos_e95cef2065d20a82_126_spawnNoteHold)
+HXLINE( 126)				_gthis->animation->play((::objects::NoteHoldCover_obj::noteColors->__get(( (int)(noteData1->__get(0)) )) + HX_("End",bb,bb,34,00)),true,null(),null());
             			}
             			HX_END_LOCAL_FUNC1((void))
 
-HXLINE( 124)			int lengthToGet;
-HXDLIN( 124)			if (!(note->isSustainNote)) {
-HXLINE( 124)				lengthToGet = note->tail->length;
+HXLINE( 122)			int lengthToGet;
+HXDLIN( 122)			if (!(note->isSustainNote)) {
+HXLINE( 122)				lengthToGet = note->tail->length;
             			}
             			else {
-HXLINE( 124)				lengthToGet = note->parent->tail->length;
+HXLINE( 122)				lengthToGet = note->parent->tail->length;
             			}
-HXLINE( 125)			Float timeToGet;
-HXDLIN( 125)			if (!(note->isSustainNote)) {
-HXLINE( 125)				timeToGet = note->strumTime;
+HXLINE( 123)			Float timeToGet;
+HXDLIN( 123)			if (!(note->isSustainNote)) {
+HXLINE( 123)				timeToGet = note->strumTime;
             			}
             			else {
-HXLINE( 125)				timeToGet = note->parent->strumTime;
+HXLINE( 123)				timeToGet = note->parent->strumTime;
             			}
-HXLINE( 126)			Float timeDuration = ((((::objects::NoteHoldCover_obj::startCrochet * ( (Float)(lengthToGet) )) + ((timeToGet - ::backend::Conductor_obj::songPosition) + ::backend::ClientPrefs_obj::data->ratingOffset)) / ( (Float)(playbackRate) )) * ((Float).001));
-HXLINE( 127)			 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(timeDuration, ::Dynamic(new _hx_Closure_0(_gthis,noteData1)),null());
+HXLINE( 124)			Float timeDuration = ((((::objects::NoteHoldCover_obj::startCrochet * ( (Float)(lengthToGet) )) + ((timeToGet - ::backend::Conductor_obj::songPosition) + ::backend::ClientPrefs_obj::data->ratingOffset)) / ( (Float)(playbackRate) )) * ((Float).001));
+HXLINE( 125)			 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(timeDuration, ::Dynamic(new _hx_Closure_0(_gthis,noteData1)),null());
             		}
             		else {
             			HX_BEGIN_LOCAL_FUNC_S2(::hx::LocalFunc,_hx_Closure_1, ::objects::NoteHoldCover,_gthis,::Array< ::Dynamic>,noteData1) HXARGC(1)
             			void _hx_run( ::flixel::util::FlxTimer timer){
-            				HX_GC_STACKFRAME(&_hx_pos_e95cef2065d20a82_132_spawnNoteHold)
-HXLINE( 132)				_gthis->animation->play((::objects::NoteHoldCover_obj::noteColors->__get(( (int)(noteData1->__get(0)) )) + HX_("End",bb,bb,34,00)),true,null(),null());
+            				HX_GC_STACKFRAME(&_hx_pos_e95cef2065d20a82_130_spawnNoteHold)
+HXLINE( 130)				_gthis->animation->play((::objects::NoteHoldCover_obj::noteColors->__get(( (int)(noteData1->__get(0)) )) + HX_("End",bb,bb,34,00)),true,null(),null());
             			}
             			HX_END_LOCAL_FUNC1((void))
 
-HXLINE( 131)			 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(2, ::Dynamic(new _hx_Closure_1(_gthis,noteData1)),null());
+HXLINE( 129)			 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(2, ::Dynamic(new _hx_Closure_1(_gthis,noteData1)),null());
             		}
-HXLINE( 136)		this->animation->onFinish->add( ::Dynamic(new _hx_Closure_2(_gthis,noteData1)));
+HXLINE( 134)		this->animation->onFinish->add( ::Dynamic(new _hx_Closure_2(_gthis,noteData1)));
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC6(NoteHoldCover_obj,spawnNoteHold,(void))
 
 void NoteHoldCover_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_e95cef2065d20a82_146_update)
-HXLINE( 147)		if (::hx::IsNotNull( this->strumNote )) {
-HXLINE( 148)			if (this->copyX) {
-HXLINE( 149)				this->set_x((this->strumNote->x - (::objects::Note_obj::swagWidth * ((Float)0.95))));
+            	HX_STACKFRAME(&_hx_pos_e95cef2065d20a82_144_update)
+HXLINE( 145)		if (::hx::IsNotNull( this->strumNote )) {
+HXLINE( 146)			if (this->copyX) {
+HXLINE( 147)				this->set_x((this->strumNote->x - (::objects::Note_obj::swagWidth * ((Float)0.95))));
             			}
-HXLINE( 150)			if (this->copyY) {
-HXLINE( 151)				this->set_y(((this->strumNote->y - ::objects::Note_obj::swagWidth) + 10));
+HXLINE( 148)			if (this->copyY) {
+HXLINE( 149)				this->set_y(((this->strumNote->y - ::objects::Note_obj::swagWidth) + 10));
             			}
             		}
-HXLINE( 153)		this->super::update(elapsed);
+HXLINE( 151)		this->super::update(elapsed);
             	}
 
 
@@ -479,12 +479,12 @@ Float NoteHoldCover_obj::startCrochet;
 ::Array< ::String > NoteHoldCover_obj::noteColors;
 
 ::String NoteHoldCover_obj::getHoldCoverSkinPostfix(){
-            	HX_STACKFRAME(&_hx_pos_e95cef2065d20a82_156_getHoldCoverSkinPostfix)
-HXLINE( 157)		::String skin = HX_("",00,00,00,00);
-HXLINE( 158)		if ((::backend::ClientPrefs_obj::data->holdCoverSkin != ::backend::ClientPrefs_obj::defaultData->holdCoverSkin)) {
-HXLINE( 159)			skin = (HX_("-",2d,00,00,00) + ::StringTools_obj::replace(::StringTools_obj::trim(::backend::ClientPrefs_obj::data->holdCoverSkin).toLowerCase(),HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)));
+            	HX_STACKFRAME(&_hx_pos_e95cef2065d20a82_154_getHoldCoverSkinPostfix)
+HXLINE( 155)		::String skin = HX_("",00,00,00,00);
+HXLINE( 156)		if ((::backend::ClientPrefs_obj::data->holdCoverSkin != ::backend::ClientPrefs_obj::defaultData->holdCoverSkin)) {
+HXLINE( 157)			skin = (HX_("-",2d,00,00,00) + ::StringTools_obj::replace(::StringTools_obj::trim(::backend::ClientPrefs_obj::data->holdCoverSkin).toLowerCase(),HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)));
             		}
-HXLINE( 161)		return skin;
+HXLINE( 159)		return skin;
             	}
 
 

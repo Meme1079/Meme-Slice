@@ -86,7 +86,7 @@
 
 HX_DEFINE_STACK_FRAME(_hx_pos_a057a3e57c2eb2b2_20_new,"funkin.ui.FunkinSoundTray","new",0xe47a8849,"funkin.ui.FunkinSoundTray.new","funkin/ui/FunkinSoundTray.hx",20,0xa75e31e7)
 HX_LOCAL_STACK_FRAME(_hx_pos_a057a3e57c2eb2b2_66_update,"funkin.ui.FunkinSoundTray","update",0xceade5c0,"funkin.ui.FunkinSoundTray.update","funkin/ui/FunkinSoundTray.hx",66,0xa75e31e7)
-HX_LOCAL_STACK_FRAME(_hx_pos_a057a3e57c2eb2b2_104_showAnim,"funkin.ui.FunkinSoundTray","showAnim",0x72414525,"funkin.ui.FunkinSoundTray.showAnim","funkin/ui/FunkinSoundTray.hx",104,0xa75e31e7)
+HX_LOCAL_STACK_FRAME(_hx_pos_a057a3e57c2eb2b2_98_showAnim,"funkin.ui.FunkinSoundTray","showAnim",0x72414525,"funkin.ui.FunkinSoundTray.showAnim","funkin/ui/FunkinSoundTray.hx",98,0xa75e31e7)
 namespace funkin{
 namespace ui{
 
@@ -171,45 +171,35 @@ HXLINE(  67)		Float _hx_tmp = this->get_y();
 HXDLIN(  67)		this->set_y(::funkin::util::MathUtil_obj::coolLerp(_hx_tmp,this->lerpYPos,((Float)0.1)));
 HXLINE(  68)		Float _hx_tmp1 = this->get_alpha();
 HXDLIN(  68)		this->set_alpha(::funkin::util::MathUtil_obj::coolLerp(_hx_tmp1,this->alphaTarget,((Float)0.25)));
-HXLINE(  71)		bool hasVolume;
-HXDLIN(  71)		if (!(::flixel::FlxG_obj::sound->muted)) {
-HXLINE(  71)			hasVolume = (::flixel::FlxG_obj::sound->volume > 0);
+HXLINE(  70)		if ((this->_timer > 0)) {
+HXLINE(  71)			 ::funkin::ui::FunkinSoundTray _hx_tmp2 = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(  71)			_hx_tmp2->_timer = (_hx_tmp2->_timer - (ms / ( (Float)(1000) )));
             		}
             		else {
-HXLINE(  71)			hasVolume = false;
-            		}
-HXLINE(  72)		if (!(hasVolume)) {
-HXLINE(  73)			return;
-            		}
-HXLINE(  76)		if ((this->_timer > 0)) {
-HXLINE(  77)			 ::funkin::ui::FunkinSoundTray _hx_tmp2 = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(  77)			_hx_tmp2->_timer = (_hx_tmp2->_timer - (ms / ( (Float)(1000) )));
-            		}
-            		else {
-HXLINE(  78)			Float _hx_tmp3 = this->get_y();
-HXDLIN(  78)			if ((_hx_tmp3 >= -(this->get_height()))) {
-HXLINE(  79)				this->lerpYPos = (-(this->get_height()) - ( (Float)(10) ));
-HXLINE(  80)				this->alphaTarget = ( (Float)(0) );
+HXLINE(  72)			Float _hx_tmp3 = this->get_y();
+HXDLIN(  72)			if ((_hx_tmp3 >= -(this->get_height()))) {
+HXLINE(  73)				this->lerpYPos = (-(this->get_height()) - ( (Float)(10) ));
+HXLINE(  74)				this->alphaTarget = ( (Float)(0) );
             			}
             		}
-HXLINE(  83)		Float _hx_tmp4 = this->get_y();
-HXDLIN(  83)		if ((_hx_tmp4 <= -(this->get_height()))) {
-HXLINE(  84)			this->set_visible(false);
-HXLINE(  85)			this->active = false;
-HXLINE(  88)			 ::flixel::util::FlxSaveStatus _g = ::flixel::FlxG_obj::save->status;
-HXDLIN(  88)			bool _hx_tmp5;
-HXDLIN(  88)			if ((_g->_hx_getIndex() == 1)) {
-HXLINE(  88)				::String _g1 = _g->_hx_getString(0);
-HXDLIN(  88)				::String _g2 = _g->_hx_getString(1);
-HXDLIN(  88)				_hx_tmp5 = true;
+HXLINE(  77)		Float _hx_tmp4 = this->get_y();
+HXDLIN(  77)		if ((_hx_tmp4 <= -(this->get_height()))) {
+HXLINE(  78)			this->set_visible(false);
+HXLINE(  79)			this->active = false;
+HXLINE(  82)			 ::flixel::util::FlxSaveStatus _g = ::flixel::FlxG_obj::save->status;
+HXDLIN(  82)			bool _hx_tmp5;
+HXDLIN(  82)			if ((_g->_hx_getIndex() == 1)) {
+HXLINE(  82)				::String _g1 = _g->_hx_getString(0);
+HXDLIN(  82)				::String _g2 = _g->_hx_getString(1);
+HXDLIN(  82)				_hx_tmp5 = true;
             			}
             			else {
-HXLINE(  88)				_hx_tmp5 = false;
+HXLINE(  82)				_hx_tmp5 = false;
             			}
-HXDLIN(  88)			if (_hx_tmp5) {
-HXLINE(  89)				::flixel::FlxG_obj::save->data->__SetField(HX_("mute",d9,6e,65,48),::flixel::FlxG_obj::sound->muted,::hx::paccDynamic);
-HXLINE(  90)				::flixel::FlxG_obj::save->data->__SetField(HX_("volume",da,29,53,5f),::flixel::FlxG_obj::sound->volume,::hx::paccDynamic);
-HXLINE(  91)				::flixel::FlxG_obj::save->flush(null());
+HXDLIN(  82)			if (_hx_tmp5) {
+HXLINE(  83)				::flixel::FlxG_obj::save->data->__SetField(HX_("mute",d9,6e,65,48),::flixel::FlxG_obj::sound->muted,::hx::paccDynamic);
+HXLINE(  84)				::flixel::FlxG_obj::save->data->__SetField(HX_("volume",da,29,53,5f),::flixel::FlxG_obj::sound->volume,::hx::paccDynamic);
+HXLINE(  85)				::flixel::FlxG_obj::save->flush(null());
             			}
             		}
             	}
@@ -219,91 +209,91 @@ void FunkinSoundTray_obj::showAnim(Float volume, ::Dynamic sound,::hx::Null< Flo
             		Float duration = __o_duration.Default(((Float)1.0));
             		::String label = __o_label;
             		if (::hx::IsNull(__o_label)) label = HX_("VOLUME",da,d5,d5,11);
-            	HX_STACKFRAME(&_hx_pos_a057a3e57c2eb2b2_104_showAnim)
-HXLINE( 105)		this->_timer = ( (Float)(1) );
-HXLINE( 106)		this->lerpYPos = ( (Float)(10) );
-HXLINE( 107)		this->set_visible(true);
-HXLINE( 108)		this->active = true;
-HXLINE( 109)		this->alphaTarget = ( (Float)(1) );
-HXLINE( 111)		int globalVolume = ::Math_obj::round((( (Float)(::flixel::FlxG_obj::sound->applySoundCurve(::flixel::FlxG_obj::sound->volume)) ) * ( (Float)(10) )));
-HXLINE( 112)		bool _hx_tmp;
-HXDLIN( 112)		if (!(::flixel::FlxG_obj::sound->muted)) {
-HXLINE( 112)			_hx_tmp = (::flixel::FlxG_obj::sound->volume == 0);
+            	HX_STACKFRAME(&_hx_pos_a057a3e57c2eb2b2_98_showAnim)
+HXLINE(  99)		this->_timer = ( (Float)(1) );
+HXLINE( 100)		this->lerpYPos = ( (Float)(10) );
+HXLINE( 101)		this->set_visible(true);
+HXLINE( 102)		this->active = true;
+HXLINE( 103)		this->alphaTarget = ( (Float)(1) );
+HXLINE( 105)		int globalVolume = ::Math_obj::round((( (Float)(::flixel::FlxG_obj::sound->applySoundCurve(::flixel::FlxG_obj::sound->volume)) ) * ( (Float)(10) )));
+HXLINE( 106)		bool _hx_tmp;
+HXDLIN( 106)		if (!(::flixel::FlxG_obj::sound->muted)) {
+HXLINE( 106)			_hx_tmp = (::flixel::FlxG_obj::sound->volume == 0);
             		}
             		else {
-HXLINE( 112)			_hx_tmp = true;
+HXLINE( 106)			_hx_tmp = true;
             		}
-HXDLIN( 112)		if (_hx_tmp) {
-HXLINE( 113)			globalVolume = 0;
+HXDLIN( 106)		if (_hx_tmp) {
+HXLINE( 107)			globalVolume = 0;
             		}
-HXLINE( 116)		if (::hx::IsNotNull( sound )) {
-HXLINE( 117)			if ((globalVolume == 10)) {
-HXLINE( 118)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp1 = ::flixel::FlxG_obj::sound;
-HXDLIN( 118)				 ::flixel::_hx_system::frontEnds::AssetFrontEnd _this = ::flixel::FlxG_obj::assets;
-HXDLIN( 118)				::String id = this->volumeMaxSound;
-HXDLIN( 118)				 ::flixel::_hx_system::debug::log::LogStyle logStyle = null();
-HXDLIN( 118)				::String id1;
-HXDLIN( 118)				bool id2;
-HXDLIN( 118)				bool id3;
-HXDLIN( 118)				if (!(::StringTools_obj::endsWith(id,HX_(".mp3",02,e8,ba,1e)))) {
-HXLINE( 118)					id3 = !(::StringTools_obj::endsWith(id,HX_(".ogg",e1,64,bc,1e)));
+HXLINE( 110)		if (::hx::IsNotNull( sound )) {
+HXLINE( 111)			if ((globalVolume == 10)) {
+HXLINE( 112)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp1 = ::flixel::FlxG_obj::sound;
+HXDLIN( 112)				 ::flixel::_hx_system::frontEnds::AssetFrontEnd _this = ::flixel::FlxG_obj::assets;
+HXDLIN( 112)				::String id = this->volumeMaxSound;
+HXDLIN( 112)				 ::flixel::_hx_system::debug::log::LogStyle logStyle = null();
+HXDLIN( 112)				::String id1;
+HXDLIN( 112)				bool id2;
+HXDLIN( 112)				bool id3;
+HXDLIN( 112)				if (!(::StringTools_obj::endsWith(id,HX_(".mp3",02,e8,ba,1e)))) {
+HXLINE( 112)					id3 = !(::StringTools_obj::endsWith(id,HX_(".ogg",e1,64,bc,1e)));
             				}
             				else {
-HXLINE( 118)					id3 = false;
+HXLINE( 112)					id3 = false;
             				}
-HXDLIN( 118)				if (id3) {
-HXLINE( 118)					id2 = !(::StringTools_obj::endsWith(id,HX_(".wav",be,71,c2,1e)));
-            				}
-            				else {
-HXLINE( 118)					id2 = false;
-            				}
-HXDLIN( 118)				if (id2) {
-HXLINE( 118)					id1 = (id + _this->defaultSoundExtension);
+HXDLIN( 112)				if (id3) {
+HXLINE( 112)					id2 = !(::StringTools_obj::endsWith(id,HX_(".wav",be,71,c2,1e)));
             				}
             				else {
-HXLINE( 118)					id1 = id;
+HXLINE( 112)					id2 = false;
             				}
-HXDLIN( 118)				_hx_tmp1->play(( ( ::openfl::media::Sound)(_this->getAsset(id1,HX_("sound",cf,8c,cc,80),true,logStyle)) ),null(),null(),null(),null(),null());
+HXDLIN( 112)				if (id2) {
+HXLINE( 112)					id1 = (id + _this->defaultSoundExtension);
+            				}
+            				else {
+HXLINE( 112)					id1 = id;
+            				}
+HXDLIN( 112)				_hx_tmp1->play(( ( ::openfl::media::Sound)(_this->getAsset(id1,HX_("sound",cf,8c,cc,80),true,logStyle)) ),null(),null(),null(),null(),null());
             			}
             			else {
-HXLINE( 120)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp2 = ::flixel::FlxG_obj::sound;
-HXDLIN( 120)				 ::flixel::_hx_system::frontEnds::AssetFrontEnd _this1 = ::flixel::FlxG_obj::assets;
-HXDLIN( 120)				 ::flixel::_hx_system::debug::log::LogStyle logStyle1 = null();
-HXDLIN( 120)				::String id4;
-HXDLIN( 120)				bool id5;
-HXDLIN( 120)				bool id6;
-HXDLIN( 120)				if (!(::StringTools_obj::endsWith(( (::String)(sound) ),HX_(".mp3",02,e8,ba,1e)))) {
-HXLINE( 120)					id6 = !(::StringTools_obj::endsWith(( (::String)(sound) ),HX_(".ogg",e1,64,bc,1e)));
+HXLINE( 114)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp2 = ::flixel::FlxG_obj::sound;
+HXDLIN( 114)				 ::flixel::_hx_system::frontEnds::AssetFrontEnd _this1 = ::flixel::FlxG_obj::assets;
+HXDLIN( 114)				 ::flixel::_hx_system::debug::log::LogStyle logStyle1 = null();
+HXDLIN( 114)				::String id4;
+HXDLIN( 114)				bool id5;
+HXDLIN( 114)				bool id6;
+HXDLIN( 114)				if (!(::StringTools_obj::endsWith(( (::String)(sound) ),HX_(".mp3",02,e8,ba,1e)))) {
+HXLINE( 114)					id6 = !(::StringTools_obj::endsWith(( (::String)(sound) ),HX_(".ogg",e1,64,bc,1e)));
             				}
             				else {
-HXLINE( 120)					id6 = false;
+HXLINE( 114)					id6 = false;
             				}
-HXDLIN( 120)				if (id6) {
-HXLINE( 120)					id5 = !(::StringTools_obj::endsWith(( (::String)(sound) ),HX_(".wav",be,71,c2,1e)));
-            				}
-            				else {
-HXLINE( 120)					id5 = false;
-            				}
-HXDLIN( 120)				if (id5) {
-HXLINE( 120)					id4 = (sound + _this1->defaultSoundExtension);
+HXDLIN( 114)				if (id6) {
+HXLINE( 114)					id5 = !(::StringTools_obj::endsWith(( (::String)(sound) ),HX_(".wav",be,71,c2,1e)));
             				}
             				else {
-HXLINE( 120)					id4 = ( (::String)(sound) );
+HXLINE( 114)					id5 = false;
             				}
-HXDLIN( 120)				_hx_tmp2->play(( ( ::openfl::media::Sound)(_this1->getAsset(id4,HX_("sound",cf,8c,cc,80),true,logStyle1)) ),null(),null(),null(),null(),null());
+HXDLIN( 114)				if (id5) {
+HXLINE( 114)					id4 = (sound + _this1->defaultSoundExtension);
+            				}
+            				else {
+HXLINE( 114)					id4 = ( (::String)(sound) );
+            				}
+HXDLIN( 114)				_hx_tmp2->play(( ( ::openfl::media::Sound)(_this1->getAsset(id4,HX_("sound",cf,8c,cc,80),true,logStyle1)) ),null(),null(),null(),null(),null());
             			}
             		}
-HXLINE( 124)		{
-HXLINE( 124)			int _g = 0;
-HXDLIN( 124)			int _g1 = this->_bars->length;
-HXDLIN( 124)			while((_g < _g1)){
-HXLINE( 124)				_g = (_g + 1);
-HXDLIN( 124)				int i = (_g - 1);
-HXLINE( 125)				if ((i < globalVolume)) {
-HXLINE( 126)					this->_bars->__get(i).StaticCast<  ::openfl::display::Bitmap >()->set_visible(true);
+HXLINE( 118)		{
+HXLINE( 118)			int _g = 0;
+HXDLIN( 118)			int _g1 = this->_bars->length;
+HXDLIN( 118)			while((_g < _g1)){
+HXLINE( 118)				_g = (_g + 1);
+HXDLIN( 118)				int i = (_g - 1);
+HXLINE( 119)				if ((i < globalVolume)) {
+HXLINE( 120)					this->_bars->__get(i).StaticCast<  ::openfl::display::Bitmap >()->set_visible(true);
             				}
             				else {
-HXLINE( 128)					this->_bars->__get(i).StaticCast<  ::openfl::display::Bitmap >()->set_visible(false);
+HXLINE( 122)					this->_bars->__get(i).StaticCast<  ::openfl::display::Bitmap >()->set_visible(false);
             				}
             			}
             		}

@@ -14,13 +14,13 @@
 #include <openfl/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_14a2d04bb98725e6_1534_new,"__ASSET__OPENFL__assets_fonts_ds_digib_ttf","new",0xc343d61b,"__ASSET__OPENFL__assets_fonts_ds_digib_ttf.new","ManifestResources.hx",1534,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_14a2d04bb98725e6_1539_new,"__ASSET__OPENFL__assets_fonts_ds_digib_ttf","new",0xc343d61b,"__ASSET__OPENFL__assets_fonts_ds_digib_ttf.new","ManifestResources.hx",1539,0xf77aa668)
 
 void __ASSET__OPENFL__assets_fonts_ds_digib_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_14a2d04bb98725e6_1534_new)
-HXDLIN(1534)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/DS-DIGIB.TTF",8c,42,ae,74));
-HXDLIN(1534)		this->name = HX_("DS-Digital Bold",cb,d9,bb,9c);
-HXDLIN(1534)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_14a2d04bb98725e6_1539_new)
+HXDLIN(1539)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/DS-DIGIB.TTF",8c,42,ae,74));
+HXDLIN(1539)		this->name = HX_("DS-Digital Bold",cb,d9,bb,9c);
+HXDLIN(1539)		super::__construct(null());
             	}
 
 Dynamic __ASSET__OPENFL__assets_fonts_ds_digib_ttf_obj::__CreateEmpty() { return new __ASSET__OPENFL__assets_fonts_ds_digib_ttf_obj; }

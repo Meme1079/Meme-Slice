@@ -37,6 +37,9 @@ export/release/macos/bin/assets/shared/images/pixelUI/good-pixel.png
 export/release/macos/bin/assets/shared/images/pixelUI/num6-pixel.png
 export/release/macos/bin/assets/shared/images/pixelUI/sick-pixel.png
 export/release/macos/bin/assets/shared/images/pixelUI/set-pixel.png
+export/release/macos/bin/assets/shared/images/pixelUI/saved_testing_notesplash/noteSplashes-pixel.xml
+export/release/macos/bin/assets/shared/images/pixelUI/saved_testing_notesplash/noteSplashes-pixel.png
+export/release/macos/bin/assets/shared/images/pixelUI/saved_testing_notesplash/noteSplashes-pixel.json
 export/release/macos/bin/assets/shared/images/pixelUI/num0-pixel.png
 export/release/macos/bin/assets/shared/images/pixelUI/num8-pixel.png
 export/release/macos/bin/assets/shared/images/pixelUI/combo-pixel.png
@@ -52,6 +55,8 @@ export/release/macos/bin/assets/shared/images/pixelUI/noteSkins/NOTE_assetsENDS.
 export/release/macos/bin/assets/shared/images/pixelUI/noteSkins/NOTE_assets-future.png
 export/release/macos/bin/assets/shared/images/pixelUI/ready-pixel.png
 export/release/macos/bin/assets/shared/images/pixelUI/num4-pixel.png
+export/release/macos/bin/assets/shared/images/pixelUI/noteSplashes/noteSplashes.xml
+export/release/macos/bin/assets/shared/images/pixelUI/noteSplashes/noteSplashes.png
 export/release/macos/bin/assets/shared/images/pixelUI/bad-pixel.png
 export/release/macos/bin/assets/shared/images/pixelUI/num2-pixel.png
 export/release/macos/bin/assets/shared/images/menudifficulties/easy.png

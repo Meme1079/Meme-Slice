@@ -14,13 +14,13 @@
 #include <openfl/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_2bec46103fab1d47_1531_new,"__ASSET__OPENFL__assets_fonts_inconsolata_medium_ttf","new",0x249e15a9,"__ASSET__OPENFL__assets_fonts_inconsolata_medium_ttf.new","ManifestResources.hx",1531,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_2bec46103fab1d47_1536_new,"__ASSET__OPENFL__assets_fonts_inconsolata_medium_ttf","new",0x249e15a9,"__ASSET__OPENFL__assets_fonts_inconsolata_medium_ttf.new","ManifestResources.hx",1536,0xf77aa668)
 
 void __ASSET__OPENFL__assets_fonts_inconsolata_medium_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_2bec46103fab1d47_1531_new)
-HXDLIN(1531)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-Medium.ttf",76,92,b4,bd));
-HXDLIN(1531)		this->name = HX_("Inconsolata Medium",3a,5f,89,83);
-HXDLIN(1531)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_2bec46103fab1d47_1536_new)
+HXDLIN(1536)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-Medium.ttf",76,92,b4,bd));
+HXDLIN(1536)		this->name = HX_("Inconsolata Medium",3a,5f,89,83);
+HXDLIN(1536)		super::__construct(null());
             	}
 
 Dynamic __ASSET__OPENFL__assets_fonts_inconsolata_medium_ttf_obj::__CreateEmpty() { return new __ASSET__OPENFL__assets_fonts_inconsolata_medium_ttf_obj; }

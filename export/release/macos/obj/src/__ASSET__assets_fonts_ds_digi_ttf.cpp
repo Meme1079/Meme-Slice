@@ -11,13 +11,13 @@
 #include <lime/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_e0f2f359731f33a3_1457_new,"__ASSET__assets_fonts_ds_digi_ttf","new",0xf6952a49,"__ASSET__assets_fonts_ds_digi_ttf.new","ManifestResources.hx",1457,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_e0f2f359731f33a3_1462_new,"__ASSET__assets_fonts_ds_digi_ttf","new",0xf6952a49,"__ASSET__assets_fonts_ds_digi_ttf.new","ManifestResources.hx",1462,0xf77aa668)
 
 void __ASSET__assets_fonts_ds_digi_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_e0f2f359731f33a3_1457_new)
-HXDLIN(1457)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/DS-DIGI.TTF",a6,b9,b9,98));
-HXDLIN(1457)		this->name = HX_("DS-Digital",ba,e1,1c,21);
-HXDLIN(1457)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_e0f2f359731f33a3_1462_new)
+HXDLIN(1462)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/DS-DIGI.TTF",a6,b9,b9,98));
+HXDLIN(1462)		this->name = HX_("DS-Digital",ba,e1,1c,21);
+HXDLIN(1462)		super::__construct(null());
             	}
 
 Dynamic __ASSET__assets_fonts_ds_digi_ttf_obj::__CreateEmpty() { return new __ASSET__assets_fonts_ds_digi_ttf_obj; }
