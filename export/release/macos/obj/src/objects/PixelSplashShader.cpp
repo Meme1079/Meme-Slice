@@ -17,20 +17,20 @@
 #include <openfl/display/ShaderParameter_Float.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_70f0cc6e85e841ba_570_new,"objects.PixelSplashShader","new",0xb8c8064a,"objects.PixelSplashShader.new","objects/NoteSplash.hx",570,0xe471e78a)
+HX_DEFINE_STACK_FRAME(_hx_pos_70f0cc6e85e841ba_573_new,"objects.PixelSplashShader","new",0xb8c8064a,"objects.PixelSplashShader.new","objects/NoteSplash.hx",573,0xe471e78a)
 namespace objects{
 
 void PixelSplashShader_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_70f0cc6e85e841ba_570_new)
+            	HX_STACKFRAME(&_hx_pos_70f0cc6e85e841ba_573_new)
 HXLINE( 183)		if (::hx::IsNull( this->_hx___glFragmentSource )) {
 HXLINE( 185)			this->_hx___glFragmentSource = HX_("\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform sampler2D bitmap;\n\n\t\tuniform bool hasTransform;  // TODO: Is this still needed? Apparently, yes!\n\t\tuniform bool hasColorTransform;\n\t\tvec4 flixel_texture2D(sampler2D bitmap, vec2 coord)\n\t\t{\n\t\t\tvec4 color = texture2D(bitmap, coord);\n\t\t\tif (!(hasTransform || openfl_HasColorTransform))\n\t\t\t\treturn color;\n\t\t\t\n\t\t\tif (color.a == 0.0)\n\t\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t\t\n\t\t\tif (openfl_HasColorTransform || hasColorTransform)\n\t\t\t{\n\t\t\t\tcolor = vec4 (color.rgb / color.a, color.a);\n\t\t\t\tvec4 mult = vec4 (openfl_ColorMultiplierv.rgb, 1.0);\n\t\t\t\tcolor = clamp (openfl_ColorOffsetv + (color * mult), 0.0, 1.0);\n\t\t\t\t\n\t\t\t\tif (color.a == 0.0)\n\t\t\t\t\treturn vec4 (0.0, 0.0, 0.0, 0.0);\n\t\t\t\t\n\t\t\t\treturn vec4 (color.rgb * color.a * openfl_Alphav, color.a * openfl_Alphav);\n\t\t\t}\n\t\t\t\n\t\t\treturn color * openfl_Alphav;\n\t\t}\n\t\n\n\t\t#pragma header\n\n\t\tuniform vec3 r;\n\t\tuniform vec3 g;\n\t\tuniform vec3 b;\n\t\tuniform float mult;\n\t\tuniform vec2 uBlocksize;\n\n\t\tvec4 flixel_texture2DCustom(sampler2D bitmap, vec2 coord) {\n\t\t\tvec2 blocks = openfl_TextureSize / uBlocksize;\n\t\t\tvec4 color = flixel_texture2D(bitmap, floor(coord * blocks) / blocks);\n\t\t\tif (!hasTransform) {\n\t\t\t\treturn color;\n\t\t\t}\n\n\t\t\tif (color.a == 0.0 || mult == 0.0) {\n\t\t\t\treturn color * openfl_Alphav;\n\t\t\t}\n\n\t\t\tvec4 newColor = color;\n\t\t\tnewColor.rgb = min(color.r * r + color.g * g + color.b * b, vec3(1.0));\n\t\t\tnewColor.a = color.a;\n\n\t\t\tcolor = mix(color, newColor, mult);\n\n\t\t\tif (color.a > 0.0) {\n\t\t\t\treturn vec4(color.rgb, color.a);\n\t\t\t}\n\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t}\n\n\t\tvoid main() {\n\t\t\tgl_FragColor = flixel_texture2DCustom(bitmap, openfl_TextureCoordv);\n\t\t}",2a,19,b1,c0);
             		}
 HXLINE( 175)		if (::hx::IsNull( this->_hx___glVertexSource )) {
 HXLINE( 177)			this->_hx___glVertexSource = HX_("attribute float openfl_Alpha;\n\t\tattribute vec4 openfl_ColorMultiplier;\n\t\tattribute vec4 openfl_ColorOffset;\n\t\tattribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\n\t\tattribute float alpha;\n\t\tattribute vec4 colorMultiplier;\n\t\tattribute vec4 colorOffset;\n\t\tuniform bool hasColorTransform;\n\t\n\n\n\t\tvoid main(void) {\n\n\t\t\topenfl_Alphav = openfl_Alpha;\n\t\topenfl_TextureCoordv = openfl_TextureCoord;\n\n\t\tif (openfl_HasColorTransform) {\n\n\t\t\topenfl_ColorMultiplierv = openfl_ColorMultiplier;\n\t\t\topenfl_ColorOffsetv = openfl_ColorOffset / 255.0;\n\n\t\t}\n\n\t\tgl_Position = openfl_Matrix * openfl_Position;\n\n\t\topenfl_Alphav = openfl_Alpha * alpha;\n\t\t\n\t\tif (hasColorTransform)\n\t\t{\n\t\t\tif (openfl_HasColorTransform)\n\t\t\t{\n\t\t\t\topenfl_ColorOffsetv = (openfl_ColorOffsetv * colorMultiplier) + (colorOffset / 255.0);\n\t\t\t\topenfl_ColorMultiplierv *= colorMultiplier;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\topenfl_ColorOffsetv = colorOffset / 255.0;\n\t\t\t\topenfl_ColorMultiplierv = colorMultiplier;\n\t\t\t}\n\t\t}\n\t\n\n\n\t\t}",09,23,04,f1);
             		}
-HXLINE( 571)		super::__construct();
-HXLINE( 528)		this->_hx___isGenerated = true;
-HXDLIN( 528)		this->_hx___initGL();
+HXLINE( 574)		super::__construct();
+HXLINE( 531)		this->_hx___isGenerated = true;
+HXDLIN( 531)		this->_hx___initGL();
             	}
 
 Dynamic PixelSplashShader_obj::__CreateEmpty() { return new PixelSplashShader_obj; }

@@ -26,7 +26,13 @@ class VisualsSettingsSubState extends BaseOptionsMenu
 			changeNoteSkin(note);
 			notes.add(note);
 			
-			var splash:NoteSplash = new NoteSplash(0, 0, NoteSplash.defaultNoteSplash + NoteSplash.getSplashSkinPostfix());
+
+			var splashSubfolder:String = '';
+			if (PlayState.stageUI == 'pixel') {
+				splashSubfolder = 'pixelUI/';
+			}
+
+			var splash:NoteSplash = new NoteSplash(0, 0, splashSubfolder + NoteSplash.defaultNoteSplash + NoteSplash.getSplashSkinPostfix());
 			splash.inEditor = true;
 			splash.babyArrow = note;
 			splash.ID = i;

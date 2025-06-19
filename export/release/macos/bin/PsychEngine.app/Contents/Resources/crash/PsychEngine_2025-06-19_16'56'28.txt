@@ -1,0 +1,14 @@
+flixel/animation/FlxAnimationController.hx (line 785)
+objects/NoteSplash.hx (line 380)
+objects/NoteSplash.hx (line 176)
+objects/NoteSplash.hx (line 214)
+objects/NoteSplash.hx (line 54)
+states/PlayState.hx (line 638)
+flixel/FlxGame.hx (line 588)
+flixel/FlxGame.hx (line 675)
+flixel/FlxGame.hx (line 628)
+flixel/FlxGame.hx (line 501)
+
+Uncaught Error: Null Object Reference
+
+> Crash Handler written by: sqirra-rng

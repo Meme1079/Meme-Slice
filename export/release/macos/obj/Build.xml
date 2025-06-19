@@ -3974,6 +3974,7 @@
    <depend name="include/options/OptionsState.h"/>
    <depend name="include/options/VisualsSettingsSubState.h"/>
    <depend name="include/shaders/RGBPalette.h"/>
+   <depend name="include/states/PlayState.h"/>
    <depend name="include/sys/FileSystem.h"/>
    <depend name="include/sys/io/File.h"/>
   </file>

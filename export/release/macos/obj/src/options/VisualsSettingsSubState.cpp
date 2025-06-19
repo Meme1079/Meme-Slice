@@ -161,6 +161,9 @@
 #ifndef INCLUDED_shaders_RGBPalette
 #include <shaders/RGBPalette.h>
 #endif
+#ifndef INCLUDED_states_PlayState
+#include <states/PlayState.h>
+#endif
 #ifndef INCLUDED_sys_FileSystem
 #include <sys/FileSystem.h>
 #endif
@@ -175,24 +178,24 @@ static const ::String _hx_array_data_47272317_11[] = {
 static const ::String _hx_array_data_47272317_12[] = {
 	HX_("None",d8,3e,e3,33),HX_("Tea Time",9d,d4,cb,99),HX_("Breakfast",bb,92,df,ea),HX_("Breakfast (Pico)",21,a1,a6,d2),
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_171_changeSelection,"options.VisualsSettingsSubState","changeSelection",0x7221fd65,"options.VisualsSettingsSubState.changeSelection","options/VisualsSettingsSubState.hx",171,0x6294a548)
-HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_203_onChangePauseMusic,"options.VisualsSettingsSubState","onChangePauseMusic",0xd5b80595,"options.VisualsSettingsSubState.onChangePauseMusic","options/VisualsSettingsSubState.hx",203,0x6294a548)
-HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_214_onChangeNoteSkin,"options.VisualsSettingsSubState","onChangeNoteSkin",0xd68535d5,"options.VisualsSettingsSubState.onChangeNoteSkin","options/VisualsSettingsSubState.hx",214,0x6294a548)
-HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_213_onChangeNoteSkin,"options.VisualsSettingsSubState","onChangeNoteSkin",0xd68535d5,"options.VisualsSettingsSubState.onChangeNoteSkin","options/VisualsSettingsSubState.hx",213,0x6294a548)
-HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_222_changeNoteSkin,"options.VisualsSettingsSubState","changeNoteSkin",0xd1a61c96,"options.VisualsSettingsSubState.changeNoteSkin","options/VisualsSettingsSubState.hx",222,0x6294a548)
-HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_233_onChangeSplashSkin,"options.VisualsSettingsSubState","onChangeSplashSkin",0x91c59b4a,"options.VisualsSettingsSubState.onChangeSplashSkin","options/VisualsSettingsSubState.hx",233,0x6294a548)
-HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_242_playNoteSplashes,"options.VisualsSettingsSubState","playNoteSplashes",0x25889ef2,"options.VisualsSettingsSubState.playNoteSplashes","options/VisualsSettingsSubState.hx",242,0x6294a548)
+HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_177_changeSelection,"options.VisualsSettingsSubState","changeSelection",0x7221fd65,"options.VisualsSettingsSubState.changeSelection","options/VisualsSettingsSubState.hx",177,0x6294a548)
+HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_209_onChangePauseMusic,"options.VisualsSettingsSubState","onChangePauseMusic",0xd5b80595,"options.VisualsSettingsSubState.onChangePauseMusic","options/VisualsSettingsSubState.hx",209,0x6294a548)
+HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_220_onChangeNoteSkin,"options.VisualsSettingsSubState","onChangeNoteSkin",0xd68535d5,"options.VisualsSettingsSubState.onChangeNoteSkin","options/VisualsSettingsSubState.hx",220,0x6294a548)
+HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_219_onChangeNoteSkin,"options.VisualsSettingsSubState","onChangeNoteSkin",0xd68535d5,"options.VisualsSettingsSubState.onChangeNoteSkin","options/VisualsSettingsSubState.hx",219,0x6294a548)
+HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_228_changeNoteSkin,"options.VisualsSettingsSubState","changeNoteSkin",0xd1a61c96,"options.VisualsSettingsSubState.changeNoteSkin","options/VisualsSettingsSubState.hx",228,0x6294a548)
+HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_239_onChangeSplashSkin,"options.VisualsSettingsSubState","onChangeSplashSkin",0x91c59b4a,"options.VisualsSettingsSubState.onChangeSplashSkin","options/VisualsSettingsSubState.hx",239,0x6294a548)
+HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_248_playNoteSplashes,"options.VisualsSettingsSubState","playNoteSplashes",0x25889ef2,"options.VisualsSettingsSubState.playNoteSplashes","options/VisualsSettingsSubState.hx",248,0x6294a548)
 static const Float _hx_array_data_47272317_29[] = {
 	(Float)0,(Float)0,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_285_destroy,"options.VisualsSettingsSubState","destroy",0xa6c940a3,"options.VisualsSettingsSubState.destroy","options/VisualsSettingsSubState.hx",285,0x6294a548)
-HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_294_onChangeFPSCounter,"options.VisualsSettingsSubState","onChangeFPSCounter",0xef0701d9,"options.VisualsSettingsSubState.onChangeFPSCounter","options/VisualsSettingsSubState.hx",294,0x6294a548)
+HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_291_destroy,"options.VisualsSettingsSubState","destroy",0xa6c940a3,"options.VisualsSettingsSubState.destroy","options/VisualsSettingsSubState.hx",291,0x6294a548)
+HX_LOCAL_STACK_FRAME(_hx_pos_3e0a67ffd3ccebb8_300_onChangeFPSCounter,"options.VisualsSettingsSubState","onChangeFPSCounter",0xef0701d9,"options.VisualsSettingsSubState.onChangeFPSCounter","options/VisualsSettingsSubState.hx",300,0x6294a548)
 namespace options{
 
 void VisualsSettingsSubState_obj::__construct(){
             	HX_GC_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_9_new)
-HXLINE( 201)		this->changedMusic = false;
-HXLINE( 169)		this->notesShown = false;
+HXLINE( 207)		this->changedMusic = false;
+HXLINE( 175)		this->notesShown = false;
 HXLINE(  14)		this->noteY = ((Float)90);
 HXLINE(  11)		this->noteOptionID = -1;
 HXLINE(  17)		::cpp::VirtualArray values = null();
@@ -230,409 +233,413 @@ HXDLIN(  23)				int i = (_g - 1);
 HXLINE(  25)				 ::objects::StrumNote note =  ::objects::StrumNote_obj::__alloc( HX_CTX ,(370 + ((( (Float)(560) ) / ( (Float)(::objects::Note_obj::colArray->length) )) * ( (Float)(i) ))),( (Float)(-200) ),i,0);
 HXLINE(  26)				this->changeNoteSkin(note);
 HXLINE(  27)				this->notes->add(note).StaticCast<  ::objects::StrumNote >();
-HXLINE(  29)				 ::objects::NoteSplash splash =  ::objects::NoteSplash_obj::__alloc( HX_CTX ,0,0,(::objects::NoteSplash_obj::defaultNoteSplash + ::objects::NoteSplash_obj::getSplashSkinPostfix()));
-HXLINE(  30)				splash->inEditor = true;
-HXLINE(  31)				splash->babyArrow = note;
-HXLINE(  32)				splash->ID = i;
-HXLINE(  33)				splash->kill();
-HXLINE(  34)				this->splashes->add(splash).StaticCast<  ::objects::NoteSplash >();
+HXLINE(  30)				::String splashSubfolder = HX_("",00,00,00,00);
+HXLINE(  31)				if ((::states::PlayState_obj::stageUI == HX_("pixel",86,c6,a3,c2))) {
+HXLINE(  32)					splashSubfolder = HX_("pixelUI/",95,50,4f,7e);
+            				}
+HXLINE(  35)				 ::objects::NoteSplash splash =  ::objects::NoteSplash_obj::__alloc( HX_CTX ,0,0,((splashSubfolder + ::objects::NoteSplash_obj::defaultNoteSplash) + ::objects::NoteSplash_obj::getSplashSkinPostfix()));
+HXLINE(  36)				splash->inEditor = true;
+HXLINE(  37)				splash->babyArrow = note;
+HXLINE(  38)				splash->ID = i;
+HXLINE(  39)				splash->kill();
+HXLINE(  40)				this->splashes->add(splash).StaticCast<  ::objects::NoteSplash >();
             			}
             		}
-HXLINE(  38)		::String defaultDirectory = null();
-HXDLIN(  38)		bool allowDuplicates = false;
-HXDLIN(  38)		if (::hx::IsNull( defaultDirectory )) {
+HXLINE(  44)		::String defaultDirectory = null();
+HXDLIN(  44)		bool allowDuplicates = false;
+HXDLIN(  44)		if (::hx::IsNull( defaultDirectory )) {
 HXLINE(  69)			defaultDirectory = HX_("assets/shared/",1e,69,1e,47);
             		}
 HXLINE(  70)		defaultDirectory = ::StringTools_obj::trim(defaultDirectory);
-HXLINE(  38)		if (!(::StringTools_obj::endsWith(defaultDirectory,HX_("/",2f,00,00,00)))) {
-HXLINE(  38)			defaultDirectory = (defaultDirectory + HX_("/",2f,00,00,00));
+HXLINE(  44)		if (!(::StringTools_obj::endsWith(defaultDirectory,HX_("/",2f,00,00,00)))) {
+HXLINE(  44)			defaultDirectory = (defaultDirectory + HX_("/",2f,00,00,00));
             		}
-HXDLIN(  38)		if (!(::StringTools_obj::startsWith(defaultDirectory,HX_("assets/",4c,2a,dc,36)))) {
+HXDLIN(  44)		if (!(::StringTools_obj::startsWith(defaultDirectory,HX_("assets/",4c,2a,dc,36)))) {
 HXLINE(  72)			defaultDirectory = (HX_("assets/",4c,2a,dc,36) + defaultDirectory);
             		}
-HXLINE(  38)		::Array< ::String > mergedList = ::Array_obj< ::String >::__new(0);
-HXDLIN(  38)		::Array< ::String > foldersToCheck = ::Array_obj< ::String >::__new(0);
-HXDLIN(  38)		if (::sys::FileSystem_obj::exists((defaultDirectory + HX_("images/noteSkins/list.txt",42,a1,fc,21)))) {
-HXLINE(  38)			foldersToCheck->push((defaultDirectory + HX_("images/noteSkins/list.txt",42,a1,fc,21)));
+HXLINE(  44)		::Array< ::String > mergedList = ::Array_obj< ::String >::__new(0);
+HXDLIN(  44)		::Array< ::String > foldersToCheck = ::Array_obj< ::String >::__new(0);
+HXDLIN(  44)		if (::sys::FileSystem_obj::exists((defaultDirectory + HX_("images/noteSkins/list.txt",42,a1,fc,21)))) {
+HXLINE(  44)			foldersToCheck->push((defaultDirectory + HX_("images/noteSkins/list.txt",42,a1,fc,21)));
             		}
-HXDLIN(  38)		bool _hx_tmp;
-HXDLIN(  38)		if (::hx::IsNotNull( ::backend::Paths_obj::currentLevel )) {
-HXLINE(  38)			_hx_tmp = (::backend::Paths_obj::currentLevel != defaultDirectory);
+HXDLIN(  44)		bool _hx_tmp;
+HXDLIN(  44)		if (::hx::IsNotNull( ::backend::Paths_obj::currentLevel )) {
+HXLINE(  44)			_hx_tmp = (::backend::Paths_obj::currentLevel != defaultDirectory);
             		}
             		else {
-HXLINE(  38)			_hx_tmp = false;
+HXLINE(  44)			_hx_tmp = false;
             		}
-HXDLIN(  38)		if (_hx_tmp) {
-HXLINE(  38)			::String folder = ::backend::Paths_obj::currentLevel;
-HXDLIN(  38)			if (::hx::IsNull( folder )) {
+HXDLIN(  44)		if (_hx_tmp) {
+HXLINE(  44)			::String folder = ::backend::Paths_obj::currentLevel;
+HXDLIN(  44)			if (::hx::IsNull( folder )) {
 HXLINE( 104)				folder = HX_("shared",a5,5e,2b,1d);
             			}
-HXLINE(  38)			::String pth = (((HX_("assets/",4c,2a,dc,36) + folder) + HX_("/",2f,00,00,00)) + HX_("images/noteSkins/list.txt",42,a1,fc,21));
-HXDLIN(  38)			bool _hx_tmp1;
-HXDLIN(  38)			if (!(foldersToCheck->contains(pth))) {
-HXLINE(  38)				_hx_tmp1 = ::sys::FileSystem_obj::exists(pth);
+HXLINE(  44)			::String pth = (((HX_("assets/",4c,2a,dc,36) + folder) + HX_("/",2f,00,00,00)) + HX_("images/noteSkins/list.txt",42,a1,fc,21));
+HXDLIN(  44)			bool _hx_tmp1;
+HXDLIN(  44)			if (!(foldersToCheck->contains(pth))) {
+HXLINE(  44)				_hx_tmp1 = ::sys::FileSystem_obj::exists(pth);
             			}
             			else {
-HXLINE(  38)				_hx_tmp1 = false;
+HXLINE(  44)				_hx_tmp1 = false;
             			}
-HXDLIN(  38)			if (_hx_tmp1) {
-HXLINE(  38)				foldersToCheck->push(pth);
+HXDLIN(  44)			if (_hx_tmp1) {
+HXLINE(  44)				foldersToCheck->push(pth);
             			}
             		}
-HXDLIN(  38)		{
-HXLINE(  38)			{
-HXLINE(  38)				int _g2 = 0;
-HXDLIN(  38)				::Array< ::String > _g3 = ::backend::Mods_obj::globalMods;
-HXDLIN(  38)				while((_g2 < _g3->length)){
-HXLINE(  38)					::String mod = _g3->__get(_g2);
-HXDLIN(  38)					_g2 = (_g2 + 1);
-HXDLIN(  38)					::String key = ((mod + HX_("/",2f,00,00,00)) + HX_("images/noteSkins/list.txt",42,a1,fc,21));
-HXDLIN(  38)					if (::hx::IsNull( key )) {
+HXDLIN(  44)		{
+HXLINE(  44)			{
+HXLINE(  44)				int _g2 = 0;
+HXDLIN(  44)				::Array< ::String > _g3 = ::backend::Mods_obj::globalMods;
+HXDLIN(  44)				while((_g2 < _g3->length)){
+HXLINE(  44)					::String mod = _g3->__get(_g2);
+HXDLIN(  44)					_g2 = (_g2 + 1);
+HXDLIN(  44)					::String key = ((mod + HX_("/",2f,00,00,00)) + HX_("images/noteSkins/list.txt",42,a1,fc,21));
+HXDLIN(  44)					if (::hx::IsNull( key )) {
 HXLINE( 115)						key = HX_("",00,00,00,00);
             					}
-HXLINE(  38)					::String folder1 = (HX_("mods/",9e,2f,58,0c) + key);
-HXDLIN(  38)					bool _hx_tmp2;
-HXDLIN(  38)					if (::sys::FileSystem_obj::exists(folder1)) {
-HXLINE(  38)						_hx_tmp2 = !(foldersToCheck->contains(folder1));
+HXLINE(  44)					::String folder1 = (HX_("mods/",9e,2f,58,0c) + key);
+HXDLIN(  44)					bool _hx_tmp2;
+HXDLIN(  44)					if (::sys::FileSystem_obj::exists(folder1)) {
+HXLINE(  44)						_hx_tmp2 = !(foldersToCheck->contains(folder1));
             					}
             					else {
-HXLINE(  38)						_hx_tmp2 = false;
+HXLINE(  44)						_hx_tmp2 = false;
             					}
-HXDLIN(  38)					if (_hx_tmp2) {
-HXLINE(  38)						foldersToCheck->push(folder1);
+HXDLIN(  44)					if (_hx_tmp2) {
+HXLINE(  44)						foldersToCheck->push(folder1);
             					}
             				}
             			}
-HXDLIN(  38)			::String key1 = HX_("images/noteSkins/list.txt",42,a1,fc,21);
-HXDLIN(  38)			if (::hx::IsNull( key1 )) {
+HXDLIN(  44)			::String key1 = HX_("images/noteSkins/list.txt",42,a1,fc,21);
+HXDLIN(  44)			if (::hx::IsNull( key1 )) {
 HXLINE( 120)				key1 = HX_("",00,00,00,00);
             			}
-HXLINE(  38)			::String folder2 = (HX_("mods/",9e,2f,58,0c) + key1);
-HXDLIN(  38)			bool _hx_tmp3;
-HXDLIN(  38)			if (::sys::FileSystem_obj::exists(folder2)) {
-HXLINE(  38)				_hx_tmp3 = !(foldersToCheck->contains(folder2));
+HXLINE(  44)			::String folder2 = (HX_("mods/",9e,2f,58,0c) + key1);
+HXDLIN(  44)			bool _hx_tmp3;
+HXDLIN(  44)			if (::sys::FileSystem_obj::exists(folder2)) {
+HXLINE(  44)				_hx_tmp3 = !(foldersToCheck->contains(folder2));
             			}
             			else {
-HXLINE(  38)				_hx_tmp3 = false;
+HXLINE(  44)				_hx_tmp3 = false;
             			}
-HXDLIN(  38)			if (_hx_tmp3) {
-HXLINE(  38)				::String key2 = HX_("images/noteSkins/list.txt",42,a1,fc,21);
-HXDLIN(  38)				if (::hx::IsNull( key2 )) {
+HXDLIN(  44)			if (_hx_tmp3) {
+HXLINE(  44)				::String key2 = HX_("images/noteSkins/list.txt",42,a1,fc,21);
+HXDLIN(  44)				if (::hx::IsNull( key2 )) {
 HXLINE( 121)					key2 = HX_("",00,00,00,00);
             				}
-HXLINE(  38)				foldersToCheck->push((HX_("mods/",9e,2f,58,0c) + key2));
+HXLINE(  44)				foldersToCheck->push((HX_("mods/",9e,2f,58,0c) + key2));
             			}
-HXDLIN(  38)			bool _hx_tmp4;
-HXDLIN(  38)			if (::hx::IsNotNull( ::backend::Mods_obj::currentModDirectory )) {
-HXLINE(  38)				_hx_tmp4 = (::backend::Mods_obj::currentModDirectory.length > 0);
+HXDLIN(  44)			bool _hx_tmp4;
+HXDLIN(  44)			if (::hx::IsNotNull( ::backend::Mods_obj::currentModDirectory )) {
+HXLINE(  44)				_hx_tmp4 = (::backend::Mods_obj::currentModDirectory.length > 0);
             			}
             			else {
-HXLINE(  38)				_hx_tmp4 = false;
+HXLINE(  44)				_hx_tmp4 = false;
             			}
-HXDLIN(  38)			if (_hx_tmp4) {
-HXLINE(  38)				::String key3 = ((::backend::Mods_obj::currentModDirectory + HX_("/",2f,00,00,00)) + HX_("images/noteSkins/list.txt",42,a1,fc,21));
-HXDLIN(  38)				if (::hx::IsNull( key3 )) {
+HXDLIN(  44)			if (_hx_tmp4) {
+HXLINE(  44)				::String key3 = ((::backend::Mods_obj::currentModDirectory + HX_("/",2f,00,00,00)) + HX_("images/noteSkins/list.txt",42,a1,fc,21));
+HXDLIN(  44)				if (::hx::IsNull( key3 )) {
 HXLINE( 126)					key3 = HX_("",00,00,00,00);
             				}
-HXLINE(  38)				::String folder3 = (HX_("mods/",9e,2f,58,0c) + key3);
-HXDLIN(  38)				bool _hx_tmp5;
-HXDLIN(  38)				if (::sys::FileSystem_obj::exists(folder3)) {
-HXLINE(  38)					_hx_tmp5 = !(foldersToCheck->contains(folder3));
+HXLINE(  44)				::String folder3 = (HX_("mods/",9e,2f,58,0c) + key3);
+HXDLIN(  44)				bool _hx_tmp5;
+HXDLIN(  44)				if (::sys::FileSystem_obj::exists(folder3)) {
+HXLINE(  44)					_hx_tmp5 = !(foldersToCheck->contains(folder3));
             				}
             				else {
-HXLINE(  38)					_hx_tmp5 = false;
+HXLINE(  44)					_hx_tmp5 = false;
             				}
-HXDLIN(  38)				if (_hx_tmp5) {
-HXLINE(  38)					foldersToCheck->push(folder3);
+HXDLIN(  44)				if (_hx_tmp5) {
+HXLINE(  44)					foldersToCheck->push(folder3);
             				}
             			}
             		}
-HXDLIN(  38)		::Array< ::String > paths = foldersToCheck;
-HXDLIN(  38)		::String defaultPath = (defaultDirectory + HX_("images/noteSkins/list.txt",42,a1,fc,21));
-HXDLIN(  38)		if (paths->contains(defaultPath)) {
-HXLINE(  38)			paths->remove(defaultPath);
-HXDLIN(  38)			paths->insert(0,defaultPath);
+HXDLIN(  44)		::Array< ::String > paths = foldersToCheck;
+HXDLIN(  44)		::String defaultPath = (defaultDirectory + HX_("images/noteSkins/list.txt",42,a1,fc,21));
+HXDLIN(  44)		if (paths->contains(defaultPath)) {
+HXLINE(  44)			paths->remove(defaultPath);
+HXDLIN(  44)			paths->insert(0,defaultPath);
             		}
-HXDLIN(  38)		{
-HXLINE(  38)			int _g4 = 0;
-HXDLIN(  38)			while((_g4 < paths->length)){
-HXLINE(  38)				::String file = paths->__get(_g4);
-HXDLIN(  38)				_g4 = (_g4 + 1);
-HXDLIN(  38)				::String daList = null();
-HXDLIN(  38)				if (::sys::FileSystem_obj::exists(file)) {
+HXDLIN(  44)		{
+HXLINE(  44)			int _g4 = 0;
+HXDLIN(  44)			while((_g4 < paths->length)){
+HXLINE(  44)				::String file = paths->__get(_g4);
+HXDLIN(  44)				_g4 = (_g4 + 1);
+HXDLIN(  44)				::String daList = null();
+HXDLIN(  44)				if (::sys::FileSystem_obj::exists(file)) {
 HXLINE(  48)					daList = ::sys::io::File_obj::getContent(file);
             				}
-HXLINE(  38)				::Array< ::String > list;
-HXDLIN(  38)				if (::hx::IsNotNull( daList )) {
-HXLINE(  38)					::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
+HXLINE(  44)				::Array< ::String > list;
+HXDLIN(  44)				if (::hx::IsNotNull( daList )) {
+HXLINE(  44)					::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
 HXLINE(  69)					daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
-HXLINE(  38)					{
-HXLINE(  38)						int _g5 = 0;
-HXDLIN(  38)						int _g6 = daList1->length;
-HXDLIN(  38)						while((_g5 < _g6)){
-HXLINE(  38)							_g5 = (_g5 + 1);
-HXDLIN(  38)							int i1 = (_g5 - 1);
-HXDLIN(  38)							daList1[i1] = ::StringTools_obj::trim(daList1->__get(i1));
+HXLINE(  44)					{
+HXLINE(  44)						int _g5 = 0;
+HXDLIN(  44)						int _g6 = daList1->length;
+HXDLIN(  44)						while((_g5 < _g6)){
+HXLINE(  44)							_g5 = (_g5 + 1);
+HXDLIN(  44)							int i1 = (_g5 - 1);
+HXDLIN(  44)							daList1[i1] = ::StringTools_obj::trim(daList1->__get(i1));
             						}
             					}
-HXDLIN(  38)					list = daList1;
+HXDLIN(  44)					list = daList1;
             				}
             				else {
-HXLINE(  38)					list = ::Array_obj< ::String >::__new(0);
+HXLINE(  44)					list = ::Array_obj< ::String >::__new(0);
             				}
-HXDLIN(  38)				{
-HXLINE(  38)					int _g7 = 0;
-HXDLIN(  38)					while((_g7 < list->length)){
-HXLINE(  38)						::String value1 = list->__get(_g7);
-HXDLIN(  38)						_g7 = (_g7 + 1);
-HXDLIN(  38)						bool _hx_tmp6;
-HXDLIN(  38)						bool _hx_tmp7;
-HXDLIN(  38)						if (!(allowDuplicates)) {
-HXLINE(  38)							_hx_tmp7 = !(mergedList->contains(value1));
+HXDLIN(  44)				{
+HXLINE(  44)					int _g7 = 0;
+HXDLIN(  44)					while((_g7 < list->length)){
+HXLINE(  44)						::String value1 = list->__get(_g7);
+HXDLIN(  44)						_g7 = (_g7 + 1);
+HXDLIN(  44)						bool _hx_tmp6;
+HXDLIN(  44)						bool _hx_tmp7;
+HXDLIN(  44)						if (!(allowDuplicates)) {
+HXLINE(  44)							_hx_tmp7 = !(mergedList->contains(value1));
             						}
             						else {
-HXLINE(  38)							_hx_tmp7 = true;
+HXLINE(  44)							_hx_tmp7 = true;
             						}
-HXDLIN(  38)						if (_hx_tmp7) {
-HXLINE(  38)							_hx_tmp6 = (value1.length > 0);
+HXDLIN(  44)						if (_hx_tmp7) {
+HXLINE(  44)							_hx_tmp6 = (value1.length > 0);
             						}
             						else {
-HXLINE(  38)							_hx_tmp6 = false;
+HXLINE(  44)							_hx_tmp6 = false;
             						}
-HXDLIN(  38)						if (_hx_tmp6) {
-HXLINE(  38)							mergedList->push(value1);
+HXDLIN(  44)						if (_hx_tmp6) {
+HXLINE(  44)							mergedList->push(value1);
             						}
             					}
             				}
             			}
             		}
-HXDLIN(  38)		::Array< ::String > noteSkins = mergedList;
-HXLINE(  39)		if ((noteSkins->length > 0)) {
-HXLINE(  41)			if (!(noteSkins->contains(::backend::ClientPrefs_obj::data->noteSkin))) {
-HXLINE(  42)				::backend::ClientPrefs_obj::data->noteSkin = ::backend::ClientPrefs_obj::defaultData->noteSkin;
+HXDLIN(  44)		::Array< ::String > noteSkins = mergedList;
+HXLINE(  45)		if ((noteSkins->length > 0)) {
+HXLINE(  47)			if (!(noteSkins->contains(::backend::ClientPrefs_obj::data->noteSkin))) {
+HXLINE(  48)				::backend::ClientPrefs_obj::data->noteSkin = ::backend::ClientPrefs_obj::defaultData->noteSkin;
             			}
-HXLINE(  44)			noteSkins->insert(0,::backend::ClientPrefs_obj::defaultData->noteSkin);
-HXLINE(  45)			 ::options::Option option =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Note Skins:",92,62,42,0e),HX_("Select your prefered Note skin.",2b,65,4f,d5),HX_("noteSkin",8f,3b,88,5b),::options::OptionType_obj::STRING_dyn(),noteSkins,null());
-HXLINE(  50)			this->addOption(option);
-HXLINE(  51)			option->onChange = this->onChangeNoteSkin_dyn();
-HXLINE(  52)			this->noteOptionID = (this->optionsArray->length - 1);
+HXLINE(  50)			noteSkins->insert(0,::backend::ClientPrefs_obj::defaultData->noteSkin);
+HXLINE(  51)			 ::options::Option option =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Note Skins:",92,62,42,0e),HX_("Select your prefered Note skin.",2b,65,4f,d5),HX_("noteSkin",8f,3b,88,5b),::options::OptionType_obj::STRING_dyn(),noteSkins,null());
+HXLINE(  56)			this->addOption(option);
+HXLINE(  57)			option->onChange = this->onChangeNoteSkin_dyn();
+HXLINE(  58)			this->noteOptionID = (this->optionsArray->length - 1);
             		}
-HXLINE(  55)		::String defaultDirectory1 = null();
-HXDLIN(  55)		bool allowDuplicates1 = false;
-HXDLIN(  55)		if (::hx::IsNull( defaultDirectory1 )) {
+HXLINE(  61)		::String defaultDirectory1 = null();
+HXDLIN(  61)		bool allowDuplicates1 = false;
+HXDLIN(  61)		if (::hx::IsNull( defaultDirectory1 )) {
 HXLINE(  69)			defaultDirectory1 = HX_("assets/shared/",1e,69,1e,47);
             		}
 HXLINE(  70)		defaultDirectory1 = ::StringTools_obj::trim(defaultDirectory1);
-HXLINE(  55)		if (!(::StringTools_obj::endsWith(defaultDirectory1,HX_("/",2f,00,00,00)))) {
-HXLINE(  55)			defaultDirectory1 = (defaultDirectory1 + HX_("/",2f,00,00,00));
+HXLINE(  61)		if (!(::StringTools_obj::endsWith(defaultDirectory1,HX_("/",2f,00,00,00)))) {
+HXLINE(  61)			defaultDirectory1 = (defaultDirectory1 + HX_("/",2f,00,00,00));
             		}
-HXDLIN(  55)		if (!(::StringTools_obj::startsWith(defaultDirectory1,HX_("assets/",4c,2a,dc,36)))) {
+HXDLIN(  61)		if (!(::StringTools_obj::startsWith(defaultDirectory1,HX_("assets/",4c,2a,dc,36)))) {
 HXLINE(  72)			defaultDirectory1 = (HX_("assets/",4c,2a,dc,36) + defaultDirectory1);
             		}
-HXLINE(  55)		::Array< ::String > mergedList1 = ::Array_obj< ::String >::__new(0);
-HXDLIN(  55)		::Array< ::String > foldersToCheck1 = ::Array_obj< ::String >::__new(0);
-HXDLIN(  55)		if (::sys::FileSystem_obj::exists((defaultDirectory1 + HX_("images/noteSplashes/list.txt",31,67,e4,1c)))) {
-HXLINE(  55)			foldersToCheck1->push((defaultDirectory1 + HX_("images/noteSplashes/list.txt",31,67,e4,1c)));
+HXLINE(  61)		::Array< ::String > mergedList1 = ::Array_obj< ::String >::__new(0);
+HXDLIN(  61)		::Array< ::String > foldersToCheck1 = ::Array_obj< ::String >::__new(0);
+HXDLIN(  61)		if (::sys::FileSystem_obj::exists((defaultDirectory1 + HX_("images/noteSplashes/list.txt",31,67,e4,1c)))) {
+HXLINE(  61)			foldersToCheck1->push((defaultDirectory1 + HX_("images/noteSplashes/list.txt",31,67,e4,1c)));
             		}
-HXDLIN(  55)		bool _hx_tmp8;
-HXDLIN(  55)		if (::hx::IsNotNull( ::backend::Paths_obj::currentLevel )) {
-HXLINE(  55)			_hx_tmp8 = (::backend::Paths_obj::currentLevel != defaultDirectory1);
+HXDLIN(  61)		bool _hx_tmp8;
+HXDLIN(  61)		if (::hx::IsNotNull( ::backend::Paths_obj::currentLevel )) {
+HXLINE(  61)			_hx_tmp8 = (::backend::Paths_obj::currentLevel != defaultDirectory1);
             		}
             		else {
-HXLINE(  55)			_hx_tmp8 = false;
+HXLINE(  61)			_hx_tmp8 = false;
             		}
-HXDLIN(  55)		if (_hx_tmp8) {
-HXLINE(  55)			::String folder4 = ::backend::Paths_obj::currentLevel;
-HXDLIN(  55)			if (::hx::IsNull( folder4 )) {
+HXDLIN(  61)		if (_hx_tmp8) {
+HXLINE(  61)			::String folder4 = ::backend::Paths_obj::currentLevel;
+HXDLIN(  61)			if (::hx::IsNull( folder4 )) {
 HXLINE( 104)				folder4 = HX_("shared",a5,5e,2b,1d);
             			}
-HXLINE(  55)			::String pth1 = (((HX_("assets/",4c,2a,dc,36) + folder4) + HX_("/",2f,00,00,00)) + HX_("images/noteSplashes/list.txt",31,67,e4,1c));
-HXDLIN(  55)			bool _hx_tmp9;
-HXDLIN(  55)			if (!(foldersToCheck1->contains(pth1))) {
-HXLINE(  55)				_hx_tmp9 = ::sys::FileSystem_obj::exists(pth1);
+HXLINE(  61)			::String pth1 = (((HX_("assets/",4c,2a,dc,36) + folder4) + HX_("/",2f,00,00,00)) + HX_("images/noteSplashes/list.txt",31,67,e4,1c));
+HXDLIN(  61)			bool _hx_tmp9;
+HXDLIN(  61)			if (!(foldersToCheck1->contains(pth1))) {
+HXLINE(  61)				_hx_tmp9 = ::sys::FileSystem_obj::exists(pth1);
             			}
             			else {
-HXLINE(  55)				_hx_tmp9 = false;
+HXLINE(  61)				_hx_tmp9 = false;
             			}
-HXDLIN(  55)			if (_hx_tmp9) {
-HXLINE(  55)				foldersToCheck1->push(pth1);
+HXDLIN(  61)			if (_hx_tmp9) {
+HXLINE(  61)				foldersToCheck1->push(pth1);
             			}
             		}
-HXDLIN(  55)		{
-HXLINE(  55)			{
-HXLINE(  55)				int _g8 = 0;
-HXDLIN(  55)				::Array< ::String > _g9 = ::backend::Mods_obj::globalMods;
-HXDLIN(  55)				while((_g8 < _g9->length)){
-HXLINE(  55)					::String mod1 = _g9->__get(_g8);
-HXDLIN(  55)					_g8 = (_g8 + 1);
-HXDLIN(  55)					::String key4 = ((mod1 + HX_("/",2f,00,00,00)) + HX_("images/noteSplashes/list.txt",31,67,e4,1c));
-HXDLIN(  55)					if (::hx::IsNull( key4 )) {
+HXDLIN(  61)		{
+HXLINE(  61)			{
+HXLINE(  61)				int _g8 = 0;
+HXDLIN(  61)				::Array< ::String > _g9 = ::backend::Mods_obj::globalMods;
+HXDLIN(  61)				while((_g8 < _g9->length)){
+HXLINE(  61)					::String mod1 = _g9->__get(_g8);
+HXDLIN(  61)					_g8 = (_g8 + 1);
+HXDLIN(  61)					::String key4 = ((mod1 + HX_("/",2f,00,00,00)) + HX_("images/noteSplashes/list.txt",31,67,e4,1c));
+HXDLIN(  61)					if (::hx::IsNull( key4 )) {
 HXLINE( 115)						key4 = HX_("",00,00,00,00);
             					}
-HXLINE(  55)					::String folder5 = (HX_("mods/",9e,2f,58,0c) + key4);
-HXDLIN(  55)					bool _hx_tmp10;
-HXDLIN(  55)					if (::sys::FileSystem_obj::exists(folder5)) {
-HXLINE(  55)						_hx_tmp10 = !(foldersToCheck1->contains(folder5));
+HXLINE(  61)					::String folder5 = (HX_("mods/",9e,2f,58,0c) + key4);
+HXDLIN(  61)					bool _hx_tmp10;
+HXDLIN(  61)					if (::sys::FileSystem_obj::exists(folder5)) {
+HXLINE(  61)						_hx_tmp10 = !(foldersToCheck1->contains(folder5));
             					}
             					else {
-HXLINE(  55)						_hx_tmp10 = false;
+HXLINE(  61)						_hx_tmp10 = false;
             					}
-HXDLIN(  55)					if (_hx_tmp10) {
-HXLINE(  55)						foldersToCheck1->push(folder5);
+HXDLIN(  61)					if (_hx_tmp10) {
+HXLINE(  61)						foldersToCheck1->push(folder5);
             					}
             				}
             			}
-HXDLIN(  55)			::String key5 = HX_("images/noteSplashes/list.txt",31,67,e4,1c);
-HXDLIN(  55)			if (::hx::IsNull( key5 )) {
+HXDLIN(  61)			::String key5 = HX_("images/noteSplashes/list.txt",31,67,e4,1c);
+HXDLIN(  61)			if (::hx::IsNull( key5 )) {
 HXLINE( 120)				key5 = HX_("",00,00,00,00);
             			}
-HXLINE(  55)			::String folder6 = (HX_("mods/",9e,2f,58,0c) + key5);
-HXDLIN(  55)			bool _hx_tmp11;
-HXDLIN(  55)			if (::sys::FileSystem_obj::exists(folder6)) {
-HXLINE(  55)				_hx_tmp11 = !(foldersToCheck1->contains(folder6));
+HXLINE(  61)			::String folder6 = (HX_("mods/",9e,2f,58,0c) + key5);
+HXDLIN(  61)			bool _hx_tmp11;
+HXDLIN(  61)			if (::sys::FileSystem_obj::exists(folder6)) {
+HXLINE(  61)				_hx_tmp11 = !(foldersToCheck1->contains(folder6));
             			}
             			else {
-HXLINE(  55)				_hx_tmp11 = false;
+HXLINE(  61)				_hx_tmp11 = false;
             			}
-HXDLIN(  55)			if (_hx_tmp11) {
-HXLINE(  55)				::String key6 = HX_("images/noteSplashes/list.txt",31,67,e4,1c);
-HXDLIN(  55)				if (::hx::IsNull( key6 )) {
+HXDLIN(  61)			if (_hx_tmp11) {
+HXLINE(  61)				::String key6 = HX_("images/noteSplashes/list.txt",31,67,e4,1c);
+HXDLIN(  61)				if (::hx::IsNull( key6 )) {
 HXLINE( 121)					key6 = HX_("",00,00,00,00);
             				}
-HXLINE(  55)				foldersToCheck1->push((HX_("mods/",9e,2f,58,0c) + key6));
+HXLINE(  61)				foldersToCheck1->push((HX_("mods/",9e,2f,58,0c) + key6));
             			}
-HXDLIN(  55)			bool _hx_tmp12;
-HXDLIN(  55)			if (::hx::IsNotNull( ::backend::Mods_obj::currentModDirectory )) {
-HXLINE(  55)				_hx_tmp12 = (::backend::Mods_obj::currentModDirectory.length > 0);
+HXDLIN(  61)			bool _hx_tmp12;
+HXDLIN(  61)			if (::hx::IsNotNull( ::backend::Mods_obj::currentModDirectory )) {
+HXLINE(  61)				_hx_tmp12 = (::backend::Mods_obj::currentModDirectory.length > 0);
             			}
             			else {
-HXLINE(  55)				_hx_tmp12 = false;
+HXLINE(  61)				_hx_tmp12 = false;
             			}
-HXDLIN(  55)			if (_hx_tmp12) {
-HXLINE(  55)				::String key7 = ((::backend::Mods_obj::currentModDirectory + HX_("/",2f,00,00,00)) + HX_("images/noteSplashes/list.txt",31,67,e4,1c));
-HXDLIN(  55)				if (::hx::IsNull( key7 )) {
+HXDLIN(  61)			if (_hx_tmp12) {
+HXLINE(  61)				::String key7 = ((::backend::Mods_obj::currentModDirectory + HX_("/",2f,00,00,00)) + HX_("images/noteSplashes/list.txt",31,67,e4,1c));
+HXDLIN(  61)				if (::hx::IsNull( key7 )) {
 HXLINE( 126)					key7 = HX_("",00,00,00,00);
             				}
-HXLINE(  55)				::String folder7 = (HX_("mods/",9e,2f,58,0c) + key7);
-HXDLIN(  55)				bool _hx_tmp13;
-HXDLIN(  55)				if (::sys::FileSystem_obj::exists(folder7)) {
-HXLINE(  55)					_hx_tmp13 = !(foldersToCheck1->contains(folder7));
+HXLINE(  61)				::String folder7 = (HX_("mods/",9e,2f,58,0c) + key7);
+HXDLIN(  61)				bool _hx_tmp13;
+HXDLIN(  61)				if (::sys::FileSystem_obj::exists(folder7)) {
+HXLINE(  61)					_hx_tmp13 = !(foldersToCheck1->contains(folder7));
             				}
             				else {
-HXLINE(  55)					_hx_tmp13 = false;
+HXLINE(  61)					_hx_tmp13 = false;
             				}
-HXDLIN(  55)				if (_hx_tmp13) {
-HXLINE(  55)					foldersToCheck1->push(folder7);
+HXDLIN(  61)				if (_hx_tmp13) {
+HXLINE(  61)					foldersToCheck1->push(folder7);
             				}
             			}
             		}
-HXDLIN(  55)		::Array< ::String > paths1 = foldersToCheck1;
-HXDLIN(  55)		::String defaultPath1 = (defaultDirectory1 + HX_("images/noteSplashes/list.txt",31,67,e4,1c));
-HXDLIN(  55)		if (paths1->contains(defaultPath1)) {
-HXLINE(  55)			paths1->remove(defaultPath1);
-HXDLIN(  55)			paths1->insert(0,defaultPath1);
+HXDLIN(  61)		::Array< ::String > paths1 = foldersToCheck1;
+HXDLIN(  61)		::String defaultPath1 = (defaultDirectory1 + HX_("images/noteSplashes/list.txt",31,67,e4,1c));
+HXDLIN(  61)		if (paths1->contains(defaultPath1)) {
+HXLINE(  61)			paths1->remove(defaultPath1);
+HXDLIN(  61)			paths1->insert(0,defaultPath1);
             		}
-HXDLIN(  55)		{
-HXLINE(  55)			int _g10 = 0;
-HXDLIN(  55)			while((_g10 < paths1->length)){
-HXLINE(  55)				::String file1 = paths1->__get(_g10);
-HXDLIN(  55)				_g10 = (_g10 + 1);
-HXDLIN(  55)				::String daList2 = null();
-HXDLIN(  55)				if (::sys::FileSystem_obj::exists(file1)) {
+HXDLIN(  61)		{
+HXLINE(  61)			int _g10 = 0;
+HXDLIN(  61)			while((_g10 < paths1->length)){
+HXLINE(  61)				::String file1 = paths1->__get(_g10);
+HXDLIN(  61)				_g10 = (_g10 + 1);
+HXDLIN(  61)				::String daList2 = null();
+HXDLIN(  61)				if (::sys::FileSystem_obj::exists(file1)) {
 HXLINE(  48)					daList2 = ::sys::io::File_obj::getContent(file1);
             				}
-HXLINE(  55)				::Array< ::String > list1;
-HXDLIN(  55)				if (::hx::IsNotNull( daList2 )) {
-HXLINE(  55)					::Array< ::String > daList3 = ::Array_obj< ::String >::__new(0);
+HXLINE(  61)				::Array< ::String > list1;
+HXDLIN(  61)				if (::hx::IsNotNull( daList2 )) {
+HXLINE(  61)					::Array< ::String > daList3 = ::Array_obj< ::String >::__new(0);
 HXLINE(  69)					daList3 = ::StringTools_obj::trim(daList2).split(HX_("\n",0a,00,00,00));
-HXLINE(  55)					{
-HXLINE(  55)						int _g11 = 0;
-HXDLIN(  55)						int _g12 = daList3->length;
-HXDLIN(  55)						while((_g11 < _g12)){
-HXLINE(  55)							_g11 = (_g11 + 1);
-HXDLIN(  55)							int i2 = (_g11 - 1);
-HXDLIN(  55)							daList3[i2] = ::StringTools_obj::trim(daList3->__get(i2));
+HXLINE(  61)					{
+HXLINE(  61)						int _g11 = 0;
+HXDLIN(  61)						int _g12 = daList3->length;
+HXDLIN(  61)						while((_g11 < _g12)){
+HXLINE(  61)							_g11 = (_g11 + 1);
+HXDLIN(  61)							int i2 = (_g11 - 1);
+HXDLIN(  61)							daList3[i2] = ::StringTools_obj::trim(daList3->__get(i2));
             						}
             					}
-HXDLIN(  55)					list1 = daList3;
+HXDLIN(  61)					list1 = daList3;
             				}
             				else {
-HXLINE(  55)					list1 = ::Array_obj< ::String >::__new(0);
+HXLINE(  61)					list1 = ::Array_obj< ::String >::__new(0);
             				}
-HXDLIN(  55)				{
-HXLINE(  55)					int _g13 = 0;
-HXDLIN(  55)					while((_g13 < list1->length)){
-HXLINE(  55)						::String value2 = list1->__get(_g13);
-HXDLIN(  55)						_g13 = (_g13 + 1);
-HXDLIN(  55)						bool _hx_tmp14;
-HXDLIN(  55)						bool _hx_tmp15;
-HXDLIN(  55)						if (!(allowDuplicates1)) {
-HXLINE(  55)							_hx_tmp15 = !(mergedList1->contains(value2));
+HXDLIN(  61)				{
+HXLINE(  61)					int _g13 = 0;
+HXDLIN(  61)					while((_g13 < list1->length)){
+HXLINE(  61)						::String value2 = list1->__get(_g13);
+HXDLIN(  61)						_g13 = (_g13 + 1);
+HXDLIN(  61)						bool _hx_tmp14;
+HXDLIN(  61)						bool _hx_tmp15;
+HXDLIN(  61)						if (!(allowDuplicates1)) {
+HXLINE(  61)							_hx_tmp15 = !(mergedList1->contains(value2));
             						}
             						else {
-HXLINE(  55)							_hx_tmp15 = true;
+HXLINE(  61)							_hx_tmp15 = true;
             						}
-HXDLIN(  55)						if (_hx_tmp15) {
-HXLINE(  55)							_hx_tmp14 = (value2.length > 0);
+HXDLIN(  61)						if (_hx_tmp15) {
+HXLINE(  61)							_hx_tmp14 = (value2.length > 0);
             						}
             						else {
-HXLINE(  55)							_hx_tmp14 = false;
+HXLINE(  61)							_hx_tmp14 = false;
             						}
-HXDLIN(  55)						if (_hx_tmp14) {
-HXLINE(  55)							mergedList1->push(value2);
+HXDLIN(  61)						if (_hx_tmp14) {
+HXLINE(  61)							mergedList1->push(value2);
             						}
             					}
             				}
             			}
             		}
-HXDLIN(  55)		::Array< ::String > noteSplashes = mergedList1;
-HXLINE(  56)		if ((noteSplashes->length > 0)) {
-HXLINE(  58)			if (!(noteSplashes->contains(::backend::ClientPrefs_obj::data->splashSkin))) {
-HXLINE(  59)				::backend::ClientPrefs_obj::data->splashSkin = ::backend::ClientPrefs_obj::defaultData->splashSkin;
+HXDLIN(  61)		::Array< ::String > noteSplashes = mergedList1;
+HXLINE(  62)		if ((noteSplashes->length > 0)) {
+HXLINE(  64)			if (!(noteSplashes->contains(::backend::ClientPrefs_obj::data->splashSkin))) {
+HXLINE(  65)				::backend::ClientPrefs_obj::data->splashSkin = ::backend::ClientPrefs_obj::defaultData->splashSkin;
             			}
-HXLINE(  61)			noteSplashes->insert(0,::backend::ClientPrefs_obj::defaultData->splashSkin);
-HXLINE(  62)			 ::options::Option option1 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Note Splashes:",57,cb,35,75),HX_("Select your prefered Note Splash variation.",0e,cc,1d,a8),HX_("splashSkin",84,03,e1,a1),::options::OptionType_obj::STRING_dyn(),noteSplashes,null());
-HXLINE(  67)			this->addOption(option1);
-HXLINE(  68)			option1->onChange = this->onChangeSplashSkin_dyn();
+HXLINE(  67)			noteSplashes->insert(0,::backend::ClientPrefs_obj::defaultData->splashSkin);
+HXLINE(  68)			 ::options::Option option1 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Note Splashes:",57,cb,35,75),HX_("Select your prefered Note Splash variation.",0e,cc,1d,a8),HX_("splashSkin",84,03,e1,a1),::options::OptionType_obj::STRING_dyn(),noteSplashes,null());
+HXLINE(  73)			this->addOption(option1);
+HXLINE(  74)			option1->onChange = this->onChangeSplashSkin_dyn();
             		}
-HXLINE(  71)		 ::options::Option option2 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Note Splash Opacity",60,36,3d,35),HX_("How much transparent should the Note Splashes be.",23,18,f8,99),HX_("splashAlpha",77,20,7a,a6),::options::OptionType_obj::PERCENT_dyn(),null(),null());
-HXLINE(  75)		option2->scrollSpeed = ((Float)1.6);
-HXLINE(  76)		option2->minValue = ((Float)0.0);
-HXLINE(  77)		option2->maxValue = 1;
-HXLINE(  78)		option2->changeValue = ((Float)0.1);
-HXLINE(  79)		option2->decimals = 1;
-HXLINE(  80)		this->addOption(option2);
-HXLINE(  81)		option2->onChange = this->playNoteSplashes_dyn();
-HXLINE(  83)		 ::options::Option option3 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Hide HUD",59,3a,04,5d),HX_("If checked, hides most HUD elements.",b8,a1,19,66),HX_("hideHud",15,b9,3c,b7),::options::OptionType_obj::BOOL_dyn(),null(),null());
-HXLINE(  87)		this->addOption(option3);
-HXLINE(  89)		 ::options::Option option4 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Time Bar:",fa,e7,52,5c),HX_("What should the Time Bar display?",bd,00,f8,02),HX_("timeBarType",a0,5d,bb,01),::options::OptionType_obj::STRING_dyn(),::Array_obj< ::String >::fromData( _hx_array_data_47272317_11,4),null());
-HXLINE(  94)		this->addOption(option4);
-HXLINE(  96)		 ::options::Option option5 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Flashing Lights",0b,e4,0d,04),HX_("Uncheck this if you're sensitive to flashing lights!",9e,ed,11,12),HX_("flashing",32,85,e8,99),::options::OptionType_obj::BOOL_dyn(),null(),null());
-HXLINE( 100)		this->addOption(option5);
-HXLINE( 102)		 ::options::Option option6 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Camera Zooms",45,a6,9b,43),HX_("If unchecked, the camera won't zoom in on a beat hit.",fd,78,13,6b),HX_("camZooms",71,f3,cd,90),::options::OptionType_obj::BOOL_dyn(),null(),null());
-HXLINE( 106)		this->addOption(option6);
-HXLINE( 108)		 ::options::Option option7 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Score Text Grow on Hit",da,0b,38,43),HX_("If unchecked, disables the Score text growing\neverytime you hit a note.",bc,bc,d2,a5),HX_("scoreZoom",85,53,bc,e0),::options::OptionType_obj::BOOL_dyn(),null(),null());
-HXLINE( 112)		this->addOption(option7);
-HXLINE( 114)		 ::options::Option option8 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Health Bar Opacity",da,18,73,d2),HX_("How much transparent should the health bar and icons be.",16,a5,40,f3),HX_("healthBarAlpha",47,c9,a0,80),::options::OptionType_obj::PERCENT_dyn(),null(),null());
-HXLINE( 118)		option8->scrollSpeed = ((Float)1.6);
-HXLINE( 119)		option8->minValue = ((Float)0.0);
-HXLINE( 120)		option8->maxValue = 1;
-HXLINE( 121)		option8->changeValue = ((Float)0.1);
-HXLINE( 122)		option8->decimals = 1;
-HXLINE( 123)		this->addOption(option8);
-HXLINE( 126)		 ::options::Option option9 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("FPS Counter",85,ef,54,c9),HX_("If unchecked, hides FPS Counter.",17,fc,a1,74),HX_("showFPS",ec,0a,9a,7b),::options::OptionType_obj::BOOL_dyn(),null(),null());
-HXLINE( 130)		this->addOption(option9);
-HXLINE( 131)		option9->onChange = this->onChangeFPSCounter_dyn();
-HXLINE( 134)		 ::options::Option option10 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Pause Music:",1f,ec,d9,3b),HX_("What song do you prefer for the Pause Screen?",9a,c8,b3,59),HX_("pauseMusic",cf,6d,d3,e5),::options::OptionType_obj::STRING_dyn(),::Array_obj< ::String >::fromData( _hx_array_data_47272317_12,4),null());
-HXLINE( 139)		this->addOption(option10);
-HXLINE( 140)		option10->onChange = this->onChangePauseMusic_dyn();
-HXLINE( 151)		 ::options::Option option11 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Discord Rich Presence",2b,ef,99,77),HX_("Uncheck this to prevent accidental leaks, it will hide the Application from your \"Playing\" box on Discord",0b,e4,6b,c9),HX_("discordRPC",99,18,34,b0),::options::OptionType_obj::BOOL_dyn(),null(),null());
-HXLINE( 155)		this->addOption(option11);
-HXLINE( 158)		 ::options::Option option12 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Combo Stacking",ec,30,59,b7),HX_("If unchecked, Ratings and Combo won't stack, saving on System Memory and making them easier to read",d6,be,78,3a),HX_("comboStacking",08,45,bb,e0),::options::OptionType_obj::BOOL_dyn(),null(),null());
-HXLINE( 162)		this->addOption(option12);
-HXLINE( 164)		super::__construct();
-HXLINE( 165)		this->add(this->notes);
-HXLINE( 166)		this->add(this->splashes);
+HXLINE(  77)		 ::options::Option option2 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Note Splash Opacity",60,36,3d,35),HX_("How much transparent should the Note Splashes be.",23,18,f8,99),HX_("splashAlpha",77,20,7a,a6),::options::OptionType_obj::PERCENT_dyn(),null(),null());
+HXLINE(  81)		option2->scrollSpeed = ((Float)1.6);
+HXLINE(  82)		option2->minValue = ((Float)0.0);
+HXLINE(  83)		option2->maxValue = 1;
+HXLINE(  84)		option2->changeValue = ((Float)0.1);
+HXLINE(  85)		option2->decimals = 1;
+HXLINE(  86)		this->addOption(option2);
+HXLINE(  87)		option2->onChange = this->playNoteSplashes_dyn();
+HXLINE(  89)		 ::options::Option option3 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Hide HUD",59,3a,04,5d),HX_("If checked, hides most HUD elements.",b8,a1,19,66),HX_("hideHud",15,b9,3c,b7),::options::OptionType_obj::BOOL_dyn(),null(),null());
+HXLINE(  93)		this->addOption(option3);
+HXLINE(  95)		 ::options::Option option4 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Time Bar:",fa,e7,52,5c),HX_("What should the Time Bar display?",bd,00,f8,02),HX_("timeBarType",a0,5d,bb,01),::options::OptionType_obj::STRING_dyn(),::Array_obj< ::String >::fromData( _hx_array_data_47272317_11,4),null());
+HXLINE( 100)		this->addOption(option4);
+HXLINE( 102)		 ::options::Option option5 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Flashing Lights",0b,e4,0d,04),HX_("Uncheck this if you're sensitive to flashing lights!",9e,ed,11,12),HX_("flashing",32,85,e8,99),::options::OptionType_obj::BOOL_dyn(),null(),null());
+HXLINE( 106)		this->addOption(option5);
+HXLINE( 108)		 ::options::Option option6 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Camera Zooms",45,a6,9b,43),HX_("If unchecked, the camera won't zoom in on a beat hit.",fd,78,13,6b),HX_("camZooms",71,f3,cd,90),::options::OptionType_obj::BOOL_dyn(),null(),null());
+HXLINE( 112)		this->addOption(option6);
+HXLINE( 114)		 ::options::Option option7 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Score Text Grow on Hit",da,0b,38,43),HX_("If unchecked, disables the Score text growing\neverytime you hit a note.",bc,bc,d2,a5),HX_("scoreZoom",85,53,bc,e0),::options::OptionType_obj::BOOL_dyn(),null(),null());
+HXLINE( 118)		this->addOption(option7);
+HXLINE( 120)		 ::options::Option option8 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Health Bar Opacity",da,18,73,d2),HX_("How much transparent should the health bar and icons be.",16,a5,40,f3),HX_("healthBarAlpha",47,c9,a0,80),::options::OptionType_obj::PERCENT_dyn(),null(),null());
+HXLINE( 124)		option8->scrollSpeed = ((Float)1.6);
+HXLINE( 125)		option8->minValue = ((Float)0.0);
+HXLINE( 126)		option8->maxValue = 1;
+HXLINE( 127)		option8->changeValue = ((Float)0.1);
+HXLINE( 128)		option8->decimals = 1;
+HXLINE( 129)		this->addOption(option8);
+HXLINE( 132)		 ::options::Option option9 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("FPS Counter",85,ef,54,c9),HX_("If unchecked, hides FPS Counter.",17,fc,a1,74),HX_("showFPS",ec,0a,9a,7b),::options::OptionType_obj::BOOL_dyn(),null(),null());
+HXLINE( 136)		this->addOption(option9);
+HXLINE( 137)		option9->onChange = this->onChangeFPSCounter_dyn();
+HXLINE( 140)		 ::options::Option option10 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Pause Music:",1f,ec,d9,3b),HX_("What song do you prefer for the Pause Screen?",9a,c8,b3,59),HX_("pauseMusic",cf,6d,d3,e5),::options::OptionType_obj::STRING_dyn(),::Array_obj< ::String >::fromData( _hx_array_data_47272317_12,4),null());
+HXLINE( 145)		this->addOption(option10);
+HXLINE( 146)		option10->onChange = this->onChangePauseMusic_dyn();
+HXLINE( 157)		 ::options::Option option11 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Discord Rich Presence",2b,ef,99,77),HX_("Uncheck this to prevent accidental leaks, it will hide the Application from your \"Playing\" box on Discord",0b,e4,6b,c9),HX_("discordRPC",99,18,34,b0),::options::OptionType_obj::BOOL_dyn(),null(),null());
+HXLINE( 161)		this->addOption(option11);
+HXLINE( 164)		 ::options::Option option12 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Combo Stacking",ec,30,59,b7),HX_("If unchecked, Ratings and Combo won't stack, saving on System Memory and making them easier to read",d6,be,78,3a),HX_("comboStacking",08,45,bb,e0),::options::OptionType_obj::BOOL_dyn(),null(),null());
+HXLINE( 168)		this->addOption(option12);
+HXLINE( 170)		super::__construct();
+HXLINE( 171)		this->add(this->notes);
+HXLINE( 172)		this->add(this->splashes);
             	}
 
 Dynamic VisualsSettingsSubState_obj::__CreateEmpty() { return new VisualsSettingsSubState_obj; }
@@ -672,67 +679,67 @@ bool VisualsSettingsSubState_obj::_hx_isInstanceOf(int inClassId) {
 
 void VisualsSettingsSubState_obj::changeSelection(::hx::Null< int >  __o_change){
             		int change = __o_change.Default(0);
-            	HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_171_changeSelection)
-HXLINE( 172)		this->super::changeSelection(change);
-HXLINE( 174)		::String _hx_switch_0 = this->curOption->variable;
+            	HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_177_changeSelection)
+HXLINE( 178)		this->super::changeSelection(change);
+HXLINE( 180)		::String _hx_switch_0 = this->curOption->variable;
             		if (  (_hx_switch_0==HX_("noteSkin",8f,3b,88,5b)) ||  (_hx_switch_0==HX_("splashAlpha",77,20,7a,a6)) ||  (_hx_switch_0==HX_("splashSkin",84,03,e1,a1)) ){
-HXLINE( 177)			if (!(this->notesShown)) {
-HXLINE( 179)				int _g = 0;
-HXDLIN( 179)				::Array< ::Dynamic> _g1 = this->notes->members;
-HXDLIN( 179)				while((_g < _g1->length)){
-HXLINE( 179)					 ::objects::StrumNote note = _g1->__get(_g).StaticCast<  ::objects::StrumNote >();
-HXDLIN( 179)					_g = (_g + 1);
-HXLINE( 181)					::flixel::tweens::FlxTween_obj::cancelTweensOf(note,null());
-HXLINE( 182)					::flixel::tweens::FlxTween_obj::tween(note, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE( 183)			if (!(this->notesShown)) {
+HXLINE( 185)				int _g = 0;
+HXDLIN( 185)				::Array< ::Dynamic> _g1 = this->notes->members;
+HXDLIN( 185)				while((_g < _g1->length)){
+HXLINE( 185)					 ::objects::StrumNote note = _g1->__get(_g).StaticCast<  ::objects::StrumNote >();
+HXDLIN( 185)					_g = (_g + 1);
+HXLINE( 187)					::flixel::tweens::FlxTween_obj::cancelTweensOf(note,null());
+HXLINE( 188)					::flixel::tweens::FlxTween_obj::tween(note, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("y",79,00,00,00),this->noteY)),(::Math_obj::abs((note->y / (200 + this->noteY))) / ( (Float)(3) )), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::quadInOut_dyn())));
             				}
             			}
-HXLINE( 185)			this->notesShown = true;
-HXLINE( 186)			bool _hx_tmp;
-HXDLIN( 186)			if (::StringTools_obj::startsWith(this->curOption->variable,HX_("splash",67,81,98,bf))) {
-HXLINE( 186)				_hx_tmp = (::Math_obj::abs((Dynamic( this->notes->members->__get(0)).StaticCast<  ::objects::StrumNote >()->y - this->noteY)) < 25);
+HXLINE( 191)			this->notesShown = true;
+HXLINE( 192)			bool _hx_tmp;
+HXDLIN( 192)			if (::StringTools_obj::startsWith(this->curOption->variable,HX_("splash",67,81,98,bf))) {
+HXLINE( 192)				_hx_tmp = (::Math_obj::abs((Dynamic( this->notes->members->__get(0)).StaticCast<  ::objects::StrumNote >()->y - this->noteY)) < 25);
             			}
             			else {
-HXLINE( 186)				_hx_tmp = false;
+HXLINE( 192)				_hx_tmp = false;
             			}
-HXDLIN( 186)			if (_hx_tmp) {
-HXLINE( 186)				this->playNoteSplashes();
+HXDLIN( 192)			if (_hx_tmp) {
+HXLINE( 192)				this->playNoteSplashes();
             			}
-HXLINE( 176)			goto _hx_goto_14;
+HXLINE( 182)			goto _hx_goto_14;
             		}
             		/* default */{
-HXLINE( 189)			if (this->notesShown) {
-HXLINE( 191)				int _g2 = 0;
-HXDLIN( 191)				::Array< ::Dynamic> _g3 = this->notes->members;
-HXDLIN( 191)				while((_g2 < _g3->length)){
-HXLINE( 191)					 ::objects::StrumNote note1 = _g3->__get(_g2).StaticCast<  ::objects::StrumNote >();
-HXDLIN( 191)					_g2 = (_g2 + 1);
-HXLINE( 193)					::flixel::tweens::FlxTween_obj::cancelTweensOf(note1,null());
-HXLINE( 194)					::flixel::tweens::FlxTween_obj::tween(note1, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE( 195)			if (this->notesShown) {
+HXLINE( 197)				int _g2 = 0;
+HXDLIN( 197)				::Array< ::Dynamic> _g3 = this->notes->members;
+HXDLIN( 197)				while((_g2 < _g3->length)){
+HXLINE( 197)					 ::objects::StrumNote note1 = _g3->__get(_g2).StaticCast<  ::objects::StrumNote >();
+HXDLIN( 197)					_g2 = (_g2 + 1);
+HXLINE( 199)					::flixel::tweens::FlxTween_obj::cancelTweensOf(note1,null());
+HXLINE( 200)					::flixel::tweens::FlxTween_obj::tween(note1, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("y",79,00,00,00),-200)),(::Math_obj::abs((note1->y / (200 + this->noteY))) / ( (Float)(3) )), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::quadInOut_dyn())));
             				}
             			}
-HXLINE( 197)			this->notesShown = false;
+HXLINE( 203)			this->notesShown = false;
             		}
             		_hx_goto_14:;
             	}
 
 
 void VisualsSettingsSubState_obj::onChangePauseMusic(){
-            	HX_GC_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_203_onChangePauseMusic)
-HXLINE( 204)		if ((::backend::ClientPrefs_obj::data->pauseMusic == HX_("None",d8,3e,e3,33))) {
-HXLINE( 205)			::flixel::FlxG_obj::sound->music->set_volume(( (Float)(0) ));
+            	HX_GC_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_209_onChangePauseMusic)
+HXLINE( 210)		if ((::backend::ClientPrefs_obj::data->pauseMusic == HX_("None",d8,3e,e3,33))) {
+HXLINE( 211)			::flixel::FlxG_obj::sound->music->set_volume(( (Float)(0) ));
             		}
             		else {
-HXLINE( 207)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN( 207)			::String path = ::backend::ClientPrefs_obj::data->pauseMusic;
-HXDLIN( 207)			 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&;:<>#\\s]",07,34,b4,25),HX_("g",67,00,00,00));
-HXDLIN( 207)			 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("g",67,00,00,00));
-HXDLIN( 207)			_hx_tmp->playMusic(::backend::Paths_obj::returnSound((HX_("music/",ea,bf,1b,3f) + ::StringTools_obj::trim(hideChars->replace(invalidChars->replace(path,HX_("-",2d,00,00,00)),HX_("",00,00,00,00))).toLowerCase()),null(),true,null()),null(),null(),null());
+HXLINE( 213)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
+HXDLIN( 213)			::String path = ::backend::ClientPrefs_obj::data->pauseMusic;
+HXDLIN( 213)			 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&;:<>#\\s]",07,34,b4,25),HX_("g",67,00,00,00));
+HXDLIN( 213)			 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("g",67,00,00,00));
+HXDLIN( 213)			_hx_tmp->playMusic(::backend::Paths_obj::returnSound((HX_("music/",ea,bf,1b,3f) + ::StringTools_obj::trim(hideChars->replace(invalidChars->replace(path,HX_("-",2d,00,00,00)),HX_("",00,00,00,00))).toLowerCase()),null(),true,null()),null(),null(),null());
             		}
-HXLINE( 209)		this->changedMusic = true;
+HXLINE( 215)		this->changedMusic = true;
             	}
 
 
@@ -741,234 +748,234 @@ HX_DEFINE_DYNAMIC_FUNC0(VisualsSettingsSubState_obj,onChangePauseMusic,(void))
 void VisualsSettingsSubState_obj::onChangeNoteSkin(){
             		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_0, ::options::VisualsSettingsSubState,_gthis) HXARGC(1)
             		void _hx_run( ::objects::StrumNote note){
-            			HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_214_onChangeNoteSkin)
-HXLINE( 215)			_gthis->changeNoteSkin(note);
-HXLINE( 216)			note->centerOffsets(null());
-HXLINE( 217)			{
-HXLINE( 217)				 ::flixel::math::FlxBasePoint this1 = note->origin;
-HXDLIN( 217)				Float y = (( (Float)(note->frameHeight) ) * ((Float)0.5));
-HXDLIN( 217)				this1->set_x((( (Float)(note->frameWidth) ) * ((Float)0.5)));
-HXDLIN( 217)				this1->set_y(y);
+            			HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_220_onChangeNoteSkin)
+HXLINE( 221)			_gthis->changeNoteSkin(note);
+HXLINE( 222)			note->centerOffsets(null());
+HXLINE( 223)			{
+HXLINE( 223)				 ::flixel::math::FlxBasePoint this1 = note->origin;
+HXDLIN( 223)				Float y = (( (Float)(note->frameHeight) ) * ((Float)0.5));
+HXDLIN( 223)				this1->set_x((( (Float)(note->frameWidth) ) * ((Float)0.5)));
+HXDLIN( 223)				this1->set_y(y);
             			}
             		}
             		HX_END_LOCAL_FUNC1((void))
 
-            	HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_213_onChangeNoteSkin)
-HXDLIN( 213)		 ::options::VisualsSettingsSubState _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE( 214)		this->notes->forEachAlive( ::Dynamic(new _hx_Closure_0(_gthis)),null());
+            	HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_219_onChangeNoteSkin)
+HXDLIN( 219)		 ::options::VisualsSettingsSubState _gthis = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE( 220)		this->notes->forEachAlive( ::Dynamic(new _hx_Closure_0(_gthis)),null());
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(VisualsSettingsSubState_obj,onChangeNoteSkin,(void))
 
 void VisualsSettingsSubState_obj::changeNoteSkin( ::objects::StrumNote note){
-            	HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_222_changeNoteSkin)
-HXLINE( 223)		::String skin = ::objects::Note_obj::defaultNoteSkin;
-HXLINE( 224)		::String customSkin = (skin + ::objects::Note_obj::getNoteSkinPostfix());
-HXLINE( 225)		if (::backend::Paths_obj::fileExists(((HX_("images/",77,50,74,c1) + customSkin) + HX_(".png",3b,2d,bd,1e)),HX_("IMAGE",3b,57,57,3b),null(),null())) {
-HXLINE( 225)			skin = customSkin;
+            	HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_228_changeNoteSkin)
+HXLINE( 229)		::String skin = ::objects::Note_obj::defaultNoteSkin;
+HXLINE( 230)		::String customSkin = (skin + ::objects::Note_obj::getNoteSkinPostfix());
+HXLINE( 231)		if (::backend::Paths_obj::fileExists(((HX_("images/",77,50,74,c1) + customSkin) + HX_(".png",3b,2d,bd,1e)),HX_("IMAGE",3b,57,57,3b),null(),null())) {
+HXLINE( 231)			skin = customSkin;
             		}
-HXLINE( 227)		note->set_texture(skin);
-HXLINE( 228)		note->reloadNote();
-HXLINE( 229)		note->playAnim(HX_("static",ae,dc,fb,05),null());
+HXLINE( 233)		note->set_texture(skin);
+HXLINE( 234)		note->reloadNote();
+HXLINE( 235)		note->playAnim(HX_("static",ae,dc,fb,05),null());
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(VisualsSettingsSubState_obj,changeNoteSkin,(void))
 
 void VisualsSettingsSubState_obj::onChangeSplashSkin(){
-            	HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_233_onChangeSplashSkin)
-HXLINE( 234)		::String skin = (::objects::NoteSplash_obj::defaultNoteSplash + ::objects::NoteSplash_obj::getSplashSkinPostfix());
-HXLINE( 235)		{
-HXLINE( 235)			 ::Dynamic filter = null();
-HXDLIN( 235)			::Array< ::Dynamic> _g__groupMembers = this->splashes->members;
-HXDLIN( 235)			 ::Dynamic _g__filter = filter;
-HXDLIN( 235)			int _g__cursor = 0;
-HXDLIN( 235)			int _g__length = _g__groupMembers->length;
-HXDLIN( 235)			while(true){
-HXLINE( 235)				while(true){
-HXLINE( 235)					bool _hx_tmp;
-HXDLIN( 235)					if ((_g__cursor < _g__length)) {
-HXLINE( 235)						if (::hx::IsNotNull( _g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >() )) {
-HXLINE( 235)							if (::hx::IsNotNull( _g__filter )) {
-HXLINE( 235)								_hx_tmp = !(( (bool)(_g__filter(_g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >())) ));
+            	HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_239_onChangeSplashSkin)
+HXLINE( 240)		::String skin = (::objects::NoteSplash_obj::defaultNoteSplash + ::objects::NoteSplash_obj::getSplashSkinPostfix());
+HXLINE( 241)		{
+HXLINE( 241)			 ::Dynamic filter = null();
+HXDLIN( 241)			::Array< ::Dynamic> _g__groupMembers = this->splashes->members;
+HXDLIN( 241)			 ::Dynamic _g__filter = filter;
+HXDLIN( 241)			int _g__cursor = 0;
+HXDLIN( 241)			int _g__length = _g__groupMembers->length;
+HXDLIN( 241)			while(true){
+HXLINE( 241)				while(true){
+HXLINE( 241)					bool _hx_tmp;
+HXDLIN( 241)					if ((_g__cursor < _g__length)) {
+HXLINE( 241)						if (::hx::IsNotNull( _g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >() )) {
+HXLINE( 241)							if (::hx::IsNotNull( _g__filter )) {
+HXLINE( 241)								_hx_tmp = !(( (bool)(_g__filter(_g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >())) ));
             							}
             							else {
-HXLINE( 235)								_hx_tmp = false;
+HXLINE( 241)								_hx_tmp = false;
             							}
             						}
             						else {
-HXLINE( 235)							_hx_tmp = true;
+HXLINE( 241)							_hx_tmp = true;
             						}
             					}
             					else {
-HXLINE( 235)						_hx_tmp = false;
+HXLINE( 241)						_hx_tmp = false;
             					}
-HXDLIN( 235)					if (!(_hx_tmp)) {
-HXLINE( 235)						goto _hx_goto_22;
+HXDLIN( 241)					if (!(_hx_tmp)) {
+HXLINE( 241)						goto _hx_goto_22;
             					}
-HXDLIN( 235)					_g__cursor = (_g__cursor + 1);
+HXDLIN( 241)					_g__cursor = (_g__cursor + 1);
             				}
             				_hx_goto_22:;
-HXDLIN( 235)				if (!((_g__cursor < _g__length))) {
-HXLINE( 235)					goto _hx_goto_21;
+HXDLIN( 241)				if (!((_g__cursor < _g__length))) {
+HXLINE( 241)					goto _hx_goto_21;
             				}
-HXDLIN( 235)				 ::objects::NoteSplash splash;
-HXDLIN( 235)				while(true){
-HXLINE( 235)					bool splash1;
-HXDLIN( 235)					if ((_g__cursor < _g__length)) {
-HXLINE( 235)						if (::hx::IsNotNull( _g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >() )) {
-HXLINE( 235)							if (::hx::IsNotNull( _g__filter )) {
-HXLINE( 235)								splash1 = !(( (bool)(_g__filter(_g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >())) ));
+HXDLIN( 241)				 ::objects::NoteSplash splash;
+HXDLIN( 241)				while(true){
+HXLINE( 241)					bool splash1;
+HXDLIN( 241)					if ((_g__cursor < _g__length)) {
+HXLINE( 241)						if (::hx::IsNotNull( _g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >() )) {
+HXLINE( 241)							if (::hx::IsNotNull( _g__filter )) {
+HXLINE( 241)								splash1 = !(( (bool)(_g__filter(_g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >())) ));
             							}
             							else {
-HXLINE( 235)								splash1 = false;
+HXLINE( 241)								splash1 = false;
             							}
             						}
             						else {
-HXLINE( 235)							splash1 = true;
+HXLINE( 241)							splash1 = true;
             						}
             					}
             					else {
-HXLINE( 235)						splash1 = false;
+HXLINE( 241)						splash1 = false;
             					}
-HXDLIN( 235)					if (!(splash1)) {
-HXLINE( 235)						goto _hx_goto_23;
+HXDLIN( 241)					if (!(splash1)) {
+HXLINE( 241)						goto _hx_goto_23;
             					}
-HXDLIN( 235)					_g__cursor = (_g__cursor + 1);
+HXDLIN( 241)					_g__cursor = (_g__cursor + 1);
             				}
             				_hx_goto_23:;
-HXDLIN( 235)				if ((_g__cursor < _g__length)) {
-HXLINE( 235)					_g__cursor = (_g__cursor + 1);
-HXDLIN( 235)					splash = _g__groupMembers->__get((_g__cursor - 1)).StaticCast<  ::objects::NoteSplash >();
+HXDLIN( 241)				if ((_g__cursor < _g__length)) {
+HXLINE( 241)					_g__cursor = (_g__cursor + 1);
+HXDLIN( 241)					splash = _g__groupMembers->__get((_g__cursor - 1)).StaticCast<  ::objects::NoteSplash >();
             				}
             				else {
-HXLINE( 235)					splash = null();
+HXLINE( 241)					splash = null();
             				}
-HXDLIN( 235)				 ::objects::NoteSplash splash2 = splash;
-HXLINE( 236)				splash2->loadSplash(skin);
+HXDLIN( 241)				 ::objects::NoteSplash splash2 = splash;
+HXLINE( 242)				splash2->loadSplash(skin);
             			}
             			_hx_goto_21:;
             		}
-HXLINE( 238)		this->playNoteSplashes();
+HXLINE( 244)		this->playNoteSplashes();
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(VisualsSettingsSubState_obj,onChangeSplashSkin,(void))
 
 void VisualsSettingsSubState_obj::playNoteSplashes(){
-            	HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_242_playNoteSplashes)
-HXLINE( 243)		int rand = 0;
-HXLINE( 244)		bool _hx_tmp;
-HXDLIN( 244)		if (::hx::IsNotNull( Dynamic( this->splashes->members->__get(0)).StaticCast<  ::objects::NoteSplash >() )) {
-HXLINE( 244)			_hx_tmp = (Dynamic( this->splashes->members->__get(0)).StaticCast<  ::objects::NoteSplash >()->maxAnims > 1);
+            	HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_248_playNoteSplashes)
+HXLINE( 249)		int rand = 0;
+HXLINE( 250)		bool _hx_tmp;
+HXDLIN( 250)		if (::hx::IsNotNull( Dynamic( this->splashes->members->__get(0)).StaticCast<  ::objects::NoteSplash >() )) {
+HXLINE( 250)			_hx_tmp = (Dynamic( this->splashes->members->__get(0)).StaticCast<  ::objects::NoteSplash >()->maxAnims > 1);
             		}
             		else {
-HXLINE( 244)			_hx_tmp = false;
+HXLINE( 250)			_hx_tmp = false;
             		}
-HXDLIN( 244)		if (_hx_tmp) {
-HXLINE( 245)			rand = ::flixel::FlxG_obj::random->_hx_int(0,(Dynamic( this->splashes->members->__get(0)).StaticCast<  ::objects::NoteSplash >()->maxAnims - 1),null());
+HXDLIN( 250)		if (_hx_tmp) {
+HXLINE( 251)			rand = ::flixel::FlxG_obj::random->_hx_int(0,(Dynamic( this->splashes->members->__get(0)).StaticCast<  ::objects::NoteSplash >()->maxAnims - 1),null());
             		}
-HXLINE( 247)		{
-HXLINE( 247)			 ::Dynamic filter = null();
-HXDLIN( 247)			::Array< ::Dynamic> _g__groupMembers = this->splashes->members;
-HXDLIN( 247)			 ::Dynamic _g__filter = filter;
-HXDLIN( 247)			int _g__cursor = 0;
-HXDLIN( 247)			int _g__length = _g__groupMembers->length;
-HXDLIN( 247)			while(true){
-HXLINE( 247)				while(true){
-HXLINE( 247)					bool _hx_tmp1;
-HXDLIN( 247)					if ((_g__cursor < _g__length)) {
-HXLINE( 247)						if (::hx::IsNotNull( _g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >() )) {
-HXLINE( 247)							if (::hx::IsNotNull( _g__filter )) {
-HXLINE( 247)								_hx_tmp1 = !(( (bool)(_g__filter(_g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >())) ));
+HXLINE( 253)		{
+HXLINE( 253)			 ::Dynamic filter = null();
+HXDLIN( 253)			::Array< ::Dynamic> _g__groupMembers = this->splashes->members;
+HXDLIN( 253)			 ::Dynamic _g__filter = filter;
+HXDLIN( 253)			int _g__cursor = 0;
+HXDLIN( 253)			int _g__length = _g__groupMembers->length;
+HXDLIN( 253)			while(true){
+HXLINE( 253)				while(true){
+HXLINE( 253)					bool _hx_tmp1;
+HXDLIN( 253)					if ((_g__cursor < _g__length)) {
+HXLINE( 253)						if (::hx::IsNotNull( _g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >() )) {
+HXLINE( 253)							if (::hx::IsNotNull( _g__filter )) {
+HXLINE( 253)								_hx_tmp1 = !(( (bool)(_g__filter(_g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >())) ));
             							}
             							else {
-HXLINE( 247)								_hx_tmp1 = false;
+HXLINE( 253)								_hx_tmp1 = false;
             							}
             						}
             						else {
-HXLINE( 247)							_hx_tmp1 = true;
+HXLINE( 253)							_hx_tmp1 = true;
             						}
             					}
             					else {
-HXLINE( 247)						_hx_tmp1 = false;
+HXLINE( 253)						_hx_tmp1 = false;
             					}
-HXDLIN( 247)					if (!(_hx_tmp1)) {
-HXLINE( 247)						goto _hx_goto_26;
+HXDLIN( 253)					if (!(_hx_tmp1)) {
+HXLINE( 253)						goto _hx_goto_26;
             					}
-HXDLIN( 247)					_g__cursor = (_g__cursor + 1);
+HXDLIN( 253)					_g__cursor = (_g__cursor + 1);
             				}
             				_hx_goto_26:;
-HXDLIN( 247)				if (!((_g__cursor < _g__length))) {
-HXLINE( 247)					goto _hx_goto_25;
+HXDLIN( 253)				if (!((_g__cursor < _g__length))) {
+HXLINE( 253)					goto _hx_goto_25;
             				}
-HXDLIN( 247)				 ::objects::NoteSplash splash;
-HXDLIN( 247)				while(true){
-HXLINE( 247)					bool splash1;
-HXDLIN( 247)					if ((_g__cursor < _g__length)) {
-HXLINE( 247)						if (::hx::IsNotNull( _g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >() )) {
-HXLINE( 247)							if (::hx::IsNotNull( _g__filter )) {
-HXLINE( 247)								splash1 = !(( (bool)(_g__filter(_g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >())) ));
+HXDLIN( 253)				 ::objects::NoteSplash splash;
+HXDLIN( 253)				while(true){
+HXLINE( 253)					bool splash1;
+HXDLIN( 253)					if ((_g__cursor < _g__length)) {
+HXLINE( 253)						if (::hx::IsNotNull( _g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >() )) {
+HXLINE( 253)							if (::hx::IsNotNull( _g__filter )) {
+HXLINE( 253)								splash1 = !(( (bool)(_g__filter(_g__groupMembers->__get(_g__cursor).StaticCast<  ::objects::NoteSplash >())) ));
             							}
             							else {
-HXLINE( 247)								splash1 = false;
+HXLINE( 253)								splash1 = false;
             							}
             						}
             						else {
-HXLINE( 247)							splash1 = true;
+HXLINE( 253)							splash1 = true;
             						}
             					}
             					else {
-HXLINE( 247)						splash1 = false;
+HXLINE( 253)						splash1 = false;
             					}
-HXDLIN( 247)					if (!(splash1)) {
-HXLINE( 247)						goto _hx_goto_27;
+HXDLIN( 253)					if (!(splash1)) {
+HXLINE( 253)						goto _hx_goto_27;
             					}
-HXDLIN( 247)					_g__cursor = (_g__cursor + 1);
+HXDLIN( 253)					_g__cursor = (_g__cursor + 1);
             				}
             				_hx_goto_27:;
-HXDLIN( 247)				if ((_g__cursor < _g__length)) {
-HXLINE( 247)					_g__cursor = (_g__cursor + 1);
-HXDLIN( 247)					splash = _g__groupMembers->__get((_g__cursor - 1)).StaticCast<  ::objects::NoteSplash >();
+HXDLIN( 253)				if ((_g__cursor < _g__length)) {
+HXLINE( 253)					_g__cursor = (_g__cursor + 1);
+HXDLIN( 253)					splash = _g__groupMembers->__get((_g__cursor - 1)).StaticCast<  ::objects::NoteSplash >();
             				}
             				else {
-HXLINE( 247)					splash = null();
+HXLINE( 253)					splash = null();
             				}
-HXDLIN( 247)				 ::objects::NoteSplash splash2 = splash;
-HXLINE( 249)				splash2->revive();
-HXLINE( 251)				splash2->spawnSplashNote(0,0,splash2->ID,null(),false);
-HXLINE( 252)				if ((splash2->maxAnims > 1)) {
-HXLINE( 253)					splash2->noteData = (::hx::Mod(splash2->noteData,::objects::Note_obj::colArray->length) + (rand * ::objects::Note_obj::colArray->length));
+HXDLIN( 253)				 ::objects::NoteSplash splash2 = splash;
+HXLINE( 255)				splash2->revive();
+HXLINE( 257)				splash2->spawnSplashNote(0,0,splash2->ID,null(),false);
+HXLINE( 258)				if ((splash2->maxAnims > 1)) {
+HXLINE( 259)					splash2->noteData = (::hx::Mod(splash2->noteData,::objects::Note_obj::colArray->length) + (rand * ::objects::Note_obj::colArray->length));
             				}
-HXLINE( 255)				::String anim = splash2->playDefaultAnim();
-HXLINE( 256)				 ::Dynamic conf = ( ( ::haxe::ds::StringMap)( ::Dynamic(splash2->config->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic))) )->get(anim);
-HXLINE( 257)				::Array< Float > offsets = ::Array_obj< Float >::fromData( _hx_array_data_47272317_29,2);
-HXLINE( 259)				int minFps = 22;
-HXLINE( 260)				int maxFps = 26;
-HXLINE( 261)				if (::hx::IsNotNull( conf )) {
-HXLINE( 263)					offsets = ( (::Array< Float >)(conf->__Field(HX_("offsets",80,09,65,d7),::hx::paccDynamic)) );
-HXLINE( 265)					minFps = ( (int)( ::Dynamic(conf->__Field(HX_("fps",e9,c7,4d,00),::hx::paccDynamic))->__GetItem(0)) );
-HXLINE( 266)					if ((minFps < 0)) {
-HXLINE( 266)						minFps = 0;
+HXLINE( 261)				::String anim = splash2->playDefaultAnim();
+HXLINE( 262)				 ::Dynamic conf = ( ( ::haxe::ds::StringMap)( ::Dynamic(splash2->config->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic))) )->get(anim);
+HXLINE( 263)				::Array< Float > offsets = ::Array_obj< Float >::fromData( _hx_array_data_47272317_29,2);
+HXLINE( 265)				int minFps = 22;
+HXLINE( 266)				int maxFps = 26;
+HXLINE( 267)				if (::hx::IsNotNull( conf )) {
+HXLINE( 269)					offsets = ( (::Array< Float >)(conf->__Field(HX_("offsets",80,09,65,d7),::hx::paccDynamic)) );
+HXLINE( 271)					minFps = ( (int)( ::Dynamic(conf->__Field(HX_("fps",e9,c7,4d,00),::hx::paccDynamic))->__GetItem(0)) );
+HXLINE( 272)					if ((minFps < 0)) {
+HXLINE( 272)						minFps = 0;
             					}
-HXLINE( 268)					maxFps = ( (int)( ::Dynamic(conf->__Field(HX_("fps",e9,c7,4d,00),::hx::paccDynamic))->__GetItem(1)) );
-HXLINE( 269)					if ((maxFps < 0)) {
-HXLINE( 269)						maxFps = 0;
+HXLINE( 274)					maxFps = ( (int)( ::Dynamic(conf->__Field(HX_("fps",e9,c7,4d,00),::hx::paccDynamic))->__GetItem(1)) );
+HXLINE( 275)					if ((maxFps < 0)) {
+HXLINE( 275)						maxFps = 0;
             					}
             				}
-HXLINE( 272)				{
-HXLINE( 272)					 ::flixel::math::FlxBasePoint this1 = splash2->offset;
-HXDLIN( 272)					this1->set_x(( (Float)(10) ));
-HXDLIN( 272)					this1->set_y(( (Float)(10) ));
+HXLINE( 278)				{
+HXLINE( 278)					 ::flixel::math::FlxBasePoint this1 = splash2->offset;
+HXDLIN( 278)					this1->set_x(( (Float)(10) ));
+HXDLIN( 278)					this1->set_y(( (Float)(10) ));
             				}
-HXLINE( 273)				if (::hx::IsNotNull( offsets )) {
-HXLINE( 275)					splash2->offset->set_x((splash2->offset->x + offsets->__get(0)));
-HXLINE( 276)					splash2->offset->set_y((splash2->offset->y + offsets->__get(1)));
+HXLINE( 279)				if (::hx::IsNotNull( offsets )) {
+HXLINE( 281)					splash2->offset->set_x((splash2->offset->x + offsets->__get(0)));
+HXLINE( 282)					splash2->offset->set_y((splash2->offset->y + offsets->__get(1)));
             				}
-HXLINE( 279)				if (::hx::IsNotNull( splash2->animation->_curAnim )) {
-HXLINE( 280)					 ::flixel::animation::FlxAnimation splash3 = splash2->animation->_curAnim;
-HXDLIN( 280)					splash3->set_frameRate(( (Float)(::flixel::FlxG_obj::random->_hx_int(minFps,maxFps,null())) ));
+HXLINE( 285)				if (::hx::IsNotNull( splash2->animation->_curAnim )) {
+HXLINE( 286)					 ::flixel::animation::FlxAnimation splash3 = splash2->animation->_curAnim;
+HXDLIN( 286)					splash3->set_frameRate(( (Float)(::flixel::FlxG_obj::random->_hx_int(minFps,maxFps,null())) ));
             				}
             			}
             			_hx_goto_25:;
@@ -979,27 +986,27 @@ HXDLIN( 280)					splash3->set_frameRate(( (Float)(::flixel::FlxG_obj::random->_h
 HX_DEFINE_DYNAMIC_FUNC0(VisualsSettingsSubState_obj,playNoteSplashes,(void))
 
 void VisualsSettingsSubState_obj::destroy(){
-            	HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_285_destroy)
-HXLINE( 286)		bool _hx_tmp;
-HXDLIN( 286)		if (this->changedMusic) {
-HXLINE( 286)			_hx_tmp = !(::options::OptionsState_obj::onPlayState);
+            	HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_291_destroy)
+HXLINE( 292)		bool _hx_tmp;
+HXDLIN( 292)		if (this->changedMusic) {
+HXLINE( 292)			_hx_tmp = !(::options::OptionsState_obj::onPlayState);
             		}
             		else {
-HXLINE( 286)			_hx_tmp = false;
+HXLINE( 292)			_hx_tmp = false;
             		}
-HXDLIN( 286)		if (_hx_tmp) {
-HXLINE( 286)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp1 = ::flixel::FlxG_obj::sound;
-HXDLIN( 286)			_hx_tmp1->playMusic(::backend::Paths_obj::returnSound((HX_("music/",ea,bf,1b,3f) + HX_("freakyMenu",15,c9,93,86)),null(),true,null()),1,true,null());
+HXDLIN( 292)		if (_hx_tmp) {
+HXLINE( 292)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp1 = ::flixel::FlxG_obj::sound;
+HXDLIN( 292)			_hx_tmp1->playMusic(::backend::Paths_obj::returnSound((HX_("music/",ea,bf,1b,3f) + HX_("freakyMenu",15,c9,93,86)),null(),true,null()),1,true,null());
             		}
-HXLINE( 287)		::objects::Note_obj::globalRgbShaders = ::Array_obj< ::Dynamic>::__new(0);
-HXLINE( 288)		this->super::destroy();
+HXLINE( 293)		::objects::Note_obj::globalRgbShaders = ::Array_obj< ::Dynamic>::__new(0);
+HXLINE( 294)		this->super::destroy();
             	}
 
 
 void VisualsSettingsSubState_obj::onChangeFPSCounter(){
-            	HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_294_onChangeFPSCounter)
-HXDLIN( 294)		if (::hx::IsNotNull( ::Main_obj::fpsVar )) {
-HXLINE( 295)			::Main_obj::fpsVar->set_visible(::backend::ClientPrefs_obj::data->showFPS);
+            	HX_STACKFRAME(&_hx_pos_3e0a67ffd3ccebb8_300_onChangeFPSCounter)
+HXDLIN( 300)		if (::hx::IsNotNull( ::Main_obj::fpsVar )) {
+HXLINE( 301)			::Main_obj::fpsVar->set_visible(::backend::ClientPrefs_obj::data->showFPS);
             		}
             	}
 

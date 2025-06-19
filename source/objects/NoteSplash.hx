@@ -27,6 +27,7 @@ typedef NoteSplashConfig = {
 	rgb:Array<Null<RGB>>
 }
 
+// TODO: Fix a unnecessary bug that will print 3 "Bitmap not found" messege.
 class NoteSplash extends FlxSprite {
 	public var rgbShader:PixelSplashShaderRef;
 	public var texture:String;
@@ -65,11 +66,13 @@ class NoteSplash extends FlxSprite {
 
 		if (splash == null) {
 			splash = subfolder + defaultNoteSplash + getSplashSkinPostfix();
-			if (PlayState.SONG != null && PlayState.SONG.splashSkin != null && PlayState.SONG.splashSkin.length > 0) 
-				splash = subfolder + PlayState.SONG.splashSkin;
+			if (PlayState.SONG != null && PlayState.SONG.splashSkin != null && PlayState.SONG.splashSkin.length > 0)
+				splash  = subfolder + PlayState.SONG.splashSkin;
+				texture = splash;
+		} else {
+			texture = subfolder + splash;
 		}
 
-		texture = subfolder + splash;
 		frames  = Paths.getSparrowAtlas(texture);
 		if (frames == null) {
 			texture = subfolder + defaultNoteSplash + getSplashSkinPostfix();
