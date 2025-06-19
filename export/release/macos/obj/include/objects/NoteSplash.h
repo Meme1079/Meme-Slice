@@ -82,8 +82,23 @@ class HXCPP_CLASS_ATTRIBUTES NoteSplash_obj : public  ::flixel::FlxSprite_obj
 		bool spawned;
 		 ::haxe::ds::IntMap noteDataMap;
 		int maxAnims;
+		void initTextureSplash(::String splash,::String subfolder);
+		::Dynamic initTextureSplash_dyn();
+
+		void initConfigSplash(::String splash,::String path);
+		::Dynamic initConfigSplash_dyn();
+
+		void createConfigSplash(::String path);
+		::Dynamic createConfigSplash_dyn();
+
+		void createConfigTextSplash(::String path);
+		::Dynamic createConfigTextSplash_dyn();
+
 		void loadSplash(::String splash);
 		::Dynamic loadSplash_dyn();
+
+		void loadSplashPixel(::String splash);
+		::Dynamic loadSplashPixel_dyn();
 
 		void spawnSplashNote( ::Dynamic x, ::Dynamic y, ::Dynamic noteData, ::objects::Note note, ::Dynamic randomize);
 		::Dynamic spawnSplashNote_dyn();

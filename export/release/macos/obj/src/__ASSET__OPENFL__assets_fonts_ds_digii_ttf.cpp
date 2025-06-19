@@ -14,13 +14,13 @@
 #include <openfl/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_0fb5265c12d20369_1542_new,"__ASSET__OPENFL__assets_fonts_ds_digii_ttf","new",0x87ddb522,"__ASSET__OPENFL__assets_fonts_ds_digii_ttf.new","ManifestResources.hx",1542,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_0fb5265c12d20369_1548_new,"__ASSET__OPENFL__assets_fonts_ds_digii_ttf","new",0x87ddb522,"__ASSET__OPENFL__assets_fonts_ds_digii_ttf.new","ManifestResources.hx",1548,0xf77aa668)
 
 void __ASSET__OPENFL__assets_fonts_ds_digii_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_0fb5265c12d20369_1542_new)
-HXDLIN(1542)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/DS-DIGII.TTF",13,52,7c,7c));
-HXDLIN(1542)		this->name = HX_("DS-Digital Italic",b6,a4,ff,cc);
-HXDLIN(1542)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_0fb5265c12d20369_1548_new)
+HXDLIN(1548)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/DS-DIGII.TTF",13,52,7c,7c));
+HXDLIN(1548)		this->name = HX_("DS-Digital Italic",b6,a4,ff,cc);
+HXDLIN(1548)		super::__construct(null());
             	}
 
 Dynamic __ASSET__OPENFL__assets_fonts_ds_digii_ttf_obj::__CreateEmpty() { return new __ASSET__OPENFL__assets_fonts_ds_digii_ttf_obj; }

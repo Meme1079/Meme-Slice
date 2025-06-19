@@ -53,6 +53,36 @@ class StrumNote extends FlxSprite {
 		playAnim('static');
 	}
 
+	private function reloadNoteByFunkin() {
+          frames = Paths.getSparrowAtlas(texture);
+		animation.addByPrefix('green', 'arrowUP');
+		animation.addByPrefix('blue', 'arrowDOWN');
+		animation.addByPrefix('purple', 'arrowLEFT');
+		animation.addByPrefix('red', 'arrowRIGHT');
+
+		antialiasing = ClientPrefs.data.antialiasing;
+		setGraphicSize(Std.int(width * 0.7));
+
+		switch (Math.abs(noteData) % 4) {
+			case 0:
+				animation.addByPrefix('static', 'arrowLEFT');
+				animation.addByPrefix('pressed', 'left press', 24, false);
+				animation.addByPrefix('confirm', 'left confirm', 24, false);
+			case 1:
+				animation.addByPrefix('static', 'arrowDOWN');
+				animation.addByPrefix('pressed', 'down press', 24, false);
+				animation.addByPrefix('confirm', 'down confirm', 24, false);
+			case 2:
+				animation.addByPrefix('static', 'arrowUP');
+				animation.addByPrefix('pressed', 'up press', 24, false);
+				animation.addByPrefix('confirm', 'up confirm', 24, false);
+			case 3:
+				animation.addByPrefix('static', 'arrowRIGHT');
+				animation.addByPrefix('pressed', 'right press', 24, false);
+				animation.addByPrefix('confirm', 'right confirm', 24, false);
+		}
+     }
+
      private function reloadNoteByPixel() {
           loadGraphic(Paths.image('pixelUI/' + texture));
 		width  = width / 4;
@@ -83,36 +113,6 @@ class StrumNote extends FlxSprite {
 				animation.add('static', [3]);
 				animation.add('pressed', [7, 11], 12, false);
 				animation.add('confirm', [15, 19], 24, false);
-		}
-     }
-
-     private function reloadNoteByFunkin() {
-          frames = Paths.getSparrowAtlas(texture);
-		animation.addByPrefix('green', 'arrowUP');
-		animation.addByPrefix('blue', 'arrowDOWN');
-		animation.addByPrefix('purple', 'arrowLEFT');
-		animation.addByPrefix('red', 'arrowRIGHT');
-
-		antialiasing = ClientPrefs.data.antialiasing;
-		setGraphicSize(Std.int(width * 0.7));
-
-		switch (Math.abs(noteData) % 4) {
-			case 0:
-				animation.addByPrefix('static', 'arrowLEFT');
-				animation.addByPrefix('pressed', 'left press', 24, false);
-				animation.addByPrefix('confirm', 'left confirm', 24, false);
-			case 1:
-				animation.addByPrefix('static', 'arrowDOWN');
-				animation.addByPrefix('pressed', 'down press', 24, false);
-				animation.addByPrefix('confirm', 'down confirm', 24, false);
-			case 2:
-				animation.addByPrefix('static', 'arrowUP');
-				animation.addByPrefix('pressed', 'up press', 24, false);
-				animation.addByPrefix('confirm', 'up confirm', 24, false);
-			case 3:
-				animation.addByPrefix('static', 'arrowRIGHT');
-				animation.addByPrefix('pressed', 'right press', 24, false);
-				animation.addByPrefix('confirm', 'right confirm', 24, false);
 		}
      }
 

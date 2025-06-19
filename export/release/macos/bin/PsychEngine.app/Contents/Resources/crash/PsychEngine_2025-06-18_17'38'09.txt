@@ -1,0 +1,16 @@
+objects/NoteSplash.hx (line 421)
+objects/NoteSplash.hx (line 106)
+objects/NoteSplash.hx (line 118)
+objects/NoteSplash.hx (line 57)
+/usr/local/lib/haxe/std/cpp/_std/Type.hx (line 90)
+flixel/group/FlxGroup.hx (line 348)
+states/PlayState.hx (line 3157)
+states/PlayState.hx (line 3152)
+states/PlayState.hx (line 2587)
+states/PlayState.hx (line 3110)
+states/PlayState.hx (line 2752)
+states/PlayState.hx (line 2713)
+
+Uncaught Error: Null Object Reference
+
+> Crash Handler written by: sqirra-rng

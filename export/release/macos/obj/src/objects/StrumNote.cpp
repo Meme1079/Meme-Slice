@@ -109,56 +109,56 @@
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_cf63324388460f24_7_new,"objects.StrumNote","new",0x7dc6a313,"objects.StrumNote.new","objects/StrumNote.hx",7,0x9c6a1d3e)
-HX_LOCAL_STACK_FRAME(_hx_pos_cf63324388460f24_56_reloadNoteByPixel,"objects.StrumNote","reloadNoteByPixel",0x76696e77,"objects.StrumNote.reloadNoteByPixel","objects/StrumNote.hx",56,0x9c6a1d3e)
-static const int _hx_array_data_4e351da1_3[] = {
+HX_LOCAL_STACK_FRAME(_hx_pos_cf63324388460f24_56_reloadNoteByFunkin,"objects.StrumNote","reloadNoteByFunkin",0x087cfd20,"objects.StrumNote.reloadNoteByFunkin","objects/StrumNote.hx",56,0x9c6a1d3e)
+HX_LOCAL_STACK_FRAME(_hx_pos_cf63324388460f24_86_reloadNoteByPixel,"objects.StrumNote","reloadNoteByPixel",0x76696e77,"objects.StrumNote.reloadNoteByPixel","objects/StrumNote.hx",86,0x9c6a1d3e)
+static const int _hx_array_data_4e351da1_5[] = {
 	(int)6,
 };
-static const int _hx_array_data_4e351da1_4[] = {
+static const int _hx_array_data_4e351da1_6[] = {
 	(int)7,
 };
-static const int _hx_array_data_4e351da1_5[] = {
+static const int _hx_array_data_4e351da1_7[] = {
 	(int)5,
 };
-static const int _hx_array_data_4e351da1_6[] = {
+static const int _hx_array_data_4e351da1_8[] = {
 	(int)4,
 };
-static const int _hx_array_data_4e351da1_7[] = {
+static const int _hx_array_data_4e351da1_9[] = {
 	(int)0,
 };
-static const int _hx_array_data_4e351da1_8[] = {
+static const int _hx_array_data_4e351da1_10[] = {
 	(int)4,(int)8,
 };
-static const int _hx_array_data_4e351da1_9[] = {
+static const int _hx_array_data_4e351da1_11[] = {
 	(int)12,(int)16,
 };
-static const int _hx_array_data_4e351da1_10[] = {
+static const int _hx_array_data_4e351da1_12[] = {
 	(int)1,
 };
-static const int _hx_array_data_4e351da1_11[] = {
+static const int _hx_array_data_4e351da1_13[] = {
 	(int)5,(int)9,
 };
-static const int _hx_array_data_4e351da1_12[] = {
+static const int _hx_array_data_4e351da1_14[] = {
 	(int)13,(int)17,
 };
-static const int _hx_array_data_4e351da1_13[] = {
+static const int _hx_array_data_4e351da1_15[] = {
 	(int)2,
 };
-static const int _hx_array_data_4e351da1_14[] = {
+static const int _hx_array_data_4e351da1_16[] = {
 	(int)6,(int)10,
 };
-static const int _hx_array_data_4e351da1_15[] = {
+static const int _hx_array_data_4e351da1_17[] = {
 	(int)14,(int)18,
 };
-static const int _hx_array_data_4e351da1_16[] = {
+static const int _hx_array_data_4e351da1_18[] = {
 	(int)3,
 };
-static const int _hx_array_data_4e351da1_17[] = {
+static const int _hx_array_data_4e351da1_19[] = {
 	(int)7,(int)11,
 };
-static const int _hx_array_data_4e351da1_18[] = {
+static const int _hx_array_data_4e351da1_20[] = {
 	(int)15,(int)19,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_cf63324388460f24_89_reloadNoteByFunkin,"objects.StrumNote","reloadNoteByFunkin",0x087cfd20,"objects.StrumNote.reloadNoteByFunkin","objects/StrumNote.hx",89,0x9c6a1d3e)
 HX_LOCAL_STACK_FRAME(_hx_pos_cf63324388460f24_119_reloadNote,"objects.StrumNote","reloadNote",0xe8c2f198,"objects.StrumNote.reloadNote","objects/StrumNote.hx",119,0x9c6a1d3e)
 HX_LOCAL_STACK_FRAME(_hx_pos_cf63324388460f24_137_set_texture,"objects.StrumNote","set_texture",0xf5a96db1,"objects.StrumNote.set_texture","objects/StrumNote.hx",137,0x9c6a1d3e)
 HX_LOCAL_STACK_FRAME(_hx_pos_cf63324388460f24_145_playerPosition,"objects.StrumNote","playerPosition",0x51d52557,"objects.StrumNote.playerPosition","objects/StrumNote.hx",145,0x9c6a1d3e)
@@ -259,120 +259,120 @@ bool StrumNote_obj::_hx_isInstanceOf(int inClassId) {
 	}
 }
 
-void StrumNote_obj::reloadNoteByPixel(){
-            	HX_STACKFRAME(&_hx_pos_cf63324388460f24_56_reloadNoteByPixel)
-HXLINE(  57)		this->loadGraphic(::backend::Paths_obj::image((HX_("pixelUI/",95,50,4f,7e) + this->texture),null(),null()),null(),null(),null(),null(),null());
-HXLINE(  58)		this->set_width((this->get_width() / ( (Float)(4) )));
-HXLINE(  59)		this->set_height((this->get_height() / ( (Float)(5) )));
-HXLINE(  60)		 ::flixel::graphics::FlxGraphic _hx_tmp = ::backend::Paths_obj::image((HX_("pixelUI/",95,50,4f,7e) + this->texture),null(),null());
-HXDLIN(  60)		int _hx_tmp1 = ::Math_obj::floor(this->get_width());
-HXDLIN(  60)		this->loadGraphic(_hx_tmp,true,_hx_tmp1,::Math_obj::floor(this->get_height()),null(),null());
-HXLINE(  62)		this->set_antialiasing(false);
-HXLINE(  63)		Float _hx_tmp2 = this->get_width();
-HXDLIN(  63)		this->setGraphicSize(::Std_obj::_hx_int((_hx_tmp2 * ::states::PlayState_obj::daPixelZoom)),null());
-HXLINE(  65)		this->animation->add(HX_("green",c3,0e,ed,99),::Array_obj< int >::fromData( _hx_array_data_4e351da1_3,1),null(),null(),null(),null());
-HXLINE(  66)		this->animation->add(HX_("red",51,d9,56,00),::Array_obj< int >::fromData( _hx_array_data_4e351da1_4,1),null(),null(),null(),null());
-HXLINE(  67)		this->animation->add(HX_("blue",9a,42,19,41),::Array_obj< int >::fromData( _hx_array_data_4e351da1_5,1),null(),null(),null(),null());
-HXLINE(  68)		this->animation->add(HX_("purple",3c,f6,89,71),::Array_obj< int >::fromData( _hx_array_data_4e351da1_6,1),null(),null(),null(),null());
-HXLINE(  69)		Float _hx_switch_0 = ::hx::Mod(::Math_obj::abs(( (Float)(this->noteData) )),4);
-            		if (  (_hx_switch_0==( (Float)(0) )) ){
-HXLINE(  71)			this->animation->add(HX_("static",ae,dc,fb,05),::Array_obj< int >::fromData( _hx_array_data_4e351da1_7,1),null(),null(),null(),null());
-HXLINE(  72)			this->animation->add(HX_("pressed",a2,d2,e6,39),::Array_obj< int >::fromData( _hx_array_data_4e351da1_8,2),12,false,null(),null());
-HXLINE(  73)			this->animation->add(HX_("confirm",00,9d,39,10),::Array_obj< int >::fromData( _hx_array_data_4e351da1_9,2),24,false,null(),null());
-HXLINE(  70)			goto _hx_goto_1;
-            		}
-            		if (  (_hx_switch_0==( (Float)(1) )) ){
-HXLINE(  75)			this->animation->add(HX_("static",ae,dc,fb,05),::Array_obj< int >::fromData( _hx_array_data_4e351da1_10,1),null(),null(),null(),null());
-HXLINE(  76)			this->animation->add(HX_("pressed",a2,d2,e6,39),::Array_obj< int >::fromData( _hx_array_data_4e351da1_11,2),12,false,null(),null());
-HXLINE(  77)			this->animation->add(HX_("confirm",00,9d,39,10),::Array_obj< int >::fromData( _hx_array_data_4e351da1_12,2),24,false,null(),null());
-HXLINE(  74)			goto _hx_goto_1;
-            		}
-            		if (  (_hx_switch_0==( (Float)(2) )) ){
-HXLINE(  79)			this->animation->add(HX_("static",ae,dc,fb,05),::Array_obj< int >::fromData( _hx_array_data_4e351da1_13,1),null(),null(),null(),null());
-HXLINE(  80)			this->animation->add(HX_("pressed",a2,d2,e6,39),::Array_obj< int >::fromData( _hx_array_data_4e351da1_14,2),12,false,null(),null());
-HXLINE(  81)			this->animation->add(HX_("confirm",00,9d,39,10),::Array_obj< int >::fromData( _hx_array_data_4e351da1_15,2),12,false,null(),null());
-HXLINE(  78)			goto _hx_goto_1;
-            		}
-            		if (  (_hx_switch_0==( (Float)(3) )) ){
-HXLINE(  83)			this->animation->add(HX_("static",ae,dc,fb,05),::Array_obj< int >::fromData( _hx_array_data_4e351da1_16,1),null(),null(),null(),null());
-HXLINE(  84)			this->animation->add(HX_("pressed",a2,d2,e6,39),::Array_obj< int >::fromData( _hx_array_data_4e351da1_17,2),12,false,null(),null());
-HXLINE(  85)			this->animation->add(HX_("confirm",00,9d,39,10),::Array_obj< int >::fromData( _hx_array_data_4e351da1_18,2),24,false,null(),null());
-HXLINE(  82)			goto _hx_goto_1;
-            		}
-            		_hx_goto_1:;
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC0(StrumNote_obj,reloadNoteByPixel,(void))
-
 void StrumNote_obj::reloadNoteByFunkin(){
-            	HX_STACKFRAME(&_hx_pos_cf63324388460f24_89_reloadNoteByFunkin)
-HXLINE(  90)		::String key = this->texture;
-HXDLIN(  90)		::String parentFolder = null();
-HXDLIN(  90)		if ((key.indexOf(HX_("psychic",d5,09,aa,19),null()) != -1)) {
-HXLINE(  90)			::haxe::Log_obj::trace(key, ::Dynamic(::hx::Anon_obj::Create(5)
+            	HX_STACKFRAME(&_hx_pos_cf63324388460f24_56_reloadNoteByFunkin)
+HXLINE(  57)		::String key = this->texture;
+HXDLIN(  57)		::String parentFolder = null();
+HXDLIN(  57)		if ((key.indexOf(HX_("psychic",d5,09,aa,19),null()) != -1)) {
+HXLINE(  57)			::haxe::Log_obj::trace(key, ::Dynamic(::hx::Anon_obj::Create(5)
             				->setFixed(0,HX_("className",a3,92,3d,dc),HX_("backend.Paths",34,17,99,92))
             				->setFixed(1,HX_("customParams",d7,51,18,ed),::cpp::VirtualArray_obj::__new(2)->init(0,parentFolder)->init(1,true))
             				->setFixed(2,HX_("methodName",cc,19,0f,12),HX_("getSparrowAtlas",55,ab,b7,a7))
             				->setFixed(3,HX_("fileName",e7,5a,43,62),HX_("source/backend/Paths.hx",ff,43,8c,3d))
             				->setFixed(4,HX_("lineNumber",dd,81,22,76),372)));
             		}
-HXDLIN(  90)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(key,parentFolder,true);
-HXDLIN(  90)		bool xmlExists = false;
-HXDLIN(  90)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".xml",69,3e,c3,1e)));
-HXDLIN(  90)		if (::sys::FileSystem_obj::exists(xml)) {
-HXLINE(  90)			xmlExists = true;
+HXDLIN(  57)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(key,parentFolder,true);
+HXDLIN(  57)		bool xmlExists = false;
+HXDLIN(  57)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".xml",69,3e,c3,1e)));
+HXDLIN(  57)		if (::sys::FileSystem_obj::exists(xml)) {
+HXLINE(  57)			xmlExists = true;
             		}
-HXDLIN(  90)		 ::Dynamic _hx_tmp;
-HXDLIN(  90)		if (xmlExists) {
-HXLINE(  90)			_hx_tmp = ::sys::io::File_obj::getContent(xml);
+HXDLIN(  57)		 ::Dynamic _hx_tmp;
+HXDLIN(  57)		if (xmlExists) {
+HXLINE(  57)			_hx_tmp = ::sys::io::File_obj::getContent(xml);
             		}
             		else {
-HXLINE(  90)			::String key1 = (HX_("images/",77,50,74,c1) + key);
-HXDLIN(  90)			::Dynamic this1 = ::backend::Language_obj::phrases;
-HXDLIN(  90)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
-HXDLIN(  90)			if (::hx::IsNotNull( str )) {
-HXLINE(  90)				key1 = str;
+HXLINE(  57)			::String key1 = (HX_("images/",77,50,74,c1) + key);
+HXDLIN(  57)			::Dynamic this1 = ::backend::Language_obj::phrases;
+HXDLIN(  57)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
+HXDLIN(  57)			if (::hx::IsNotNull( str )) {
+HXLINE(  57)				key1 = str;
             			}
-HXDLIN(  90)			_hx_tmp = ::backend::Paths_obj::getPath((key1 + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
+HXDLIN(  57)			_hx_tmp = ::backend::Paths_obj::getPath((key1 + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
             		}
-HXDLIN(  90)		this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded,_hx_tmp));
-HXLINE(  91)		this->animation->addByPrefix(HX_("green",c3,0e,ed,99),HX_("arrowUP",64,88,b8,43),null(),null(),null(),null());
-HXLINE(  92)		this->animation->addByPrefix(HX_("blue",9a,42,19,41),HX_("arrowDOWN",ab,52,f9,fd),null(),null(),null(),null());
-HXLINE(  93)		this->animation->addByPrefix(HX_("purple",3c,f6,89,71),HX_("arrowLEFT",50,62,3b,03),null(),null(),null(),null());
-HXLINE(  94)		this->animation->addByPrefix(HX_("red",51,d9,56,00),HX_("arrowRIGHT",53,b1,c7,47),null(),null(),null(),null());
-HXLINE(  96)		this->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
-HXLINE(  97)		this->setGraphicSize(::Std_obj::_hx_int((this->get_width() * ((Float)0.7))),null());
-HXLINE(  99)		Float _hx_switch_0 = ::hx::Mod(::Math_obj::abs(( (Float)(this->noteData) )),4);
+HXDLIN(  57)		this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded,_hx_tmp));
+HXLINE(  58)		this->animation->addByPrefix(HX_("green",c3,0e,ed,99),HX_("arrowUP",64,88,b8,43),null(),null(),null(),null());
+HXLINE(  59)		this->animation->addByPrefix(HX_("blue",9a,42,19,41),HX_("arrowDOWN",ab,52,f9,fd),null(),null(),null(),null());
+HXLINE(  60)		this->animation->addByPrefix(HX_("purple",3c,f6,89,71),HX_("arrowLEFT",50,62,3b,03),null(),null(),null(),null());
+HXLINE(  61)		this->animation->addByPrefix(HX_("red",51,d9,56,00),HX_("arrowRIGHT",53,b1,c7,47),null(),null(),null(),null());
+HXLINE(  63)		this->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
+HXLINE(  64)		this->setGraphicSize(::Std_obj::_hx_int((this->get_width() * ((Float)0.7))),null());
+HXLINE(  66)		Float _hx_switch_0 = ::hx::Mod(::Math_obj::abs(( (Float)(this->noteData) )),4);
             		if (  (_hx_switch_0==( (Float)(0) )) ){
-HXLINE( 101)			this->animation->addByPrefix(HX_("static",ae,dc,fb,05),HX_("arrowLEFT",50,62,3b,03),null(),null(),null(),null());
-HXLINE( 102)			this->animation->addByPrefix(HX_("pressed",a2,d2,e6,39),HX_("left press",aa,26,70,8e),24,false,null(),null());
-HXLINE( 103)			this->animation->addByPrefix(HX_("confirm",00,9d,39,10),HX_("left confirm",e7,c7,19,fe),24,false,null(),null());
-HXLINE( 100)			goto _hx_goto_19;
+HXLINE(  68)			this->animation->addByPrefix(HX_("static",ae,dc,fb,05),HX_("arrowLEFT",50,62,3b,03),null(),null(),null(),null());
+HXLINE(  69)			this->animation->addByPrefix(HX_("pressed",a2,d2,e6,39),HX_("left press",aa,26,70,8e),24,false,null(),null());
+HXLINE(  70)			this->animation->addByPrefix(HX_("confirm",00,9d,39,10),HX_("left confirm",e7,c7,19,fe),24,false,null(),null());
+HXLINE(  67)			goto _hx_goto_1;
             		}
             		if (  (_hx_switch_0==( (Float)(1) )) ){
-HXLINE( 105)			this->animation->addByPrefix(HX_("static",ae,dc,fb,05),HX_("arrowDOWN",ab,52,f9,fd),null(),null(),null(),null());
-HXLINE( 106)			this->animation->addByPrefix(HX_("pressed",a2,d2,e6,39),HX_("down press",45,4d,63,9c),24,false,null(),null());
-HXLINE( 107)			this->animation->addByPrefix(HX_("confirm",00,9d,39,10),HX_("down confirm",42,0b,18,cc),24,false,null(),null());
-HXLINE( 104)			goto _hx_goto_19;
+HXLINE(  72)			this->animation->addByPrefix(HX_("static",ae,dc,fb,05),HX_("arrowDOWN",ab,52,f9,fd),null(),null(),null(),null());
+HXLINE(  73)			this->animation->addByPrefix(HX_("pressed",a2,d2,e6,39),HX_("down press",45,4d,63,9c),24,false,null(),null());
+HXLINE(  74)			this->animation->addByPrefix(HX_("confirm",00,9d,39,10),HX_("down confirm",42,0b,18,cc),24,false,null(),null());
+HXLINE(  71)			goto _hx_goto_1;
             		}
             		if (  (_hx_switch_0==( (Float)(2) )) ){
-HXLINE( 109)			this->animation->addByPrefix(HX_("static",ae,dc,fb,05),HX_("arrowUP",64,88,b8,43),null(),null(),null(),null());
-HXLINE( 110)			this->animation->addByPrefix(HX_("pressed",a2,d2,e6,39),HX_("up press",fe,fb,65,e9),24,false,null(),null());
-HXLINE( 111)			this->animation->addByPrefix(HX_("confirm",00,9d,39,10),HX_("up confirm",3b,9a,2e,62),24,false,null(),null());
-HXLINE( 108)			goto _hx_goto_19;
+HXLINE(  76)			this->animation->addByPrefix(HX_("static",ae,dc,fb,05),HX_("arrowUP",64,88,b8,43),null(),null(),null(),null());
+HXLINE(  77)			this->animation->addByPrefix(HX_("pressed",a2,d2,e6,39),HX_("up press",fe,fb,65,e9),24,false,null(),null());
+HXLINE(  78)			this->animation->addByPrefix(HX_("confirm",00,9d,39,10),HX_("up confirm",3b,9a,2e,62),24,false,null(),null());
+HXLINE(  75)			goto _hx_goto_1;
             		}
             		if (  (_hx_switch_0==( (Float)(3) )) ){
-HXLINE( 113)			this->animation->addByPrefix(HX_("static",ae,dc,fb,05),HX_("arrowRIGHT",53,b1,c7,47),null(),null(),null(),null());
-HXLINE( 114)			this->animation->addByPrefix(HX_("pressed",a2,d2,e6,39),HX_("right press",3f,38,e4,c8),24,false,null(),null());
-HXLINE( 115)			this->animation->addByPrefix(HX_("confirm",00,9d,39,10),HX_("right confirm",bc,28,e5,ca),24,false,null(),null());
-HXLINE( 112)			goto _hx_goto_19;
+HXLINE(  80)			this->animation->addByPrefix(HX_("static",ae,dc,fb,05),HX_("arrowRIGHT",53,b1,c7,47),null(),null(),null(),null());
+HXLINE(  81)			this->animation->addByPrefix(HX_("pressed",a2,d2,e6,39),HX_("right press",3f,38,e4,c8),24,false,null(),null());
+HXLINE(  82)			this->animation->addByPrefix(HX_("confirm",00,9d,39,10),HX_("right confirm",bc,28,e5,ca),24,false,null(),null());
+HXLINE(  79)			goto _hx_goto_1;
             		}
-            		_hx_goto_19:;
+            		_hx_goto_1:;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(StrumNote_obj,reloadNoteByFunkin,(void))
+
+void StrumNote_obj::reloadNoteByPixel(){
+            	HX_STACKFRAME(&_hx_pos_cf63324388460f24_86_reloadNoteByPixel)
+HXLINE(  87)		this->loadGraphic(::backend::Paths_obj::image((HX_("pixelUI/",95,50,4f,7e) + this->texture),null(),null()),null(),null(),null(),null(),null());
+HXLINE(  88)		this->set_width((this->get_width() / ( (Float)(4) )));
+HXLINE(  89)		this->set_height((this->get_height() / ( (Float)(5) )));
+HXLINE(  90)		 ::flixel::graphics::FlxGraphic _hx_tmp = ::backend::Paths_obj::image((HX_("pixelUI/",95,50,4f,7e) + this->texture),null(),null());
+HXDLIN(  90)		int _hx_tmp1 = ::Math_obj::floor(this->get_width());
+HXDLIN(  90)		this->loadGraphic(_hx_tmp,true,_hx_tmp1,::Math_obj::floor(this->get_height()),null(),null());
+HXLINE(  92)		this->set_antialiasing(false);
+HXLINE(  93)		Float _hx_tmp2 = this->get_width();
+HXDLIN(  93)		this->setGraphicSize(::Std_obj::_hx_int((_hx_tmp2 * ::states::PlayState_obj::daPixelZoom)),null());
+HXLINE(  95)		this->animation->add(HX_("green",c3,0e,ed,99),::Array_obj< int >::fromData( _hx_array_data_4e351da1_5,1),null(),null(),null(),null());
+HXLINE(  96)		this->animation->add(HX_("red",51,d9,56,00),::Array_obj< int >::fromData( _hx_array_data_4e351da1_6,1),null(),null(),null(),null());
+HXLINE(  97)		this->animation->add(HX_("blue",9a,42,19,41),::Array_obj< int >::fromData( _hx_array_data_4e351da1_7,1),null(),null(),null(),null());
+HXLINE(  98)		this->animation->add(HX_("purple",3c,f6,89,71),::Array_obj< int >::fromData( _hx_array_data_4e351da1_8,1),null(),null(),null(),null());
+HXLINE(  99)		Float _hx_switch_0 = ::hx::Mod(::Math_obj::abs(( (Float)(this->noteData) )),4);
+            		if (  (_hx_switch_0==( (Float)(0) )) ){
+HXLINE( 101)			this->animation->add(HX_("static",ae,dc,fb,05),::Array_obj< int >::fromData( _hx_array_data_4e351da1_9,1),null(),null(),null(),null());
+HXLINE( 102)			this->animation->add(HX_("pressed",a2,d2,e6,39),::Array_obj< int >::fromData( _hx_array_data_4e351da1_10,2),12,false,null(),null());
+HXLINE( 103)			this->animation->add(HX_("confirm",00,9d,39,10),::Array_obj< int >::fromData( _hx_array_data_4e351da1_11,2),24,false,null(),null());
+HXLINE( 100)			goto _hx_goto_3;
+            		}
+            		if (  (_hx_switch_0==( (Float)(1) )) ){
+HXLINE( 105)			this->animation->add(HX_("static",ae,dc,fb,05),::Array_obj< int >::fromData( _hx_array_data_4e351da1_12,1),null(),null(),null(),null());
+HXLINE( 106)			this->animation->add(HX_("pressed",a2,d2,e6,39),::Array_obj< int >::fromData( _hx_array_data_4e351da1_13,2),12,false,null(),null());
+HXLINE( 107)			this->animation->add(HX_("confirm",00,9d,39,10),::Array_obj< int >::fromData( _hx_array_data_4e351da1_14,2),24,false,null(),null());
+HXLINE( 104)			goto _hx_goto_3;
+            		}
+            		if (  (_hx_switch_0==( (Float)(2) )) ){
+HXLINE( 109)			this->animation->add(HX_("static",ae,dc,fb,05),::Array_obj< int >::fromData( _hx_array_data_4e351da1_15,1),null(),null(),null(),null());
+HXLINE( 110)			this->animation->add(HX_("pressed",a2,d2,e6,39),::Array_obj< int >::fromData( _hx_array_data_4e351da1_16,2),12,false,null(),null());
+HXLINE( 111)			this->animation->add(HX_("confirm",00,9d,39,10),::Array_obj< int >::fromData( _hx_array_data_4e351da1_17,2),12,false,null(),null());
+HXLINE( 108)			goto _hx_goto_3;
+            		}
+            		if (  (_hx_switch_0==( (Float)(3) )) ){
+HXLINE( 113)			this->animation->add(HX_("static",ae,dc,fb,05),::Array_obj< int >::fromData( _hx_array_data_4e351da1_18,1),null(),null(),null(),null());
+HXLINE( 114)			this->animation->add(HX_("pressed",a2,d2,e6,39),::Array_obj< int >::fromData( _hx_array_data_4e351da1_19,2),12,false,null(),null());
+HXLINE( 115)			this->animation->add(HX_("confirm",00,9d,39,10),::Array_obj< int >::fromData( _hx_array_data_4e351da1_20,2),24,false,null(),null());
+HXLINE( 112)			goto _hx_goto_3;
+            		}
+            		_hx_goto_3:;
+            	}
+
+
+HX_DEFINE_DYNAMIC_FUNC0(StrumNote_obj,reloadNoteByPixel,(void))
 
 void StrumNote_obj::reloadNote(){
             	HX_STACKFRAME(&_hx_pos_cf63324388460f24_119_reloadNote)
@@ -621,8 +621,8 @@ static ::String StrumNote_obj_sMemberFields[] = {
 	HX_("texture",db,c8,e0,9e),
 	HX_("player",61,eb,b8,37),
 	HX_("noteData",3c,7b,96,51),
-	HX_("reloadNoteByPixel",84,68,7a,80),
 	HX_("reloadNoteByFunkin",73,ce,46,cd),
+	HX_("reloadNoteByPixel",84,68,7a,80),
 	HX_("reloadNote",eb,b7,11,94),
 	HX_("set_texture",fe,2f,48,2f),
 	HX_("playerPosition",2a,11,41,dd),

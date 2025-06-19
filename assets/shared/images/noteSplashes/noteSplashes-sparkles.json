@@ -59,5 +59,6 @@
 	},
 	"allowRGB": true,
 	"allowPixel": true,
+	"allowPixelVariant": false,
 	"scale": 1
 }

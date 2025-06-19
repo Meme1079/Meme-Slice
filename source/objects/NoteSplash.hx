@@ -23,11 +23,11 @@ typedef NoteSplashConfig = {
 	scale:Float,
 	allowRGB:Bool,
 	allowPixel:Bool,
+	allowPixelVariant:Bool,
 	rgb:Array<Null<RGB>>
 }
 
-class NoteSplash extends FlxSprite
-{
+class NoteSplash extends FlxSprite {
 	public var rgbShader:PixelSplashShaderRef;
 	public var texture:String;
 	public var config(default, set):NoteSplashConfig;
@@ -41,166 +41,214 @@ class NoteSplash extends FlxSprite
 	var spawned:Bool = false;
 	var noteDataMap:Map<Int, String> = new Map();
 
+	public var maxAnims(default, set):Int = 0;
 	public static var defaultNoteSplash(default, never):String = "noteSplashes/noteSplashes";
 	public static var configs:Map<String, NoteSplashConfig> = new Map();
-
-	public function new(?x:Float = 0, ?y:Float = 0, ?splash:String)
-	{
+	public function new(?x:Float = 0, ?y:Float = 0, ?splash:String) {
 		super(x, y);
 
 		animation = new PsychAnimationController(this);
-
 		rgbShader = new PixelSplashShaderRef();
 		shader = rgbShader.shader;
-
 		loadSplash(splash);
 	}
 
-	public var maxAnims(default, set):Int = 0;
-	public function loadSplash(?splash:String)
-	{
+	/**
+		* Initiates the splashes' texture and animations.
+		* @param splash The current splash texture that the player hit.
+		* @param subfolder A subfolder to get the different splash texture from styles.
+		* @return nothing
+	*/
+	private function initTextureSplash(splash:String, ?subfolder:String = ''):Void {
 		config = null;
 		maxAnims = 0;
 
-		if(splash == null)
-		{
-			splash = defaultNoteSplash + getSplashSkinPostfix();
-			if (PlayState.SONG != null && PlayState.SONG.splashSkin != null && PlayState.SONG.splashSkin.length > 0) splash = PlayState.SONG.splashSkin;
+		if (splash == null) {
+			splash = subfolder + defaultNoteSplash + getSplashSkinPostfix();
+			if (PlayState.SONG != null && PlayState.SONG.splashSkin != null && PlayState.SONG.splashSkin.length > 0) 
+				splash = subfolder + PlayState.SONG.splashSkin;
 		}
 
-		texture = splash;
-		frames = Paths.getSparrowAtlas(texture);
-		if (frames == null)
-		{
-			texture = defaultNoteSplash + getSplashSkinPostfix();
-			frames = Paths.getSparrowAtlas(texture);
-			if (frames == null)
-			{
-				texture = defaultNoteSplash;
-				frames = Paths.getSparrowAtlas(texture);
+		texture = subfolder + splash;
+		frames  = Paths.getSparrowAtlas(texture);
+		if (frames == null) {
+			texture = subfolder + defaultNoteSplash + getSplashSkinPostfix();
+			frames  = Paths.getSparrowAtlas(texture);
+			if (frames == null) {
+				texture = subfolder + defaultNoteSplash;
+				frames  = Paths.getSparrowAtlas(texture);
 			}
 		}
+	}
 
-		var path:String = 'images/$texture';
-		if (configs.exists(path))
-		{
-			this.config = configs.get(path);
-			for (anim in this.config.animations)
-			{
-				if (anim.noteData % 4 == 0)
-					maxAnims++;
-			}
+	/**
+		* Initiates the splashes' configs, checks and load different styles.
+		* @param splash The current splash texture that the player hit.
+		* @param path The current image path of the splash texture.
+		* @return nothing
+	*/
+	private function initConfigSplash(splash:String, path:String):Void {
+		this.config = configs.get(path);
+		if (config.allowPixelVariant == true && PlayState.stageUI == 'pixel') {
+			loadSplashPixel(splash);
 			return;
 		}
-		else if (Paths.fileExists('$path.json', TEXT))
-		{
-			var config:Dynamic = haxe.Json.parse(Paths.getTextFromFile('$path.json'));
-			if (config != null)
-			{
-				var tempConfig:NoteSplashConfig = {
-					animations: new Map(),
-					scale: config.scale,
-					allowRGB: config.allowRGB,
-					allowPixel: config.allowPixel,
-					rgb: config.rgb
-				}
-
-				for (i in Reflect.fields(config.animations))
-				{
-					var anim:NoteSplashAnim = Reflect.field(config.animations, i);
-					tempConfig.animations.set(i, anim);
-					if (anim.noteData % 4 == 0)
-						maxAnims++;
-				}
-
-				this.config = tempConfig;
-				configs.set(path, this.config);
-				return;
-			}
+		for (anim in this.config.animations) {
+			if (anim.noteData % 4 == 0)
+				maxAnims++;
 		}
+	}
 
-		// Splashes with no json
-		var tempConfig:NoteSplashConfig = createConfig();
-		var anim:String = 'note splash';
-		var fps:Array<Null<Int>> = [22, 26];
-		var offsets:Array<Array<Float>> = [[0, 0]];
-		if (Paths.fileExists('$path.txt', TEXT)) // Backwards compatibility with 0.7 splash txts
-		{
-			var configFile:Array<String> = CoolUtil.listFromString(Paths.getTextFromFile('$path.txt'));
-			if (configFile.length > 0)
-			{
-				anim = configFile[0];
-				if (configFile.length > 1)
-				{
-					var framerates:Array<String> = configFile[1].split(' ');
-					fps = [Std.parseInt(framerates[0]), Std.parseInt(framerates[1])];
-					if (fps[0] == null) fps[0] = 22;
-					if (fps[1] == null) fps[1] = 26;
+	/**
+		* Creates the splashes' configs, if it doesn't exists.
+		* @param path The current image path of the splash texture.
+		* @return nothing
+	*/
+	private function createConfigSplash(path:String):Void {
+		var config:Dynamic = haxe.Json.parse(Paths.getTextFromFile('$path.json'));
+		if (config == null)
+			return;
 
-					if (configFile.length > 2)
-					{
-						offsets = [];
-						for (i in 2...configFile.length)
-						{
-							if (configFile[i].trim() != '')
-							{
-								var animOffs:Array<String> = configFile[i].split(' ');
-								var x:Float = Std.parseFloat(animOffs[0]);
-								var y:Float = Std.parseFloat(animOffs[1]);
-								if (Math.isNaN(x)) x = 0;
-								if (Math.isNaN(y)) y = 0;
-								offsets.push([x, y]);
-							}
-						}
-					}
-				}
-			}
-		}
+		var tempConfig:NoteSplashConfig = {
+			animations: new Map(),
+			scale: config.scale,
+			allowRGB: config.allowRGB,
+			allowPixel: config.allowPixel,
+			allowPixelVariant: config.allowPixelVariant,
+			rgb: config.rgb
+		};
 
-		var failedToFind:Bool = false;
-		while (true)
-		{
-			for (v in Note.colArray)
-			{
-				if (!checkForAnim('$anim $v ${maxAnims+1}'))
-				{
-					failedToFind = true;
-					break;
-				}
-			}
-			if (failedToFind) break;
-			maxAnims++;
-		}
-
-		for (animNum in 0...maxAnims)
-		{
-			for (i => col in Note.colArray)
-			{
-				var data:Int = i % Note.colArray.length + (animNum * Note.colArray.length);
-				var name:String = animNum > 0 ? '$col' + (animNum + 1) : col;
-				var offset:Array<Float> = offsets[FlxMath.wrap(data, 0, Std.int(offsets.length-1))];
-				addAnimationToConfig(tempConfig, 1, name, '$anim $col ${animNum + 1}', fps, offset, [], data);
-			}
+		for (i in Reflect.fields(config.animations)) {
+			var anim:NoteSplashAnim = Reflect.field(config.animations, i);
+			tempConfig.animations.set(i, anim);
+			if (anim.noteData % 4 == 0)
+				maxAnims++;
 		}
 
 		this.config = tempConfig;
 		configs.set(path, this.config);
 	}
 
-	public function spawnSplashNote(?x:Float = 0, ?y:Float = 0, ?noteData:Int = 0, ?note:Note, ?randomize:Bool = true)
-	{
+	/**
+		* Backwards compatibility with 0.7 splash txts.
+		* @param path The current image path of the splash texture.
+		* @return nothing
+	*/
+	private function createConfigTextSplash(path:String):Void {
+		var tempConfig:NoteSplashConfig = createConfig();
+		var anim:String = 'note splash';
+		var fps:Array<Null<Int>> = [22, 26];
+		var offsets:Array<Array<Float>> = [[0, 0]];
+		if (Paths.fileExists('$path.txt', TEXT)) {
+			var configFile:Array<String> = CoolUtil.listFromString(Paths.getTextFromFile('$path.txt'));
+			if (configFile.length <= 0)
+				return;
+
+			anim = configFile[0];
+			if (configFile.length <= 1)
+				return;
+
+			var framerates:Array<String> = configFile[1].split(' ');
+			fps = [Std.parseInt(framerates[0]), Std.parseInt(framerates[1])];
+			if (fps[0] == null) fps[0] = 22;
+			if (fps[1] == null) fps[1] = 26;
+
+			if (configFile.length <= 2)
+				return;
+					
+			offsets = [];
+			for (i in 2...configFile.length) {
+				if (configFile[i].trim() != '') {
+					var animOffs:Array<String> = configFile[i].split(' ');
+					var x:Float = Std.parseFloat(animOffs[0]);
+					var y:Float = Std.parseFloat(animOffs[1]);
+					if (Math.isNaN(x)) x = 0;
+					if (Math.isNaN(y)) y = 0;
+					offsets.push([x, y]);
+				}
+			}
+		}
+		
+		var failedToFind:Bool = false;
+		while (true) {
+			for (v in Note.colArray) {
+				if (!checkForAnim('$anim $v ${maxAnims+1}')) {
+					failedToFind = true;
+					break;
+				}
+			}
+			if (failedToFind) 
+				break;
+			maxAnims++;
+		}
+		
+		for (animNum in 0...maxAnims) {
+			for (i => col in Note.colArray) {
+				var data:Int = i % Note.colArray.length + (animNum * Note.colArray.length);
+				var name:String = animNum > 0 ? '$col' + (animNum + 1) : col;
+				var offset:Array<Float> = offsets[FlxMath.wrap(data, 0, Std.int(offsets.length-1))];
+				addAnimationToConfig(tempConfig, 1, name, '$anim $col ${animNum + 1}', fps, offset, [], data);
+			}
+		}
+		this.config = tempConfig;
+		configs.set(path, this.config);
+	}
+
+	/**
+		* Loads the splashes' texture, self-explanatory.
+		* @param splash The current splash texture that the player hit.
+		* @return nothing
+	*/
+	public function loadSplash(?splash:String):Void {
+		initTextureSplash(splash);
+
+		var path:String = 'images/$texture';
+		if (configs.exists(path)) {
+			initConfigSplash(splash, path);
+			return;
+		} else if (Paths.fileExists('$path.json', TEXT)) {
+			createConfigSplash(path);
+			return;
+		} else {
+			createConfigTextSplash(path);
+		}
+	}
+
+	/**
+		* Loads the splashes' texture from the pixel style, self-explanatory.
+		* @param splash The current splash texture that the player hit.
+		* @return nothing
+	*/
+	public function loadSplashPixel(?splash:String):Void {
+		initTextureSplash(splash, 'pixelUI/');
+
+		var path:String = 'images/$texture';
+		if (configs.exists(path)) {
+			initConfigSplash(splash, path);
+			return;
+		} else if (Paths.fileExists('$path.json', TEXT)) {
+			createConfigSplash(path);
+			return;
+		} else {
+			createConfigTextSplash(path);
+		}
+	}
+
+	public function spawnSplashNote(?x:Float = 0, ?y:Float = 0, ?noteData:Int = 0, ?note:Note, ?randomize:Bool = true) {
 		if (note != null && note.noteSplashData.disabled)
 			return;
 
 		aliveTime = 0;
 
-		if (!inEditor)
-		{
+		if (!inEditor) {
 			var loadedTexture:String = defaultNoteSplash + getSplashSkinPostfix();
-			if (note != null && note.noteSplashData.texture != null) loadedTexture = note.noteSplashData.texture;
-			else if (PlayState.SONG != null && PlayState.SONG.splashSkin != null && PlayState.SONG.splashSkin.length > 0) loadedTexture = PlayState.SONG.splashSkin;
+			if (note != null && note.noteSplashData.texture != null) 
+				loadedTexture = note.noteSplashData.texture;
+			else if (PlayState.SONG != null && PlayState.SONG.splashSkin != null && PlayState.SONG.splashSkin.length > 0) 
+				loadedTexture = PlayState.SONG.splashSkin;
 
-			if (texture != loadedTexture) loadSplash(loadedTexture);
+			if (texture != loadedTexture) 
+				loadSplash(loadedTexture);
 		}
 
 		setPosition(x, y);
@@ -340,7 +388,7 @@ class NoteSplash extends FlxSprite
 		if (spawned)
 		{
 			aliveTime += elapsed;
-			if (animation.curAnim == null && aliveTime >= buggedKillTime)
+			if (animation.curAnim == null || aliveTime >= buggedKillTime)
 			{
 				kill();
 				spawned = false;
@@ -373,6 +421,7 @@ class NoteSplash extends FlxSprite
 			scale: 1,
 			allowRGB: true,
 			allowPixel: true,
+			allowPixelVariant: false,
 			rgb: null
 		}
 	}

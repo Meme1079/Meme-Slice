@@ -60,11 +60,11 @@ class HXCPP_CLASS_ATTRIBUTES StrumNote_obj : public  ::flixel::FlxSprite_obj
 		::String texture;
 		int player;
 		int noteData;
-		void reloadNoteByPixel();
-		::Dynamic reloadNoteByPixel_dyn();
-
 		void reloadNoteByFunkin();
 		::Dynamic reloadNoteByFunkin_dyn();
+
+		void reloadNoteByPixel();
+		::Dynamic reloadNoteByPixel_dyn();
 
 		void reloadNote();
 		::Dynamic reloadNote_dyn();

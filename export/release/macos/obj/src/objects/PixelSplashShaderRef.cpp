@@ -47,11 +47,11 @@
 #include <states/PlayState.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_637e812d5650d12a_426_new,"objects.PixelSplashShaderRef","new",0xbfb1c94d,"objects.PixelSplashShaderRef.new","objects/NoteSplash.hx",426,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_637e812d5650d12a_434_copyValues,"objects.PixelSplashShaderRef","copyValues",0x6e00182a,"objects.PixelSplashShaderRef.copyValues","objects/NoteSplash.hx",434,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_637e812d5650d12a_448_set_enabled,"objects.PixelSplashShaderRef","set_enabled",0x1a2c9991,"objects.PixelSplashShaderRef.set_enabled","objects/NoteSplash.hx",448,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_637e812d5650d12a_455_set_pixelAmount,"objects.PixelSplashShaderRef","set_pixelAmount",0xe6e3520e,"objects.PixelSplashShaderRef.set_pixelAmount","objects/NoteSplash.hx",455,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_637e812d5650d12a_462_reset,"objects.PixelSplashShaderRef","reset",0xb44817fc,"objects.PixelSplashShaderRef.reset","objects/NoteSplash.hx",462,0xe471e78a)
+HX_DEFINE_STACK_FRAME(_hx_pos_637e812d5650d12a_475_new,"objects.PixelSplashShaderRef","new",0xbfb1c94d,"objects.PixelSplashShaderRef.new","objects/NoteSplash.hx",475,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_637e812d5650d12a_483_copyValues,"objects.PixelSplashShaderRef","copyValues",0x6e00182a,"objects.PixelSplashShaderRef.copyValues","objects/NoteSplash.hx",483,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_637e812d5650d12a_497_set_enabled,"objects.PixelSplashShaderRef","set_enabled",0x1a2c9991,"objects.PixelSplashShaderRef.set_enabled","objects/NoteSplash.hx",497,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_637e812d5650d12a_504_set_pixelAmount,"objects.PixelSplashShaderRef","set_pixelAmount",0xe6e3520e,"objects.PixelSplashShaderRef.set_pixelAmount","objects/NoteSplash.hx",504,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_637e812d5650d12a_511_reset,"objects.PixelSplashShaderRef","reset",0xb44817fc,"objects.PixelSplashShaderRef.reset","objects/NoteSplash.hx",511,0xe471e78a)
 static const Float _hx_array_data_83ce1edb_5[] = {
 	(Float)0,(Float)0,(Float)0,
 };
@@ -64,17 +64,17 @@ static const Float _hx_array_data_83ce1edb_7[] = {
 namespace objects{
 
 void PixelSplashShaderRef_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_637e812d5650d12a_426_new)
-HXLINE( 430)		this->pixelAmount = ((Float)1);
-HXLINE( 429)		this->enabled = true;
-HXLINE( 428)		this->shader =  ::objects::PixelSplashShader_obj::__alloc( HX_CTX );
-HXLINE( 470)		this->reset();
-HXLINE( 471)		this->set_enabled(true);
-HXLINE( 473)		if (!(::states::PlayState_obj::get_isPixelStage())) {
-HXLINE( 473)			this->set_pixelAmount(( (Float)(1) ));
+            	HX_GC_STACKFRAME(&_hx_pos_637e812d5650d12a_475_new)
+HXLINE( 479)		this->pixelAmount = ((Float)1);
+HXLINE( 478)		this->enabled = true;
+HXLINE( 477)		this->shader =  ::objects::PixelSplashShader_obj::__alloc( HX_CTX );
+HXLINE( 519)		this->reset();
+HXLINE( 520)		this->set_enabled(true);
+HXLINE( 522)		if (!(::states::PlayState_obj::get_isPixelStage())) {
+HXLINE( 522)			this->set_pixelAmount(( (Float)(1) ));
             		}
             		else {
-HXLINE( 474)			this->set_pixelAmount(::states::PlayState_obj::daPixelZoom);
+HXLINE( 523)			this->set_pixelAmount(::states::PlayState_obj::daPixelZoom);
             		}
             	}
 
@@ -94,29 +94,29 @@ bool PixelSplashShaderRef_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void PixelSplashShaderRef_obj::copyValues( ::shaders::RGBPalette tempShader){
-            	HX_STACKFRAME(&_hx_pos_637e812d5650d12a_434_copyValues)
-HXDLIN( 434)		if (::hx::IsNotNull( tempShader )) {
-HXLINE( 436)			{
-HXLINE( 437)				{
-HXLINE( 438)					this->shader->r->value[0] = tempShader->shader->r->value->__get(0);
-HXLINE( 439)					this->shader->g->value[0] = tempShader->shader->g->value->__get(0);
-HXLINE( 440)					this->shader->b->value[0] = tempShader->shader->b->value->__get(0);
+            	HX_STACKFRAME(&_hx_pos_637e812d5650d12a_483_copyValues)
+HXDLIN( 483)		if (::hx::IsNotNull( tempShader )) {
+HXLINE( 485)			{
+HXLINE( 486)				{
+HXLINE( 487)					this->shader->r->value[0] = tempShader->shader->r->value->__get(0);
+HXLINE( 488)					this->shader->g->value[0] = tempShader->shader->g->value->__get(0);
+HXLINE( 489)					this->shader->b->value[0] = tempShader->shader->b->value->__get(0);
             				}
-HXLINE( 437)				{
-HXLINE( 438)					this->shader->r->value[1] = tempShader->shader->r->value->__get(1);
-HXLINE( 439)					this->shader->g->value[1] = tempShader->shader->g->value->__get(1);
-HXLINE( 440)					this->shader->b->value[1] = tempShader->shader->b->value->__get(1);
+HXLINE( 486)				{
+HXLINE( 487)					this->shader->r->value[1] = tempShader->shader->r->value->__get(1);
+HXLINE( 488)					this->shader->g->value[1] = tempShader->shader->g->value->__get(1);
+HXLINE( 489)					this->shader->b->value[1] = tempShader->shader->b->value->__get(1);
             				}
-HXLINE( 437)				{
-HXLINE( 438)					this->shader->r->value[2] = tempShader->shader->r->value->__get(2);
-HXLINE( 439)					this->shader->g->value[2] = tempShader->shader->g->value->__get(2);
-HXLINE( 440)					this->shader->b->value[2] = tempShader->shader->b->value->__get(2);
+HXLINE( 486)				{
+HXLINE( 487)					this->shader->r->value[2] = tempShader->shader->r->value->__get(2);
+HXLINE( 488)					this->shader->g->value[2] = tempShader->shader->g->value->__get(2);
+HXLINE( 489)					this->shader->b->value[2] = tempShader->shader->b->value->__get(2);
             				}
             			}
-HXLINE( 442)			this->shader->mult->value[0] = tempShader->shader->mult->value->__get(0);
+HXLINE( 491)			this->shader->mult->value[0] = tempShader->shader->mult->value->__get(0);
             		}
             		else {
-HXLINE( 444)			this->set_enabled(false);
+HXLINE( 493)			this->set_enabled(false);
             		}
             	}
 
@@ -124,37 +124,37 @@ HXLINE( 444)			this->set_enabled(false);
 HX_DEFINE_DYNAMIC_FUNC1(PixelSplashShaderRef_obj,copyValues,(void))
 
 bool PixelSplashShaderRef_obj::set_enabled(bool value){
-            	HX_STACKFRAME(&_hx_pos_637e812d5650d12a_448_set_enabled)
-HXLINE( 449)		this->enabled = value;
-HXLINE( 450)		Float _hx_tmp;
-HXDLIN( 450)		if (value) {
-HXLINE( 450)			_hx_tmp = ( (Float)(1) );
+            	HX_STACKFRAME(&_hx_pos_637e812d5650d12a_497_set_enabled)
+HXLINE( 498)		this->enabled = value;
+HXLINE( 499)		Float _hx_tmp;
+HXDLIN( 499)		if (value) {
+HXLINE( 499)			_hx_tmp = ( (Float)(1) );
             		}
             		else {
-HXLINE( 450)			_hx_tmp = ( (Float)(0) );
+HXLINE( 499)			_hx_tmp = ( (Float)(0) );
             		}
-HXDLIN( 450)		this->shader->mult->value = ::Array_obj< Float >::__new(1)->init(0,_hx_tmp);
-HXLINE( 451)		return value;
+HXDLIN( 499)		this->shader->mult->value = ::Array_obj< Float >::__new(1)->init(0,_hx_tmp);
+HXLINE( 500)		return value;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(PixelSplashShaderRef_obj,set_enabled,return )
 
 Float PixelSplashShaderRef_obj::set_pixelAmount(Float value){
-            	HX_STACKFRAME(&_hx_pos_637e812d5650d12a_455_set_pixelAmount)
-HXLINE( 456)		this->pixelAmount = value;
-HXLINE( 457)		this->shader->uBlocksize->value = ::Array_obj< Float >::__new(2)->init(0,value)->init(1,value);
-HXLINE( 458)		return value;
+            	HX_STACKFRAME(&_hx_pos_637e812d5650d12a_504_set_pixelAmount)
+HXLINE( 505)		this->pixelAmount = value;
+HXLINE( 506)		this->shader->uBlocksize->value = ::Array_obj< Float >::__new(2)->init(0,value)->init(1,value);
+HXLINE( 507)		return value;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(PixelSplashShaderRef_obj,set_pixelAmount,return )
 
 void PixelSplashShaderRef_obj::reset(){
-            	HX_STACKFRAME(&_hx_pos_637e812d5650d12a_462_reset)
-HXLINE( 463)		this->shader->r->value = ::Array_obj< Float >::fromData( _hx_array_data_83ce1edb_5,3);
-HXLINE( 464)		this->shader->g->value = ::Array_obj< Float >::fromData( _hx_array_data_83ce1edb_6,3);
-HXLINE( 465)		this->shader->b->value = ::Array_obj< Float >::fromData( _hx_array_data_83ce1edb_7,3);
+            	HX_STACKFRAME(&_hx_pos_637e812d5650d12a_511_reset)
+HXLINE( 512)		this->shader->r->value = ::Array_obj< Float >::fromData( _hx_array_data_83ce1edb_5,3);
+HXLINE( 513)		this->shader->g->value = ::Array_obj< Float >::fromData( _hx_array_data_83ce1edb_6,3);
+HXLINE( 514)		this->shader->b->value = ::Array_obj< Float >::fromData( _hx_array_data_83ce1edb_7,3);
             	}
 
 

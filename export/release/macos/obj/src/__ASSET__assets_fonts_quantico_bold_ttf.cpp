@@ -11,13 +11,13 @@
 #include <lime/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_53e7974752bad0e1_1463_new,"__ASSET__assets_fonts_quantico_bold_ttf","new",0xd0f69aa4,"__ASSET__assets_fonts_quantico_bold_ttf.new","ManifestResources.hx",1463,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_53e7974752bad0e1_1469_new,"__ASSET__assets_fonts_quantico_bold_ttf","new",0xd0f69aa4,"__ASSET__assets_fonts_quantico_bold_ttf.new","ManifestResources.hx",1469,0xf77aa668)
 
 void __ASSET__assets_fonts_quantico_bold_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_53e7974752bad0e1_1463_new)
-HXDLIN(1463)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Quantico-Bold.ttf",a1,e8,c3,6f));
-HXDLIN(1463)		this->name = HX_("Quantico-Bold",40,1a,26,29);
-HXDLIN(1463)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_53e7974752bad0e1_1469_new)
+HXDLIN(1469)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Quantico-Bold.ttf",a1,e8,c3,6f));
+HXDLIN(1469)		this->name = HX_("Quantico-Bold",40,1a,26,29);
+HXDLIN(1469)		super::__construct(null());
             	}
 
 Dynamic __ASSET__assets_fonts_quantico_bold_ttf_obj::__CreateEmpty() { return new __ASSET__assets_fonts_quantico_bold_ttf_obj; }

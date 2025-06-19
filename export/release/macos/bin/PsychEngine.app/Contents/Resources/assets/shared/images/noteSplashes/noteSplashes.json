@@ -114,6 +114,7 @@
 		}
 	},
 	"allowRGB": true,
-	"allowPixel": true,
+	"allowPixel": false,
+	"allowPixelVariant": true,
 	"scale": 1
 }
