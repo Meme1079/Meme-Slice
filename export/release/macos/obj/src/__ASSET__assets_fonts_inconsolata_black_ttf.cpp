@@ -11,13 +11,13 @@
 #include <lime/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_ea69db107dcbb776_1472_new,"__ASSET__assets_fonts_inconsolata_black_ttf","new",0x9cd1e2ed,"__ASSET__assets_fonts_inconsolata_black_ttf.new","ManifestResources.hx",1472,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_ea69db107dcbb776_1469_new,"__ASSET__assets_fonts_inconsolata_black_ttf","new",0x9cd1e2ed,"__ASSET__assets_fonts_inconsolata_black_ttf.new","ManifestResources.hx",1469,0xf77aa668)
 
 void __ASSET__assets_fonts_inconsolata_black_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_ea69db107dcbb776_1472_new)
-HXDLIN(1472)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-Black.ttf",ce,4c,6b,7b));
-HXDLIN(1472)		this->name = HX_("Inconsolata Black",9a,0a,bf,23);
-HXDLIN(1472)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_ea69db107dcbb776_1469_new)
+HXDLIN(1469)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-Black.ttf",ce,4c,6b,7b));
+HXDLIN(1469)		this->name = HX_("Inconsolata Black",9a,0a,bf,23);
+HXDLIN(1469)		super::__construct(null());
             	}
 
 Dynamic __ASSET__assets_fonts_inconsolata_black_ttf_obj::__CreateEmpty() { return new __ASSET__assets_fonts_inconsolata_black_ttf_obj; }

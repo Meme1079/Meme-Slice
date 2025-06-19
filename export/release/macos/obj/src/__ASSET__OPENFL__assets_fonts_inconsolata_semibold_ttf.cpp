@@ -14,13 +14,13 @@
 #include <openfl/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_0c4d5406d0b10571_1541_new,"__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf","new",0x236e38e7,"__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf.new","ManifestResources.hx",1541,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_0c4d5406d0b10571_1538_new,"__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf","new",0x236e38e7,"__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf.new","ManifestResources.hx",1538,0xf77aa668)
 
 void __ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_0c4d5406d0b10571_1541_new)
-HXDLIN(1541)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-SemiBold.ttf",54,c2,8c,a2));
-HXDLIN(1541)		this->name = HX_("Inconsolata SemiBold",18,0f,bc,4e);
-HXDLIN(1541)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_0c4d5406d0b10571_1538_new)
+HXDLIN(1538)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-SemiBold.ttf",54,c2,8c,a2));
+HXDLIN(1538)		this->name = HX_("Inconsolata SemiBold",18,0f,bc,4e);
+HXDLIN(1538)		super::__construct(null());
             	}
 
 Dynamic __ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf_obj::__CreateEmpty() { return new __ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf_obj; }

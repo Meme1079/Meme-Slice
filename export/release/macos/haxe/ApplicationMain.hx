@@ -35,7 +35,7 @@ class ApplicationMain
 		ManifestResources.init(config);
 		#end
 
-		app.meta["build"] = "18";
+		app.meta["build"] = "19";
 		app.meta["company"] = "Meme1079";
 		app.meta["file"] = "PsychEngine";
 		app.meta["name"] = "Friday Night Funkin': Psych Engine - Meme-Slice";
