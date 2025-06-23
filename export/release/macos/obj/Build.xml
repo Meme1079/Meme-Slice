@@ -908,7 +908,7 @@
    <depend name="include/backend/MusicBeatSubstate.h"/>
    <depend name="include/backend/Paths.h"/>
    <depend name="include/backend/SaveVariables.h"/>
-   <depend name="include/cutscenes/DialogueBox.h"/>
+   <depend name="include/cutscenes/DialogueBoxMeme.h"/>
    <depend name="include/flixel/FlxBasic.h"/>
    <depend name="include/flixel/FlxCamera.h"/>
    <depend name="include/flixel/FlxG.h"/>
@@ -16738,6 +16738,34 @@
    <depend name="include/openfl/media/SoundChannel.h"/>
    <depend name="include/sys/FileSystem.h"/>
    <depend name="include/sys/io/File.h"/>
+  </file>
+  <file name="src/cutscenes/DialogueBoxMeme.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/backend/Controls.h"/>
+   <depend name="include/backend/Language.h"/>
+   <depend name="include/backend/Paths.h"/>
+   <depend name="include/cutscenes/DialogueBoxMeme.h"/>
+   <depend name="include/flixel/FlxBasic.h"/>
+   <depend name="include/flixel/FlxG.h"/>
+   <depend name="include/flixel/FlxObject.h"/>
+   <depend name="include/flixel/FlxSprite.h"/>
+   <depend name="include/flixel/addons/text/FlxTypeText.h"/>
+   <depend name="include/flixel/group/FlxTypedSpriteGroup.h"/>
+   <depend name="include/flixel/math/FlxBasePoint.h"/>
+   <depend name="include/flixel/sound/FlxSound.h"/>
+   <depend name="include/flixel/sound/FlxSoundGroup.h"/>
+   <depend name="include/flixel/system/frontEnds/SoundFrontEnd.h"/>
+   <depend name="include/flixel/text/FlxText.h"/>
+   <depend name="include/flixel/text/FlxTextBorderStyle.h"/>
+   <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPooled.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/openfl/events/EventDispatcher.h"/>
+   <depend name="include/openfl/events/IEventDispatcher.h"/>
+   <depend name="include/openfl/media/Sound.h"/>
+   <depend name="include/sys/FileSystem.h"/>
   </file>
   <file name="src/cutscenes/DialogueBox.cpp" >
    <depend name="include/EReg.h"/>

@@ -1,0 +1,8 @@
+/usr/local/lib/haxe/std/haxe/format/JsonParser.hx (line 318)
+/usr/local/lib/haxe/std/haxe/format/JsonParser.hx (line 147)
+/usr/local/lib/haxe/std/haxe/format/JsonParser.hx (line 57)
+states/editors/DialogueEditorState.hx (line 440)
+
+Uncaught Error: Invalid char 58 at position 0
+
+> Crash Handler written by: sqirra-rng

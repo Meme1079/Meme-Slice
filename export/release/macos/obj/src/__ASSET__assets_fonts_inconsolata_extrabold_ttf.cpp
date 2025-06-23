@@ -11,13 +11,13 @@
 #include <lime/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_33cccbcc7b2b98a6_1480_new,"__ASSET__assets_fonts_inconsolata_extrabold_ttf","new",0x53ee05c3,"__ASSET__assets_fonts_inconsolata_extrabold_ttf.new","ManifestResources.hx",1480,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_33cccbcc7b2b98a6_1506_new,"__ASSET__assets_fonts_inconsolata_extrabold_ttf","new",0x53ee05c3,"__ASSET__assets_fonts_inconsolata_extrabold_ttf.new","ManifestResources.hx",1506,0xf77aa668)
 
 void __ASSET__assets_fonts_inconsolata_extrabold_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_33cccbcc7b2b98a6_1480_new)
-HXDLIN(1480)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-ExtraBold.ttf",c4,11,56,08));
-HXDLIN(1480)		this->name = HX_("Inconsolata ExtraBold",90,0e,58,c3);
-HXDLIN(1480)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_33cccbcc7b2b98a6_1506_new)
+HXDLIN(1506)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-ExtraBold.ttf",c4,11,56,08));
+HXDLIN(1506)		this->name = HX_("Inconsolata ExtraBold",90,0e,58,c3);
+HXDLIN(1506)		super::__construct(null());
             	}
 
 Dynamic __ASSET__assets_fonts_inconsolata_extrabold_ttf_obj::__CreateEmpty() { return new __ASSET__assets_fonts_inconsolata_extrabold_ttf_obj; }

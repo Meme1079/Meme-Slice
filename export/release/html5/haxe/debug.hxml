@@ -62,8 +62,6 @@
 --macro flixel.system.macros.FlxDefines.run()
 --macro allowPackage('flash')
 --macro include('my.pack')
---connect
-6000
 -js export/release/html5/bin/PsychEngine.js
 -cp export/release/html5/haxe
 -D html5

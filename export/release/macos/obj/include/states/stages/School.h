@@ -10,7 +10,7 @@
 #include <backend/BaseStage.h>
 #endif
 HX_DECLARE_CLASS1(backend,BaseStage)
-HX_DECLARE_CLASS1(cutscenes,DialogueBox)
+HX_DECLARE_CLASS1(cutscenes,DialogueBoxMeme)
 HX_DECLARE_CLASS1(flixel,FlxBasic)
 HX_DECLARE_CLASS1(flixel,FlxObject)
 HX_DECLARE_CLASS1(flixel,FlxSprite)
@@ -56,15 +56,12 @@ class HXCPP_CLASS_ATTRIBUTES School_obj : public  ::backend::BaseStage_obj
 		::String __ToString() const { return HX_("School",94,2c,5d,75); }
 
 		 ::states::stages::objects::BackgroundGirls bgGirls;
+		 ::cutscenes::DialogueBoxMeme doof;
 		void create();
 
 		void beatHit();
 
 		void eventCalled(::String eventName,::String value1,::String value2, ::Dynamic flValue1, ::Dynamic flValue2,Float strumTime);
-
-		 ::cutscenes::DialogueBox doof;
-		void initDoof();
-		::Dynamic initDoof_dyn();
 
 		void schoolIntro();
 		::Dynamic schoolIntro_dyn();

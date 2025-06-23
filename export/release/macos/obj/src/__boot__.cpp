@@ -4321,6 +4321,9 @@
 #ifndef INCLUDED_debug_FPSCounter
 #include <debug/FPSCounter.h>
 #endif
+#ifndef INCLUDED_cutscenes_DialogueBoxMeme
+#include <cutscenes/DialogueBoxMeme.h>
+#endif
 #ifndef INCLUDED_cutscenes_DialogueBox
 #include <cutscenes/DialogueBox.h>
 #endif
@@ -6131,6 +6134,7 @@ __files__boot();
 ::flixel::_hx_system::frontEnds::AssetFrontEnd_obj::__register();
 ::flixel::IFlxBasic_obj::__register();
 ::debug::FPSCounter_obj::__register();
+::cutscenes::DialogueBoxMeme_obj::__register();
 ::cutscenes::DialogueBox_obj::__register();
 ::cutscenes::CutsceneHandler_obj::__register();
 ::crowplexus::iris::IrisConfig_obj::__register();

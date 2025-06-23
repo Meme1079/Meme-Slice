@@ -1,0 +1,15 @@
+flixel/group/FlxSpriteGroup.hx (line 313)
+flixel/group/FlxSpriteGroup.hx (line 283)
+cutscenes/DialogueBoxMeme.hx (line 42)
+states/stages/School.hx (line 86)
+backend/BaseStage.hx (line 61)
+states/stages/School.hx (line 10)
+states/PlayState.hx (line 389)
+flixel/FlxGame.hx (line 588)
+flixel/FlxGame.hx (line 675)
+flixel/FlxGame.hx (line 628)
+flixel/FlxGame.hx (line 501)
+
+Uncaught Error: Null Object Reference
+
+> Crash Handler written by: sqirra-rng

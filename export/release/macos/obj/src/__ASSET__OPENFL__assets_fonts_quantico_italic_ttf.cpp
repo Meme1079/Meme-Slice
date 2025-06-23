@@ -14,13 +14,13 @@
 #include <openfl/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_0e054f839e498afa_1556_new,"__ASSET__OPENFL__assets_fonts_quantico_italic_ttf","new",0x63b4b73f,"__ASSET__OPENFL__assets_fonts_quantico_italic_ttf.new","ManifestResources.hx",1556,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_0e054f839e498afa_1582_new,"__ASSET__OPENFL__assets_fonts_quantico_italic_ttf","new",0x63b4b73f,"__ASSET__OPENFL__assets_fonts_quantico_italic_ttf.new","ManifestResources.hx",1582,0xf77aa668)
 
 void __ASSET__OPENFL__assets_fonts_quantico_italic_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_0e054f839e498afa_1556_new)
-HXDLIN(1556)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Quantico-Italic.ttf",8c,b8,4d,ae));
-HXDLIN(1556)		this->name = HX_("Quantico-Italic",6b,ac,d2,f8);
-HXDLIN(1556)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_0e054f839e498afa_1582_new)
+HXDLIN(1582)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Quantico-Italic.ttf",8c,b8,4d,ae));
+HXDLIN(1582)		this->name = HX_("Quantico-Italic",6b,ac,d2,f8);
+HXDLIN(1582)		super::__construct(null());
             	}
 
 Dynamic __ASSET__OPENFL__assets_fonts_quantico_italic_ttf_obj::__CreateEmpty() { return new __ASSET__OPENFL__assets_fonts_quantico_italic_ttf_obj; }

@@ -35,10 +35,10 @@ class ApplicationMain
 		ManifestResources.init(config);
 		#end
 
-		app.meta["build"] = "11";
+		app.meta["build"] = "22";
 		app.meta["company"] = "Meme1079";
 		app.meta["file"] = "PsychEngine";
-		app.meta["name"] = "Friday Night Funkin': Psych Engine - Meme-Slice";
+		app.meta["name"] = "Meme-Slice";
 		app.meta["packageName"] = "com.shadowmario.psychengine";
 		app.meta["version"] = "0.2.8";
 
@@ -60,7 +60,7 @@ class ApplicationMain
 			minimized: false,
 			parameters: {},
 			resizable: true,
-			title: "Friday Night Funkin': Psych Engine - Meme-Slice",
+			title: "Meme-Slice",
 			width: 1280,
 			x: null,
 			y: null,
@@ -102,7 +102,7 @@ class ApplicationMain
 		app.createWindow(attributes);
 		
 		#elseif air
-		app.window.title = "Friday Night Funkin': Psych Engine - Meme-Slice";
+		app.window.title = "Meme-Slice";
 		#else
 		app.window.context.attributes.background = 0;
 		app.window.frameRate = 60;

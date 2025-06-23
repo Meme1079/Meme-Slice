@@ -72,52 +72,52 @@
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_ba0947b87f4f6853_3_new,"states.stages.objects.BackgroundGirls","new",0xf867f034,"states.stages.objects.BackgroundGirls.new","states/stages/objects/BackgroundGirls.hx",3,0x40c9c01d)
-HX_LOCAL_STACK_FRAME(_hx_pos_ba0947b87f4f6853_23_swapDanceType,"states.stages.objects.BackgroundGirls","swapDanceType",0x61b6b34e,"states.stages.objects.BackgroundGirls.swapDanceType","states/stages/objects/BackgroundGirls.hx",23,0x40c9c01d)
-HX_LOCAL_STACK_FRAME(_hx_pos_ba0947b87f4f6853_36_dance,"states.stages.objects.BackgroundGirls","dance",0x11be4007,"states.stages.objects.BackgroundGirls.dance","states/stages/objects/BackgroundGirls.hx",36,0x40c9c01d)
+HX_LOCAL_STACK_FRAME(_hx_pos_ba0947b87f4f6853_19_swapDanceType,"states.stages.objects.BackgroundGirls","swapDanceType",0x61b6b34e,"states.stages.objects.BackgroundGirls.swapDanceType","states/stages/objects/BackgroundGirls.hx",19,0x40c9c01d)
+HX_LOCAL_STACK_FRAME(_hx_pos_ba0947b87f4f6853_31_dance,"states.stages.objects.BackgroundGirls","dance",0x11be4007,"states.stages.objects.BackgroundGirls.dance","states/stages/objects/BackgroundGirls.hx",31,0x40c9c01d)
 namespace states{
 namespace stages{
 namespace objects{
 
 void BackgroundGirls_obj::__construct(Float x,Float y){
             	HX_STACKFRAME(&_hx_pos_ba0947b87f4f6853_3_new)
-HXLINE(  20)		this->danceDir = false;
-HXLINE(   5)		this->isPissed = true;
-HXLINE(   8)		super::__construct(x,y,null());
-HXLINE(  11)		::String parentFolder = null();
-HXDLIN(  11)		if ((HX_("weeb/bgFreaks",d9,71,bd,0f).indexOf(HX_("psychic",d5,09,aa,19),null()) != -1)) {
-HXLINE(  11)			::haxe::Log_obj::trace(HX_("weeb/bgFreaks",d9,71,bd,0f), ::Dynamic(::hx::Anon_obj::Create(5)
+HXLINE(  18)		this->danceDir = false;
+HXLINE(   4)		this->isPissed = true;
+HXLINE(   6)		super::__construct(x,y,null());
+HXLINE(   9)		::String parentFolder = null();
+HXDLIN(   9)		if ((HX_("weeb/bgFreaks",d9,71,bd,0f).indexOf(HX_("psychic",d5,09,aa,19),null()) != -1)) {
+HXLINE(   9)			::haxe::Log_obj::trace(HX_("weeb/bgFreaks",d9,71,bd,0f), ::Dynamic(::hx::Anon_obj::Create(5)
             				->setFixed(0,HX_("className",a3,92,3d,dc),HX_("backend.Paths",34,17,99,92))
             				->setFixed(1,HX_("customParams",d7,51,18,ed),::cpp::VirtualArray_obj::__new(2)->init(0,parentFolder)->init(1,true))
             				->setFixed(2,HX_("methodName",cc,19,0f,12),HX_("getSparrowAtlas",55,ab,b7,a7))
             				->setFixed(3,HX_("fileName",e7,5a,43,62),HX_("source/backend/Paths.hx",ff,43,8c,3d))
             				->setFixed(4,HX_("lineNumber",dd,81,22,76),372)));
             		}
-HXDLIN(  11)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("weeb/bgFreaks",d9,71,bd,0f),parentFolder,true);
-HXDLIN(  11)		bool xmlExists = false;
-HXDLIN(  11)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("weeb/bgFreaks",d9,71,bd,0f)) + HX_(".xml",69,3e,c3,1e)));
-HXDLIN(  11)		if (::sys::FileSystem_obj::exists(xml)) {
-HXLINE(  11)			xmlExists = true;
+HXDLIN(   9)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("weeb/bgFreaks",d9,71,bd,0f),parentFolder,true);
+HXDLIN(   9)		bool xmlExists = false;
+HXDLIN(   9)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("weeb/bgFreaks",d9,71,bd,0f)) + HX_(".xml",69,3e,c3,1e)));
+HXDLIN(   9)		if (::sys::FileSystem_obj::exists(xml)) {
+HXLINE(   9)			xmlExists = true;
             		}
-HXDLIN(  11)		 ::Dynamic _hx_tmp;
-HXDLIN(  11)		if (xmlExists) {
-HXLINE(  11)			_hx_tmp = ::sys::io::File_obj::getContent(xml);
+HXDLIN(   9)		 ::Dynamic _hx_tmp;
+HXDLIN(   9)		if (xmlExists) {
+HXLINE(   9)			_hx_tmp = ::sys::io::File_obj::getContent(xml);
             		}
             		else {
-HXLINE(  11)			::String key = (HX_("images/",77,50,74,c1) + HX_("weeb/bgFreaks",d9,71,bd,0f));
-HXDLIN(  11)			::Dynamic this1 = ::backend::Language_obj::phrases;
-HXDLIN(  11)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key).toLowerCase());
-HXDLIN(  11)			if (::hx::IsNotNull( str )) {
-HXLINE(  11)				key = str;
+HXLINE(   9)			::String key = (HX_("images/",77,50,74,c1) + HX_("weeb/bgFreaks",d9,71,bd,0f));
+HXDLIN(   9)			::Dynamic this1 = ::backend::Language_obj::phrases;
+HXDLIN(   9)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key).toLowerCase());
+HXDLIN(   9)			if (::hx::IsNotNull( str )) {
+HXLINE(   9)				key = str;
             			}
-HXDLIN(  11)			_hx_tmp = ::backend::Paths_obj::getPath((key + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
+HXDLIN(   9)			_hx_tmp = ::backend::Paths_obj::getPath((key + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
             		}
-HXDLIN(  11)		this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded,_hx_tmp));
-HXLINE(  12)		this->set_antialiasing(false);
-HXLINE(  13)		this->swapDanceType();
-HXLINE(  15)		Float _hx_tmp1 = this->get_width();
-HXDLIN(  15)		this->setGraphicSize(::Std_obj::_hx_int((_hx_tmp1 * ::states::PlayState_obj::daPixelZoom)),null());
-HXLINE(  16)		this->updateHitbox();
-HXLINE(  17)		this->animation->play(HX_("danceLeft",da,cc,f9,df),null(),null(),null());
+HXDLIN(   9)		this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded,_hx_tmp));
+HXLINE(  10)		this->set_antialiasing(false);
+HXLINE(  11)		this->swapDanceType();
+HXLINE(  13)		Float _hx_tmp1 = this->get_width();
+HXDLIN(  13)		this->setGraphicSize(::Std_obj::_hx_int((_hx_tmp1 * ::states::PlayState_obj::daPixelZoom)),null());
+HXLINE(  14)		this->updateHitbox();
+HXLINE(  15)		this->animation->play(HX_("danceLeft",da,cc,f9,df),null(),null(),null());
             	}
 
 Dynamic BackgroundGirls_obj::__CreateEmpty() { return new BackgroundGirls_obj; }
@@ -144,82 +144,82 @@ bool BackgroundGirls_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void BackgroundGirls_obj::swapDanceType(){
-            	HX_STACKFRAME(&_hx_pos_ba0947b87f4f6853_23_swapDanceType)
-HXLINE(  24)		this->isPissed = !(this->isPissed);
-HXLINE(  25)		if (!(this->isPissed)) {
-HXLINE(  26)			 ::flixel::animation::FlxAnimationController _hx_tmp = this->animation;
-HXDLIN(  26)			::Array< int > dumbArray = ::Array_obj< int >::__new(0);
-HXDLIN(  26)			{
-HXLINE(  26)				int _g = 0;
-HXDLIN(  26)				int _g1 = 14;
-HXDLIN(  26)				while((_g < _g1)){
-HXLINE(  26)					_g = (_g + 1);
-HXDLIN(  26)					int i = (_g - 1);
-HXDLIN(  26)					dumbArray->push(i);
+            	HX_STACKFRAME(&_hx_pos_ba0947b87f4f6853_19_swapDanceType)
+HXLINE(  20)		this->isPissed = !(this->isPissed);
+HXLINE(  21)		if (!(this->isPissed)) {
+HXLINE(  22)			 ::flixel::animation::FlxAnimationController _hx_tmp = this->animation;
+HXDLIN(  22)			::Array< int > dumbArray = ::Array_obj< int >::__new(0);
+HXDLIN(  22)			{
+HXLINE(  22)				int _g = 0;
+HXDLIN(  22)				int _g1 = 14;
+HXDLIN(  22)				while((_g < _g1)){
+HXLINE(  22)					_g = (_g + 1);
+HXDLIN(  22)					int i = (_g - 1);
+HXDLIN(  22)					dumbArray->push(i);
             				}
             			}
-HXDLIN(  26)			_hx_tmp->addByIndices(HX_("danceLeft",da,cc,f9,df),HX_("BG girls group",1b,d2,55,9d),dumbArray,HX_("",00,00,00,00),24,false,null(),null());
-HXLINE(  27)			 ::flixel::animation::FlxAnimationController _hx_tmp1 = this->animation;
-HXDLIN(  27)			 ::Dynamic min = 15;
-HXDLIN(  27)			if (::hx::IsNull( min )) {
-HXLINE(  27)				min = 0;
+HXDLIN(  22)			_hx_tmp->addByIndices(HX_("danceLeft",da,cc,f9,df),HX_("BG girls group",1b,d2,55,9d),dumbArray,HX_("",00,00,00,00),24,false,null(),null());
+HXLINE(  23)			 ::flixel::animation::FlxAnimationController _hx_tmp1 = this->animation;
+HXDLIN(  23)			 ::Dynamic min = 15;
+HXDLIN(  23)			if (::hx::IsNull( min )) {
+HXLINE(  23)				min = 0;
             			}
-HXDLIN(  27)			::Array< int > dumbArray1 = ::Array_obj< int >::__new(0);
-HXDLIN(  27)			{
-HXLINE(  27)				int _g2 = ( (int)(min) );
-HXDLIN(  27)				int _g3 = 30;
-HXDLIN(  27)				while((_g2 < _g3)){
-HXLINE(  27)					_g2 = (_g2 + 1);
-HXDLIN(  27)					int i1 = (_g2 - 1);
-HXDLIN(  27)					dumbArray1->push(i1);
+HXDLIN(  23)			::Array< int > dumbArray1 = ::Array_obj< int >::__new(0);
+HXDLIN(  23)			{
+HXLINE(  23)				int _g2 = ( (int)(min) );
+HXDLIN(  23)				int _g3 = 30;
+HXDLIN(  23)				while((_g2 < _g3)){
+HXLINE(  23)					_g2 = (_g2 + 1);
+HXDLIN(  23)					int i1 = (_g2 - 1);
+HXDLIN(  23)					dumbArray1->push(i1);
             				}
             			}
-HXDLIN(  27)			_hx_tmp1->addByIndices(HX_("danceRight",a9,7f,a6,91),HX_("BG girls group",1b,d2,55,9d),dumbArray1,HX_("",00,00,00,00),24,false,null(),null());
+HXDLIN(  23)			_hx_tmp1->addByIndices(HX_("danceRight",a9,7f,a6,91),HX_("BG girls group",1b,d2,55,9d),dumbArray1,HX_("",00,00,00,00),24,false,null(),null());
             		}
             		else {
-HXLINE(  29)			 ::flixel::animation::FlxAnimationController _hx_tmp2 = this->animation;
-HXDLIN(  29)			::Array< int > dumbArray2 = ::Array_obj< int >::__new(0);
-HXDLIN(  29)			{
-HXLINE(  29)				int _g4 = 0;
-HXDLIN(  29)				int _g5 = 14;
-HXDLIN(  29)				while((_g4 < _g5)){
-HXLINE(  29)					_g4 = (_g4 + 1);
-HXDLIN(  29)					int i2 = (_g4 - 1);
-HXDLIN(  29)					dumbArray2->push(i2);
+HXLINE(  25)			 ::flixel::animation::FlxAnimationController _hx_tmp2 = this->animation;
+HXDLIN(  25)			::Array< int > dumbArray2 = ::Array_obj< int >::__new(0);
+HXDLIN(  25)			{
+HXLINE(  25)				int _g4 = 0;
+HXDLIN(  25)				int _g5 = 14;
+HXDLIN(  25)				while((_g4 < _g5)){
+HXLINE(  25)					_g4 = (_g4 + 1);
+HXDLIN(  25)					int i2 = (_g4 - 1);
+HXDLIN(  25)					dumbArray2->push(i2);
             				}
             			}
-HXDLIN(  29)			_hx_tmp2->addByIndices(HX_("danceLeft",da,cc,f9,df),HX_("BG fangirls dissuaded",b1,42,22,06),dumbArray2,HX_("",00,00,00,00),24,false,null(),null());
-HXLINE(  30)			 ::flixel::animation::FlxAnimationController _hx_tmp3 = this->animation;
-HXDLIN(  30)			 ::Dynamic min1 = 15;
-HXDLIN(  30)			if (::hx::IsNull( min1 )) {
-HXLINE(  30)				min1 = 0;
+HXDLIN(  25)			_hx_tmp2->addByIndices(HX_("danceLeft",da,cc,f9,df),HX_("BG fangirls dissuaded",b1,42,22,06),dumbArray2,HX_("",00,00,00,00),24,false,null(),null());
+HXLINE(  26)			 ::flixel::animation::FlxAnimationController _hx_tmp3 = this->animation;
+HXDLIN(  26)			 ::Dynamic min1 = 15;
+HXDLIN(  26)			if (::hx::IsNull( min1 )) {
+HXLINE(  26)				min1 = 0;
             			}
-HXDLIN(  30)			::Array< int > dumbArray3 = ::Array_obj< int >::__new(0);
-HXDLIN(  30)			{
-HXLINE(  30)				int _g6 = ( (int)(min1) );
-HXDLIN(  30)				int _g7 = 30;
-HXDLIN(  30)				while((_g6 < _g7)){
-HXLINE(  30)					_g6 = (_g6 + 1);
-HXDLIN(  30)					int i3 = (_g6 - 1);
-HXDLIN(  30)					dumbArray3->push(i3);
+HXDLIN(  26)			::Array< int > dumbArray3 = ::Array_obj< int >::__new(0);
+HXDLIN(  26)			{
+HXLINE(  26)				int _g6 = ( (int)(min1) );
+HXDLIN(  26)				int _g7 = 30;
+HXDLIN(  26)				while((_g6 < _g7)){
+HXLINE(  26)					_g6 = (_g6 + 1);
+HXDLIN(  26)					int i3 = (_g6 - 1);
+HXDLIN(  26)					dumbArray3->push(i3);
             				}
             			}
-HXDLIN(  30)			_hx_tmp3->addByIndices(HX_("danceRight",a9,7f,a6,91),HX_("BG fangirls dissuaded",b1,42,22,06),dumbArray3,HX_("",00,00,00,00),24,false,null(),null());
+HXDLIN(  26)			_hx_tmp3->addByIndices(HX_("danceRight",a9,7f,a6,91),HX_("BG fangirls dissuaded",b1,42,22,06),dumbArray3,HX_("",00,00,00,00),24,false,null(),null());
             		}
-HXLINE(  32)		this->dance();
+HXLINE(  28)		this->dance();
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(BackgroundGirls_obj,swapDanceType,(void))
 
 void BackgroundGirls_obj::dance(){
-            	HX_STACKFRAME(&_hx_pos_ba0947b87f4f6853_36_dance)
-HXLINE(  37)		this->danceDir = !(this->danceDir);
-HXLINE(  39)		if (this->danceDir) {
-HXLINE(  40)			this->animation->play(HX_("danceRight",a9,7f,a6,91),true,null(),null());
+            	HX_STACKFRAME(&_hx_pos_ba0947b87f4f6853_31_dance)
+HXLINE(  32)		this->danceDir = !(this->danceDir);
+HXLINE(  34)		if (this->danceDir) {
+HXLINE(  35)			this->animation->play(HX_("danceRight",a9,7f,a6,91),true,null(),null());
             		}
             		else {
-HXLINE(  42)			this->animation->play(HX_("danceLeft",da,cc,f9,df),true,null(),null());
+HXLINE(  37)			this->animation->play(HX_("danceLeft",da,cc,f9,df),true,null(),null());
             		}
             	}
 

@@ -3,12 +3,14 @@ package states.stages;
 import states.stages.objects.*;
 import substates.GameOverSubstate;
 import cutscenes.DialogueBox;
+import cutscenes.DialogueBoxMeme;
 
 import openfl.utils.Assets as OpenFlAssets;
 
-class School extends BaseStage
-{
+class School extends BaseStage {
 	var bgGirls:BackgroundGirls;
+
+	var doof:DialogueBoxMeme;
 	override function create()
 	{
 		var _song = PlayState.SONG;
@@ -71,7 +73,7 @@ class School extends BaseStage
 			bgGirls.scrollFactor.set(0.9, 0.9);
 			add(bgGirls);
 		}
-		setDefaultGF('gf-pixel');
+		//setDefaultGF('gf-pixel');
 
 		switch (songName)
 		{
@@ -81,62 +83,33 @@ class School extends BaseStage
 			case 'roses':
 				FlxG.sound.play(Paths.sound('ANGRY_TEXT_BOX'));
 		}
-		if(isStoryMode && !seenCutscene)
-		{
+
+		if (isStoryMode && !seenCutscene) {
 			if(songName == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
-			initDoof();
-			setStartCallback(schoolIntro);
 		}
+
+		doof = new DialogueBoxMeme();
+		doof.cameras = [camHUD];
+
+		setStartCallback(schoolIntro);
 	}
 
-	override function beatHit()
-	{
-		if(bgGirls != null) bgGirls.dance();
+	override function beatHit() {
+		if (bgGirls != null) 
+			bgGirls.dance();
 	}
 
 	// For events
 	override function eventCalled(eventName:String, value1:String, value2:String, flValue1:Null<Float>, flValue2:Null<Float>, strumTime:Float)
 	{
-		switch(eventName)
-		{
+		switch (eventName) {
 			case "BG Freaks Expression":
-				if(bgGirls != null) bgGirls.swapDanceType();
+				if (bgGirls != null) 
+					bgGirls.swapDanceType();
 		}
 	}
 
-	var doof:DialogueBox = null;
-	function initDoof()
-	{
-		var file:String = Paths.txt('$songName/${songName}Dialogue_${ClientPrefs.data.language}'); //Checks for vanilla/Senpai dialogue
-		#if MODS_ALLOWED
-		if (!FileSystem.exists(file))
-		#else
-		if (!OpenFlAssets.exists(file))
-		#end
-		{
-			file = Paths.txt('$songName/${songName}Dialogue');
-		}
-
-		#if MODS_ALLOWED
-		if (!FileSystem.exists(file))
-		#else
-		if (!OpenFlAssets.exists(file))
-		#end
-		{
-			startCountdown();
-			return;
-		}
-
-		doof = new DialogueBox(false, CoolUtil.coolTextFile(file));
-		doof.cameras = [camHUD];
-		doof.scrollFactor.set();
-		doof.finishThing = startCountdown;
-		doof.nextDialogueThing = PlayState.instance.startNextDialogue;
-		doof.skipDialogueThing = PlayState.instance.skipDialogue;
-	}
-	
-	function schoolIntro():Void
-	{
+	function schoolIntro():Void {
 		inCutscene = true;
 		var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 		black.scrollFactor.set();
@@ -148,11 +121,7 @@ class School extends BaseStage
 
 			if (black.alpha <= 0)
 			{
-				if (doof != null)
-					add(doof);
-				else
-					startCountdown();
-
+				add(doof);
 				remove(black);
 				black.destroy();
 			}

@@ -451,9 +451,6 @@ import sys.FileSystem;
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_cocoa_inst_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_cocoa_voices_player_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_senpai_voices_opponent_ogg extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_senpai_fart_voices_opponent_ogg extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_senpai_fart_inst_ogg extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_senpai_fart_voices_player_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_senpai_inst_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_senpai_voices_player_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_satin_panties_voices_opponent_ogg extends null { }
@@ -503,6 +500,10 @@ import sys.FileSystem;
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_week6_images_weeb_pixelui_dialoguebox_pixel_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_week6_images_weeb_pixelui_dialoguebox_senpaimad_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_week6_images_weeb_pixelui_dialoguebox_senpaimad_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_week6_images_weeb_pixelui_dialoguebox_new_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_week6_images_weeb_pixelui_dialoguebox_new_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_week6_images_weeb_pixelui_dialoguebox_evilnew_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_week6_images_weeb_pixelui_dialoguebox_evilnew_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_week6_images_weeb_pixelui_dialoguebox_evil_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_week6_images_weeb_pixelui_dialoguebox_evil_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_week6_images_weeb_spiritfaceforward_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -602,6 +603,15 @@ import sys.FileSystem;
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_week7_sounds_jeffgameover_jeffgameover_18_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_week7_sounds_killyou_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_week7_sounds_wellwellwell_ogg extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_dialogues_speaker_spirit_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_dialogues_speaker_bf_pixel_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_dialogues_speaker_senpai_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_dialogues_speaker_senpai_angry_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_dialogues_conversation_senpai_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_dialogues_conversation_thorns_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_dialogues_conversation_roses_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_dialogues_boxes_thorns_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_dialogues_boxes_roses_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_weeks_week5_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_weeks_week4_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_weeks_week3_json extends null { }
@@ -669,6 +679,22 @@ import sys.FileSystem;
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_menubackgrounds_menu_tank_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_menubackgrounds_menu_limo_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_menubackgrounds_menu_school_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_boyfriend_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_boyfriend_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_senpai_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_senpai_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_senpai_bwuh_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_senpai_bwuh_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_pico_peeved_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_pico_peeved_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_nene_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_nene_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_nene_peeved_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_nene_peeved_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_senpai_angry_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_senpai_angry_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_pico_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_portraits_portrait_pico_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_icons_icon_gf_png1 extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_icons_icon_pico_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_images_icons_icon_face_png1 extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
