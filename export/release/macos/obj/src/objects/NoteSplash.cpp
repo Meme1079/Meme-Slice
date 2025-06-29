@@ -153,32 +153,32 @@
 #include <sys/io/File.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_31_new,"objects.NoteSplash","new",0x6a418ee5,"objects.NoteSplash.new","objects/NoteSplash.hx",31,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_63_initTextureSplash,"objects.NoteSplash","initTextureSplash",0x6f09fcb7,"objects.NoteSplash.initTextureSplash","objects/NoteSplash.hx",63,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_93_initConfigSplash,"objects.NoteSplash","initConfigSplash",0xffc97b54,"objects.NoteSplash.initConfigSplash","objects/NoteSplash.hx",93,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_110_createConfigSplash,"objects.NoteSplash","createConfigSplash",0x1c036600,"objects.NoteSplash.createConfigSplash","objects/NoteSplash.hx",110,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_140_createConfigTextSplash,"objects.NoteSplash","createConfigTextSplash",0x4484a70d,"objects.NoteSplash.createConfigTextSplash","objects/NoteSplash.hx",140,0xe471e78a)
+HX_DEFINE_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_30_new,"objects.NoteSplash","new",0x6a418ee5,"objects.NoteSplash.new","objects/NoteSplash.hx",30,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_62_initTextureSplash,"objects.NoteSplash","initTextureSplash",0x6f09fcb7,"objects.NoteSplash.initTextureSplash","objects/NoteSplash.hx",62,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_92_initConfigSplash,"objects.NoteSplash","initConfigSplash",0xffc97b54,"objects.NoteSplash.initConfigSplash","objects/NoteSplash.hx",92,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_109_createConfigSplash,"objects.NoteSplash","createConfigSplash",0x1c036600,"objects.NoteSplash.createConfigSplash","objects/NoteSplash.hx",109,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_139_createConfigTextSplash,"objects.NoteSplash","createConfigTextSplash",0x4484a70d,"objects.NoteSplash.createConfigTextSplash","objects/NoteSplash.hx",139,0xe471e78a)
 static const Float _hx_array_data_45753873_13[] = {
 	(Float)0,(Float)0,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_205_loadSplash,"objects.NoteSplash","loadSplash",0xfa5efc48,"objects.NoteSplash.loadSplash","objects/NoteSplash.hx",205,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_225_loadSplashPixel,"objects.NoteSplash","loadSplashPixel",0xbf52b51e,"objects.NoteSplash.loadSplashPixel","objects/NoteSplash.hx",225,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_340_spawnSplashNote,"objects.NoteSplash","spawnSplashNote",0x3f35d119,"objects.NoteSplash.spawnSplashNote","objects/NoteSplash.hx",340,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_240_spawnSplashNote,"objects.NoteSplash","spawnSplashNote",0x3f35d119,"objects.NoteSplash.spawnSplashNote","objects/NoteSplash.hx",240,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_204_loadSplash,"objects.NoteSplash","loadSplash",0xfa5efc48,"objects.NoteSplash.loadSplash","objects/NoteSplash.hx",204,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_224_loadSplashPixel,"objects.NoteSplash","loadSplashPixel",0xbf52b51e,"objects.NoteSplash.loadSplashPixel","objects/NoteSplash.hx",224,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_339_spawnSplashNote,"objects.NoteSplash","spawnSplashNote",0x3f35d119,"objects.NoteSplash.spawnSplashNote","objects/NoteSplash.hx",339,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_239_spawnSplashNote,"objects.NoteSplash","spawnSplashNote",0x3f35d119,"objects.NoteSplash.spawnSplashNote","objects/NoteSplash.hx",239,0xe471e78a)
 static const Float _hx_array_data_45753873_19[] = {
 	(Float)0,(Float)0,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_370_playDefaultAnim,"objects.NoteSplash","playDefaultAnim",0xfa9677e3,"objects.NoteSplash.playDefaultAnim","objects/NoteSplash.hx",370,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_379_checkForAnim,"objects.NoteSplash","checkForAnim",0x4bc4b2ad,"objects.NoteSplash.checkForAnim","objects/NoteSplash.hx",379,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_390_update,"objects.NoteSplash","update",0x3dabe8a4,"objects.NoteSplash.update","objects/NoteSplash.hx",390,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_442_set_config,"objects.NoteSplash","set_config",0x4172b11a,"objects.NoteSplash.set_config","objects/NoteSplash.hx",442,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_468_set_maxAnims,"objects.NoteSplash","set_maxAnims",0x332ebc56,"objects.NoteSplash.set_maxAnims","objects/NoteSplash.hx",468,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_413_getSplashSkinPostfix,"objects.NoteSplash","getSplashSkinPostfix",0x421668b6,"objects.NoteSplash.getSplashSkinPostfix","objects/NoteSplash.hx",413,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_422_createConfig,"objects.NoteSplash","createConfig",0x86425fb9,"objects.NoteSplash.createConfig","objects/NoteSplash.hx",422,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_433_addAnimationToConfig,"objects.NoteSplash","addAnimationToConfig",0xff39423b,"objects.NoteSplash.addAnimationToConfig","objects/NoteSplash.hx",433,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_369_playDefaultAnim,"objects.NoteSplash","playDefaultAnim",0xfa9677e3,"objects.NoteSplash.playDefaultAnim","objects/NoteSplash.hx",369,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_378_checkForAnim,"objects.NoteSplash","checkForAnim",0x4bc4b2ad,"objects.NoteSplash.checkForAnim","objects/NoteSplash.hx",378,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_389_update,"objects.NoteSplash","update",0x3dabe8a4,"objects.NoteSplash.update","objects/NoteSplash.hx",389,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_441_set_config,"objects.NoteSplash","set_config",0x4172b11a,"objects.NoteSplash.set_config","objects/NoteSplash.hx",441,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_467_set_maxAnims,"objects.NoteSplash","set_maxAnims",0x332ebc56,"objects.NoteSplash.set_maxAnims","objects/NoteSplash.hx",467,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_412_getSplashSkinPostfix,"objects.NoteSplash","getSplashSkinPostfix",0x421668b6,"objects.NoteSplash.getSplashSkinPostfix","objects/NoteSplash.hx",412,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_421_createConfig,"objects.NoteSplash","createConfig",0x86425fb9,"objects.NoteSplash.createConfig","objects/NoteSplash.hx",421,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_432_addAnimationToConfig,"objects.NoteSplash","addAnimationToConfig",0xff39423b,"objects.NoteSplash.addAnimationToConfig","objects/NoteSplash.hx",432,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_45_boot,"objects.NoteSplash","boot",0x87347a0d,"objects.NoteSplash.boot","objects/NoteSplash.hx",45,0xe471e78a)
 HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_46_boot,"objects.NoteSplash","boot",0x87347a0d,"objects.NoteSplash.boot","objects/NoteSplash.hx",46,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_47_boot,"objects.NoteSplash","boot",0x87347a0d,"objects.NoteSplash.boot","objects/NoteSplash.hx",47,0xe471e78a)
-HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_388_boot,"objects.NoteSplash","boot",0x87347a0d,"objects.NoteSplash.boot","objects/NoteSplash.hx",388,0xe471e78a)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3b2eb9b9f1b347d_387_boot,"objects.NoteSplash","boot",0x87347a0d,"objects.NoteSplash.boot","objects/NoteSplash.hx",387,0xe471e78a)
 namespace objects{
 
 void NoteSplash_obj::__construct( ::Dynamic __o_x, ::Dynamic __o_y,::String splash){
@@ -186,20 +186,20 @@ void NoteSplash_obj::__construct( ::Dynamic __o_x, ::Dynamic __o_y,::String spla
             		if (::hx::IsNull(__o_x)) x = 0;
             		 ::Dynamic y = __o_y;
             		if (::hx::IsNull(__o_y)) y = 0;
-            	HX_GC_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_31_new)
-HXLINE( 387)		this->aliveTime = ((Float)0);
-HXLINE(  45)		this->maxAnims = 0;
-HXLINE(  43)		this->noteDataMap =  ::haxe::ds::IntMap_obj::__alloc( HX_CTX );
-HXLINE(  42)		this->spawned = false;
-HXLINE(  40)		this->inEditor = false;
-HXLINE(  39)		this->copyY = true;
-HXLINE(  38)		this->copyX = true;
-HXLINE(  36)		this->noteData = 0;
-HXLINE(  49)		super::__construct(x,y,null());
-HXLINE(  51)		this->animation =  ::backend::animation::PsychAnimationController_obj::__alloc( HX_CTX ,::hx::ObjectPtr<OBJ_>(this));
-HXLINE(  52)		this->rgbShader =  ::objects::PixelSplashShaderRef_obj::__alloc( HX_CTX );
-HXLINE(  53)		this->shader = this->rgbShader->shader;
-HXLINE(  54)		this->loadSplash(splash);
+            	HX_GC_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_30_new)
+HXLINE( 386)		this->aliveTime = ((Float)0);
+HXLINE(  44)		this->maxAnims = 0;
+HXLINE(  42)		this->noteDataMap =  ::haxe::ds::IntMap_obj::__alloc( HX_CTX );
+HXLINE(  41)		this->spawned = false;
+HXLINE(  39)		this->inEditor = false;
+HXLINE(  38)		this->copyY = true;
+HXLINE(  37)		this->copyX = true;
+HXLINE(  35)		this->noteData = 0;
+HXLINE(  48)		super::__construct(x,y,null());
+HXLINE(  50)		this->animation =  ::backend::animation::PsychAnimationController_obj::__alloc( HX_CTX ,::hx::ObjectPtr<OBJ_>(this));
+HXLINE(  51)		this->rgbShader =  ::objects::PixelSplashShaderRef_obj::__alloc( HX_CTX );
+HXLINE(  52)		this->shader = this->rgbShader->shader;
+HXLINE(  53)		this->loadSplash(splash);
             	}
 
 Dynamic NoteSplash_obj::__CreateEmpty() { return new NoteSplash_obj; }
@@ -228,127 +228,127 @@ bool NoteSplash_obj::_hx_isInstanceOf(int inClassId) {
 void NoteSplash_obj::initTextureSplash(::String splash,::String __o_subfolder){
             		::String subfolder = __o_subfolder;
             		if (::hx::IsNull(__o_subfolder)) subfolder = HX_("",00,00,00,00);
-            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_63_initTextureSplash)
-HXLINE(  64)		this->set_config(null());
-HXLINE(  65)		this->set_maxAnims(0);
-HXLINE(  67)		if (::hx::IsNull( splash )) {
-HXLINE(  68)			splash = ((subfolder + ::objects::NoteSplash_obj::defaultNoteSplash) + ::objects::NoteSplash_obj::getSplashSkinPostfix());
-HXLINE(  69)			bool _hx_tmp;
-HXDLIN(  69)			bool _hx_tmp1;
-HXDLIN(  69)			if (::hx::IsNotNull( ::states::PlayState_obj::SONG )) {
-HXLINE(  69)				_hx_tmp1 = ::hx::IsNotNull( ::states::PlayState_obj::SONG->__Field(HX_("splashSkin",84,03,e1,a1),::hx::paccDynamic) );
+            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_62_initTextureSplash)
+HXLINE(  63)		this->set_config(null());
+HXLINE(  64)		this->set_maxAnims(0);
+HXLINE(  66)		if (::hx::IsNull( splash )) {
+HXLINE(  67)			splash = ((subfolder + ::objects::NoteSplash_obj::defaultNoteSplash) + ::objects::NoteSplash_obj::getSplashSkinPostfix());
+HXLINE(  68)			bool _hx_tmp;
+HXDLIN(  68)			bool _hx_tmp1;
+HXDLIN(  68)			if (::hx::IsNotNull( ::states::PlayState_obj::SONG )) {
+HXLINE(  68)				_hx_tmp1 = ::hx::IsNotNull( ::states::PlayState_obj::SONG->__Field(HX_("splashSkin",84,03,e1,a1),::hx::paccDynamic) );
             			}
             			else {
-HXLINE(  69)				_hx_tmp1 = false;
+HXLINE(  68)				_hx_tmp1 = false;
             			}
-HXDLIN(  69)			if (_hx_tmp1) {
-HXLINE(  69)				_hx_tmp = (( (::String)(::states::PlayState_obj::SONG->__Field(HX_("splashSkin",84,03,e1,a1),::hx::paccDynamic)) ).length > 0);
+HXDLIN(  68)			if (_hx_tmp1) {
+HXLINE(  68)				_hx_tmp = (( (::String)(::states::PlayState_obj::SONG->__Field(HX_("splashSkin",84,03,e1,a1),::hx::paccDynamic)) ).length > 0);
             			}
             			else {
-HXLINE(  69)				_hx_tmp = false;
+HXLINE(  68)				_hx_tmp = false;
             			}
-HXDLIN(  69)			if (_hx_tmp) {
-HXLINE(  70)				splash = ( (::String)((subfolder + ::states::PlayState_obj::SONG->__Field(HX_("splashSkin",84,03,e1,a1),::hx::paccDynamic))) );
+HXDLIN(  68)			if (_hx_tmp) {
+HXLINE(  69)				splash = ( (::String)((subfolder + ::states::PlayState_obj::SONG->__Field(HX_("splashSkin",84,03,e1,a1),::hx::paccDynamic))) );
             			}
-HXLINE(  71)			this->texture = splash;
+HXLINE(  70)			this->texture = splash;
             		}
             		else {
-HXLINE(  73)			this->texture = (subfolder + splash);
+HXLINE(  72)			this->texture = (subfolder + splash);
             		}
-HXLINE(  76)		::String key = this->texture;
-HXDLIN(  76)		::String parentFolder = null();
-HXDLIN(  76)		if ((key.indexOf(HX_("psychic",d5,09,aa,19),null()) != -1)) {
-HXLINE(  76)			::haxe::Log_obj::trace(key, ::Dynamic(::hx::Anon_obj::Create(5)
+HXLINE(  75)		::String key = this->texture;
+HXDLIN(  75)		::String parentFolder = null();
+HXDLIN(  75)		if ((key.indexOf(HX_("psychic",d5,09,aa,19),null()) != -1)) {
+HXLINE(  75)			::haxe::Log_obj::trace(key, ::Dynamic(::hx::Anon_obj::Create(5)
             				->setFixed(0,HX_("className",a3,92,3d,dc),HX_("backend.Paths",34,17,99,92))
             				->setFixed(1,HX_("customParams",d7,51,18,ed),::cpp::VirtualArray_obj::__new(2)->init(0,parentFolder)->init(1,true))
             				->setFixed(2,HX_("methodName",cc,19,0f,12),HX_("getSparrowAtlas",55,ab,b7,a7))
             				->setFixed(3,HX_("fileName",e7,5a,43,62),HX_("source/backend/Paths.hx",ff,43,8c,3d))
-            				->setFixed(4,HX_("lineNumber",dd,81,22,76),372)));
+            				->setFixed(4,HX_("lineNumber",dd,81,22,76),375)));
             		}
-HXDLIN(  76)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(key,parentFolder,true);
-HXDLIN(  76)		bool xmlExists = false;
-HXDLIN(  76)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".xml",69,3e,c3,1e)));
-HXDLIN(  76)		if (::sys::FileSystem_obj::exists(xml)) {
-HXLINE(  76)			xmlExists = true;
+HXDLIN(  75)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(key,parentFolder,true);
+HXDLIN(  75)		bool xmlExists = false;
+HXDLIN(  75)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".xml",69,3e,c3,1e)));
+HXDLIN(  75)		if (::sys::FileSystem_obj::exists(xml)) {
+HXLINE(  75)			xmlExists = true;
             		}
-HXDLIN(  76)		 ::Dynamic _hx_tmp2;
-HXDLIN(  76)		if (xmlExists) {
-HXLINE(  76)			_hx_tmp2 = ::sys::io::File_obj::getContent(xml);
+HXDLIN(  75)		 ::Dynamic _hx_tmp2;
+HXDLIN(  75)		if (xmlExists) {
+HXLINE(  75)			_hx_tmp2 = ::sys::io::File_obj::getContent(xml);
             		}
             		else {
-HXLINE(  76)			::String key1 = (HX_("images/",77,50,74,c1) + key);
-HXDLIN(  76)			::Dynamic this1 = ::backend::Language_obj::phrases;
-HXDLIN(  76)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
-HXDLIN(  76)			if (::hx::IsNotNull( str )) {
-HXLINE(  76)				key1 = str;
+HXLINE(  75)			::String key1 = (HX_("images/",77,50,74,c1) + key);
+HXDLIN(  75)			::Dynamic this1 = ::backend::Language_obj::phrases;
+HXDLIN(  75)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
+HXDLIN(  75)			if (::hx::IsNotNull( str )) {
+HXLINE(  75)				key1 = str;
             			}
-HXDLIN(  76)			_hx_tmp2 = ::backend::Paths_obj::getPath((key1 + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
+HXDLIN(  75)			_hx_tmp2 = ::backend::Paths_obj::getPath((key1 + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
             		}
-HXDLIN(  76)		this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded,_hx_tmp2));
-HXLINE(  77)		if (::hx::IsNull( this->frames )) {
-HXLINE(  78)			this->texture = ((subfolder + ::objects::NoteSplash_obj::defaultNoteSplash) + ::objects::NoteSplash_obj::getSplashSkinPostfix());
-HXLINE(  79)			::String key2 = this->texture;
-HXDLIN(  79)			::String parentFolder1 = null();
-HXDLIN(  79)			if ((key2.indexOf(HX_("psychic",d5,09,aa,19),null()) != -1)) {
-HXLINE(  79)				::haxe::Log_obj::trace(key2, ::Dynamic(::hx::Anon_obj::Create(5)
+HXDLIN(  75)		this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded,_hx_tmp2));
+HXLINE(  76)		if (::hx::IsNull( this->frames )) {
+HXLINE(  77)			this->texture = ((subfolder + ::objects::NoteSplash_obj::defaultNoteSplash) + ::objects::NoteSplash_obj::getSplashSkinPostfix());
+HXLINE(  78)			::String key2 = this->texture;
+HXDLIN(  78)			::String parentFolder1 = null();
+HXDLIN(  78)			if ((key2.indexOf(HX_("psychic",d5,09,aa,19),null()) != -1)) {
+HXLINE(  78)				::haxe::Log_obj::trace(key2, ::Dynamic(::hx::Anon_obj::Create(5)
             					->setFixed(0,HX_("className",a3,92,3d,dc),HX_("backend.Paths",34,17,99,92))
             					->setFixed(1,HX_("customParams",d7,51,18,ed),::cpp::VirtualArray_obj::__new(2)->init(0,parentFolder1)->init(1,true))
             					->setFixed(2,HX_("methodName",cc,19,0f,12),HX_("getSparrowAtlas",55,ab,b7,a7))
             					->setFixed(3,HX_("fileName",e7,5a,43,62),HX_("source/backend/Paths.hx",ff,43,8c,3d))
-            					->setFixed(4,HX_("lineNumber",dd,81,22,76),372)));
+            					->setFixed(4,HX_("lineNumber",dd,81,22,76),375)));
             			}
-HXDLIN(  79)			 ::flixel::graphics::FlxGraphic imageLoaded1 = ::backend::Paths_obj::image(key2,parentFolder1,true);
-HXDLIN(  79)			bool xmlExists1 = false;
-HXDLIN(  79)			::String xml1 = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key2) + HX_(".xml",69,3e,c3,1e)));
-HXDLIN(  79)			if (::sys::FileSystem_obj::exists(xml1)) {
-HXLINE(  79)				xmlExists1 = true;
+HXDLIN(  78)			 ::flixel::graphics::FlxGraphic imageLoaded1 = ::backend::Paths_obj::image(key2,parentFolder1,true);
+HXDLIN(  78)			bool xmlExists1 = false;
+HXDLIN(  78)			::String xml1 = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key2) + HX_(".xml",69,3e,c3,1e)));
+HXDLIN(  78)			if (::sys::FileSystem_obj::exists(xml1)) {
+HXLINE(  78)				xmlExists1 = true;
             			}
-HXDLIN(  79)			 ::Dynamic _hx_tmp3;
-HXDLIN(  79)			if (xmlExists1) {
-HXLINE(  79)				_hx_tmp3 = ::sys::io::File_obj::getContent(xml1);
+HXDLIN(  78)			 ::Dynamic _hx_tmp3;
+HXDLIN(  78)			if (xmlExists1) {
+HXLINE(  78)				_hx_tmp3 = ::sys::io::File_obj::getContent(xml1);
             			}
             			else {
-HXLINE(  79)				::String key3 = (HX_("images/",77,50,74,c1) + key2);
-HXDLIN(  79)				::Dynamic this2 = ::backend::Language_obj::phrases;
-HXDLIN(  79)				::String str1 = ( ( ::haxe::ds::StringMap)(this2) )->get_string(::StringTools_obj::trim(key3).toLowerCase());
-HXDLIN(  79)				if (::hx::IsNotNull( str1 )) {
-HXLINE(  79)					key3 = str1;
+HXLINE(  78)				::String key3 = (HX_("images/",77,50,74,c1) + key2);
+HXDLIN(  78)				::Dynamic this2 = ::backend::Language_obj::phrases;
+HXDLIN(  78)				::String str1 = ( ( ::haxe::ds::StringMap)(this2) )->get_string(::StringTools_obj::trim(key3).toLowerCase());
+HXDLIN(  78)				if (::hx::IsNotNull( str1 )) {
+HXLINE(  78)					key3 = str1;
             				}
-HXDLIN(  79)				_hx_tmp3 = ::backend::Paths_obj::getPath((key3 + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder1,null());
+HXDLIN(  78)				_hx_tmp3 = ::backend::Paths_obj::getPath((key3 + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder1,null());
             			}
-HXDLIN(  79)			this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded1,_hx_tmp3));
-HXLINE(  80)			if (::hx::IsNull( this->frames )) {
-HXLINE(  81)				this->texture = (subfolder + ::objects::NoteSplash_obj::defaultNoteSplash);
-HXLINE(  82)				::String key4 = this->texture;
-HXDLIN(  82)				::String parentFolder2 = null();
-HXDLIN(  82)				if ((key4.indexOf(HX_("psychic",d5,09,aa,19),null()) != -1)) {
-HXLINE(  82)					::haxe::Log_obj::trace(key4, ::Dynamic(::hx::Anon_obj::Create(5)
+HXDLIN(  78)			this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded1,_hx_tmp3));
+HXLINE(  79)			if (::hx::IsNull( this->frames )) {
+HXLINE(  80)				this->texture = (subfolder + ::objects::NoteSplash_obj::defaultNoteSplash);
+HXLINE(  81)				::String key4 = this->texture;
+HXDLIN(  81)				::String parentFolder2 = null();
+HXDLIN(  81)				if ((key4.indexOf(HX_("psychic",d5,09,aa,19),null()) != -1)) {
+HXLINE(  81)					::haxe::Log_obj::trace(key4, ::Dynamic(::hx::Anon_obj::Create(5)
             						->setFixed(0,HX_("className",a3,92,3d,dc),HX_("backend.Paths",34,17,99,92))
             						->setFixed(1,HX_("customParams",d7,51,18,ed),::cpp::VirtualArray_obj::__new(2)->init(0,parentFolder2)->init(1,true))
             						->setFixed(2,HX_("methodName",cc,19,0f,12),HX_("getSparrowAtlas",55,ab,b7,a7))
             						->setFixed(3,HX_("fileName",e7,5a,43,62),HX_("source/backend/Paths.hx",ff,43,8c,3d))
-            						->setFixed(4,HX_("lineNumber",dd,81,22,76),372)));
+            						->setFixed(4,HX_("lineNumber",dd,81,22,76),375)));
             				}
-HXDLIN(  82)				 ::flixel::graphics::FlxGraphic imageLoaded2 = ::backend::Paths_obj::image(key4,parentFolder2,true);
-HXDLIN(  82)				bool xmlExists2 = false;
-HXDLIN(  82)				::String xml2 = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key4) + HX_(".xml",69,3e,c3,1e)));
-HXDLIN(  82)				if (::sys::FileSystem_obj::exists(xml2)) {
-HXLINE(  82)					xmlExists2 = true;
+HXDLIN(  81)				 ::flixel::graphics::FlxGraphic imageLoaded2 = ::backend::Paths_obj::image(key4,parentFolder2,true);
+HXDLIN(  81)				bool xmlExists2 = false;
+HXDLIN(  81)				::String xml2 = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key4) + HX_(".xml",69,3e,c3,1e)));
+HXDLIN(  81)				if (::sys::FileSystem_obj::exists(xml2)) {
+HXLINE(  81)					xmlExists2 = true;
             				}
-HXDLIN(  82)				 ::Dynamic _hx_tmp4;
-HXDLIN(  82)				if (xmlExists2) {
-HXLINE(  82)					_hx_tmp4 = ::sys::io::File_obj::getContent(xml2);
+HXDLIN(  81)				 ::Dynamic _hx_tmp4;
+HXDLIN(  81)				if (xmlExists2) {
+HXLINE(  81)					_hx_tmp4 = ::sys::io::File_obj::getContent(xml2);
             				}
             				else {
-HXLINE(  82)					::String key5 = (HX_("images/",77,50,74,c1) + key4);
-HXDLIN(  82)					::Dynamic this3 = ::backend::Language_obj::phrases;
-HXDLIN(  82)					::String str2 = ( ( ::haxe::ds::StringMap)(this3) )->get_string(::StringTools_obj::trim(key5).toLowerCase());
-HXDLIN(  82)					if (::hx::IsNotNull( str2 )) {
-HXLINE(  82)						key5 = str2;
+HXLINE(  81)					::String key5 = (HX_("images/",77,50,74,c1) + key4);
+HXDLIN(  81)					::Dynamic this3 = ::backend::Language_obj::phrases;
+HXDLIN(  81)					::String str2 = ( ( ::haxe::ds::StringMap)(this3) )->get_string(::StringTools_obj::trim(key5).toLowerCase());
+HXDLIN(  81)					if (::hx::IsNotNull( str2 )) {
+HXLINE(  81)						key5 = str2;
             					}
-HXDLIN(  82)					_hx_tmp4 = ::backend::Paths_obj::getPath((key5 + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder2,null());
+HXDLIN(  81)					_hx_tmp4 = ::backend::Paths_obj::getPath((key5 + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder2,null());
             				}
-HXDLIN(  82)				this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded2,_hx_tmp4));
+HXDLIN(  81)				this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded2,_hx_tmp4));
             			}
             		}
             	}
@@ -357,25 +357,25 @@ HXDLIN(  82)				this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj:
 HX_DEFINE_DYNAMIC_FUNC2(NoteSplash_obj,initTextureSplash,(void))
 
 void NoteSplash_obj::initConfigSplash(::String splash,::String path){
-            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_93_initConfigSplash)
-HXLINE(  94)		this->set_config(::objects::NoteSplash_obj::configs->get(path));
-HXLINE(  95)		bool _hx_tmp;
-HXDLIN(  95)		if (::hx::IsEq( this->config->__Field(HX_("allowPixelVariant",c8,38,2b,e5),::hx::paccDynamic),true )) {
-HXLINE(  95)			_hx_tmp = (::states::PlayState_obj::stageUI == HX_("pixel",86,c6,a3,c2));
+            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_92_initConfigSplash)
+HXLINE(  93)		this->set_config(::objects::NoteSplash_obj::configs->get(path));
+HXLINE(  94)		bool _hx_tmp;
+HXDLIN(  94)		if (::hx::IsEq( this->config->__Field(HX_("allowPixelVariant",c8,38,2b,e5),::hx::paccDynamic),true )) {
+HXLINE(  94)			_hx_tmp = (::states::PlayState_obj::stageUI == HX_("pixel",86,c6,a3,c2));
             		}
             		else {
-HXLINE(  95)			_hx_tmp = false;
+HXLINE(  94)			_hx_tmp = false;
             		}
-HXDLIN(  95)		if (_hx_tmp) {
-HXLINE(  96)			this->loadSplashPixel(splash);
-HXLINE(  97)			return;
+HXDLIN(  94)		if (_hx_tmp) {
+HXLINE(  95)			this->loadSplashPixel(splash);
+HXLINE(  96)			return;
             		}
-HXLINE(  99)		{
-HXLINE(  99)			 ::Dynamic anim = ( ( ::haxe::ds::StringMap)( ::Dynamic(this->config->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic))) )->iterator();
-HXDLIN(  99)			while(( (bool)(anim->__Field(HX_("hasNext",6d,a5,46,18),::hx::paccDynamic)()) )){
-HXLINE(  99)				 ::Dynamic anim1 = anim->__Field(HX_("next",f3,84,02,49),::hx::paccDynamic)();
-HXLINE( 100)				if ((::hx::Mod(anim1->__Field(HX_("noteData",3c,7b,96,51),::hx::paccDynamic),4) == 0)) {
-HXLINE( 101)					this->set_maxAnims((this->maxAnims + 1));
+HXLINE(  98)		{
+HXLINE(  98)			 ::Dynamic anim = ( ( ::haxe::ds::StringMap)( ::Dynamic(this->config->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic))) )->iterator();
+HXDLIN(  98)			while(( (bool)(anim->__Field(HX_("hasNext",6d,a5,46,18),::hx::paccDynamic)()) )){
+HXLINE(  98)				 ::Dynamic anim1 = anim->__Field(HX_("next",f3,84,02,49),::hx::paccDynamic)();
+HXLINE(  99)				if ((::hx::Mod(anim1->__Field(HX_("noteData",3c,7b,96,51),::hx::paccDynamic),4) == 0)) {
+HXLINE( 100)					this->set_maxAnims((this->maxAnims + 1));
             				}
             			}
             		}
@@ -385,188 +385,188 @@ HXLINE( 101)					this->set_maxAnims((this->maxAnims + 1));
 HX_DEFINE_DYNAMIC_FUNC2(NoteSplash_obj,initConfigSplash,(void))
 
 void NoteSplash_obj::createConfigSplash(::String path){
-            	HX_GC_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_110_createConfigSplash)
-HXLINE( 111)		::String path1 = ::backend::Paths_obj::getPath(((HX_("",00,00,00,00) + path) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),null(),true);
-HXDLIN( 111)		::String text;
-HXDLIN( 111)		if (::sys::FileSystem_obj::exists(path1)) {
-HXLINE( 111)			text = ::sys::io::File_obj::getContent(path1);
+            	HX_GC_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_109_createConfigSplash)
+HXLINE( 110)		::String path1 = ::backend::Paths_obj::getPath(((HX_("",00,00,00,00) + path) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),null(),true);
+HXDLIN( 110)		::String text;
+HXDLIN( 110)		if (::sys::FileSystem_obj::exists(path1)) {
+HXLINE( 110)			text = ::sys::io::File_obj::getContent(path1);
             		}
             		else {
-HXLINE( 111)			text = null();
+HXLINE( 110)			text = null();
             		}
-HXDLIN( 111)		 ::Dynamic config =  ::haxe::format::JsonParser_obj::__alloc( HX_CTX ,text)->doParse();
-HXLINE( 112)		if (::hx::IsNull( config )) {
-HXLINE( 113)			return;
+HXDLIN( 110)		 ::Dynamic config =  ::haxe::format::JsonParser_obj::__alloc( HX_CTX ,text)->doParse();
+HXLINE( 111)		if (::hx::IsNull( config )) {
+HXLINE( 112)			return;
             		}
-HXLINE( 115)		 ::Dynamic tempConfig =  ::Dynamic(::hx::Anon_obj::Create(6)
+HXLINE( 114)		 ::Dynamic tempConfig =  ::Dynamic(::hx::Anon_obj::Create(6)
             			->setFixed(0,HX_("animations",ef,34,1c,83), ::haxe::ds::StringMap_obj::__alloc( HX_CTX ))
             			->setFixed(1,HX_("allowRGB",04,8e,17,9e),( (bool)(config->__Field(HX_("allowRGB",04,8e,17,9e),::hx::paccDynamic)) ))
             			->setFixed(2,HX_("allowPixelVariant",c8,38,2b,e5),( (bool)(config->__Field(HX_("allowPixelVariant",c8,38,2b,e5),::hx::paccDynamic)) ))
             			->setFixed(3,HX_("allowPixel",3d,81,6f,ed),( (bool)(config->__Field(HX_("allowPixel",3d,81,6f,ed),::hx::paccDynamic)) ))
             			->setFixed(4,HX_("rgb",0d,db,56,00),( (::Array< ::Dynamic>)(config->__Field(HX_("rgb",0d,db,56,00),::hx::paccDynamic)) ))
             			->setFixed(5,HX_("scale",8a,ce,ce,78),( (Float)(config->__Field(HX_("scale",8a,ce,ce,78),::hx::paccDynamic)) )));
-HXLINE( 124)		{
-HXLINE( 124)			int _g = 0;
-HXDLIN( 124)			::Array< ::String > _g1 = ::Reflect_obj::fields( ::Dynamic(config->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic)));
-HXDLIN( 124)			while((_g < _g1->length)){
-HXLINE( 124)				::String i = _g1->__get(_g);
-HXDLIN( 124)				_g = (_g + 1);
-HXLINE( 125)				 ::Dynamic anim = ::Reflect_obj::field( ::Dynamic(config->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic)),i);
-HXLINE( 126)				( ( ::haxe::ds::StringMap)( ::Dynamic(tempConfig->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic))) )->set(i,anim);
-HXLINE( 127)				if ((::hx::Mod(anim->__Field(HX_("noteData",3c,7b,96,51),::hx::paccDynamic),4) == 0)) {
-HXLINE( 128)					this->set_maxAnims((this->maxAnims + 1));
+HXLINE( 123)		{
+HXLINE( 123)			int _g = 0;
+HXDLIN( 123)			::Array< ::String > _g1 = ::Reflect_obj::fields( ::Dynamic(config->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic)));
+HXDLIN( 123)			while((_g < _g1->length)){
+HXLINE( 123)				::String i = _g1->__get(_g);
+HXDLIN( 123)				_g = (_g + 1);
+HXLINE( 124)				 ::Dynamic anim = ::Reflect_obj::field( ::Dynamic(config->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic)),i);
+HXLINE( 125)				( ( ::haxe::ds::StringMap)( ::Dynamic(tempConfig->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic))) )->set(i,anim);
+HXLINE( 126)				if ((::hx::Mod(anim->__Field(HX_("noteData",3c,7b,96,51),::hx::paccDynamic),4) == 0)) {
+HXLINE( 127)					this->set_maxAnims((this->maxAnims + 1));
             				}
             			}
             		}
-HXLINE( 131)		this->set_config(tempConfig);
-HXLINE( 132)		::objects::NoteSplash_obj::configs->set(path,this->config);
+HXLINE( 130)		this->set_config(tempConfig);
+HXLINE( 131)		::objects::NoteSplash_obj::configs->set(path,this->config);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(NoteSplash_obj,createConfigSplash,(void))
 
 void NoteSplash_obj::createConfigTextSplash(::String path){
-            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_140_createConfigTextSplash)
-HXLINE( 141)		 ::Dynamic tempConfig = ::objects::NoteSplash_obj::createConfig();
-HXLINE( 142)		::String anim = HX_("note splash",d5,03,6e,d8);
-HXLINE( 143)		::Array< ::Dynamic> fps = ::Array_obj< ::Dynamic>::__new(2)->init(0,22)->init(1,26);
-HXLINE( 144)		::Array< ::Dynamic> offsets = ::Array_obj< ::Dynamic>::__new(1)->init(0,::Array_obj< Float >::fromData( _hx_array_data_45753873_13,2));
-HXLINE( 145)		if (::backend::Paths_obj::fileExists(((HX_("",00,00,00,00) + path) + HX_(".txt",02,3f,c0,1e)),HX_("TEXT",ad,94,ba,37),null(),null())) {
-HXLINE( 146)			::String path1 = ::backend::Paths_obj::getPath(((HX_("",00,00,00,00) + path) + HX_(".txt",02,3f,c0,1e)),HX_("TEXT",ad,94,ba,37),null(),true);
-HXDLIN( 146)			::String string;
-HXDLIN( 146)			if (::sys::FileSystem_obj::exists(path1)) {
-HXLINE( 146)				string = ::sys::io::File_obj::getContent(path1);
+            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_139_createConfigTextSplash)
+HXLINE( 140)		 ::Dynamic tempConfig = ::objects::NoteSplash_obj::createConfig();
+HXLINE( 141)		::String anim = HX_("note splash",d5,03,6e,d8);
+HXLINE( 142)		::Array< ::Dynamic> fps = ::Array_obj< ::Dynamic>::__new(2)->init(0,22)->init(1,26);
+HXLINE( 143)		::Array< ::Dynamic> offsets = ::Array_obj< ::Dynamic>::__new(1)->init(0,::Array_obj< Float >::fromData( _hx_array_data_45753873_13,2));
+HXLINE( 144)		if (::backend::Paths_obj::fileExists(((HX_("",00,00,00,00) + path) + HX_(".txt",02,3f,c0,1e)),HX_("TEXT",ad,94,ba,37),null(),null())) {
+HXLINE( 145)			::String path1 = ::backend::Paths_obj::getPath(((HX_("",00,00,00,00) + path) + HX_(".txt",02,3f,c0,1e)),HX_("TEXT",ad,94,ba,37),null(),true);
+HXDLIN( 145)			::String string;
+HXDLIN( 145)			if (::sys::FileSystem_obj::exists(path1)) {
+HXLINE( 145)				string = ::sys::io::File_obj::getContent(path1);
             			}
             			else {
-HXLINE( 146)				string = null();
+HXLINE( 145)				string = null();
             			}
-HXDLIN( 146)			::Array< ::String > daList = ::Array_obj< ::String >::__new(0);
+HXDLIN( 145)			::Array< ::String > daList = ::Array_obj< ::String >::__new(0);
 HXLINE(  69)			daList = ::StringTools_obj::trim(string).split(HX_("\n",0a,00,00,00));
-HXLINE( 146)			{
-HXLINE( 146)				int _g = 0;
-HXDLIN( 146)				int _g1 = daList->length;
-HXDLIN( 146)				while((_g < _g1)){
-HXLINE( 146)					_g = (_g + 1);
-HXDLIN( 146)					int i = (_g - 1);
-HXDLIN( 146)					daList[i] = ::StringTools_obj::trim(daList->__get(i));
+HXLINE( 145)			{
+HXLINE( 145)				int _g = 0;
+HXDLIN( 145)				int _g1 = daList->length;
+HXDLIN( 145)				while((_g < _g1)){
+HXLINE( 145)					_g = (_g + 1);
+HXDLIN( 145)					int i = (_g - 1);
+HXDLIN( 145)					daList[i] = ::StringTools_obj::trim(daList->__get(i));
             				}
             			}
-HXDLIN( 146)			::Array< ::String > configFile = daList;
-HXLINE( 147)			if ((configFile->length <= 0)) {
-HXLINE( 148)				return;
+HXDLIN( 145)			::Array< ::String > configFile = daList;
+HXLINE( 146)			if ((configFile->length <= 0)) {
+HXLINE( 147)				return;
             			}
-HXLINE( 150)			anim = configFile->__get(0);
-HXLINE( 151)			if ((configFile->length <= 1)) {
-HXLINE( 152)				return;
+HXLINE( 149)			anim = configFile->__get(0);
+HXLINE( 150)			if ((configFile->length <= 1)) {
+HXLINE( 151)				return;
             			}
-HXLINE( 154)			::Array< ::String > framerates = configFile->__get(1).split(HX_(" ",20,00,00,00));
-HXLINE( 155)			 ::Dynamic fps1 = ::Std_obj::parseInt(framerates->__get(0));
-HXDLIN( 155)			fps = ::Array_obj< ::Dynamic>::__new(2)->init(0,fps1)->init(1,::Std_obj::parseInt(framerates->__get(1)));
-HXLINE( 156)			if (::hx::IsNull( fps->__get(0) )) {
-HXLINE( 156)				fps[0] = 22;
+HXLINE( 153)			::Array< ::String > framerates = configFile->__get(1).split(HX_(" ",20,00,00,00));
+HXLINE( 154)			 ::Dynamic fps1 = ::Std_obj::parseInt(framerates->__get(0));
+HXDLIN( 154)			fps = ::Array_obj< ::Dynamic>::__new(2)->init(0,fps1)->init(1,::Std_obj::parseInt(framerates->__get(1)));
+HXLINE( 155)			if (::hx::IsNull( fps->__get(0) )) {
+HXLINE( 155)				fps[0] = 22;
             			}
-HXLINE( 157)			if (::hx::IsNull( fps->__get(1) )) {
-HXLINE( 157)				fps[1] = 26;
+HXLINE( 156)			if (::hx::IsNull( fps->__get(1) )) {
+HXLINE( 156)				fps[1] = 26;
             			}
-HXLINE( 159)			if ((configFile->length <= 2)) {
-HXLINE( 160)				return;
+HXLINE( 158)			if ((configFile->length <= 2)) {
+HXLINE( 159)				return;
             			}
-HXLINE( 162)			offsets = ::Array_obj< ::Dynamic>::__new(0);
-HXLINE( 163)			{
-HXLINE( 163)				int _g2 = 2;
-HXDLIN( 163)				int _g3 = configFile->length;
-HXDLIN( 163)				while((_g2 < _g3)){
-HXLINE( 163)					_g2 = (_g2 + 1);
-HXDLIN( 163)					int i1 = (_g2 - 1);
-HXLINE( 164)					if ((::StringTools_obj::trim(configFile->__get(i1)) != HX_("",00,00,00,00))) {
-HXLINE( 165)						::Array< ::String > animOffs = configFile->__get(i1).split(HX_(" ",20,00,00,00));
-HXLINE( 166)						Float x = ::Std_obj::parseFloat(animOffs->__get(0));
-HXLINE( 167)						Float y = ::Std_obj::parseFloat(animOffs->__get(1));
-HXLINE( 168)						if (::Math_obj::isNaN(x)) {
-HXLINE( 168)							x = ( (Float)(0) );
+HXLINE( 161)			offsets = ::Array_obj< ::Dynamic>::__new(0);
+HXLINE( 162)			{
+HXLINE( 162)				int _g2 = 2;
+HXDLIN( 162)				int _g3 = configFile->length;
+HXDLIN( 162)				while((_g2 < _g3)){
+HXLINE( 162)					_g2 = (_g2 + 1);
+HXDLIN( 162)					int i1 = (_g2 - 1);
+HXLINE( 163)					if ((::StringTools_obj::trim(configFile->__get(i1)) != HX_("",00,00,00,00))) {
+HXLINE( 164)						::Array< ::String > animOffs = configFile->__get(i1).split(HX_(" ",20,00,00,00));
+HXLINE( 165)						Float x = ::Std_obj::parseFloat(animOffs->__get(0));
+HXLINE( 166)						Float y = ::Std_obj::parseFloat(animOffs->__get(1));
+HXLINE( 167)						if (::Math_obj::isNaN(x)) {
+HXLINE( 167)							x = ( (Float)(0) );
             						}
-HXLINE( 169)						if (::Math_obj::isNaN(y)) {
-HXLINE( 169)							y = ( (Float)(0) );
+HXLINE( 168)						if (::Math_obj::isNaN(y)) {
+HXLINE( 168)							y = ( (Float)(0) );
             						}
-HXLINE( 170)						offsets->push(::Array_obj< Float >::__new(2)->init(0,x)->init(1,y));
+HXLINE( 169)						offsets->push(::Array_obj< Float >::__new(2)->init(0,x)->init(1,y));
             					}
             				}
             			}
             		}
-HXLINE( 175)		bool failedToFind = false;
-HXLINE( 176)		while(true){
-HXLINE( 177)			{
-HXLINE( 177)				int _g4 = 0;
-HXDLIN( 177)				::Array< ::String > _g5 = ::objects::Note_obj::colArray;
-HXDLIN( 177)				while((_g4 < _g5->length)){
-HXLINE( 177)					::String v = _g5->__get(_g4);
-HXDLIN( 177)					_g4 = (_g4 + 1);
-HXLINE( 178)					if (!(this->checkForAnim((((((HX_("",00,00,00,00) + anim) + HX_(" ",20,00,00,00)) + v) + HX_(" ",20,00,00,00)) + (this->maxAnims + 1))))) {
-HXLINE( 179)						failedToFind = true;
-HXLINE( 180)						goto _hx_goto_9;
+HXLINE( 174)		bool failedToFind = false;
+HXLINE( 175)		while(true){
+HXLINE( 176)			{
+HXLINE( 176)				int _g4 = 0;
+HXDLIN( 176)				::Array< ::String > _g5 = ::objects::Note_obj::colArray;
+HXDLIN( 176)				while((_g4 < _g5->length)){
+HXLINE( 176)					::String v = _g5->__get(_g4);
+HXDLIN( 176)					_g4 = (_g4 + 1);
+HXLINE( 177)					if (!(this->checkForAnim((((((HX_("",00,00,00,00) + anim) + HX_(" ",20,00,00,00)) + v) + HX_(" ",20,00,00,00)) + (this->maxAnims + 1))))) {
+HXLINE( 178)						failedToFind = true;
+HXLINE( 179)						goto _hx_goto_9;
             					}
             				}
             				_hx_goto_9:;
             			}
-HXLINE( 183)			if (failedToFind) {
-HXLINE( 184)				goto _hx_goto_8;
+HXLINE( 182)			if (failedToFind) {
+HXLINE( 183)				goto _hx_goto_8;
             			}
-HXLINE( 185)			this->set_maxAnims((this->maxAnims + 1));
+HXLINE( 184)			this->set_maxAnims((this->maxAnims + 1));
             		}
             		_hx_goto_8:;
-HXLINE( 188)		{
-HXLINE( 188)			int _g6 = 0;
-HXDLIN( 188)			int _g7 = this->maxAnims;
-HXDLIN( 188)			while((_g6 < _g7)){
-HXLINE( 188)				_g6 = (_g6 + 1);
-HXDLIN( 188)				int animNum = (_g6 - 1);
-HXLINE( 189)				{
-HXLINE( 189)					int _g_current = 0;
-HXDLIN( 189)					::Array< ::String > _g_array = ::objects::Note_obj::colArray;
-HXDLIN( 189)					while((_g_current < _g_array->length)){
-HXLINE( 189)						::String _g_value = _g_array->__get(_g_current);
-HXDLIN( 189)						_g_current = (_g_current + 1);
-HXDLIN( 189)						int _g_key = (_g_current - 1);
-HXDLIN( 189)						int i2 = _g_key;
-HXDLIN( 189)						::String col = _g_value;
-HXDLIN( 189)						{
-HXLINE( 190)							int data = (::hx::Mod(i2,::objects::Note_obj::colArray->length) + (animNum * ::objects::Note_obj::colArray->length));
-HXLINE( 191)							::String name;
-HXDLIN( 191)							if ((animNum > 0)) {
-HXLINE( 191)								name = ((HX_("",00,00,00,00) + col) + (animNum + 1));
+HXLINE( 187)		{
+HXLINE( 187)			int _g6 = 0;
+HXDLIN( 187)			int _g7 = this->maxAnims;
+HXDLIN( 187)			while((_g6 < _g7)){
+HXLINE( 187)				_g6 = (_g6 + 1);
+HXDLIN( 187)				int animNum = (_g6 - 1);
+HXLINE( 188)				{
+HXLINE( 188)					int _g_current = 0;
+HXDLIN( 188)					::Array< ::String > _g_array = ::objects::Note_obj::colArray;
+HXDLIN( 188)					while((_g_current < _g_array->length)){
+HXLINE( 188)						::String _g_value = _g_array->__get(_g_current);
+HXDLIN( 188)						_g_current = (_g_current + 1);
+HXDLIN( 188)						int _g_key = (_g_current - 1);
+HXDLIN( 188)						int i2 = _g_key;
+HXDLIN( 188)						::String col = _g_value;
+HXDLIN( 188)						{
+HXLINE( 189)							int data = (::hx::Mod(i2,::objects::Note_obj::colArray->length) + (animNum * ::objects::Note_obj::colArray->length));
+HXLINE( 190)							::String name;
+HXDLIN( 190)							if ((animNum > 0)) {
+HXLINE( 190)								name = ((HX_("",00,00,00,00) + col) + (animNum + 1));
             							}
             							else {
-HXLINE( 191)								name = col;
+HXLINE( 190)								name = col;
             							}
-HXLINE( 192)							::Array< Float > offset = offsets->__get(::flixel::math::FlxMath_obj::wrap(data,0,::Std_obj::_hx_int(( (Float)((offsets->length - 1)) )))).StaticCast< ::Array< Float > >();
-HXLINE( 193)							::objects::NoteSplash_obj::addAnimationToConfig(tempConfig,( (Float)(1) ),name,(((((HX_("",00,00,00,00) + anim) + HX_(" ",20,00,00,00)) + col) + HX_(" ",20,00,00,00)) + (animNum + 1)),fps,offset,::Array_obj< int >::__new(0),data);
+HXLINE( 191)							::Array< Float > offset = offsets->__get(::flixel::math::FlxMath_obj::wrap(data,0,::Std_obj::_hx_int(( (Float)((offsets->length - 1)) )))).StaticCast< ::Array< Float > >();
+HXLINE( 192)							::objects::NoteSplash_obj::addAnimationToConfig(tempConfig,( (Float)(1) ),name,(((((HX_("",00,00,00,00) + anim) + HX_(" ",20,00,00,00)) + col) + HX_(" ",20,00,00,00)) + (animNum + 1)),fps,offset,::Array_obj< int >::__new(0),data);
             						}
             					}
             				}
             			}
             		}
-HXLINE( 196)		this->set_config(tempConfig);
-HXLINE( 197)		::objects::NoteSplash_obj::configs->set(path,this->config);
+HXLINE( 195)		this->set_config(tempConfig);
+HXLINE( 196)		::objects::NoteSplash_obj::configs->set(path,this->config);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(NoteSplash_obj,createConfigTextSplash,(void))
 
 void NoteSplash_obj::loadSplash(::String splash){
-            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_205_loadSplash)
-HXLINE( 206)		this->initTextureSplash(splash,null());
-HXLINE( 208)		::String path = (HX_("images/",77,50,74,c1) + this->texture);
-HXLINE( 209)		if (::objects::NoteSplash_obj::configs->exists(path)) {
-HXLINE( 210)			this->initConfigSplash(splash,path);
-HXLINE( 211)			return;
+            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_204_loadSplash)
+HXLINE( 205)		this->initTextureSplash(splash,null());
+HXLINE( 207)		::String path = (HX_("images/",77,50,74,c1) + this->texture);
+HXLINE( 208)		if (::objects::NoteSplash_obj::configs->exists(path)) {
+HXLINE( 209)			this->initConfigSplash(splash,path);
+HXLINE( 210)			return;
             		}
             		else {
-HXLINE( 212)			if (::backend::Paths_obj::fileExists(((HX_("",00,00,00,00) + path) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),null(),null())) {
-HXLINE( 213)				this->createConfigSplash(path);
-HXLINE( 214)				return;
+HXLINE( 211)			if (::backend::Paths_obj::fileExists(((HX_("",00,00,00,00) + path) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),null(),null())) {
+HXLINE( 212)				this->createConfigSplash(path);
+HXLINE( 213)				return;
             			}
             			else {
-HXLINE( 216)				this->createConfigTextSplash(path);
+HXLINE( 215)				this->createConfigTextSplash(path);
             			}
             		}
             	}
@@ -575,20 +575,20 @@ HXLINE( 216)				this->createConfigTextSplash(path);
 HX_DEFINE_DYNAMIC_FUNC1(NoteSplash_obj,loadSplash,(void))
 
 void NoteSplash_obj::loadSplashPixel(::String splash){
-            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_225_loadSplashPixel)
-HXLINE( 226)		this->initTextureSplash(splash,HX_("pixelUI/",95,50,4f,7e));
-HXLINE( 228)		::String path = (HX_("images/",77,50,74,c1) + this->texture);
-HXLINE( 229)		if (::objects::NoteSplash_obj::configs->exists(path)) {
-HXLINE( 230)			this->initConfigSplash(splash,path);
-HXLINE( 231)			return;
+            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_224_loadSplashPixel)
+HXLINE( 225)		this->initTextureSplash(splash,HX_("pixelUI/",95,50,4f,7e));
+HXLINE( 227)		::String path = (HX_("images/",77,50,74,c1) + this->texture);
+HXLINE( 228)		if (::objects::NoteSplash_obj::configs->exists(path)) {
+HXLINE( 229)			this->initConfigSplash(splash,path);
+HXLINE( 230)			return;
             		}
             		else {
-HXLINE( 232)			if (::backend::Paths_obj::fileExists(((HX_("",00,00,00,00) + path) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),null(),null())) {
-HXLINE( 233)				this->createConfigSplash(path);
-HXLINE( 234)				return;
+HXLINE( 231)			if (::backend::Paths_obj::fileExists(((HX_("",00,00,00,00) + path) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),null(),null())) {
+HXLINE( 232)				this->createConfigSplash(path);
+HXLINE( 233)				return;
             			}
             			else {
-HXLINE( 236)				this->createConfigTextSplash(path);
+HXLINE( 235)				this->createConfigTextSplash(path);
             			}
             		}
             	}
@@ -599,9 +599,9 @@ HX_DEFINE_DYNAMIC_FUNC1(NoteSplash_obj,loadSplashPixel,(void))
 void NoteSplash_obj::spawnSplashNote( ::Dynamic __o_x, ::Dynamic __o_y, ::Dynamic __o_noteData, ::objects::Note note, ::Dynamic __o_randomize){
             		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_0, ::objects::NoteSplash,_gthis) HXARGC(1)
             		void _hx_run(::String name){
-            			HX_GC_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_340_spawnSplashNote)
-HXLINE( 341)			_gthis->kill();
-HXLINE( 342)			_gthis->spawned = false;
+            			HX_GC_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_339_spawnSplashNote)
+HXLINE( 340)			_gthis->kill();
+HXLINE( 341)			_gthis->spawned = false;
             		}
             		HX_END_LOCAL_FUNC1((void))
 
@@ -613,284 +613,284 @@ HXLINE( 342)			_gthis->spawned = false;
             		if (::hx::IsNull(__o_noteData)) noteData = 0;
             		 ::Dynamic randomize = __o_randomize;
             		if (::hx::IsNull(__o_randomize)) randomize = true;
-            	HX_GC_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_240_spawnSplashNote)
-HXDLIN( 240)		 ::objects::NoteSplash _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE( 241)		bool _hx_tmp;
-HXDLIN( 241)		if (::hx::IsNotNull( note )) {
-HXLINE( 241)			_hx_tmp = ( (bool)(note->noteSplashData->__Field(HX_("disabled",7c,41,04,7c),::hx::paccDynamic)) );
+            	HX_GC_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_239_spawnSplashNote)
+HXDLIN( 239)		 ::objects::NoteSplash _gthis = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE( 240)		bool _hx_tmp;
+HXDLIN( 240)		if (::hx::IsNotNull( note )) {
+HXLINE( 240)			_hx_tmp = ( (bool)(note->noteSplashData->__Field(HX_("disabled",7c,41,04,7c),::hx::paccDynamic)) );
             		}
             		else {
-HXLINE( 241)			_hx_tmp = false;
+HXLINE( 240)			_hx_tmp = false;
             		}
-HXDLIN( 241)		if (_hx_tmp) {
-HXLINE( 242)			return;
+HXDLIN( 240)		if (_hx_tmp) {
+HXLINE( 241)			return;
             		}
-HXLINE( 244)		this->aliveTime = ( (Float)(0) );
-HXLINE( 246)		if (!(this->inEditor)) {
-HXLINE( 247)			::String loadedTexture = (::objects::NoteSplash_obj::defaultNoteSplash + ::objects::NoteSplash_obj::getSplashSkinPostfix());
-HXLINE( 248)			bool _hx_tmp1;
-HXDLIN( 248)			if (::hx::IsNotNull( note )) {
-HXLINE( 248)				_hx_tmp1 = ::hx::IsNotNull( note->noteSplashData->__Field(HX_("texture",db,c8,e0,9e),::hx::paccDynamic) );
+HXLINE( 243)		this->aliveTime = ( (Float)(0) );
+HXLINE( 245)		if (!(this->inEditor)) {
+HXLINE( 246)			::String loadedTexture = (::objects::NoteSplash_obj::defaultNoteSplash + ::objects::NoteSplash_obj::getSplashSkinPostfix());
+HXLINE( 247)			bool _hx_tmp1;
+HXDLIN( 247)			if (::hx::IsNotNull( note )) {
+HXLINE( 247)				_hx_tmp1 = ::hx::IsNotNull( note->noteSplashData->__Field(HX_("texture",db,c8,e0,9e),::hx::paccDynamic) );
             			}
             			else {
-HXLINE( 248)				_hx_tmp1 = false;
+HXLINE( 247)				_hx_tmp1 = false;
             			}
-HXDLIN( 248)			if (_hx_tmp1) {
-HXLINE( 249)				loadedTexture = ( (::String)(note->noteSplashData->__Field(HX_("texture",db,c8,e0,9e),::hx::paccDynamic)) );
+HXDLIN( 247)			if (_hx_tmp1) {
+HXLINE( 248)				loadedTexture = ( (::String)(note->noteSplashData->__Field(HX_("texture",db,c8,e0,9e),::hx::paccDynamic)) );
             			}
             			else {
-HXLINE( 250)				bool _hx_tmp2;
-HXDLIN( 250)				bool _hx_tmp3;
-HXDLIN( 250)				if (::hx::IsNotNull( ::states::PlayState_obj::SONG )) {
-HXLINE( 250)					_hx_tmp3 = ::hx::IsNotNull( ::states::PlayState_obj::SONG->__Field(HX_("splashSkin",84,03,e1,a1),::hx::paccDynamic) );
+HXLINE( 249)				bool _hx_tmp2;
+HXDLIN( 249)				bool _hx_tmp3;
+HXDLIN( 249)				if (::hx::IsNotNull( ::states::PlayState_obj::SONG )) {
+HXLINE( 249)					_hx_tmp3 = ::hx::IsNotNull( ::states::PlayState_obj::SONG->__Field(HX_("splashSkin",84,03,e1,a1),::hx::paccDynamic) );
             				}
             				else {
-HXLINE( 250)					_hx_tmp3 = false;
+HXLINE( 249)					_hx_tmp3 = false;
             				}
-HXDLIN( 250)				if (_hx_tmp3) {
-HXLINE( 250)					_hx_tmp2 = (( (::String)(::states::PlayState_obj::SONG->__Field(HX_("splashSkin",84,03,e1,a1),::hx::paccDynamic)) ).length > 0);
+HXDLIN( 249)				if (_hx_tmp3) {
+HXLINE( 249)					_hx_tmp2 = (( (::String)(::states::PlayState_obj::SONG->__Field(HX_("splashSkin",84,03,e1,a1),::hx::paccDynamic)) ).length > 0);
             				}
             				else {
-HXLINE( 250)					_hx_tmp2 = false;
+HXLINE( 249)					_hx_tmp2 = false;
             				}
-HXDLIN( 250)				if (_hx_tmp2) {
-HXLINE( 251)					loadedTexture = ( (::String)(::states::PlayState_obj::SONG->__Field(HX_("splashSkin",84,03,e1,a1),::hx::paccDynamic)) );
+HXDLIN( 249)				if (_hx_tmp2) {
+HXLINE( 250)					loadedTexture = ( (::String)(::states::PlayState_obj::SONG->__Field(HX_("splashSkin",84,03,e1,a1),::hx::paccDynamic)) );
             				}
             			}
-HXLINE( 253)			if ((this->texture != loadedTexture)) {
-HXLINE( 254)				this->loadSplash(loadedTexture);
+HXLINE( 252)			if ((this->texture != loadedTexture)) {
+HXLINE( 253)				this->loadSplash(loadedTexture);
             			}
             		}
-HXLINE( 257)		this->setPosition(x,y);
-HXLINE( 259)		if (::hx::IsNotNull( this->babyArrow )) {
-HXLINE( 260)			this->setPosition((this->babyArrow->x - (::objects::Note_obj::swagWidth * ((Float)0.95))),(this->babyArrow->y - ::objects::Note_obj::swagWidth));
+HXLINE( 256)		this->setPosition(x,y);
+HXLINE( 258)		if (::hx::IsNotNull( this->babyArrow )) {
+HXLINE( 259)			this->setPosition((this->babyArrow->x - (::objects::Note_obj::swagWidth * ((Float)0.95))),(this->babyArrow->y - ::objects::Note_obj::swagWidth));
             		}
-HXLINE( 262)		if (::hx::IsNotNull( note )) {
-HXLINE( 263)			noteData = note->noteData;
+HXLINE( 261)		if (::hx::IsNotNull( note )) {
+HXLINE( 262)			noteData = note->noteData;
             		}
-HXLINE( 265)		bool _hx_tmp4;
-HXDLIN( 265)		if (( (bool)(randomize) )) {
-HXLINE( 265)			_hx_tmp4 = (this->maxAnims > 1);
+HXLINE( 264)		bool _hx_tmp4;
+HXDLIN( 264)		if (( (bool)(randomize) )) {
+HXLINE( 264)			_hx_tmp4 = (this->maxAnims > 1);
             		}
             		else {
-HXLINE( 265)			_hx_tmp4 = false;
+HXLINE( 264)			_hx_tmp4 = false;
             		}
-HXDLIN( 265)		if (_hx_tmp4) {
-HXLINE( 266)			int noteData1 = ::hx::Mod(noteData,::objects::Note_obj::colArray->length);
-HXDLIN( 266)			int noteData2 = ::flixel::FlxG_obj::random->_hx_int(0,(this->maxAnims - 1),null());
-HXDLIN( 266)			noteData = (noteData1 + (noteData2 * ::objects::Note_obj::colArray->length));
+HXDLIN( 264)		if (_hx_tmp4) {
+HXLINE( 265)			int noteData1 = ::hx::Mod(noteData,::objects::Note_obj::colArray->length);
+HXDLIN( 265)			int noteData2 = ::flixel::FlxG_obj::random->_hx_int(0,(this->maxAnims - 1),null());
+HXDLIN( 265)			noteData = (noteData1 + (noteData2 * ::objects::Note_obj::colArray->length));
             		}
-HXLINE( 268)		this->noteData = ( (int)(noteData) );
-HXLINE( 269)		::String anim = this->playDefaultAnim();
-HXLINE( 271)		 ::shaders::RGBPalette tempShader = null();
-HXLINE( 272)		if (( (bool)(this->config->__Field(HX_("allowRGB",04,8e,17,9e),::hx::paccDynamic)) )) {
-HXLINE( 274)			::objects::Note_obj::initializeGlobalRGBShader(::hx::Mod(noteData,::objects::Note_obj::colArray->length));
-HXLINE( 275)			bool _hx_tmp5;
-HXDLIN( 275)			if (!(this->inEditor)) {
-HXLINE( 275)				bool _hx_tmp6;
-HXDLIN( 275)				if (::hx::IsNotNull( note )) {
-HXLINE( 275)					_hx_tmp6 = ( (bool)(note->noteSplashData->__Field(HX_("useRGBShader",cb,ac,57,46),::hx::paccDynamic)) );
+HXLINE( 267)		this->noteData = ( (int)(noteData) );
+HXLINE( 268)		::String anim = this->playDefaultAnim();
+HXLINE( 270)		 ::shaders::RGBPalette tempShader = null();
+HXLINE( 271)		if (( (bool)(this->config->__Field(HX_("allowRGB",04,8e,17,9e),::hx::paccDynamic)) )) {
+HXLINE( 273)			::objects::Note_obj::initializeGlobalRGBShader(::hx::Mod(noteData,::objects::Note_obj::colArray->length));
+HXLINE( 274)			bool _hx_tmp5;
+HXDLIN( 274)			if (!(this->inEditor)) {
+HXLINE( 274)				bool _hx_tmp6;
+HXDLIN( 274)				if (::hx::IsNotNull( note )) {
+HXLINE( 274)					_hx_tmp6 = ( (bool)(note->noteSplashData->__Field(HX_("useRGBShader",cb,ac,57,46),::hx::paccDynamic)) );
             				}
             				else {
-HXLINE( 275)					_hx_tmp6 = true;
+HXLINE( 274)					_hx_tmp6 = true;
             				}
-HXDLIN( 275)				if (_hx_tmp6) {
-HXLINE( 275)					if (::hx::IsNotNull( ::states::PlayState_obj::SONG )) {
-HXLINE( 275)						_hx_tmp5 = !(( (bool)(::states::PlayState_obj::SONG->__Field(HX_("disableNoteRGB",33,ad,d1,4a),::hx::paccDynamic)) ));
+HXDLIN( 274)				if (_hx_tmp6) {
+HXLINE( 274)					if (::hx::IsNotNull( ::states::PlayState_obj::SONG )) {
+HXLINE( 274)						_hx_tmp5 = !(( (bool)(::states::PlayState_obj::SONG->__Field(HX_("disableNoteRGB",33,ad,d1,4a),::hx::paccDynamic)) ));
             					}
             					else {
-HXLINE( 275)						_hx_tmp5 = true;
+HXLINE( 274)						_hx_tmp5 = true;
             					}
             				}
             				else {
-HXLINE( 275)					_hx_tmp5 = false;
+HXLINE( 274)					_hx_tmp5 = false;
             				}
             			}
             			else {
-HXLINE( 275)				_hx_tmp5 = true;
+HXLINE( 274)				_hx_tmp5 = true;
             			}
-HXDLIN( 275)			if (_hx_tmp5) {
-HXLINE( 277)				tempShader =  ::shaders::RGBPalette_obj::__alloc( HX_CTX );
-HXLINE( 279)				bool _hx_tmp7;
-HXDLIN( 279)				bool _hx_tmp8;
-HXDLIN( 279)				if (::hx::IsNotNull( note )) {
-HXLINE( 279)					_hx_tmp8 = !(( (bool)(note->noteSplashData->__Field(HX_("useGlobalShader",cf,57,4f,53),::hx::paccDynamic)) ));
+HXDLIN( 274)			if (_hx_tmp5) {
+HXLINE( 276)				tempShader =  ::shaders::RGBPalette_obj::__alloc( HX_CTX );
+HXLINE( 278)				bool _hx_tmp7;
+HXDLIN( 278)				bool _hx_tmp8;
+HXDLIN( 278)				if (::hx::IsNotNull( note )) {
+HXLINE( 278)					_hx_tmp8 = !(( (bool)(note->noteSplashData->__Field(HX_("useGlobalShader",cf,57,4f,53),::hx::paccDynamic)) ));
             				}
             				else {
-HXLINE( 279)					_hx_tmp8 = true;
+HXLINE( 278)					_hx_tmp8 = true;
             				}
-HXDLIN( 279)				if (!(_hx_tmp8)) {
-HXLINE( 279)					_hx_tmp7 = this->inEditor;
+HXDLIN( 278)				if (!(_hx_tmp8)) {
+HXLINE( 278)					_hx_tmp7 = this->inEditor;
             				}
             				else {
-HXLINE( 279)					_hx_tmp7 = true;
+HXLINE( 278)					_hx_tmp7 = true;
             				}
-HXDLIN( 279)				if (_hx_tmp7) {
-HXLINE( 281)					::Array< ::Dynamic> colors = ( (::Array< ::Dynamic>)(this->config->__Field(HX_("rgb",0d,db,56,00),::hx::paccDynamic)) );
-HXLINE( 282)					if (::hx::IsNotNull( colors )) {
-HXLINE( 284)						int _g = 0;
-HXDLIN( 284)						int _g1 = colors->length;
-HXDLIN( 284)						while((_g < _g1)){
-HXLINE( 284)							_g = (_g + 1);
-HXDLIN( 284)							int i = (_g - 1);
-HXLINE( 286)							if ((i > 2)) {
-HXLINE( 286)								goto _hx_goto_16;
+HXDLIN( 278)				if (_hx_tmp7) {
+HXLINE( 280)					::Array< ::Dynamic> colors = ( (::Array< ::Dynamic>)(this->config->__Field(HX_("rgb",0d,db,56,00),::hx::paccDynamic)) );
+HXLINE( 281)					if (::hx::IsNotNull( colors )) {
+HXLINE( 283)						int _g = 0;
+HXDLIN( 283)						int _g1 = colors->length;
+HXDLIN( 283)						while((_g < _g1)){
+HXLINE( 283)							_g = (_g + 1);
+HXDLIN( 283)							int i = (_g - 1);
+HXLINE( 285)							if ((i > 2)) {
+HXLINE( 285)								goto _hx_goto_16;
             							}
-HXLINE( 288)							::Array< int > arr = ::backend::ClientPrefs_obj::data->arrowRGB->__get(::hx::Mod(noteData,::objects::Note_obj::colArray->length)).StaticCast< ::Array< int > >();
-HXLINE( 289)							if (::states::PlayState_obj::get_isPixelStage()) {
-HXLINE( 289)								arr = ::backend::ClientPrefs_obj::data->arrowRGBPixel->__get(::hx::Mod(noteData,::objects::Note_obj::colArray->length)).StaticCast< ::Array< int > >();
+HXLINE( 287)							::Array< int > arr = ::backend::ClientPrefs_obj::data->arrowRGB->__get(::hx::Mod(noteData,::objects::Note_obj::colArray->length)).StaticCast< ::Array< int > >();
+HXLINE( 288)							if (::states::PlayState_obj::get_isPixelStage()) {
+HXLINE( 288)								arr = ::backend::ClientPrefs_obj::data->arrowRGBPixel->__get(::hx::Mod(noteData,::objects::Note_obj::colArray->length)).StaticCast< ::Array< int > >();
             							}
-HXLINE( 291)							 ::Dynamic rgb = colors->__get(i);
-HXLINE( 292)							if (::hx::IsNull( rgb )) {
-HXLINE( 294)								if ((i == 0)) {
-HXLINE( 294)									tempShader->set_r(arr->__get(0));
+HXLINE( 290)							 ::Dynamic rgb = colors->__get(i);
+HXLINE( 291)							if (::hx::IsNull( rgb )) {
+HXLINE( 293)								if ((i == 0)) {
+HXLINE( 293)									tempShader->set_r(arr->__get(0));
             								}
             								else {
-HXLINE( 295)									if ((i == 1)) {
-HXLINE( 295)										tempShader->set_g(arr->__get(1));
+HXLINE( 294)									if ((i == 1)) {
+HXLINE( 294)										tempShader->set_g(arr->__get(1));
             									}
             									else {
-HXLINE( 296)										if ((i == 2)) {
-HXLINE( 296)											tempShader->set_b(arr->__get(2));
+HXLINE( 295)										if ((i == 2)) {
+HXLINE( 295)											tempShader->set_b(arr->__get(2));
             										}
             									}
             								}
-HXLINE( 297)								continue;
+HXLINE( 296)								continue;
             							}
-HXLINE( 300)							 ::Dynamic r = rgb->__Field(HX_("r",72,00,00,00),::hx::paccDynamic);
-HXLINE( 301)							 ::Dynamic g = rgb->__Field(HX_("g",67,00,00,00),::hx::paccDynamic);
-HXLINE( 302)							 ::Dynamic b = rgb->__Field(HX_("b",62,00,00,00),::hx::paccDynamic);
-HXLINE( 304)							bool _hx_tmp9;
-HXDLIN( 304)							bool _hx_tmp10;
-HXDLIN( 304)							if (::hx::IsNotNull( r )) {
-HXLINE( 304)								_hx_tmp10 = ::Math_obj::isNaN(( (Float)(r) ));
-            							}
-            							else {
-HXLINE( 304)								_hx_tmp10 = true;
-            							}
-HXDLIN( 304)							if (!(_hx_tmp10)) {
-HXLINE( 304)								_hx_tmp9 = ::hx::IsLess( r,0 );
+HXLINE( 299)							 ::Dynamic r = rgb->__Field(HX_("r",72,00,00,00),::hx::paccDynamic);
+HXLINE( 300)							 ::Dynamic g = rgb->__Field(HX_("g",67,00,00,00),::hx::paccDynamic);
+HXLINE( 301)							 ::Dynamic b = rgb->__Field(HX_("b",62,00,00,00),::hx::paccDynamic);
+HXLINE( 303)							bool _hx_tmp9;
+HXDLIN( 303)							bool _hx_tmp10;
+HXDLIN( 303)							if (::hx::IsNotNull( r )) {
+HXLINE( 303)								_hx_tmp10 = ::Math_obj::isNaN(( (Float)(r) ));
             							}
             							else {
-HXLINE( 304)								_hx_tmp9 = true;
+HXLINE( 303)								_hx_tmp10 = true;
             							}
-HXDLIN( 304)							if (_hx_tmp9) {
-HXLINE( 304)								r = arr->__get(0);
-            							}
-HXLINE( 305)							bool _hx_tmp11;
-HXDLIN( 305)							bool _hx_tmp12;
-HXDLIN( 305)							if (::hx::IsNotNull( g )) {
-HXLINE( 305)								_hx_tmp12 = ::Math_obj::isNaN(( (Float)(g) ));
+HXDLIN( 303)							if (!(_hx_tmp10)) {
+HXLINE( 303)								_hx_tmp9 = ::hx::IsLess( r,0 );
             							}
             							else {
-HXLINE( 305)								_hx_tmp12 = true;
+HXLINE( 303)								_hx_tmp9 = true;
             							}
-HXDLIN( 305)							if (!(_hx_tmp12)) {
-HXLINE( 305)								_hx_tmp11 = ::hx::IsLess( g,0 );
+HXDLIN( 303)							if (_hx_tmp9) {
+HXLINE( 303)								r = arr->__get(0);
             							}
-            							else {
-HXLINE( 305)								_hx_tmp11 = true;
-            							}
-HXDLIN( 305)							if (_hx_tmp11) {
-HXLINE( 305)								g = arr->__get(1);
-            							}
-HXLINE( 306)							bool _hx_tmp13;
-HXDLIN( 306)							bool _hx_tmp14;
-HXDLIN( 306)							if (::hx::IsNotNull( b )) {
-HXLINE( 306)								_hx_tmp14 = ::Math_obj::isNaN(( (Float)(b) ));
+HXLINE( 304)							bool _hx_tmp11;
+HXDLIN( 304)							bool _hx_tmp12;
+HXDLIN( 304)							if (::hx::IsNotNull( g )) {
+HXLINE( 304)								_hx_tmp12 = ::Math_obj::isNaN(( (Float)(g) ));
             							}
             							else {
-HXLINE( 306)								_hx_tmp14 = true;
+HXLINE( 304)								_hx_tmp12 = true;
             							}
-HXDLIN( 306)							if (!(_hx_tmp14)) {
-HXLINE( 306)								_hx_tmp13 = ::hx::IsLess( b,0 );
+HXDLIN( 304)							if (!(_hx_tmp12)) {
+HXLINE( 304)								_hx_tmp11 = ::hx::IsLess( g,0 );
             							}
             							else {
-HXLINE( 306)								_hx_tmp13 = true;
+HXLINE( 304)								_hx_tmp11 = true;
             							}
-HXDLIN( 306)							if (_hx_tmp13) {
-HXLINE( 306)								b = arr->__get(2);
+HXDLIN( 304)							if (_hx_tmp11) {
+HXLINE( 304)								g = arr->__get(1);
             							}
-HXLINE( 308)							int Red = ( (int)(r) );
-HXDLIN( 308)							int Green = ( (int)(g) );
-HXDLIN( 308)							int Blue = ( (int)(b) );
-HXDLIN( 308)							int Alpha = 255;
-HXDLIN( 308)							int color = ::flixel::util::_FlxColor::FlxColor_Impl__obj::_new(null());
-HXDLIN( 308)							{
-HXLINE( 308)								color = (color & -16711681);
-HXDLIN( 308)								int color1;
-HXDLIN( 308)								if ((Red > 255)) {
-HXLINE( 308)									color1 = 255;
+HXLINE( 305)							bool _hx_tmp13;
+HXDLIN( 305)							bool _hx_tmp14;
+HXDLIN( 305)							if (::hx::IsNotNull( b )) {
+HXLINE( 305)								_hx_tmp14 = ::Math_obj::isNaN(( (Float)(b) ));
+            							}
+            							else {
+HXLINE( 305)								_hx_tmp14 = true;
+            							}
+HXDLIN( 305)							if (!(_hx_tmp14)) {
+HXLINE( 305)								_hx_tmp13 = ::hx::IsLess( b,0 );
+            							}
+            							else {
+HXLINE( 305)								_hx_tmp13 = true;
+            							}
+HXDLIN( 305)							if (_hx_tmp13) {
+HXLINE( 305)								b = arr->__get(2);
+            							}
+HXLINE( 307)							int Red = ( (int)(r) );
+HXDLIN( 307)							int Green = ( (int)(g) );
+HXDLIN( 307)							int Blue = ( (int)(b) );
+HXDLIN( 307)							int Alpha = 255;
+HXDLIN( 307)							int color = ::flixel::util::_FlxColor::FlxColor_Impl__obj::_new(null());
+HXDLIN( 307)							{
+HXLINE( 307)								color = (color & -16711681);
+HXDLIN( 307)								int color1;
+HXDLIN( 307)								if ((Red > 255)) {
+HXLINE( 307)									color1 = 255;
             								}
             								else {
-HXLINE( 308)									if ((Red < 0)) {
-HXLINE( 308)										color1 = 0;
+HXLINE( 307)									if ((Red < 0)) {
+HXLINE( 307)										color1 = 0;
             									}
             									else {
-HXLINE( 308)										color1 = Red;
+HXLINE( 307)										color1 = Red;
             									}
             								}
-HXDLIN( 308)								color = (color | (color1 << 16));
+HXDLIN( 307)								color = (color | (color1 << 16));
             							}
-HXDLIN( 308)							{
-HXLINE( 308)								color = (color & -65281);
-HXDLIN( 308)								int color2;
-HXDLIN( 308)								if ((Green > 255)) {
-HXLINE( 308)									color2 = 255;
+HXDLIN( 307)							{
+HXLINE( 307)								color = (color & -65281);
+HXDLIN( 307)								int color2;
+HXDLIN( 307)								if ((Green > 255)) {
+HXLINE( 307)									color2 = 255;
             								}
             								else {
-HXLINE( 308)									if ((Green < 0)) {
-HXLINE( 308)										color2 = 0;
+HXLINE( 307)									if ((Green < 0)) {
+HXLINE( 307)										color2 = 0;
             									}
             									else {
-HXLINE( 308)										color2 = Green;
+HXLINE( 307)										color2 = Green;
             									}
             								}
-HXDLIN( 308)								color = (color | (color2 << 8));
+HXDLIN( 307)								color = (color | (color2 << 8));
             							}
-HXDLIN( 308)							{
-HXLINE( 308)								color = (color & -256);
-HXDLIN( 308)								int color3;
-HXDLIN( 308)								if ((Blue > 255)) {
-HXLINE( 308)									color3 = 255;
+HXDLIN( 307)							{
+HXLINE( 307)								color = (color & -256);
+HXDLIN( 307)								int color3;
+HXDLIN( 307)								if ((Blue > 255)) {
+HXLINE( 307)									color3 = 255;
             								}
             								else {
-HXLINE( 308)									if ((Blue < 0)) {
-HXLINE( 308)										color3 = 0;
+HXLINE( 307)									if ((Blue < 0)) {
+HXLINE( 307)										color3 = 0;
             									}
             									else {
-HXLINE( 308)										color3 = Blue;
+HXLINE( 307)										color3 = Blue;
             									}
             								}
-HXDLIN( 308)								color = (color | color3);
+HXDLIN( 307)								color = (color | color3);
             							}
-HXDLIN( 308)							{
-HXLINE( 308)								color = (color & 16777215);
-HXDLIN( 308)								int color4;
-HXDLIN( 308)								if ((Alpha > 255)) {
-HXLINE( 308)									color4 = 255;
+HXDLIN( 307)							{
+HXLINE( 307)								color = (color & 16777215);
+HXDLIN( 307)								int color4;
+HXDLIN( 307)								if ((Alpha > 255)) {
+HXLINE( 307)									color4 = 255;
             								}
             								else {
-HXLINE( 308)									if ((Alpha < 0)) {
-HXLINE( 308)										color4 = 0;
+HXLINE( 307)									if ((Alpha < 0)) {
+HXLINE( 307)										color4 = 0;
             									}
             									else {
-HXLINE( 308)										color4 = Alpha;
+HXLINE( 307)										color4 = Alpha;
             									}
             								}
-HXDLIN( 308)								color = (color | (color4 << 24));
+HXDLIN( 307)								color = (color | (color4 << 24));
             							}
-HXDLIN( 308)							int color5 = color;
-HXLINE( 309)							if ((i == 0)) {
-HXLINE( 309)								tempShader->set_r(color5);
+HXDLIN( 307)							int color5 = color;
+HXLINE( 308)							if ((i == 0)) {
+HXLINE( 308)								tempShader->set_r(color5);
             							}
             							else {
-HXLINE( 310)								if ((i == 1)) {
-HXLINE( 310)									tempShader->set_g(color5);
+HXLINE( 309)								if ((i == 1)) {
+HXLINE( 309)									tempShader->set_g(color5);
             								}
             								else {
-HXLINE( 311)									if ((i == 2)) {
-HXLINE( 311)										tempShader->set_b(color5);
+HXLINE( 310)									if ((i == 2)) {
+HXLINE( 310)										tempShader->set_b(color5);
             									}
             								}
             							}
@@ -898,212 +898,212 @@ HXLINE( 311)										tempShader->set_b(color5);
             						_hx_goto_16:;
             					}
             					else {
-HXLINE( 314)						tempShader->copyValues(::objects::Note_obj::globalRgbShaders->__get(::hx::Mod(noteData,::objects::Note_obj::colArray->length)).StaticCast<  ::shaders::RGBPalette >());
+HXLINE( 313)						tempShader->copyValues(::objects::Note_obj::globalRgbShaders->__get(::hx::Mod(noteData,::objects::Note_obj::colArray->length)).StaticCast<  ::shaders::RGBPalette >());
             					}
-HXLINE( 316)					if (::hx::IsNotNull( note )) {
-HXLINE( 318)						if (::hx::IsNotEq( note->noteSplashData->__Field(HX_("r",72,00,00,00),::hx::paccDynamic),-1 )) {
-HXLINE( 318)							tempShader->set_r(( (int)(note->noteSplashData->__Field(HX_("r",72,00,00,00),::hx::paccDynamic)) ));
+HXLINE( 315)					if (::hx::IsNotNull( note )) {
+HXLINE( 317)						if (::hx::IsNotEq( note->noteSplashData->__Field(HX_("r",72,00,00,00),::hx::paccDynamic),-1 )) {
+HXLINE( 317)							tempShader->set_r(( (int)(note->noteSplashData->__Field(HX_("r",72,00,00,00),::hx::paccDynamic)) ));
             						}
-HXLINE( 319)						if (::hx::IsNotEq( note->noteSplashData->__Field(HX_("g",67,00,00,00),::hx::paccDynamic),-1 )) {
-HXLINE( 319)							tempShader->set_g(( (int)(note->noteSplashData->__Field(HX_("g",67,00,00,00),::hx::paccDynamic)) ));
+HXLINE( 318)						if (::hx::IsNotEq( note->noteSplashData->__Field(HX_("g",67,00,00,00),::hx::paccDynamic),-1 )) {
+HXLINE( 318)							tempShader->set_g(( (int)(note->noteSplashData->__Field(HX_("g",67,00,00,00),::hx::paccDynamic)) ));
             						}
-HXLINE( 320)						if (::hx::IsNotEq( note->noteSplashData->__Field(HX_("b",62,00,00,00),::hx::paccDynamic),-1 )) {
-HXLINE( 320)							tempShader->set_b(( (int)(note->noteSplashData->__Field(HX_("b",62,00,00,00),::hx::paccDynamic)) ));
+HXLINE( 319)						if (::hx::IsNotEq( note->noteSplashData->__Field(HX_("b",62,00,00,00),::hx::paccDynamic),-1 )) {
+HXLINE( 319)							tempShader->set_b(( (int)(note->noteSplashData->__Field(HX_("b",62,00,00,00),::hx::paccDynamic)) ));
             						}
             					}
             				}
             				else {
-HXLINE( 323)					tempShader->copyValues(::objects::Note_obj::globalRgbShaders->__get(::hx::Mod(noteData,::objects::Note_obj::colArray->length)).StaticCast<  ::shaders::RGBPalette >());
+HXLINE( 322)					tempShader->copyValues(::objects::Note_obj::globalRgbShaders->__get(::hx::Mod(noteData,::objects::Note_obj::colArray->length)).StaticCast<  ::shaders::RGBPalette >());
             				}
             			}
             		}
-HXLINE( 326)		this->rgbShader->copyValues(tempShader);
-HXLINE( 327)		if (!(( (bool)(this->config->__Field(HX_("allowPixel",3d,81,6f,ed),::hx::paccDynamic)) ))) {
-HXLINE( 327)			this->rgbShader->set_pixelAmount(( (Float)(1) ));
+HXLINE( 325)		this->rgbShader->copyValues(tempShader);
+HXLINE( 326)		if (!(( (bool)(this->config->__Field(HX_("allowPixel",3d,81,6f,ed),::hx::paccDynamic)) ))) {
+HXLINE( 326)			this->rgbShader->set_pixelAmount(( (Float)(1) ));
             		}
             		else {
-HXLINE( 328)			if (::states::PlayState_obj::get_isPixelStage()) {
-HXLINE( 328)				this->rgbShader->set_pixelAmount(( (Float)(6) ));
+HXLINE( 327)			if (::states::PlayState_obj::get_isPixelStage()) {
+HXLINE( 327)				this->rgbShader->set_pixelAmount(( (Float)(6) ));
             			}
             		}
-HXLINE( 330)		{
-HXLINE( 330)			 ::flixel::math::FlxBasePoint this1 = this->offset;
-HXDLIN( 330)			this1->set_x(( (Float)(10) ));
-HXDLIN( 330)			this1->set_y(( (Float)(10) ));
+HXLINE( 329)		{
+HXLINE( 329)			 ::flixel::math::FlxBasePoint this1 = this->offset;
+HXDLIN( 329)			this1->set_x(( (Float)(10) ));
+HXDLIN( 329)			this1->set_y(( (Float)(10) ));
             		}
-HXLINE( 331)		 ::Dynamic conf = ( ( ::haxe::ds::StringMap)( ::Dynamic(this->config->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic))) )->get(anim);
-HXLINE( 332)		::Array< Float > offsets = ::Array_obj< Float >::fromData( _hx_array_data_45753873_19,2);
-HXLINE( 333)		if (::hx::IsNotNull( conf )) {
-HXLINE( 333)			offsets = ( (::Array< Float >)(conf->__Field(HX_("offsets",80,09,65,d7),::hx::paccDynamic)) );
+HXLINE( 330)		 ::Dynamic conf = ( ( ::haxe::ds::StringMap)( ::Dynamic(this->config->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic))) )->get(anim);
+HXLINE( 331)		::Array< Float > offsets = ::Array_obj< Float >::fromData( _hx_array_data_45753873_19,2);
+HXLINE( 332)		if (::hx::IsNotNull( conf )) {
+HXLINE( 332)			offsets = ( (::Array< Float >)(conf->__Field(HX_("offsets",80,09,65,d7),::hx::paccDynamic)) );
             		}
-HXLINE( 334)		if (::hx::IsNotNull( offsets )) {
-HXLINE( 336)			this->offset->set_x((this->offset->x + offsets->__get(0)));
-HXLINE( 337)			this->offset->set_y((this->offset->y + offsets->__get(1)));
+HXLINE( 333)		if (::hx::IsNotNull( offsets )) {
+HXLINE( 335)			this->offset->set_x((this->offset->x + offsets->__get(0)));
+HXLINE( 336)			this->offset->set_y((this->offset->y + offsets->__get(1)));
             		}
-HXLINE( 340)		this->animation->onFinish->add( ::Dynamic(new _hx_Closure_0(_gthis)));
-HXLINE( 345)		this->set_alpha(::backend::ClientPrefs_obj::data->splashAlpha);
-HXLINE( 346)		if (::hx::IsNotNull( note )) {
-HXLINE( 346)			this->set_alpha(( (Float)(note->noteSplashData->__Field(HX_("a",61,00,00,00),::hx::paccDynamic)) ));
+HXLINE( 339)		this->animation->onFinish->add( ::Dynamic(new _hx_Closure_0(_gthis)));
+HXLINE( 344)		this->set_alpha(::backend::ClientPrefs_obj::data->splashAlpha);
+HXLINE( 345)		if (::hx::IsNotNull( note )) {
+HXLINE( 345)			this->set_alpha(( (Float)(note->noteSplashData->__Field(HX_("a",61,00,00,00),::hx::paccDynamic)) ));
             		}
-HXLINE( 348)		this->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
-HXLINE( 349)		if (::hx::IsNotNull( note )) {
-HXLINE( 349)			this->set_antialiasing(( (bool)(note->noteSplashData->__Field(HX_("antialiasing",f4,16,b3,48),::hx::paccDynamic)) ));
+HXLINE( 347)		this->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
+HXLINE( 348)		if (::hx::IsNotNull( note )) {
+HXLINE( 348)			this->set_antialiasing(( (bool)(note->noteSplashData->__Field(HX_("antialiasing",f4,16,b3,48),::hx::paccDynamic)) ));
             		}
-HXLINE( 350)		bool _hx_tmp15;
-HXDLIN( 350)		if (::states::PlayState_obj::get_isPixelStage()) {
-HXLINE( 350)			_hx_tmp15 = ( (bool)(this->config->__Field(HX_("allowPixel",3d,81,6f,ed),::hx::paccDynamic)) );
+HXLINE( 349)		bool _hx_tmp15;
+HXDLIN( 349)		if (::states::PlayState_obj::get_isPixelStage()) {
+HXLINE( 349)			_hx_tmp15 = ( (bool)(this->config->__Field(HX_("allowPixel",3d,81,6f,ed),::hx::paccDynamic)) );
             		}
             		else {
-HXLINE( 350)			_hx_tmp15 = false;
+HXLINE( 349)			_hx_tmp15 = false;
             		}
-HXDLIN( 350)		if (_hx_tmp15) {
-HXLINE( 350)			this->set_antialiasing(false);
+HXDLIN( 349)		if (_hx_tmp15) {
+HXLINE( 349)			this->set_antialiasing(false);
             		}
-HXLINE( 352)		int minFps = 22;
-HXLINE( 353)		int maxFps = 26;
-HXLINE( 354)		if (::hx::IsNotNull( conf )) {
-HXLINE( 356)			minFps = ( (int)( ::Dynamic(conf->__Field(HX_("fps",e9,c7,4d,00),::hx::paccDynamic))->__GetItem(0)) );
-HXLINE( 357)			if ((minFps < 0)) {
-HXLINE( 357)				minFps = 0;
+HXLINE( 351)		int minFps = 22;
+HXLINE( 352)		int maxFps = 26;
+HXLINE( 353)		if (::hx::IsNotNull( conf )) {
+HXLINE( 355)			minFps = ( (int)( ::Dynamic(conf->__Field(HX_("fps",e9,c7,4d,00),::hx::paccDynamic))->__GetItem(0)) );
+HXLINE( 356)			if ((minFps < 0)) {
+HXLINE( 356)				minFps = 0;
             			}
-HXLINE( 359)			maxFps = ( (int)( ::Dynamic(conf->__Field(HX_("fps",e9,c7,4d,00),::hx::paccDynamic))->__GetItem(1)) );
-HXLINE( 360)			if ((maxFps < 0)) {
-HXLINE( 360)				maxFps = 0;
+HXLINE( 358)			maxFps = ( (int)( ::Dynamic(conf->__Field(HX_("fps",e9,c7,4d,00),::hx::paccDynamic))->__GetItem(1)) );
+HXLINE( 359)			if ((maxFps < 0)) {
+HXLINE( 359)				maxFps = 0;
             			}
             		}
-HXLINE( 363)		if (::hx::IsNotNull( this->animation->_curAnim )) {
-HXLINE( 364)			 ::flixel::animation::FlxAnimation _hx_tmp16 = this->animation->_curAnim;
-HXDLIN( 364)			_hx_tmp16->set_frameRate(( (Float)(::flixel::FlxG_obj::random->_hx_int(minFps,maxFps,null())) ));
+HXLINE( 362)		if (::hx::IsNotNull( this->animation->_curAnim )) {
+HXLINE( 363)			 ::flixel::animation::FlxAnimation _hx_tmp16 = this->animation->_curAnim;
+HXDLIN( 363)			_hx_tmp16->set_frameRate(( (Float)(::flixel::FlxG_obj::random->_hx_int(minFps,maxFps,null())) ));
             		}
-HXLINE( 366)		this->spawned = true;
+HXLINE( 365)		this->spawned = true;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC5(NoteSplash_obj,spawnSplashNote,(void))
 
 ::String NoteSplash_obj::playDefaultAnim(){
-            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_370_playDefaultAnim)
-HXLINE( 371)		::String anim = this->noteDataMap->get_string(this->noteData);
-HXLINE( 372)		bool _hx_tmp;
-HXDLIN( 372)		if (::hx::IsNotNull( anim )) {
-HXLINE( 372)			_hx_tmp = this->animation->exists(anim);
+            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_369_playDefaultAnim)
+HXLINE( 370)		::String anim = this->noteDataMap->get_string(this->noteData);
+HXLINE( 371)		bool _hx_tmp;
+HXDLIN( 371)		if (::hx::IsNotNull( anim )) {
+HXLINE( 371)			_hx_tmp = this->animation->exists(anim);
             		}
             		else {
-HXLINE( 372)			_hx_tmp = false;
+HXLINE( 371)			_hx_tmp = false;
             		}
-HXDLIN( 372)		if (_hx_tmp) {
-HXLINE( 373)			this->animation->play(anim,true,null(),null());
+HXDLIN( 371)		if (_hx_tmp) {
+HXLINE( 372)			this->animation->play(anim,true,null(),null());
             		}
-HXLINE( 375)		return anim;
+HXLINE( 374)		return anim;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(NoteSplash_obj,playDefaultAnim,return )
 
 bool NoteSplash_obj::checkForAnim(::String anim){
-            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_379_checkForAnim)
-HXLINE( 380)		::Array< ::Dynamic> animFrames = ::Array_obj< ::Dynamic>::__new(0);
-HXLINE( 382)		this->animation->findByPrefix(animFrames,anim,null());
-HXLINE( 384)		return (animFrames->length > 0);
+            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_378_checkForAnim)
+HXLINE( 379)		::Array< ::Dynamic> animFrames = ::Array_obj< ::Dynamic>::__new(0);
+HXLINE( 381)		this->animation->findByPrefix(animFrames,anim,null());
+HXLINE( 383)		return (animFrames->length > 0);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(NoteSplash_obj,checkForAnim,return )
 
 void NoteSplash_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_390_update)
-HXLINE( 391)		if (this->spawned) {
-HXLINE( 393)			 ::objects::NoteSplash _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN( 393)			_hx_tmp->aliveTime = (_hx_tmp->aliveTime + elapsed);
-HXLINE( 394)			bool _hx_tmp1;
-HXDLIN( 394)			if (::hx::IsNotNull( this->animation->_curAnim )) {
-HXLINE( 394)				_hx_tmp1 = (this->aliveTime >= ::objects::NoteSplash_obj::buggedKillTime);
+            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_389_update)
+HXLINE( 390)		if (this->spawned) {
+HXLINE( 392)			 ::objects::NoteSplash _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 392)			_hx_tmp->aliveTime = (_hx_tmp->aliveTime + elapsed);
+HXLINE( 393)			bool _hx_tmp1;
+HXDLIN( 393)			if (::hx::IsNotNull( this->animation->_curAnim )) {
+HXLINE( 393)				_hx_tmp1 = (this->aliveTime >= ::objects::NoteSplash_obj::buggedKillTime);
             			}
             			else {
-HXLINE( 394)				_hx_tmp1 = true;
+HXLINE( 393)				_hx_tmp1 = true;
             			}
-HXDLIN( 394)			if (_hx_tmp1) {
-HXLINE( 396)				this->kill();
-HXLINE( 397)				this->spawned = false;
-            			}
-            		}
-HXLINE( 401)		if (::hx::IsNotNull( this->babyArrow )) {
-HXLINE( 403)			if (this->copyX) {
-HXLINE( 404)				this->set_x((this->babyArrow->x - (::objects::Note_obj::swagWidth * ((Float)0.95))));
-            			}
-HXLINE( 406)			if (this->copyY) {
-HXLINE( 407)				this->set_y((this->babyArrow->y - ::objects::Note_obj::swagWidth));
+HXDLIN( 393)			if (_hx_tmp1) {
+HXLINE( 395)				this->kill();
+HXLINE( 396)				this->spawned = false;
             			}
             		}
-HXLINE( 409)		this->super::update(elapsed);
+HXLINE( 400)		if (::hx::IsNotNull( this->babyArrow )) {
+HXLINE( 402)			if (this->copyX) {
+HXLINE( 403)				this->set_x((this->babyArrow->x - (::objects::Note_obj::swagWidth * ((Float)0.95))));
+            			}
+HXLINE( 405)			if (this->copyY) {
+HXLINE( 406)				this->set_y((this->babyArrow->y - ::objects::Note_obj::swagWidth));
+            			}
+            		}
+HXLINE( 408)		this->super::update(elapsed);
             	}
 
 
  ::Dynamic NoteSplash_obj::set_config( ::Dynamic value){
-            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_442_set_config)
-HXLINE( 443)		if (::hx::IsNull( value )) {
-HXLINE( 443)			value = ::objects::NoteSplash_obj::createConfig();
+            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_441_set_config)
+HXLINE( 442)		if (::hx::IsNull( value )) {
+HXLINE( 442)			value = ::objects::NoteSplash_obj::createConfig();
             		}
-HXLINE( 446)		this->animation->clearAnimations();
-HXLINE( 447)		this->noteDataMap->clear();
-HXLINE( 449)		{
-HXLINE( 449)			 ::Dynamic i = ( ( ::haxe::ds::StringMap)( ::Dynamic(value->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic))) )->iterator();
-HXDLIN( 449)			while(( (bool)(i->__Field(HX_("hasNext",6d,a5,46,18),::hx::paccDynamic)()) )){
-HXLINE( 449)				 ::Dynamic i1 = i->__Field(HX_("next",f3,84,02,49),::hx::paccDynamic)();
-HXLINE( 451)				::String key = ( (::String)(i1->__Field(HX_("name",4b,72,ff,48),::hx::paccDynamic)) );
-HXLINE( 452)				bool _hx_tmp;
-HXDLIN( 452)				bool _hx_tmp1;
-HXDLIN( 452)				if ((( (::String)(i1->__Field(HX_("prefix",92,d9,b6,ae),::hx::paccDynamic)) ).length > 0)) {
-HXLINE( 452)					_hx_tmp1 = ::hx::IsNotNull( key );
+HXLINE( 445)		this->animation->clearAnimations();
+HXLINE( 446)		this->noteDataMap->clear();
+HXLINE( 448)		{
+HXLINE( 448)			 ::Dynamic i = ( ( ::haxe::ds::StringMap)( ::Dynamic(value->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic))) )->iterator();
+HXDLIN( 448)			while(( (bool)(i->__Field(HX_("hasNext",6d,a5,46,18),::hx::paccDynamic)()) )){
+HXLINE( 448)				 ::Dynamic i1 = i->__Field(HX_("next",f3,84,02,49),::hx::paccDynamic)();
+HXLINE( 450)				::String key = ( (::String)(i1->__Field(HX_("name",4b,72,ff,48),::hx::paccDynamic)) );
+HXLINE( 451)				bool _hx_tmp;
+HXDLIN( 451)				bool _hx_tmp1;
+HXDLIN( 451)				if ((( (::String)(i1->__Field(HX_("prefix",92,d9,b6,ae),::hx::paccDynamic)) ).length > 0)) {
+HXLINE( 451)					_hx_tmp1 = ::hx::IsNotNull( key );
             				}
             				else {
-HXLINE( 452)					_hx_tmp1 = false;
+HXLINE( 451)					_hx_tmp1 = false;
             				}
-HXDLIN( 452)				if (_hx_tmp1) {
-HXLINE( 452)					_hx_tmp = (key.length > 0);
+HXDLIN( 451)				if (_hx_tmp1) {
+HXLINE( 451)					_hx_tmp = (key.length > 0);
             				}
             				else {
-HXLINE( 452)					_hx_tmp = false;
+HXLINE( 451)					_hx_tmp = false;
             				}
-HXDLIN( 452)				if (_hx_tmp) {
-HXLINE( 454)					bool _hx_tmp2;
-HXDLIN( 454)					if (::hx::IsNotNull( i1->__Field(HX_("indices",27,47,54,e3),::hx::paccDynamic) )) {
-HXLINE( 454)						_hx_tmp2 = (( (::Array< int >)(i1->__Field(HX_("indices",27,47,54,e3),::hx::paccDynamic)) )->length > 0);
+HXDLIN( 451)				if (_hx_tmp) {
+HXLINE( 453)					bool _hx_tmp2;
+HXDLIN( 453)					if (::hx::IsNotNull( i1->__Field(HX_("indices",27,47,54,e3),::hx::paccDynamic) )) {
+HXLINE( 453)						_hx_tmp2 = (( (::Array< int >)(i1->__Field(HX_("indices",27,47,54,e3),::hx::paccDynamic)) )->length > 0);
             					}
             					else {
-HXLINE( 454)						_hx_tmp2 = false;
+HXLINE( 453)						_hx_tmp2 = false;
             					}
-HXDLIN( 454)					if (_hx_tmp2) {
-HXLINE( 455)						this->animation->addByIndices(key,( (::String)(i1->__Field(HX_("prefix",92,d9,b6,ae),::hx::paccDynamic)) ),( (::Array< int >)(i1->__Field(HX_("indices",27,47,54,e3),::hx::paccDynamic)) ),HX_("",00,00,00,00), ::Dynamic(i1->__Field(HX_("fps",e9,c7,4d,00),::hx::paccDynamic))->__GetItem(1),false,null(),null());
+HXDLIN( 453)					if (_hx_tmp2) {
+HXLINE( 454)						this->animation->addByIndices(key,( (::String)(i1->__Field(HX_("prefix",92,d9,b6,ae),::hx::paccDynamic)) ),( (::Array< int >)(i1->__Field(HX_("indices",27,47,54,e3),::hx::paccDynamic)) ),HX_("",00,00,00,00), ::Dynamic(i1->__Field(HX_("fps",e9,c7,4d,00),::hx::paccDynamic))->__GetItem(1),false,null(),null());
             					}
             					else {
-HXLINE( 457)						this->animation->addByPrefix(key,( (::String)(i1->__Field(HX_("prefix",92,d9,b6,ae),::hx::paccDynamic)) ), ::Dynamic(i1->__Field(HX_("fps",e9,c7,4d,00),::hx::paccDynamic))->__GetItem(1),false,null(),null());
+HXLINE( 456)						this->animation->addByPrefix(key,( (::String)(i1->__Field(HX_("prefix",92,d9,b6,ae),::hx::paccDynamic)) ), ::Dynamic(i1->__Field(HX_("fps",e9,c7,4d,00),::hx::paccDynamic))->__GetItem(1),false,null(),null());
             					}
-HXLINE( 459)					this->noteDataMap->set(( (int)(i1->__Field(HX_("noteData",3c,7b,96,51),::hx::paccDynamic)) ),key);
+HXLINE( 458)					this->noteDataMap->set(( (int)(i1->__Field(HX_("noteData",3c,7b,96,51),::hx::paccDynamic)) ),key);
             				}
             			}
             		}
-HXLINE( 463)		{
-HXLINE( 463)			 ::flixel::math::FlxBasePoint this1 = this->scale;
-HXDLIN( 463)			Float y = ( (Float)(value->__Field(HX_("scale",8a,ce,ce,78),::hx::paccDynamic)) );
-HXDLIN( 463)			this1->set_x(( (Float)(value->__Field(HX_("scale",8a,ce,ce,78),::hx::paccDynamic)) ));
-HXDLIN( 463)			this1->set_y(y);
+HXLINE( 462)		{
+HXLINE( 462)			 ::flixel::math::FlxBasePoint this1 = this->scale;
+HXDLIN( 462)			Float y = ( (Float)(value->__Field(HX_("scale",8a,ce,ce,78),::hx::paccDynamic)) );
+HXDLIN( 462)			this1->set_x(( (Float)(value->__Field(HX_("scale",8a,ce,ce,78),::hx::paccDynamic)) ));
+HXDLIN( 462)			this1->set_y(y);
             		}
-HXLINE( 464)		return (this->config = value);
+HXLINE( 463)		return (this->config = value);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(NoteSplash_obj,set_config,return )
 
 int NoteSplash_obj::set_maxAnims(int value){
-            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_468_set_maxAnims)
-HXLINE( 469)		if ((value > 0)) {
-HXLINE( 470)			this->noteData = ::Std_obj::_hx_int(( (Float)(::flixel::math::FlxMath_obj::wrap(this->noteData,0,((value * ::objects::Note_obj::colArray->length) - 1))) ));
+            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_467_set_maxAnims)
+HXLINE( 468)		if ((value > 0)) {
+HXLINE( 469)			this->noteData = ::Std_obj::_hx_int(( (Float)(::flixel::math::FlxMath_obj::wrap(this->noteData,0,((value * ::objects::Note_obj::colArray->length) - 1))) ));
             		}
             		else {
-HXLINE( 472)			this->noteData = 0;
+HXLINE( 471)			this->noteData = 0;
             		}
-HXLINE( 474)		return (this->maxAnims = value);
+HXLINE( 473)		return (this->maxAnims = value);
             	}
 
 
@@ -1116,20 +1116,20 @@ HX_DEFINE_DYNAMIC_FUNC1(NoteSplash_obj,set_maxAnims,return )
 Float NoteSplash_obj::buggedKillTime;
 
 ::String NoteSplash_obj::getSplashSkinPostfix(){
-            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_413_getSplashSkinPostfix)
-HXLINE( 414)		::String skin = HX_("",00,00,00,00);
-HXLINE( 415)		if ((::backend::ClientPrefs_obj::data->splashSkin != ::backend::ClientPrefs_obj::defaultData->splashSkin)) {
-HXLINE( 416)			skin = (HX_("-",2d,00,00,00) + ::StringTools_obj::replace(::StringTools_obj::trim(::backend::ClientPrefs_obj::data->splashSkin).toLowerCase(),HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)));
+            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_412_getSplashSkinPostfix)
+HXLINE( 413)		::String skin = HX_("",00,00,00,00);
+HXLINE( 414)		if ((::backend::ClientPrefs_obj::data->splashSkin != ::backend::ClientPrefs_obj::defaultData->splashSkin)) {
+HXLINE( 415)			skin = (HX_("-",2d,00,00,00) + ::StringTools_obj::replace(::StringTools_obj::trim(::backend::ClientPrefs_obj::data->splashSkin).toLowerCase(),HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)));
             		}
-HXLINE( 417)		return skin;
+HXLINE( 416)		return skin;
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(NoteSplash_obj,getSplashSkinPostfix,return )
 
  ::Dynamic NoteSplash_obj::createConfig(){
-            	HX_GC_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_422_createConfig)
-HXDLIN( 422)		return  ::Dynamic(::hx::Anon_obj::Create(6)
+            	HX_GC_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_421_createConfig)
+HXDLIN( 421)		return  ::Dynamic(::hx::Anon_obj::Create(6)
             			->setFixed(0,HX_("animations",ef,34,1c,83), ::haxe::ds::StringMap_obj::__alloc( HX_CTX ))
             			->setFixed(1,HX_("allowRGB",04,8e,17,9e),true)
             			->setFixed(2,HX_("allowPixelVariant",c8,38,2b,e5),false)
@@ -1142,19 +1142,19 @@ HXDLIN( 422)		return  ::Dynamic(::hx::Anon_obj::Create(6)
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(NoteSplash_obj,createConfig,return )
 
  ::Dynamic NoteSplash_obj::addAnimationToConfig( ::Dynamic config,Float scale,::String name,::String prefix,::Array< int > fps,::Array< Float > offsets,::Array< int > indices,int noteData){
-            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_433_addAnimationToConfig)
-HXLINE( 434)		if (::hx::IsNull( config )) {
-HXLINE( 434)			config = ::objects::NoteSplash_obj::createConfig();
+            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_432_addAnimationToConfig)
+HXLINE( 433)		if (::hx::IsNull( config )) {
+HXLINE( 433)			config = ::objects::NoteSplash_obj::createConfig();
             		}
-HXLINE( 436)		( ( ::haxe::ds::StringMap)( ::Dynamic(config->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic))) )->set(name, ::Dynamic(::hx::Anon_obj::Create(6)
+HXLINE( 435)		( ( ::haxe::ds::StringMap)( ::Dynamic(config->__Field(HX_("animations",ef,34,1c,83),::hx::paccDynamic))) )->set(name, ::Dynamic(::hx::Anon_obj::Create(6)
             			->setFixed(0,HX_("prefix",92,d9,b6,ae),prefix)
             			->setFixed(1,HX_("offsets",80,09,65,d7),offsets)
             			->setFixed(2,HX_("indices",27,47,54,e3),indices)
             			->setFixed(3,HX_("fps",e9,c7,4d,00),fps)
             			->setFixed(4,HX_("name",4b,72,ff,48),name)
             			->setFixed(5,HX_("noteData",3c,7b,96,51),noteData)));
-HXLINE( 437)		config->__SetField(HX_("scale",8a,ce,ce,78),scale,::hx::paccDynamic);
-HXLINE( 438)		return config;
+HXLINE( 436)		config->__SetField(HX_("scale",8a,ce,ce,78),scale,::hx::paccDynamic);
+HXLINE( 437)		return config;
             	}
 
 
@@ -1462,16 +1462,16 @@ void NoteSplash_obj::__register()
 void NoteSplash_obj::__boot()
 {
 {
-            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_46_boot)
-HXDLIN(  46)		defaultNoteSplash = HX_("noteSplashes/noteSplashes",4f,0e,1e,ef);
+            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_45_boot)
+HXDLIN(  45)		defaultNoteSplash = HX_("noteSplashes/noteSplashes",4f,0e,1e,ef);
             	}
 {
-            	HX_GC_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_47_boot)
-HXDLIN(  47)		configs =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
+            	HX_GC_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_46_boot)
+HXDLIN(  46)		configs =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_388_boot)
-HXDLIN( 388)		buggedKillTime = ((Float)0.5);
+            	HX_STACKFRAME(&_hx_pos_a3b2eb9b9f1b347d_387_boot)
+HXDLIN( 387)		buggedKillTime = ((Float)0.5);
             	}
 }
 

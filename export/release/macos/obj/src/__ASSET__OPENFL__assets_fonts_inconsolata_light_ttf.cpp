@@ -14,13 +14,13 @@
 #include <openfl/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_4a2cc303092fcf32_1578_new,"__ASSET__OPENFL__assets_fonts_inconsolata_light_ttf","new",0xff63a7b4,"__ASSET__OPENFL__assets_fonts_inconsolata_light_ttf.new","ManifestResources.hx",1578,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_4a2cc303092fcf32_1584_new,"__ASSET__OPENFL__assets_fonts_inconsolata_light_ttf","new",0xff63a7b4,"__ASSET__OPENFL__assets_fonts_inconsolata_light_ttf.new","ManifestResources.hx",1584,0xf77aa668)
 
 void __ASSET__OPENFL__assets_fonts_inconsolata_light_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_4a2cc303092fcf32_1578_new)
-HXDLIN(1578)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-Light.ttf",65,df,26,35));
-HXDLIN(1578)		this->name = HX_("Inconsolata Light",b1,c5,c9,e3);
-HXDLIN(1578)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_4a2cc303092fcf32_1584_new)
+HXDLIN(1584)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-Light.ttf",65,df,26,35));
+HXDLIN(1584)		this->name = HX_("Inconsolata Light",b1,c5,c9,e3);
+HXDLIN(1584)		super::__construct(null());
             	}
 
 Dynamic __ASSET__OPENFL__assets_fonts_inconsolata_light_ttf_obj::__CreateEmpty() { return new __ASSET__OPENFL__assets_fonts_inconsolata_light_ttf_obj; }

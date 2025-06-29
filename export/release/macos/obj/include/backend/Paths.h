@@ -109,6 +109,9 @@ class HXCPP_CLASS_ATTRIBUTES Paths_obj : public ::hx::Object
 		static ::String json(::String key,::String folder);
 		static ::Dynamic json_dyn();
 
+		static ::String dialogue(::String key,::String metafolder,::String folder);
+		static ::Dynamic dialogue_dyn();
+
 		static ::String shaderFragment(::String key,::String folder);
 		static ::Dynamic shaderFragment_dyn();
 

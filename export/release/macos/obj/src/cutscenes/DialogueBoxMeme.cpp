@@ -7,9 +7,6 @@
 #ifndef INCLUDED_StringTools
 #include <StringTools.h>
 #endif
-#ifndef INCLUDED_backend_Controls
-#include <backend/Controls.h>
-#endif
 #ifndef INCLUDED_backend_Language
 #include <backend/Language.h>
 #endif
@@ -67,6 +64,9 @@
 #ifndef INCLUDED_haxe_ds_StringMap
 #include <haxe/ds/StringMap.h>
 #endif
+#ifndef INCLUDED_haxe_format_JsonParser
+#include <haxe/format/JsonParser.h>
+#endif
 #ifndef INCLUDED_openfl_events_EventDispatcher
 #include <openfl/events/EventDispatcher.h>
 #endif
@@ -79,64 +79,57 @@
 #ifndef INCLUDED_sys_FileSystem
 #include <sys/FileSystem.h>
 #endif
+#ifndef INCLUDED_sys_io_File
+#include <sys/io/File.h>
+#endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_a84c99dedaa96de1_8_new,"cutscenes.DialogueBoxMeme","new",0xb54c6030,"cutscenes.DialogueBoxMeme.new","cutscenes/DialogueBoxMeme.hx",8,0x13a3c981)
-HX_LOCAL_STACK_FRAME(_hx_pos_a84c99dedaa96de1_41_update,"cutscenes.DialogueBoxMeme","update",0x4c0cb839,"cutscenes.DialogueBoxMeme.update","cutscenes/DialogueBoxMeme.hx",41,0x13a3c981)
+HX_DEFINE_STACK_FRAME(_hx_pos_a84c99dedaa96de1_45_new,"cutscenes.DialogueBoxMeme","new",0xb54c6030,"cutscenes.DialogueBoxMeme.new","cutscenes/DialogueBoxMeme.hx",45,0x13a3c981)
+HX_LOCAL_STACK_FRAME(_hx_pos_a84c99dedaa96de1_65_update,"cutscenes.DialogueBoxMeme","update",0x4c0cb839,"cutscenes.DialogueBoxMeme.update","cutscenes/DialogueBoxMeme.hx",65,0x13a3c981)
+HX_LOCAL_STACK_FRAME(_hx_pos_a84c99dedaa96de1_70_parseDialogue,"cutscenes.DialogueBoxMeme","parseDialogue",0x7a5bd83b,"cutscenes.DialogueBoxMeme.parseDialogue","cutscenes/DialogueBoxMeme.hx",70,0x13a3c981)
+static const ::String _hx_array_data_d5b4c83e_3[] = {
+	HX_("coolswag",d3,7d,92,03),
+};
+HX_LOCAL_STACK_FRAME(_hx_pos_a84c99dedaa96de1_77_dialogueTemplate,"cutscenes.DialogueBoxMeme","dialogueTemplate",0xa61277a2,"cutscenes.DialogueBoxMeme.dialogueTemplate","cutscenes/DialogueBoxMeme.hx",77,0x13a3c981)
+static const ::String _hx_array_data_d5b4c83e_5[] = {
+	HX_("coolswag",d3,7d,92,03),
+};
 namespace cutscenes{
 
-void DialogueBoxMeme_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_a84c99dedaa96de1_8_new)
-HXLINE(  40)		this->index = 0;
-HXLINE(  19)		this->de = ::Array_obj< int >::__new(0);
-HXLINE(  18)		this->dr = 0;
-HXLINE(  12)		::String _hx_tmp = HX_("IN A LUCID PARADISE",5c,2c,60,c9).toLowerCase();
-HXLINE(  13)		::String _hx_tmp1 = HX_(" YOU COME HERE TO BREAK THE TIME",4d,f0,3f,da).toLowerCase();
-HXLINE(  14)		::String _hx_tmp2 = HX_(" I'LL MAKE YOU A PROTAGONIST",ce,70,c9,7c).toLowerCase();
-HXLINE(  11)		this->dialogues = ::Array_obj< ::String >::__new(4)->init(0,_hx_tmp)->init(1,_hx_tmp1)->init(2,_hx_tmp2)->init(3,HX_(" AFTER WE PLAY HIDE AND SEEK",01,e7,1e,9c).toLowerCase());
-HXLINE(  21)		super::__construct(null(),null(),null());
-HXLINE(  23)		int _hx_tmp3 = ::Std_obj::_hx_int((( (Float)(::flixel::FlxG_obj::width) ) * ((Float)0.6)));
-HXDLIN(  23)		this->swagDialogue =  ::flixel::addons::text::FlxTypeText_obj::__alloc( HX_CTX ,( (Float)(240) ),( (Float)(500) ),_hx_tmp3,(((this->dialogues->__get(0) + this->dialogues->__get(1)) + this->dialogues->__get(2)) + this->dialogues->__get(3)),32,null());
-HXLINE(  24)		 ::flixel::addons::text::FlxTypeText _hx_tmp11 = this->swagDialogue;
-HXDLIN(  24)		::String key = (HX_("fonts/",eb,13,ef,fa) + HX_("pixel-latin.ttf",b5,c3,d6,c6));
-HXDLIN(  24)		::Dynamic this1 = ::backend::Language_obj::phrases;
-HXDLIN(  24)		::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key).toLowerCase());
-HXDLIN(  24)		if (::hx::IsNotNull( str )) {
-HXLINE(  24)			key = str;
+void DialogueBoxMeme_obj::__construct( ::Dynamic dialogueList){
+            	HX_GC_STACKFRAME(&_hx_pos_a84c99dedaa96de1_45_new)
+HXLINE(  63)		this->index = 0;
+HXLINE(  49)		super::__construct(null(),null(),null());
+HXLINE(  51)		this->swagDialogue =  ::flixel::addons::text::FlxTypeText_obj::__alloc( HX_CTX ,( (Float)(240) ),( (Float)(500) ),::Std_obj::_hx_int((( (Float)(::flixel::FlxG_obj::width) ) * ((Float)0.6))),HX_("SwagFarts",0c,75,9d,79),32,null());
+HXLINE(  52)		 ::flixel::addons::text::FlxTypeText _hx_tmp = this->swagDialogue;
+HXDLIN(  52)		::String key = (HX_("fonts/",eb,13,ef,fa) + HX_("pixel-latin.ttf",b5,c3,d6,c6));
+HXDLIN(  52)		::Dynamic this1 = ::backend::Language_obj::phrases;
+HXDLIN(  52)		::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key).toLowerCase());
+HXDLIN(  52)		if (::hx::IsNotNull( str )) {
+HXLINE(  52)			key = str;
             		}
-HXDLIN(  24)		::String folderKey = key;
-HXDLIN(  24)		::String file = ::backend::Paths_obj::modFolders(folderKey);
-HXDLIN(  24)		::String _hx_tmp21;
-HXDLIN(  24)		if (::sys::FileSystem_obj::exists(file)) {
-HXLINE(  24)			_hx_tmp21 = file;
+HXDLIN(  52)		::String folderKey = key;
+HXDLIN(  52)		::String file = ::backend::Paths_obj::modFolders(folderKey);
+HXDLIN(  52)		::String _hx_tmp1;
+HXDLIN(  52)		if (::sys::FileSystem_obj::exists(file)) {
+HXLINE(  52)			_hx_tmp1 = file;
             		}
             		else {
-HXLINE(  24)			_hx_tmp21 = (HX_("assets/",4c,2a,dc,36) + folderKey);
+HXLINE(  52)			_hx_tmp1 = (HX_("assets/",4c,2a,dc,36) + folderKey);
             		}
-HXDLIN(  24)		_hx_tmp11->set_font(_hx_tmp21);
-HXLINE(  25)		this->swagDialogue->set_color(-12640223);
-HXLINE(  26)		 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp31 = ::flixel::FlxG_obj::sound;
-HXDLIN(  26)		 ::flixel::sound::FlxSound _hx_tmp4 = _hx_tmp31->load(::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + HX_("pixelText",53,7a,83,06)),null(),true,null()),((Float)0.6),null(),null(),null(),null(),null(),null(),null());
-HXDLIN(  26)		this->swagDialogue->sounds = ::Array_obj< ::Dynamic>::__new(1)->init(0,_hx_tmp4);
-HXLINE(  27)		this->swagDialogue->set_borderStyle(::flixel::text::FlxTextBorderStyle_obj::SHADOW_dyn());
-HXLINE(  28)		this->swagDialogue->set_borderColor(-2583404);
-HXLINE(  29)		{
-HXLINE(  29)			 ::flixel::math::FlxBasePoint this2 = this->swagDialogue->_shadowOffset;
-HXDLIN(  29)			this2->set_x(( (Float)(2) ));
-HXDLIN(  29)			this2->set_y(( (Float)(2) ));
+HXDLIN(  52)		_hx_tmp->set_font(_hx_tmp1);
+HXLINE(  53)		this->swagDialogue->set_color(-12640223);
+HXLINE(  54)		 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp2 = ::flixel::FlxG_obj::sound;
+HXDLIN(  54)		 ::flixel::sound::FlxSound _hx_tmp3 = _hx_tmp2->load(::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + HX_("pixelText",53,7a,83,06)),null(),true,null()),((Float)0.6),null(),null(),null(),null(),null(),null(),null());
+HXDLIN(  54)		this->swagDialogue->sounds = ::Array_obj< ::Dynamic>::__new(1)->init(0,_hx_tmp3);
+HXLINE(  55)		this->swagDialogue->set_borderStyle(::flixel::text::FlxTextBorderStyle_obj::SHADOW_dyn());
+HXLINE(  56)		this->swagDialogue->set_borderColor(-2583404);
+HXLINE(  57)		{
+HXLINE(  57)			 ::flixel::math::FlxBasePoint this2 = this->swagDialogue->_shadowOffset;
+HXDLIN(  57)			this2->set_x(( (Float)(2) ));
+HXDLIN(  57)			this2->set_y(( (Float)(2) ));
             		}
-HXLINE(  30)		this->add(this->swagDialogue);
-HXLINE(  32)		this->swagDialogue->start(((Float)0.04),false,null(),null(),null());
-HXLINE(  34)		{
-HXLINE(  34)			int _g = 0;
-HXDLIN(  34)			int _g1 = this->dialogues->length;
-HXDLIN(  34)			while((_g < _g1)){
-HXLINE(  34)				_g = (_g + 1);
-HXDLIN(  34)				int i = (_g - 1);
-HXLINE(  35)				 ::cutscenes::DialogueBoxMeme _hx_tmp5 = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(  35)				_hx_tmp5->dr = (_hx_tmp5->dr + this->dialogues->__get(i).length);
-HXLINE(  36)				this->de->push(this->dr);
-            			}
-            		}
+HXLINE(  58)		this->add(this->swagDialogue);
+HXLINE(  60)		this->swagDialogue->start(((Float)0.04),false,null(),null(),null());
             	}
 
 Dynamic DialogueBoxMeme_obj::__CreateEmpty() { return new DialogueBoxMeme_obj; }
@@ -146,7 +139,7 @@ void *DialogueBoxMeme_obj::_hx_vtable = 0;
 Dynamic DialogueBoxMeme_obj::__Create(::hx::DynamicArray inArgs)
 {
 	::hx::ObjectPtr< DialogueBoxMeme_obj > _hx_result = new DialogueBoxMeme_obj();
-	_hx_result->__construct();
+	_hx_result->__construct(inArgs[0]);
 	return _hx_result;
 }
 
@@ -167,30 +160,80 @@ bool DialogueBoxMeme_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void DialogueBoxMeme_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_a84c99dedaa96de1_41_update)
-HXLINE(  42)		this->super::update(elapsed);
-HXLINE(  46)		if ((this->swagDialogue->text.length >= this->de->__get(this->index))) {
-HXLINE(  47)			 ::cutscenes::DialogueBoxMeme _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(  47)			_hx_tmp->index = (_hx_tmp->index + 1);
-HXLINE(  48)			this->swagDialogue->paused = true;
-            		}
-HXLINE(  51)		if (::backend::Controls_obj::instance->get_ACCEPT()) {
-HXLINE(  53)			this->swagDialogue->paused = false;
-            		}
+            	HX_STACKFRAME(&_hx_pos_a84c99dedaa96de1_65_update)
+HXDLIN(  65)		this->super::update(elapsed);
             	}
 
 
+ ::Dynamic DialogueBoxMeme_obj::parseDialogue(::String path){
+            	HX_GC_STACKFRAME(&_hx_pos_a84c99dedaa96de1_70_parseDialogue)
+HXDLIN(  70)		if (::sys::FileSystem_obj::exists(path)) {
+HXDLIN(  70)			return  ::haxe::format::JsonParser_obj::__alloc( HX_CTX ,::sys::io::File_obj::getContent(path))->doParse();
+            		}
+            		else {
+HXDLIN(  70)			return  ::Dynamic(::hx::Anon_obj::Create(4)
+            				->setFixed(0,HX_("dialogue",18,2d,94,a7),::Array_obj< ::Dynamic>::__new(1)->init(0, ::Dynamic(::hx::Anon_obj::Create(6)
+            					->setFixed(0,HX_("speed",87,97,69,81),((Float)1.0))
+            					->setFixed(1,HX_("speakerAnimation",05,22,fe,c5),HX_("BF",c4,39,00,00))
+            					->setFixed(2,HX_("speaker",ff,94,04,de),HX_("boyfriend",6a,29,b8,e6))
+            					->setFixed(3,HX_("box",0b,be,4a,00),HX_("default",c1,d8,c3,9b))
+            					->setFixed(4,HX_("boxAnimation",79,77,a8,1b),HX_("enter",18,6d,86,70))
+            					->setFixed(5,HX_("text",ad,cc,f9,4c),::Array_obj< ::String >::fromData( _hx_array_data_d5b4c83e_3,1)))))
+            				->setFixed(1,HX_("music",a5,d0,5a,10), ::Dynamic(::hx::Anon_obj::Create(3)
+            					->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)2.0))
+            					->setFixed(1,HX_("asset",f0,69,39,26),HX_("",00,00,00,00))
+            					->setFixed(2,HX_("looped",c3,5f,b9,61),true)))
+            				->setFixed(2,HX_("backdrop",d6,b1,96,1a), ::Dynamic(::hx::Anon_obj::Create(3)
+            					->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)2.0))
+            					->setFixed(1,HX_("color",63,71,5c,4a),HX_("#000000",63,3a,ab,a3))
+            					->setFixed(2,HX_("type",ba,f2,08,4d),HX_("solid",2b,b4,c5,80))))
+            				->setFixed(3,HX_("outro",cb,c3,28,37), ::Dynamic(::hx::Anon_obj::Create(2)
+            					->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)1.0))
+            					->setFixed(1,HX_("type",ba,f2,08,4d),HX_("none",b8,12,0a,49)))));
+            		}
+HXDLIN(  70)		return null();
+            	}
 
-::hx::ObjectPtr< DialogueBoxMeme_obj > DialogueBoxMeme_obj::__new() {
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC1(DialogueBoxMeme_obj,parseDialogue,return )
+
+ ::Dynamic DialogueBoxMeme_obj::dialogueTemplate(){
+            	HX_STACKFRAME(&_hx_pos_a84c99dedaa96de1_77_dialogueTemplate)
+HXDLIN(  77)		return  ::Dynamic(::hx::Anon_obj::Create(4)
+            			->setFixed(0,HX_("dialogue",18,2d,94,a7),::Array_obj< ::Dynamic>::__new(1)->init(0, ::Dynamic(::hx::Anon_obj::Create(6)
+            				->setFixed(0,HX_("speed",87,97,69,81),((Float)1.0))
+            				->setFixed(1,HX_("speakerAnimation",05,22,fe,c5),HX_("BF",c4,39,00,00))
+            				->setFixed(2,HX_("speaker",ff,94,04,de),HX_("boyfriend",6a,29,b8,e6))
+            				->setFixed(3,HX_("box",0b,be,4a,00),HX_("default",c1,d8,c3,9b))
+            				->setFixed(4,HX_("boxAnimation",79,77,a8,1b),HX_("enter",18,6d,86,70))
+            				->setFixed(5,HX_("text",ad,cc,f9,4c),::Array_obj< ::String >::fromData( _hx_array_data_d5b4c83e_5,1)))))
+            			->setFixed(1,HX_("music",a5,d0,5a,10), ::Dynamic(::hx::Anon_obj::Create(3)
+            				->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)2.0))
+            				->setFixed(1,HX_("asset",f0,69,39,26),HX_("",00,00,00,00))
+            				->setFixed(2,HX_("looped",c3,5f,b9,61),true)))
+            			->setFixed(2,HX_("backdrop",d6,b1,96,1a), ::Dynamic(::hx::Anon_obj::Create(3)
+            				->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)2.0))
+            				->setFixed(1,HX_("color",63,71,5c,4a),HX_("#000000",63,3a,ab,a3))
+            				->setFixed(2,HX_("type",ba,f2,08,4d),HX_("solid",2b,b4,c5,80))))
+            			->setFixed(3,HX_("outro",cb,c3,28,37), ::Dynamic(::hx::Anon_obj::Create(2)
+            				->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)1.0))
+            				->setFixed(1,HX_("type",ba,f2,08,4d),HX_("none",b8,12,0a,49)))));
+            	}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC0(DialogueBoxMeme_obj,dialogueTemplate,return )
+
+
+::hx::ObjectPtr< DialogueBoxMeme_obj > DialogueBoxMeme_obj::__new( ::Dynamic dialogueList) {
 	::hx::ObjectPtr< DialogueBoxMeme_obj > __this = new DialogueBoxMeme_obj();
-	__this->__construct();
+	__this->__construct(dialogueList);
 	return __this;
 }
 
-::hx::ObjectPtr< DialogueBoxMeme_obj > DialogueBoxMeme_obj::__alloc(::hx::Ctx *_hx_ctx) {
+::hx::ObjectPtr< DialogueBoxMeme_obj > DialogueBoxMeme_obj::__alloc(::hx::Ctx *_hx_ctx, ::Dynamic dialogueList) {
 	DialogueBoxMeme_obj *__this = (DialogueBoxMeme_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(DialogueBoxMeme_obj), true, "cutscenes.DialogueBoxMeme"));
 	*(void **)__this = DialogueBoxMeme_obj::_hx_vtable;
-	__this->__construct();
+	__this->__construct(dialogueList);
 	return __this;
 }
 
@@ -202,9 +245,6 @@ void DialogueBoxMeme_obj::__Mark(HX_MARK_PARAMS)
 {
 	HX_MARK_BEGIN_CLASS(DialogueBoxMeme);
 	HX_MARK_MEMBER_NAME(swagDialogue,"swagDialogue");
-	HX_MARK_MEMBER_NAME(dialogues,"dialogues");
-	HX_MARK_MEMBER_NAME(dr,"dr");
-	HX_MARK_MEMBER_NAME(de,"de");
 	HX_MARK_MEMBER_NAME(index,"index");
 	 ::flixel::group::FlxTypedSpriteGroup_obj::__Mark(HX_MARK_ARG);
 	HX_MARK_END_CLASS();
@@ -213,9 +253,6 @@ void DialogueBoxMeme_obj::__Mark(HX_MARK_PARAMS)
 void DialogueBoxMeme_obj::__Visit(HX_VISIT_PARAMS)
 {
 	HX_VISIT_MEMBER_NAME(swagDialogue,"swagDialogue");
-	HX_VISIT_MEMBER_NAME(dialogues,"dialogues");
-	HX_VISIT_MEMBER_NAME(dr,"dr");
-	HX_VISIT_MEMBER_NAME(de,"de");
 	HX_VISIT_MEMBER_NAME(index,"index");
 	 ::flixel::group::FlxTypedSpriteGroup_obj::__Visit(HX_VISIT_ARG);
 }
@@ -223,18 +260,11 @@ void DialogueBoxMeme_obj::__Visit(HX_VISIT_PARAMS)
 ::hx::Val DialogueBoxMeme_obj::__Field(const ::String &inName,::hx::PropertyAccess inCallProp)
 {
 	switch(inName.length) {
-	case 2:
-		if (HX_FIELD_EQ(inName,"dr") ) { return ::hx::Val( dr ); }
-		if (HX_FIELD_EQ(inName,"de") ) { return ::hx::Val( de ); }
-		break;
 	case 5:
 		if (HX_FIELD_EQ(inName,"index") ) { return ::hx::Val( index ); }
 		break;
 	case 6:
 		if (HX_FIELD_EQ(inName,"update") ) { return ::hx::Val( update_dyn() ); }
-		break;
-	case 9:
-		if (HX_FIELD_EQ(inName,"dialogues") ) { return ::hx::Val( dialogues ); }
 		break;
 	case 12:
 		if (HX_FIELD_EQ(inName,"swagDialogue") ) { return ::hx::Val( swagDialogue ); }
@@ -242,18 +272,23 @@ void DialogueBoxMeme_obj::__Visit(HX_VISIT_PARAMS)
 	return super::__Field(inName,inCallProp);
 }
 
+bool DialogueBoxMeme_obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::hx::PropertyAccess inCallProp)
+{
+	switch(inName.length) {
+	case 13:
+		if (HX_FIELD_EQ(inName,"parseDialogue") ) { outValue = parseDialogue_dyn(); return true; }
+		break;
+	case 16:
+		if (HX_FIELD_EQ(inName,"dialogueTemplate") ) { outValue = dialogueTemplate_dyn(); return true; }
+	}
+	return false;
+}
+
 ::hx::Val DialogueBoxMeme_obj::__SetField(const ::String &inName,const ::hx::Val &inValue,::hx::PropertyAccess inCallProp)
 {
 	switch(inName.length) {
-	case 2:
-		if (HX_FIELD_EQ(inName,"dr") ) { dr=inValue.Cast< int >(); return inValue; }
-		if (HX_FIELD_EQ(inName,"de") ) { de=inValue.Cast< ::Array< int > >(); return inValue; }
-		break;
 	case 5:
 		if (HX_FIELD_EQ(inName,"index") ) { index=inValue.Cast< int >(); return inValue; }
-		break;
-	case 9:
-		if (HX_FIELD_EQ(inName,"dialogues") ) { dialogues=inValue.Cast< ::Array< ::String > >(); return inValue; }
 		break;
 	case 12:
 		if (HX_FIELD_EQ(inName,"swagDialogue") ) { swagDialogue=inValue.Cast<  ::flixel::addons::text::FlxTypeText >(); return inValue; }
@@ -264,9 +299,6 @@ void DialogueBoxMeme_obj::__Visit(HX_VISIT_PARAMS)
 void DialogueBoxMeme_obj::__GetFields(Array< ::String> &outFields)
 {
 	outFields->push(HX_("swagDialogue",c2,ad,00,ad));
-	outFields->push(HX_("dialogues",5b,48,13,fa));
-	outFields->push(HX_("dr",8e,57,00,00));
-	outFields->push(HX_("de",81,57,00,00));
 	outFields->push(HX_("index",12,9b,14,be));
 	super::__GetFields(outFields);
 };
@@ -274,9 +306,6 @@ void DialogueBoxMeme_obj::__GetFields(Array< ::String> &outFields)
 #ifdef HXCPP_SCRIPTABLE
 static ::hx::StorageInfo DialogueBoxMeme_obj_sMemberStorageInfo[] = {
 	{::hx::fsObject /*  ::flixel::addons::text::FlxTypeText */ ,(int)offsetof(DialogueBoxMeme_obj,swagDialogue),HX_("swagDialogue",c2,ad,00,ad)},
-	{::hx::fsObject /* ::Array< ::String > */ ,(int)offsetof(DialogueBoxMeme_obj,dialogues),HX_("dialogues",5b,48,13,fa)},
-	{::hx::fsInt,(int)offsetof(DialogueBoxMeme_obj,dr),HX_("dr",8e,57,00,00)},
-	{::hx::fsObject /* ::Array< int > */ ,(int)offsetof(DialogueBoxMeme_obj,de),HX_("de",81,57,00,00)},
 	{::hx::fsInt,(int)offsetof(DialogueBoxMeme_obj,index),HX_("index",12,9b,14,be)},
 	{ ::hx::fsUnknown, 0, null()}
 };
@@ -285,14 +314,17 @@ static ::hx::StaticInfo *DialogueBoxMeme_obj_sStaticStorageInfo = 0;
 
 static ::String DialogueBoxMeme_obj_sMemberFields[] = {
 	HX_("swagDialogue",c2,ad,00,ad),
-	HX_("dialogues",5b,48,13,fa),
-	HX_("dr",8e,57,00,00),
-	HX_("de",81,57,00,00),
 	HX_("index",12,9b,14,be),
 	HX_("update",09,86,05,87),
 	::String(null()) };
 
 ::hx::Class DialogueBoxMeme_obj::__mClass;
+
+static ::String DialogueBoxMeme_obj_sStaticFields[] = {
+	HX_("parseDialogue",6b,64,c3,ec),
+	HX_("dialogueTemplate",72,a9,a4,17),
+	::String(null())
+};
 
 void DialogueBoxMeme_obj::__register()
 {
@@ -303,9 +335,9 @@ void DialogueBoxMeme_obj::__register()
 	__mClass->mSuper = &super::__SGetClass();
 	__mClass->mConstructEmpty = &__CreateEmpty;
 	__mClass->mConstructArgs = &__Create;
-	__mClass->mGetStaticField = &::hx::Class_obj::GetNoStaticField;
+	__mClass->mGetStaticField = &DialogueBoxMeme_obj::__GetStatic;
 	__mClass->mSetStaticField = &::hx::Class_obj::SetNoStaticField;
-	__mClass->mStatics = ::hx::Class_obj::dupFunctions(0 /* sStaticFields */);
+	__mClass->mStatics = ::hx::Class_obj::dupFunctions(DialogueBoxMeme_obj_sStaticFields);
 	__mClass->mMembers = ::hx::Class_obj::dupFunctions(DialogueBoxMeme_obj_sMemberFields);
 	__mClass->mCanCast = ::hx::TCanCast< DialogueBoxMeme_obj >;
 #ifdef HXCPP_SCRIPTABLE

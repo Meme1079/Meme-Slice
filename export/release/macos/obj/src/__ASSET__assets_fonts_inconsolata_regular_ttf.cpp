@@ -11,13 +11,13 @@
 #include <lime/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_a0677269f07605ae_1508_new,"__ASSET__assets_fonts_inconsolata_regular_ttf","new",0x4c36a3ca,"__ASSET__assets_fonts_inconsolata_regular_ttf.new","ManifestResources.hx",1508,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_a0677269f07605ae_1514_new,"__ASSET__assets_fonts_inconsolata_regular_ttf","new",0x4c36a3ca,"__ASSET__assets_fonts_inconsolata_regular_ttf.new","ManifestResources.hx",1514,0xf77aa668)
 
 void __ASSET__assets_fonts_inconsolata_regular_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_a0677269f07605ae_1508_new)
-HXDLIN(1508)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-Regular.ttf",ab,4f,46,a2));
-HXDLIN(1508)		this->name = HX_("Inconsolata Regular",f7,b3,b0,26);
-HXDLIN(1508)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_a0677269f07605ae_1514_new)
+HXDLIN(1514)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-Regular.ttf",ab,4f,46,a2));
+HXDLIN(1514)		this->name = HX_("Inconsolata Regular",f7,b3,b0,26);
+HXDLIN(1514)		super::__construct(null());
             	}
 
 Dynamic __ASSET__assets_fonts_inconsolata_regular_ttf_obj::__CreateEmpty() { return new __ASSET__assets_fonts_inconsolata_regular_ttf_obj; }

@@ -3,7 +3,6 @@ package states.stages;
 import flixel.addons.effects.FlxTrail;
 import states.stages.objects.*;
 import substates.GameOverSubstate;
-import cutscenes.DialogueBox;
 import openfl.utils.Assets as OpenFlAssets;
 
 class SchoolEvil extends BaseStage
@@ -34,7 +33,6 @@ class SchoolEvil extends BaseStage
 		FlxG.sound.music.fadeIn(1, 0, 0.8);
 		if(isStoryMode && !seenCutscene)
 		{
-			initDoof();
 			setStartCallback(schoolIntro);
 		}
 	}
@@ -80,37 +78,6 @@ class SchoolEvil extends BaseStage
 				}
 		}
 	}
-
-	var doof:DialogueBox = null;
-	function initDoof()
-	{
-		var file:String = Paths.txt('$songName/${songName}Dialogue_${ClientPrefs.data.language}'); //Checks for vanilla/Senpai dialogue
-		#if MODS_ALLOWED
-		if (!FileSystem.exists(file))
-		#else
-		if (!OpenFlAssets.exists(file))
-		#end
-		{
-			file = Paths.txt('$songName/${songName}Dialogue');
-		}
-
-		#if MODS_ALLOWED
-		if (!FileSystem.exists(file))
-		#else
-		if (!OpenFlAssets.exists(file))
-		#end
-		{
-			startCountdown();
-			return;
-		}
-
-		doof = new DialogueBox(false, CoolUtil.coolTextFile(file));
-		doof.cameras = [camHUD];
-		doof.scrollFactor.set();
-		doof.finishThing = startCountdown;
-		doof.nextDialogueThing = PlayState.instance.startNextDialogue;
-		doof.skipDialogueThing = PlayState.instance.skipDialogue;
-	}
 	
 	function schoolIntro():Void
 	{
@@ -131,8 +98,8 @@ class SchoolEvil extends BaseStage
 
 		new FlxTimer().start(2.1, function(tmr:FlxTimer)
 		{
-			if (doof != null)
-			{
+			//if (doof != null)
+			//{
 				add(senpaiEvil);
 				senpaiEvil.alpha = 0;
 				new FlxTimer().start(0.3, function(swagTimer:FlxTimer)
@@ -153,7 +120,7 @@ class SchoolEvil extends BaseStage
 							red.destroy();
 							FlxG.camera.fade(FlxColor.WHITE, 0.01, true, function()
 							{
-								add(doof);
+								//add(doof);
 								camHUD.visible = true;
 							}, true);
 						});
@@ -163,7 +130,7 @@ class SchoolEvil extends BaseStage
 						});
 					}
 				});
-			}
+			//}
 		});
 	}
 }

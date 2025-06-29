@@ -1,16 +1,15 @@
 package states.stages;
 
 import states.stages.objects.*;
-import substates.GameOverSubstate;
-import cutscenes.DialogueBox;
-import cutscenes.DialogueBoxMeme;
-
 import openfl.utils.Assets as OpenFlAssets;
 
+import substates.GameOverSubstate;
+import cutscenes.Conversation;
+import cutscenes.DialogueBox;
 class School extends BaseStage {
 	var bgGirls:BackgroundGirls;
 
-	var doof:DialogueBoxMeme;
+	var doof:DialogueBox;
 	override function create()
 	{
 		var _song = PlayState.SONG;
@@ -88,7 +87,9 @@ class School extends BaseStage {
 			if(songName == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
 		}
 
-		doof = new DialogueBoxMeme();
+		var g:ConversationData = Conversation.dialogueParse(Paths.dialogue('thorns', 'conversation'));
+		
+		doof = new DialogueBox(g);
 		doof.cameras = [camHUD];
 
 		setStartCallback(schoolIntro);

@@ -10,11 +10,9 @@
 #include <backend/BaseStage.h>
 #endif
 HX_DECLARE_CLASS1(backend,BaseStage)
-HX_DECLARE_CLASS1(cutscenes,DialogueBox)
 HX_DECLARE_CLASS1(flixel,FlxBasic)
 HX_DECLARE_CLASS1(flixel,FlxObject)
 HX_DECLARE_CLASS1(flixel,FlxSprite)
-HX_DECLARE_CLASS2(flixel,group,FlxTypedSpriteGroup)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
 HX_DECLARE_CLASS1(objects,BGSprite)
 HX_DECLARE_CLASS2(states,stages,SchoolEvil)
@@ -63,10 +61,6 @@ class HXCPP_CLASS_ATTRIBUTES SchoolEvil_obj : public  ::backend::BaseStage_obj
 		void eventCalled(::String eventName,::String value1,::String value2, ::Dynamic flValue1, ::Dynamic flValue2,Float strumTime);
 
 		void eventPushed( ::Dynamic event);
-
-		 ::cutscenes::DialogueBox doof;
-		void initDoof();
-		::Dynamic initDoof_dyn();
 
 		void schoolIntro();
 		::Dynamic schoolIntro_dyn();

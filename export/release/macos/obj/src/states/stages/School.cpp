@@ -28,8 +28,8 @@
 #ifndef INCLUDED_backend_SaveVariables
 #include <backend/SaveVariables.h>
 #endif
-#ifndef INCLUDED_cutscenes_DialogueBoxMeme
-#include <cutscenes/DialogueBoxMeme.h>
+#ifndef INCLUDED_cutscenes_DialogueBox
+#include <cutscenes/DialogueBox.h>
 #endif
 #ifndef INCLUDED_flixel_FlxBasic
 #include <flixel/FlxBasic.h>
@@ -112,6 +112,9 @@
 #ifndef INCLUDED_haxe_ds_StringMap
 #include <haxe/ds/StringMap.h>
 #endif
+#ifndef INCLUDED_haxe_format_JsonParser
+#include <haxe/format/JsonParser.h>
+#endif
 #ifndef INCLUDED_objects_BGSprite
 #include <objects/BGSprite.h>
 #endif
@@ -161,24 +164,27 @@
 #include <sys/io/File.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_628fdf92be9f29ca_10_new,"states.stages.School","new",0xc3fbf933,"states.stages.School.new","states/stages/School.hx",10,0xfaa6b77d)
-HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_15_create,"states.stages.School","create",0x6d684409,"states.stages.School.create","states/stages/School.hx",15,0xfaa6b77d)
+HX_DEFINE_STACK_FRAME(_hx_pos_628fdf92be9f29ca_9_new,"states.stages.School","new",0xc3fbf933,"states.stages.School.new","states/stages/School.hx",9,0xfaa6b77d)
+HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_14_create,"states.stages.School","create",0x6d684409,"states.stages.School.create","states/stages/School.hx",14,0xfaa6b77d)
 static const int _hx_array_data_413ce3c1_3[] = {
 	(int)0,(int)1,(int)2,(int)3,(int)4,(int)5,(int)6,(int)7,(int)8,(int)9,(int)10,(int)11,(int)12,(int)13,(int)14,(int)15,(int)16,(int)17,(int)18,
 };
 static const ::String _hx_array_data_413ce3c1_4[] = {
 	HX_("PETALS ALL",0a,57,91,88),
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_98_beatHit,"states.stages.School","beatHit",0xb06d78d0,"states.stages.School.beatHit","states/stages/School.hx",98,0xfaa6b77d)
-HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_105_eventCalled,"states.stages.School","eventCalled",0x4b3f540a,"states.stages.School.eventCalled","states/stages/School.hx",105,0xfaa6b77d)
-HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_119_schoolIntro,"states.stages.School","schoolIntro",0x885a112b,"states.stages.School.schoolIntro","states/stages/School.hx",119,0xfaa6b77d)
-HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_112_schoolIntro,"states.stages.School","schoolIntro",0x885a112b,"states.stages.School.schoolIntro","states/stages/School.hx",112,0xfaa6b77d)
+static const ::String _hx_array_data_413ce3c1_5[] = {
+	HX_("coolswag",d3,7d,92,03),
+};
+HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_99_beatHit,"states.stages.School","beatHit",0xb06d78d0,"states.stages.School.beatHit","states/stages/School.hx",99,0xfaa6b77d)
+HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_106_eventCalled,"states.stages.School","eventCalled",0x4b3f540a,"states.stages.School.eventCalled","states/stages/School.hx",106,0xfaa6b77d)
+HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_120_schoolIntro,"states.stages.School","schoolIntro",0x885a112b,"states.stages.School.schoolIntro","states/stages/School.hx",120,0xfaa6b77d)
+HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_113_schoolIntro,"states.stages.School","schoolIntro",0x885a112b,"states.stages.School.schoolIntro","states/stages/School.hx",113,0xfaa6b77d)
 namespace states{
 namespace stages{
 
 void School_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_628fdf92be9f29ca_10_new)
-HXDLIN(  10)		super::__construct();
+            	HX_STACKFRAME(&_hx_pos_628fdf92be9f29ca_9_new)
+HXDLIN(   9)		super::__construct();
             	}
 
 Dynamic School_obj::__CreateEmpty() { return new School_obj; }
@@ -205,178 +211,205 @@ bool School_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void School_obj::create(){
-            	HX_GC_STACKFRAME(&_hx_pos_628fdf92be9f29ca_15_create)
-HXLINE(  16)		 ::Dynamic _song = ::states::PlayState_obj::SONG;
-HXLINE(  17)		bool _hx_tmp;
-HXDLIN(  17)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverSound",89,f8,70,3c),::hx::paccDynamic) )) {
-HXLINE(  17)			_hx_tmp = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverSound",89,f8,70,3c),::hx::paccDynamic)) )).length < 1);
+            	HX_GC_STACKFRAME(&_hx_pos_628fdf92be9f29ca_14_create)
+HXLINE(  15)		 ::Dynamic _song = ::states::PlayState_obj::SONG;
+HXLINE(  16)		bool _hx_tmp;
+HXDLIN(  16)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverSound",89,f8,70,3c),::hx::paccDynamic) )) {
+HXLINE(  16)			_hx_tmp = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverSound",89,f8,70,3c),::hx::paccDynamic)) )).length < 1);
             		}
             		else {
-HXLINE(  17)			_hx_tmp = true;
+HXLINE(  16)			_hx_tmp = true;
             		}
-HXDLIN(  17)		if (_hx_tmp) {
-HXLINE(  17)			::substates::GameOverSubstate_obj::deathSoundName = HX_("fnf_loss_sfx-pixel",23,e5,94,32);
+HXDLIN(  16)		if (_hx_tmp) {
+HXLINE(  16)			::substates::GameOverSubstate_obj::deathSoundName = HX_("fnf_loss_sfx-pixel",23,e5,94,32);
             		}
-HXLINE(  18)		bool _hx_tmp1;
-HXDLIN(  18)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverLoop",ea,8f,ff,6a),::hx::paccDynamic) )) {
-HXLINE(  18)			_hx_tmp1 = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverLoop",ea,8f,ff,6a),::hx::paccDynamic)) )).length < 1);
-            		}
-            		else {
-HXLINE(  18)			_hx_tmp1 = true;
-            		}
-HXDLIN(  18)		if (_hx_tmp1) {
-HXLINE(  18)			::substates::GameOverSubstate_obj::loopSoundName = HX_("gameOver-pixel",1f,66,58,00);
-            		}
-HXLINE(  19)		bool _hx_tmp2;
-HXDLIN(  19)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverEnd",15,2d,a9,8d),::hx::paccDynamic) )) {
-HXLINE(  19)			_hx_tmp2 = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverEnd",15,2d,a9,8d),::hx::paccDynamic)) )).length < 1);
+HXLINE(  17)		bool _hx_tmp1;
+HXDLIN(  17)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverLoop",ea,8f,ff,6a),::hx::paccDynamic) )) {
+HXLINE(  17)			_hx_tmp1 = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverLoop",ea,8f,ff,6a),::hx::paccDynamic)) )).length < 1);
             		}
             		else {
-HXLINE(  19)			_hx_tmp2 = true;
+HXLINE(  17)			_hx_tmp1 = true;
             		}
-HXDLIN(  19)		if (_hx_tmp2) {
-HXLINE(  19)			::substates::GameOverSubstate_obj::endSoundName = HX_("gameOverEnd-pixel",0e,ae,3e,22);
+HXDLIN(  17)		if (_hx_tmp1) {
+HXLINE(  17)			::substates::GameOverSubstate_obj::loopSoundName = HX_("gameOver-pixel",1f,66,58,00);
             		}
-HXLINE(  20)		bool _hx_tmp3;
-HXDLIN(  20)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverChar",5c,48,07,65),::hx::paccDynamic) )) {
-HXLINE(  20)			_hx_tmp3 = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverChar",5c,48,07,65),::hx::paccDynamic)) )).length < 1);
-            		}
-            		else {
-HXLINE(  20)			_hx_tmp3 = true;
-            		}
-HXDLIN(  20)		if (_hx_tmp3) {
-HXLINE(  20)			::substates::GameOverSubstate_obj::characterName = HX_("bf-pixel-dead",34,d0,3d,c4);
-            		}
-HXLINE(  22)		 ::objects::BGSprite bgSky =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/weebSky",52,34,cf,a4),0,0,((Float)0.1),((Float)0.1),null(),null());
-HXLINE(  23)		this->add(bgSky);
-HXLINE(  24)		bgSky->set_antialiasing(false);
-HXLINE(  26)		int repositionShit = -200;
-HXLINE(  28)		 ::objects::BGSprite bgSchool =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/weebSchool",a3,21,c0,f5),repositionShit,0,((Float)0.6),((Float)0.90),null(),null());
-HXLINE(  29)		this->add(bgSchool);
-HXLINE(  30)		bgSchool->set_antialiasing(false);
-HXLINE(  32)		 ::objects::BGSprite bgStreet =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/weebStreet",32,81,24,c6),repositionShit,0,((Float)0.95),((Float)0.95),null(),null());
-HXLINE(  33)		this->add(bgStreet);
-HXLINE(  34)		bgStreet->set_antialiasing(false);
-HXLINE(  36)		Float widShit = bgSky->get_width();
-HXDLIN(  36)		int widShit1 = ::Std_obj::_hx_int((widShit * ::states::PlayState_obj::daPixelZoom));
-HXLINE(  37)		if (!(::backend::ClientPrefs_obj::data->lowQuality)) {
-HXLINE(  38)			 ::objects::BGSprite fgTrees =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/weebTreesBack",4d,ac,bd,40),(repositionShit + 170),130,((Float)0.9),((Float)0.9),null(),null());
-HXLINE(  39)			fgTrees->setGraphicSize(::Std_obj::_hx_int((( (Float)(widShit1) ) * ((Float)0.8))),null());
-HXLINE(  40)			fgTrees->updateHitbox();
-HXLINE(  41)			this->add(fgTrees);
-HXLINE(  42)			fgTrees->set_antialiasing(false);
-            		}
-HXLINE(  45)		 ::flixel::FlxSprite bgTrees =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,(repositionShit - 380),-800,null());
-HXLINE(  46)		::String parentFolder = null();
-HXDLIN(  46)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("weeb/weebTrees",06,ab,3a,76),parentFolder,true);
-HXDLIN(  46)		bool txtExists = false;
-HXDLIN(  46)		::String txt = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("weeb/weebTrees",06,ab,3a,76)) + HX_(".txt",02,3f,c0,1e)));
-HXDLIN(  46)		if (::sys::FileSystem_obj::exists(txt)) {
-HXLINE(  46)			txtExists = true;
-            		}
-HXDLIN(  46)		::String _hx_tmp4;
-HXDLIN(  46)		if (txtExists) {
-HXLINE(  46)			_hx_tmp4 = ::sys::io::File_obj::getContent(txt);
+HXLINE(  18)		bool _hx_tmp2;
+HXDLIN(  18)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverEnd",15,2d,a9,8d),::hx::paccDynamic) )) {
+HXLINE(  18)			_hx_tmp2 = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverEnd",15,2d,a9,8d),::hx::paccDynamic)) )).length < 1);
             		}
             		else {
-HXLINE(  46)			::String key = (HX_("images/",77,50,74,c1) + HX_("weeb/weebTrees",06,ab,3a,76));
-HXDLIN(  46)			::Dynamic this1 = ::backend::Language_obj::phrases;
-HXDLIN(  46)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key).toLowerCase());
-HXDLIN(  46)			if (::hx::IsNotNull( str )) {
-HXLINE(  46)				key = str;
+HXLINE(  18)			_hx_tmp2 = true;
+            		}
+HXDLIN(  18)		if (_hx_tmp2) {
+HXLINE(  18)			::substates::GameOverSubstate_obj::endSoundName = HX_("gameOverEnd-pixel",0e,ae,3e,22);
+            		}
+HXLINE(  19)		bool _hx_tmp3;
+HXDLIN(  19)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverChar",5c,48,07,65),::hx::paccDynamic) )) {
+HXLINE(  19)			_hx_tmp3 = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverChar",5c,48,07,65),::hx::paccDynamic)) )).length < 1);
+            		}
+            		else {
+HXLINE(  19)			_hx_tmp3 = true;
+            		}
+HXDLIN(  19)		if (_hx_tmp3) {
+HXLINE(  19)			::substates::GameOverSubstate_obj::characterName = HX_("bf-pixel-dead",34,d0,3d,c4);
+            		}
+HXLINE(  21)		 ::objects::BGSprite bgSky =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/weebSky",52,34,cf,a4),0,0,((Float)0.1),((Float)0.1),null(),null());
+HXLINE(  22)		this->add(bgSky);
+HXLINE(  23)		bgSky->set_antialiasing(false);
+HXLINE(  25)		int repositionShit = -200;
+HXLINE(  27)		 ::objects::BGSprite bgSchool =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/weebSchool",a3,21,c0,f5),repositionShit,0,((Float)0.6),((Float)0.90),null(),null());
+HXLINE(  28)		this->add(bgSchool);
+HXLINE(  29)		bgSchool->set_antialiasing(false);
+HXLINE(  31)		 ::objects::BGSprite bgStreet =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/weebStreet",32,81,24,c6),repositionShit,0,((Float)0.95),((Float)0.95),null(),null());
+HXLINE(  32)		this->add(bgStreet);
+HXLINE(  33)		bgStreet->set_antialiasing(false);
+HXLINE(  35)		Float widShit = bgSky->get_width();
+HXDLIN(  35)		int widShit1 = ::Std_obj::_hx_int((widShit * ::states::PlayState_obj::daPixelZoom));
+HXLINE(  36)		if (!(::backend::ClientPrefs_obj::data->lowQuality)) {
+HXLINE(  37)			 ::objects::BGSprite fgTrees =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/weebTreesBack",4d,ac,bd,40),(repositionShit + 170),130,((Float)0.9),((Float)0.9),null(),null());
+HXLINE(  38)			fgTrees->setGraphicSize(::Std_obj::_hx_int((( (Float)(widShit1) ) * ((Float)0.8))),null());
+HXLINE(  39)			fgTrees->updateHitbox();
+HXLINE(  40)			this->add(fgTrees);
+HXLINE(  41)			fgTrees->set_antialiasing(false);
+            		}
+HXLINE(  44)		 ::flixel::FlxSprite bgTrees =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,(repositionShit - 380),-800,null());
+HXLINE(  45)		::String parentFolder = null();
+HXDLIN(  45)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("weeb/weebTrees",06,ab,3a,76),parentFolder,true);
+HXDLIN(  45)		bool txtExists = false;
+HXDLIN(  45)		::String txt = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("weeb/weebTrees",06,ab,3a,76)) + HX_(".txt",02,3f,c0,1e)));
+HXDLIN(  45)		if (::sys::FileSystem_obj::exists(txt)) {
+HXLINE(  45)			txtExists = true;
+            		}
+HXDLIN(  45)		::String _hx_tmp4;
+HXDLIN(  45)		if (txtExists) {
+HXLINE(  45)			_hx_tmp4 = ::sys::io::File_obj::getContent(txt);
+            		}
+            		else {
+HXLINE(  45)			::String key = (HX_("images/",77,50,74,c1) + HX_("weeb/weebTrees",06,ab,3a,76));
+HXDLIN(  45)			::Dynamic this1 = ::backend::Language_obj::phrases;
+HXDLIN(  45)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key).toLowerCase());
+HXDLIN(  45)			if (::hx::IsNotNull( str )) {
+HXLINE(  45)				key = str;
             			}
-HXDLIN(  46)			_hx_tmp4 = ::backend::Paths_obj::getPath((key + HX_(".txt",02,3f,c0,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
+HXDLIN(  45)			_hx_tmp4 = ::backend::Paths_obj::getPath((key + HX_(".txt",02,3f,c0,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
             		}
-HXDLIN(  46)		bgTrees->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSpriteSheetPacker(imageLoaded,_hx_tmp4));
-HXLINE(  47)		bgTrees->animation->add(HX_("treeLoop",e2,72,7f,2b),::Array_obj< int >::fromData( _hx_array_data_413ce3c1_3,19),12,null(),null(),null());
-HXLINE(  48)		bgTrees->animation->play(HX_("treeLoop",e2,72,7f,2b),null(),null(),null());
-HXLINE(  49)		{
-HXLINE(  49)			 ::flixel::math::FlxBasePoint this2 = bgTrees->scrollFactor;
-HXDLIN(  49)			this2->set_x(((Float)0.85));
-HXDLIN(  49)			this2->set_y(((Float)0.85));
+HXDLIN(  45)		bgTrees->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSpriteSheetPacker(imageLoaded,_hx_tmp4));
+HXLINE(  46)		bgTrees->animation->add(HX_("treeLoop",e2,72,7f,2b),::Array_obj< int >::fromData( _hx_array_data_413ce3c1_3,19),12,null(),null(),null());
+HXLINE(  47)		bgTrees->animation->play(HX_("treeLoop",e2,72,7f,2b),null(),null(),null());
+HXLINE(  48)		{
+HXLINE(  48)			 ::flixel::math::FlxBasePoint this2 = bgTrees->scrollFactor;
+HXDLIN(  48)			this2->set_x(((Float)0.85));
+HXDLIN(  48)			this2->set_y(((Float)0.85));
             		}
-HXLINE(  50)		this->add(bgTrees);
-HXLINE(  51)		bgTrees->set_antialiasing(false);
-HXLINE(  53)		if (!(::backend::ClientPrefs_obj::data->lowQuality)) {
-HXLINE(  54)			 ::objects::BGSprite treeLeaves =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/petals",8d,ca,2b,c2),repositionShit,-40,((Float)0.85),((Float)0.85),::Array_obj< ::String >::fromData( _hx_array_data_413ce3c1_4,1),true);
-HXLINE(  55)			treeLeaves->setGraphicSize(widShit1,null());
-HXLINE(  56)			treeLeaves->updateHitbox();
-HXLINE(  57)			this->add(treeLeaves);
-HXLINE(  58)			treeLeaves->set_antialiasing(false);
+HXLINE(  49)		this->add(bgTrees);
+HXLINE(  50)		bgTrees->set_antialiasing(false);
+HXLINE(  52)		if (!(::backend::ClientPrefs_obj::data->lowQuality)) {
+HXLINE(  53)			 ::objects::BGSprite treeLeaves =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/petals",8d,ca,2b,c2),repositionShit,-40,((Float)0.85),((Float)0.85),::Array_obj< ::String >::fromData( _hx_array_data_413ce3c1_4,1),true);
+HXLINE(  54)			treeLeaves->setGraphicSize(widShit1,null());
+HXLINE(  55)			treeLeaves->updateHitbox();
+HXLINE(  56)			this->add(treeLeaves);
+HXLINE(  57)			treeLeaves->set_antialiasing(false);
             		}
-HXLINE(  61)		bgSky->setGraphicSize(widShit1,null());
-HXLINE(  62)		bgSchool->setGraphicSize(widShit1,null());
-HXLINE(  63)		bgStreet->setGraphicSize(widShit1,null());
-HXLINE(  64)		bgTrees->setGraphicSize(::Std_obj::_hx_int((( (Float)(widShit1) ) * ((Float)1.4))),null());
-HXLINE(  66)		bgSky->updateHitbox();
-HXLINE(  67)		bgSchool->updateHitbox();
-HXLINE(  68)		bgStreet->updateHitbox();
-HXLINE(  69)		bgTrees->updateHitbox();
-HXLINE(  71)		if (!(::backend::ClientPrefs_obj::data->lowQuality)) {
-HXLINE(  72)			this->bgGirls =  ::states::stages::objects::BackgroundGirls_obj::__alloc( HX_CTX ,( (Float)(-100) ),( (Float)(190) ));
-HXLINE(  73)			{
-HXLINE(  73)				 ::flixel::math::FlxBasePoint this3 = this->bgGirls->scrollFactor;
-HXDLIN(  73)				this3->set_x(((Float)0.9));
-HXDLIN(  73)				this3->set_y(((Float)0.9));
+HXLINE(  60)		bgSky->setGraphicSize(widShit1,null());
+HXLINE(  61)		bgSchool->setGraphicSize(widShit1,null());
+HXLINE(  62)		bgStreet->setGraphicSize(widShit1,null());
+HXLINE(  63)		bgTrees->setGraphicSize(::Std_obj::_hx_int((( (Float)(widShit1) ) * ((Float)1.4))),null());
+HXLINE(  65)		bgSky->updateHitbox();
+HXLINE(  66)		bgSchool->updateHitbox();
+HXLINE(  67)		bgStreet->updateHitbox();
+HXLINE(  68)		bgTrees->updateHitbox();
+HXLINE(  70)		if (!(::backend::ClientPrefs_obj::data->lowQuality)) {
+HXLINE(  71)			this->bgGirls =  ::states::stages::objects::BackgroundGirls_obj::__alloc( HX_CTX ,( (Float)(-100) ),( (Float)(190) ));
+HXLINE(  72)			{
+HXLINE(  72)				 ::flixel::math::FlxBasePoint this3 = this->bgGirls->scrollFactor;
+HXDLIN(  72)				this3->set_x(((Float)0.9));
+HXDLIN(  72)				this3->set_y(((Float)0.9));
             			}
-HXLINE(  74)			this->add(this->bgGirls);
+HXLINE(  73)			this->add(this->bgGirls);
             		}
-HXLINE(  78)		::String _hx_switch_0 = ( (::String)(::flixel::FlxG_obj::game->_state->__Field(HX_("songName",c0,d0,d7,36),::hx::paccDynamic)) );
+HXLINE(  77)		::String _hx_switch_0 = ( (::String)(::flixel::FlxG_obj::game->_state->__Field(HX_("songName",c0,d0,d7,36),::hx::paccDynamic)) );
             		if (  (_hx_switch_0==HX_("roses",04,6c,64,ed)) ){
-HXLINE(  84)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp5 = ::flixel::FlxG_obj::sound;
-HXDLIN(  84)			_hx_tmp5->play(::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + HX_("ANGRY_TEXT_BOX",57,5c,5c,19)),null(),true,null()),null(),null(),null(),null(),null());
-HXDLIN(  84)			goto _hx_goto_1;
+HXLINE(  83)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp5 = ::flixel::FlxG_obj::sound;
+HXDLIN(  83)			_hx_tmp5->play(::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + HX_("ANGRY_TEXT_BOX",57,5c,5c,19)),null(),true,null()),null(),null(),null(),null(),null());
+HXDLIN(  83)			goto _hx_goto_1;
             		}
             		if (  (_hx_switch_0==HX_("senpai",3c,df,8d,6b)) ){
-HXLINE(  81)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp6 = ::flixel::FlxG_obj::sound;
-HXDLIN(  81)			_hx_tmp6->playMusic(::backend::Paths_obj::returnSound((HX_("music/",ea,bf,1b,3f) + HX_("Lunchbox",c1,34,3f,3d)),null(),true,null()),0,null(),null());
-HXLINE(  82)			{
-HXLINE(  82)				 ::flixel::sound::FlxSound _this = ::flixel::FlxG_obj::sound->music;
-HXDLIN(  82)				 ::Dynamic onComplete = null();
-HXDLIN(  82)				if (::hx::IsNull( _this->_channel )) {
-HXLINE(  82)					_this->play(null(),null(),null());
+HXLINE(  80)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp6 = ::flixel::FlxG_obj::sound;
+HXDLIN(  80)			_hx_tmp6->playMusic(::backend::Paths_obj::returnSound((HX_("music/",ea,bf,1b,3f) + HX_("Lunchbox",c1,34,3f,3d)),null(),true,null()),0,null(),null());
+HXLINE(  81)			{
+HXLINE(  81)				 ::flixel::sound::FlxSound _this = ::flixel::FlxG_obj::sound->music;
+HXDLIN(  81)				 ::Dynamic onComplete = null();
+HXDLIN(  81)				if (::hx::IsNull( _this->_channel )) {
+HXLINE(  81)					_this->play(null(),null(),null());
             				}
-HXDLIN(  82)				if (::hx::IsNotNull( _this->fadeTween )) {
-HXLINE(  82)					_this->fadeTween->cancel();
+HXDLIN(  81)				if (::hx::IsNotNull( _this->fadeTween )) {
+HXLINE(  81)					_this->fadeTween->cancel();
             				}
-HXDLIN(  82)				_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(( (Float)(0) ),((Float)0.8),1, ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN(  81)				_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(( (Float)(0) ),((Float)0.8),1, ::Dynamic(::hx::Anon_obj::Create(1)
             					->setFixed(0,HX_("onComplete",f8,d4,7e,5d),onComplete)),_this->volumeTween_dyn());
             			}
-HXLINE(  80)			goto _hx_goto_1;
+HXLINE(  79)			goto _hx_goto_1;
             		}
             		_hx_goto_1:;
-HXLINE(  87)		bool _hx_tmp7;
-HXDLIN(  87)		if (::states::PlayState_obj::isStoryMode) {
-HXLINE(  87)			_hx_tmp7 = !(::states::PlayState_obj::seenCutscene);
+HXLINE(  86)		bool _hx_tmp7;
+HXDLIN(  86)		if (::states::PlayState_obj::isStoryMode) {
+HXLINE(  86)			_hx_tmp7 = !(::states::PlayState_obj::seenCutscene);
             		}
             		else {
-HXLINE(  87)			_hx_tmp7 = false;
+HXLINE(  86)			_hx_tmp7 = false;
             		}
-HXDLIN(  87)		if (_hx_tmp7) {
-HXLINE(  88)			if ((( (::String)(::flixel::FlxG_obj::game->_state->__Field(HX_("songName",c0,d0,d7,36),::hx::paccDynamic)) ) == HX_("roses",04,6c,64,ed))) {
-HXLINE(  88)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp8 = ::flixel::FlxG_obj::sound;
-HXDLIN(  88)				_hx_tmp8->play(::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + HX_("ANGRY",01,81,d0,a0)),null(),true,null()),null(),null(),null(),null(),null());
+HXDLIN(  86)		if (_hx_tmp7) {
+HXLINE(  87)			if ((( (::String)(::flixel::FlxG_obj::game->_state->__Field(HX_("songName",c0,d0,d7,36),::hx::paccDynamic)) ) == HX_("roses",04,6c,64,ed))) {
+HXLINE(  87)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp8 = ::flixel::FlxG_obj::sound;
+HXDLIN(  87)				_hx_tmp8->play(::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + HX_("ANGRY",01,81,d0,a0)),null(),true,null()),null(),null(),null(),null(),null());
             			}
             		}
-HXLINE(  91)		this->doof =  ::cutscenes::DialogueBoxMeme_obj::__alloc( HX_CTX );
-HXLINE(  92)		this->doof->set_cameras(::Array_obj< ::Dynamic>::__new(1)->init(0,( ( ::flixel::FlxCamera)(::flixel::FlxG_obj::game->_state->__Field(HX_("camHUD",e8,2b,76,b7),::hx::paccDynamic)) )));
-HXLINE(  94)		this->setStartCallback(this->schoolIntro_dyn());
+HXLINE(  90)		::String folder = null();
+HXDLIN(  90)		::String path = ::backend::Paths_obj::getPath(((((HX_("dialogues/",74,07,cc,d6) + HX_("conversation",83,47,19,60)) + HX_("/",2f,00,00,00)) + HX_("thorns",9c,bf,c7,8c)) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),folder,true);
+HXDLIN(  90)		 ::Dynamic g;
+HXDLIN(  90)		if (::sys::FileSystem_obj::exists(path)) {
+HXLINE(  90)			g =  ::haxe::format::JsonParser_obj::__alloc( HX_CTX ,::sys::io::File_obj::getContent(path))->doParse();
+            		}
+            		else {
+HXLINE(  90)			g =  ::Dynamic(::hx::Anon_obj::Create(4)
+            				->setFixed(0,HX_("dialogue",18,2d,94,a7),::Array_obj< ::Dynamic>::__new(1)->init(0, ::Dynamic(::hx::Anon_obj::Create(6)
+            					->setFixed(0,HX_("speed",87,97,69,81),((Float)1.0))
+            					->setFixed(1,HX_("speakerAnimation",05,22,fe,c5),HX_("BF",c4,39,00,00))
+            					->setFixed(2,HX_("speaker",ff,94,04,de),HX_("boyfriend",6a,29,b8,e6))
+            					->setFixed(3,HX_("box",0b,be,4a,00),HX_("default",c1,d8,c3,9b))
+            					->setFixed(4,HX_("boxAnimation",79,77,a8,1b),HX_("enter",18,6d,86,70))
+            					->setFixed(5,HX_("text",ad,cc,f9,4c),::Array_obj< ::String >::fromData( _hx_array_data_413ce3c1_5,1)))))
+            				->setFixed(1,HX_("music",a5,d0,5a,10), ::Dynamic(::hx::Anon_obj::Create(3)
+            					->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)2.0))
+            					->setFixed(1,HX_("asset",f0,69,39,26),HX_("",00,00,00,00))
+            					->setFixed(2,HX_("looped",c3,5f,b9,61),true)))
+            				->setFixed(2,HX_("backdrop",d6,b1,96,1a), ::Dynamic(::hx::Anon_obj::Create(3)
+            					->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)2.0))
+            					->setFixed(1,HX_("color",63,71,5c,4a),HX_("#000000",63,3a,ab,a3))
+            					->setFixed(2,HX_("type",ba,f2,08,4d),HX_("solid",2b,b4,c5,80))))
+            				->setFixed(3,HX_("outro",cb,c3,28,37), ::Dynamic(::hx::Anon_obj::Create(2)
+            					->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)1.0))
+            					->setFixed(1,HX_("type",ba,f2,08,4d),HX_("none",b8,12,0a,49)))));
+            		}
+HXLINE(  92)		this->doof =  ::cutscenes::DialogueBox_obj::__alloc( HX_CTX ,g,null());
+HXLINE(  93)		this->doof->set_cameras(::Array_obj< ::Dynamic>::__new(1)->init(0,( ( ::flixel::FlxCamera)(::flixel::FlxG_obj::game->_state->__Field(HX_("camHUD",e8,2b,76,b7),::hx::paccDynamic)) )));
+HXLINE(  95)		this->setStartCallback(this->schoolIntro_dyn());
             	}
 
 
 void School_obj::beatHit(){
-            	HX_STACKFRAME(&_hx_pos_628fdf92be9f29ca_98_beatHit)
-HXDLIN(  98)		if (::hx::IsNotNull( this->bgGirls )) {
-HXLINE(  99)			this->bgGirls->dance();
+            	HX_STACKFRAME(&_hx_pos_628fdf92be9f29ca_99_beatHit)
+HXDLIN(  99)		if (::hx::IsNotNull( this->bgGirls )) {
+HXLINE( 100)			this->bgGirls->dance();
             		}
             	}
 
 
 void School_obj::eventCalled(::String eventName,::String value1,::String value2, ::Dynamic flValue1, ::Dynamic flValue2,Float strumTime){
-            	HX_STACKFRAME(&_hx_pos_628fdf92be9f29ca_105_eventCalled)
-HXDLIN( 105)		if ((eventName == HX_("BG Freaks Expression",4d,76,b1,17))) {
-HXLINE( 107)			if (::hx::IsNotNull( this->bgGirls )) {
-HXLINE( 108)				this->bgGirls->swapDanceType();
+            	HX_STACKFRAME(&_hx_pos_628fdf92be9f29ca_106_eventCalled)
+HXDLIN( 106)		if ((eventName == HX_("BG Freaks Expression",4d,76,b1,17))) {
+HXLINE( 108)			if (::hx::IsNotNull( this->bgGirls )) {
+HXLINE( 109)				this->bgGirls->swapDanceType();
             			}
             		}
             	}
@@ -385,33 +418,33 @@ HXLINE( 108)				this->bgGirls->swapDanceType();
 void School_obj::schoolIntro(){
             		HX_BEGIN_LOCAL_FUNC_S2(::hx::LocalFunc,_hx_Closure_0, ::states::stages::School,_gthis, ::flixel::FlxSprite,black1) HXARGC(1)
             		void _hx_run( ::flixel::util::FlxTimer tmr){
-            			HX_GC_STACKFRAME(&_hx_pos_628fdf92be9f29ca_119_schoolIntro)
-HXLINE( 120)			black1->set_alpha((black1->alpha - ((Float)0.15)));
-HXLINE( 122)			if ((black1->alpha <= 0)) {
-HXLINE( 124)				_gthis->add(_gthis->doof);
-HXLINE( 125)				_gthis->remove(black1,null());
-HXLINE( 126)				black1->destroy();
+            			HX_GC_STACKFRAME(&_hx_pos_628fdf92be9f29ca_120_schoolIntro)
+HXLINE( 121)			black1->set_alpha((black1->alpha - ((Float)0.15)));
+HXLINE( 123)			if ((black1->alpha <= 0)) {
+HXLINE( 125)				_gthis->add(_gthis->doof);
+HXLINE( 126)				_gthis->remove(black1,null());
+HXLINE( 127)				black1->destroy();
             			}
             			else {
-HXLINE( 128)				tmr->reset(((Float)0.3));
+HXLINE( 129)				tmr->reset(((Float)0.3));
             			}
             		}
             		HX_END_LOCAL_FUNC1((void))
 
-            	HX_GC_STACKFRAME(&_hx_pos_628fdf92be9f29ca_112_schoolIntro)
-HXDLIN( 112)		 ::states::stages::School _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE( 113)		::flixel::FlxG_obj::game->_state->__SetField(HX_("inCutscene",8f,21,01,56),true,::hx::paccDynamic);
-HXLINE( 114)		 ::flixel::FlxSprite black =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,-100,-100,null());
-HXDLIN( 114)		 ::flixel::FlxSprite black1 = black->makeGraphic((::flixel::FlxG_obj::width * 2),(::flixel::FlxG_obj::height * 2),-16777216,null(),null());
-HXLINE( 115)		{
-HXLINE( 115)			 ::flixel::math::FlxBasePoint this1 = black1->scrollFactor;
-HXDLIN( 115)			this1->set_x(( (Float)(0) ));
-HXDLIN( 115)			this1->set_y(( (Float)(0) ));
+            	HX_GC_STACKFRAME(&_hx_pos_628fdf92be9f29ca_113_schoolIntro)
+HXDLIN( 113)		 ::states::stages::School _gthis = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE( 114)		::flixel::FlxG_obj::game->_state->__SetField(HX_("inCutscene",8f,21,01,56),true,::hx::paccDynamic);
+HXLINE( 115)		 ::flixel::FlxSprite black =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,-100,-100,null());
+HXDLIN( 115)		 ::flixel::FlxSprite black1 = black->makeGraphic((::flixel::FlxG_obj::width * 2),(::flixel::FlxG_obj::height * 2),-16777216,null(),null());
+HXLINE( 116)		{
+HXLINE( 116)			 ::flixel::math::FlxBasePoint this1 = black1->scrollFactor;
+HXDLIN( 116)			this1->set_x(( (Float)(0) ));
+HXDLIN( 116)			this1->set_y(( (Float)(0) ));
             		}
-HXLINE( 116)		if ((( (::String)(::flixel::FlxG_obj::game->_state->__Field(HX_("songName",c0,d0,d7,36),::hx::paccDynamic)) ) == HX_("senpai",3c,df,8d,6b))) {
-HXLINE( 116)			this->add(black1);
+HXLINE( 117)		if ((( (::String)(::flixel::FlxG_obj::game->_state->__Field(HX_("songName",c0,d0,d7,36),::hx::paccDynamic)) ) == HX_("senpai",3c,df,8d,6b))) {
+HXLINE( 117)			this->add(black1);
             		}
-HXLINE( 118)		 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(((Float)0.3), ::Dynamic(new _hx_Closure_0(_gthis,black1)),null());
+HXLINE( 119)		 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(((Float)0.3), ::Dynamic(new _hx_Closure_0(_gthis,black1)),null());
             	}
 
 
@@ -475,7 +508,7 @@ void School_obj::__Visit(HX_VISIT_PARAMS)
 {
 	switch(inName.length) {
 	case 4:
-		if (HX_FIELD_EQ(inName,"doof") ) { doof=inValue.Cast<  ::cutscenes::DialogueBoxMeme >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"doof") ) { doof=inValue.Cast<  ::cutscenes::DialogueBox >(); return inValue; }
 		break;
 	case 7:
 		if (HX_FIELD_EQ(inName,"bgGirls") ) { bgGirls=inValue.Cast<  ::states::stages::objects::BackgroundGirls >(); return inValue; }
@@ -493,7 +526,7 @@ void School_obj::__GetFields(Array< ::String> &outFields)
 #ifdef HXCPP_SCRIPTABLE
 static ::hx::StorageInfo School_obj_sMemberStorageInfo[] = {
 	{::hx::fsObject /*  ::states::stages::objects::BackgroundGirls */ ,(int)offsetof(School_obj,bgGirls),HX_("bgGirls",92,16,2b,41)},
-	{::hx::fsObject /*  ::cutscenes::DialogueBoxMeme */ ,(int)offsetof(School_obj,doof),HX_("doof",62,f1,6d,42)},
+	{::hx::fsObject /*  ::cutscenes::DialogueBox */ ,(int)offsetof(School_obj,doof),HX_("doof",62,f1,6d,42)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *School_obj_sStaticStorageInfo = 0;

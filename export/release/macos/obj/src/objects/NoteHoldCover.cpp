@@ -194,7 +194,7 @@ HXLINE(  43)			::haxe::Log_obj::trace(key, ::Dynamic(::hx::Anon_obj::Create(5)
             				->setFixed(1,HX_("customParams",d7,51,18,ed),::cpp::VirtualArray_obj::__new(2)->init(0,parentFolder)->init(1,true))
             				->setFixed(2,HX_("methodName",cc,19,0f,12),HX_("getSparrowAtlas",55,ab,b7,a7))
             				->setFixed(3,HX_("fileName",e7,5a,43,62),HX_("source/backend/Paths.hx",ff,43,8c,3d))
-            				->setFixed(4,HX_("lineNumber",dd,81,22,76),372)));
+            				->setFixed(4,HX_("lineNumber",dd,81,22,76),375)));
             		}
 HXDLIN(  43)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(key,parentFolder,true);
 HXDLIN(  43)		bool xmlExists = false;
@@ -226,7 +226,7 @@ HXLINE(  46)				::haxe::Log_obj::trace(key2, ::Dynamic(::hx::Anon_obj::Create(5)
             					->setFixed(1,HX_("customParams",d7,51,18,ed),::cpp::VirtualArray_obj::__new(2)->init(0,parentFolder1)->init(1,true))
             					->setFixed(2,HX_("methodName",cc,19,0f,12),HX_("getSparrowAtlas",55,ab,b7,a7))
             					->setFixed(3,HX_("fileName",e7,5a,43,62),HX_("source/backend/Paths.hx",ff,43,8c,3d))
-            					->setFixed(4,HX_("lineNumber",dd,81,22,76),372)));
+            					->setFixed(4,HX_("lineNumber",dd,81,22,76),375)));
             			}
 HXDLIN(  46)			 ::flixel::graphics::FlxGraphic imageLoaded1 = ::backend::Paths_obj::image(key2,parentFolder1,true);
 HXDLIN(  46)			bool xmlExists1 = false;
@@ -258,7 +258,7 @@ HXLINE(  49)					::haxe::Log_obj::trace(key4, ::Dynamic(::hx::Anon_obj::Create(5
             						->setFixed(1,HX_("customParams",d7,51,18,ed),::cpp::VirtualArray_obj::__new(2)->init(0,parentFolder2)->init(1,true))
             						->setFixed(2,HX_("methodName",cc,19,0f,12),HX_("getSparrowAtlas",55,ab,b7,a7))
             						->setFixed(3,HX_("fileName",e7,5a,43,62),HX_("source/backend/Paths.hx",ff,43,8c,3d))
-            						->setFixed(4,HX_("lineNumber",dd,81,22,76),372)));
+            						->setFixed(4,HX_("lineNumber",dd,81,22,76),375)));
             				}
 HXDLIN(  49)				 ::flixel::graphics::FlxGraphic imageLoaded2 = ::backend::Paths_obj::image(key4,parentFolder2,true);
 HXDLIN(  49)				bool xmlExists2 = false;

@@ -1,0 +1,16 @@
+/usr/local/lib/haxe/std/haxe/format/JsonParser.hx (line 318)
+/usr/local/lib/haxe/std/haxe/format/JsonParser.hx (line 147)
+/usr/local/lib/haxe/std/haxe/format/JsonParser.hx (line 57)
+cutscenes/DialogueBoxMeme.hx (line 45)
+states/stages/School.hx (line 91)
+backend/BaseStage.hx (line 61)
+states/stages/School.hx (line 10)
+states/PlayState.hx (line 389)
+flixel/FlxGame.hx (line 588)
+flixel/FlxGame.hx (line 675)
+flixel/FlxGame.hx (line 628)
+flixel/FlxGame.hx (line 501)
+
+Uncaught Error: Invalid char 0 at position 0
+
+> Crash Handler written by: sqirra-rng

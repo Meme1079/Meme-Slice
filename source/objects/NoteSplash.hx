@@ -27,7 +27,6 @@ typedef NoteSplashConfig = {
 	rgb:Array<Null<RGB>>
 }
 
-// TODO: Fix a unnecessary bug that will print 3 "Bitmap not found" messege.
 class NoteSplash extends FlxSprite {
 	public var rgbShader:PixelSplashShaderRef;
 	public var texture:String;

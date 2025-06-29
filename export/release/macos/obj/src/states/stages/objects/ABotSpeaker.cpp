@@ -157,7 +157,7 @@ HXLINE(  46)			::haxe::Log_obj::trace(HX_("abot/aBotViz",58,ab,36,10), ::Dynamic
             				->setFixed(1,HX_("customParams",d7,51,18,ed),::cpp::VirtualArray_obj::__new(2)->init(0,parentFolder)->init(1,true))
             				->setFixed(2,HX_("methodName",cc,19,0f,12),HX_("getSparrowAtlas",55,ab,b7,a7))
             				->setFixed(3,HX_("fileName",e7,5a,43,62),HX_("source/backend/Paths.hx",ff,43,8c,3d))
-            				->setFixed(4,HX_("lineNumber",dd,81,22,76),372)));
+            				->setFixed(4,HX_("lineNumber",dd,81,22,76),375)));
             		}
 HXDLIN(  46)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("abot/aBotViz",58,ab,36,10),parentFolder,true);
 HXDLIN(  46)		bool xmlExists = false;

@@ -189,43 +189,44 @@ HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_179_getSharedPath,"backend.Paths",
 HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_182_txt,"backend.Paths","txt",0x9a070036,"backend.Paths.txt","backend/Paths.hx",182,0x7c630d0b)
 HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_185_xml,"backend.Paths","xml",0x9a09ff9d,"backend.Paths.xml","backend/Paths.hx",185,0x7c630d0b)
 HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_188_json,"backend.Paths","json",0x25793da2,"backend.Paths.json","backend/Paths.hx",188,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_191_shaderFragment,"backend.Paths","shaderFragment",0x2f2ae00f,"backend.Paths.shaderFragment","backend/Paths.hx",191,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_194_shaderVertex,"backend.Paths","shaderVertex",0xb9407de3,"backend.Paths.shaderVertex","backend/Paths.hx",194,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_197_lua,"backend.Paths","lua",0x9a00eb7e,"backend.Paths.lua","backend/Paths.hx",197,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_200_video,"backend.Paths","video",0x86c723c1,"backend.Paths.video","backend/Paths.hx",200,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_209_sound,"backend.Paths","sound",0xd0979c15,"backend.Paths.sound","backend/Paths.hx",209,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_212_music,"backend.Paths","music",0x6025dfeb,"backend.Paths.music","backend/Paths.hx",212,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_215_inst,"backend.Paths","inst",0x24cc3f40,"backend.Paths.inst","backend/Paths.hx",215,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_218_voices,"backend.Paths","voices",0xdf2c247b,"backend.Paths.voices","backend/Paths.hx",218,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_226_soundRandom,"backend.Paths","soundRandom",0x459aeff8,"backend.Paths.soundRandom","backend/Paths.hx",226,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_230_image,"backend.Paths","image",0x0d342ea1,"backend.Paths.image","backend/Paths.hx",230,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_242_cacheBitmap,"backend.Paths","cacheBitmap",0xea8c0397,"backend.Paths.cacheBitmap","backend/Paths.hx",242,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_284_getTextFromFile,"backend.Paths","getTextFromFile",0x5992934f,"backend.Paths.getTextFromFile","backend/Paths.hx",284,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_294_font,"backend.Paths","font",0x22d15949,"backend.Paths.font","backend/Paths.hx",294,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_304_fileExists,"backend.Paths","fileExists",0x881e3872,"backend.Paths.fileExists","backend/Paths.hx",304,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_323_getAtlas,"backend.Paths","getAtlas",0x00419d4f,"backend.Paths.getAtlas","backend/Paths.hx",323,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_352_getMultiAtlas,"backend.Paths","getMultiAtlas",0xb8f6bd8e,"backend.Paths.getMultiAtlas","backend/Paths.hx",352,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_371_getSparrowAtlas,"backend.Paths","getSparrowAtlas",0x085cce1b,"backend.Paths.getSparrowAtlas","backend/Paths.hx",371,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_387_getPackerAtlas,"backend.Paths","getPackerAtlas",0xc77f8ae9,"backend.Paths.getPackerAtlas","backend/Paths.hx",387,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_402_getAsepriteAtlas,"backend.Paths","getAsepriteAtlas",0xe23e11ca,"backend.Paths.getAsepriteAtlas","backend/Paths.hx",402,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_416_formatToSongPath,"backend.Paths","formatToSongPath",0x79918146,"backend.Paths.formatToSongPath","backend/Paths.hx",416,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_425_returnSound,"backend.Paths","returnSound",0x688821c5,"backend.Paths.returnSound","backend/Paths.hx",425,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_451_mods,"backend.Paths","mods",0x2771ceeb,"backend.Paths.mods","backend/Paths.hx",451,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_454_modsJson,"backend.Paths","modsJson",0x3fdc8eb3,"backend.Paths.modsJson","backend/Paths.hx",454,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_457_modsVideo,"backend.Paths","modsVideo",0x834ac190,"backend.Paths.modsVideo","backend/Paths.hx",457,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_460_modsSounds,"backend.Paths","modsSounds",0xaab76e0f,"backend.Paths.modsSounds","backend/Paths.hx",460,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_463_modsImages,"backend.Paths","modsImages",0x771b1603,"backend.Paths.modsImages","backend/Paths.hx",463,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_466_modsXml,"backend.Paths","modsXml",0x1abb3bac,"backend.Paths.modsXml","backend/Paths.hx",466,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_469_modsTxt,"backend.Paths","modsTxt",0x1ab83c45,"backend.Paths.modsTxt","backend/Paths.hx",469,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_472_modsImagesJson,"backend.Paths","modsImagesJson",0x5cd341cb,"backend.Paths.modsImagesJson","backend/Paths.hx",472,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_475_modFolders,"backend.Paths","modFolders",0xc7f8825d,"backend.Paths.modFolders","backend/Paths.hx",475,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_495_loadAnimateAtlas,"backend.Paths","loadAnimateAtlas",0x34918caa,"backend.Paths.loadAnimateAtlas","backend/Paths.hx",495,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_191_dialogue,"backend.Paths","dialogue",0x21216d92,"backend.Paths.dialogue","backend/Paths.hx",191,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_194_shaderFragment,"backend.Paths","shaderFragment",0x2f2ae00f,"backend.Paths.shaderFragment","backend/Paths.hx",194,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_197_shaderVertex,"backend.Paths","shaderVertex",0xb9407de3,"backend.Paths.shaderVertex","backend/Paths.hx",197,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_200_lua,"backend.Paths","lua",0x9a00eb7e,"backend.Paths.lua","backend/Paths.hx",200,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_203_video,"backend.Paths","video",0x86c723c1,"backend.Paths.video","backend/Paths.hx",203,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_212_sound,"backend.Paths","sound",0xd0979c15,"backend.Paths.sound","backend/Paths.hx",212,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_215_music,"backend.Paths","music",0x6025dfeb,"backend.Paths.music","backend/Paths.hx",215,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_218_inst,"backend.Paths","inst",0x24cc3f40,"backend.Paths.inst","backend/Paths.hx",218,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_221_voices,"backend.Paths","voices",0xdf2c247b,"backend.Paths.voices","backend/Paths.hx",221,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_229_soundRandom,"backend.Paths","soundRandom",0x459aeff8,"backend.Paths.soundRandom","backend/Paths.hx",229,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_233_image,"backend.Paths","image",0x0d342ea1,"backend.Paths.image","backend/Paths.hx",233,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_245_cacheBitmap,"backend.Paths","cacheBitmap",0xea8c0397,"backend.Paths.cacheBitmap","backend/Paths.hx",245,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_287_getTextFromFile,"backend.Paths","getTextFromFile",0x5992934f,"backend.Paths.getTextFromFile","backend/Paths.hx",287,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_297_font,"backend.Paths","font",0x22d15949,"backend.Paths.font","backend/Paths.hx",297,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_307_fileExists,"backend.Paths","fileExists",0x881e3872,"backend.Paths.fileExists","backend/Paths.hx",307,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_326_getAtlas,"backend.Paths","getAtlas",0x00419d4f,"backend.Paths.getAtlas","backend/Paths.hx",326,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_355_getMultiAtlas,"backend.Paths","getMultiAtlas",0xb8f6bd8e,"backend.Paths.getMultiAtlas","backend/Paths.hx",355,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_374_getSparrowAtlas,"backend.Paths","getSparrowAtlas",0x085cce1b,"backend.Paths.getSparrowAtlas","backend/Paths.hx",374,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_390_getPackerAtlas,"backend.Paths","getPackerAtlas",0xc77f8ae9,"backend.Paths.getPackerAtlas","backend/Paths.hx",390,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_405_getAsepriteAtlas,"backend.Paths","getAsepriteAtlas",0xe23e11ca,"backend.Paths.getAsepriteAtlas","backend/Paths.hx",405,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_419_formatToSongPath,"backend.Paths","formatToSongPath",0x79918146,"backend.Paths.formatToSongPath","backend/Paths.hx",419,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_428_returnSound,"backend.Paths","returnSound",0x688821c5,"backend.Paths.returnSound","backend/Paths.hx",428,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_454_mods,"backend.Paths","mods",0x2771ceeb,"backend.Paths.mods","backend/Paths.hx",454,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_457_modsJson,"backend.Paths","modsJson",0x3fdc8eb3,"backend.Paths.modsJson","backend/Paths.hx",457,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_460_modsVideo,"backend.Paths","modsVideo",0x834ac190,"backend.Paths.modsVideo","backend/Paths.hx",460,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_463_modsSounds,"backend.Paths","modsSounds",0xaab76e0f,"backend.Paths.modsSounds","backend/Paths.hx",463,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_466_modsImages,"backend.Paths","modsImages",0x771b1603,"backend.Paths.modsImages","backend/Paths.hx",466,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_469_modsXml,"backend.Paths","modsXml",0x1abb3bac,"backend.Paths.modsXml","backend/Paths.hx",469,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_472_modsTxt,"backend.Paths","modsTxt",0x1ab83c45,"backend.Paths.modsTxt","backend/Paths.hx",472,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_475_modsImagesJson,"backend.Paths","modsImagesJson",0x5cd341cb,"backend.Paths.modsImagesJson","backend/Paths.hx",475,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_478_modFolders,"backend.Paths","modFolders",0xc7f8825d,"backend.Paths.modFolders","backend/Paths.hx",478,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_498_loadAnimateAtlas,"backend.Paths","loadAnimateAtlas",0x34918caa,"backend.Paths.loadAnimateAtlas","backend/Paths.hx",498,0x7c630d0b)
 HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_29_boot,"backend.Paths","boot",0x202c7fac,"backend.Paths.boot","backend/Paths.hx",29,0x7c630d0b)
 HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_30_boot,"backend.Paths","boot",0x202c7fac,"backend.Paths.boot","backend/Paths.hx",30,0x7c630d0b)
 HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_37_boot,"backend.Paths","boot",0x202c7fac,"backend.Paths.boot","backend/Paths.hx",37,0x7c630d0b)
 HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_57_boot,"backend.Paths","boot",0x202c7fac,"backend.Paths.boot","backend/Paths.hx",57,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_228_boot,"backend.Paths","boot",0x202c7fac,"backend.Paths.boot","backend/Paths.hx",228,0x7c630d0b)
-HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_423_boot,"backend.Paths","boot",0x202c7fac,"backend.Paths.boot","backend/Paths.hx",423,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_231_boot,"backend.Paths","boot",0x202c7fac,"backend.Paths.boot","backend/Paths.hx",231,0x7c630d0b)
+HX_LOCAL_STACK_FRAME(_hx_pos_359943aa63fd1400_426_boot,"backend.Paths","boot",0x202c7fac,"backend.Paths.boot","backend/Paths.hx",426,0x7c630d0b)
 namespace backend{
 
 void Paths_obj::__construct() { }
@@ -589,37 +590,45 @@ HXDLIN( 188)		return ::backend::Paths_obj::getPath(((HX_("data/",c5,0e,88,d4) + 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(Paths_obj,json,return )
 
+::String Paths_obj::dialogue(::String key,::String metafolder,::String folder){
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_191_dialogue)
+HXDLIN( 191)		return ::backend::Paths_obj::getPath(((((HX_("dialogues/",74,07,cc,d6) + metafolder) + HX_("/",2f,00,00,00)) + key) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),folder,true);
+            	}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC3(Paths_obj,dialogue,return )
+
 ::String Paths_obj::shaderFragment(::String key,::String folder){
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_191_shaderFragment)
-HXDLIN( 191)		return ::backend::Paths_obj::getPath(((HX_("shaders/",c1,f6,2a,36) + key) + HX_(".frag",60,48,31,c0)),HX_("TEXT",ad,94,ba,37),folder,true);
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_194_shaderFragment)
+HXDLIN( 194)		return ::backend::Paths_obj::getPath(((HX_("shaders/",c1,f6,2a,36) + key) + HX_(".frag",60,48,31,c0)),HX_("TEXT",ad,94,ba,37),folder,true);
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(Paths_obj,shaderFragment,return )
 
 ::String Paths_obj::shaderVertex(::String key,::String folder){
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_194_shaderVertex)
-HXDLIN( 194)		return ::backend::Paths_obj::getPath(((HX_("shaders/",c1,f6,2a,36) + key) + HX_(".vert",df,e3,ba,ca)),HX_("TEXT",ad,94,ba,37),folder,true);
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_197_shaderVertex)
+HXDLIN( 197)		return ::backend::Paths_obj::getPath(((HX_("shaders/",c1,f6,2a,36) + key) + HX_(".vert",df,e3,ba,ca)),HX_("TEXT",ad,94,ba,37),folder,true);
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(Paths_obj,shaderVertex,return )
 
 ::String Paths_obj::lua(::String key,::String folder){
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_197_lua)
-HXDLIN( 197)		return ::backend::Paths_obj::getPath(((HX_("",00,00,00,00) + key) + HX_(".lua",4a,2a,ba,1e)),HX_("TEXT",ad,94,ba,37),folder,true);
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_200_lua)
+HXDLIN( 200)		return ::backend::Paths_obj::getPath(((HX_("",00,00,00,00) + key) + HX_(".lua",4a,2a,ba,1e)),HX_("TEXT",ad,94,ba,37),folder,true);
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(Paths_obj,lua,return )
 
 ::String Paths_obj::video(::String key){
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_200_video)
-HXLINE( 202)		::String file = ::backend::Paths_obj::modFolders((((HX_("videos/",97,cd,86,fd) + key) + HX_(".",2e,00,00,00)) + HX_("mp4",71,17,53,00)));
-HXLINE( 203)		if (::sys::FileSystem_obj::exists(file)) {
-HXLINE( 203)			return file;
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_203_video)
+HXLINE( 205)		::String file = ::backend::Paths_obj::modFolders((((HX_("videos/",97,cd,86,fd) + key) + HX_(".",2e,00,00,00)) + HX_("mp4",71,17,53,00)));
+HXLINE( 206)		if (::sys::FileSystem_obj::exists(file)) {
+HXLINE( 206)			return file;
             		}
-HXLINE( 205)		return (((HX_("assets/videos/",cb,c4,dd,db) + key) + HX_(".",2e,00,00,00)) + HX_("mp4",71,17,53,00));
+HXLINE( 208)		return (((HX_("assets/videos/",cb,c4,dd,db) + key) + HX_(".",2e,00,00,00)) + HX_("mp4",71,17,53,00));
             	}
 
 
@@ -628,8 +637,8 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(Paths_obj,video,return )
  ::openfl::media::Sound Paths_obj::sound(::String key, ::Dynamic __o_modsAllowed){
             		 ::Dynamic modsAllowed = __o_modsAllowed;
             		if (::hx::IsNull(__o_modsAllowed)) modsAllowed = true;
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_209_sound)
-HXDLIN( 209)		return ::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + key),null(),modsAllowed,null());
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_212_sound)
+HXDLIN( 212)		return ::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + key),null(),modsAllowed,null());
             	}
 
 
@@ -638,8 +647,8 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC2(Paths_obj,sound,return )
  ::openfl::media::Sound Paths_obj::music(::String key, ::Dynamic __o_modsAllowed){
             		 ::Dynamic modsAllowed = __o_modsAllowed;
             		if (::hx::IsNull(__o_modsAllowed)) modsAllowed = true;
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_212_music)
-HXDLIN( 212)		return ::backend::Paths_obj::returnSound((HX_("music/",ea,bf,1b,3f) + key),null(),modsAllowed,null());
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_215_music)
+HXDLIN( 215)		return ::backend::Paths_obj::returnSound((HX_("music/",ea,bf,1b,3f) + key),null(),modsAllowed,null());
             	}
 
 
@@ -648,10 +657,10 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC2(Paths_obj,music,return )
  ::openfl::media::Sound Paths_obj::inst(::String song, ::Dynamic __o_modsAllowed){
             		 ::Dynamic modsAllowed = __o_modsAllowed;
             		if (::hx::IsNull(__o_modsAllowed)) modsAllowed = true;
-            	HX_GC_STACKFRAME(&_hx_pos_359943aa63fd1400_215_inst)
-HXDLIN( 215)		 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&;:<>#\\s]",07,34,b4,25),HX_("g",67,00,00,00));
-HXDLIN( 215)		 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("g",67,00,00,00));
-HXDLIN( 215)		return ::backend::Paths_obj::returnSound(((HX_("",00,00,00,00) + ::StringTools_obj::trim(hideChars->replace(invalidChars->replace(song,HX_("-",2d,00,00,00)),HX_("",00,00,00,00))).toLowerCase()) + HX_("/Inst",95,b3,69,40)),HX_("songs",fe,36,c7,80),modsAllowed,null());
+            	HX_GC_STACKFRAME(&_hx_pos_359943aa63fd1400_218_inst)
+HXDLIN( 218)		 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&;:<>#\\s]",07,34,b4,25),HX_("g",67,00,00,00));
+HXDLIN( 218)		 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("g",67,00,00,00));
+HXDLIN( 218)		return ::backend::Paths_obj::returnSound(((HX_("",00,00,00,00) + ::StringTools_obj::trim(hideChars->replace(invalidChars->replace(song,HX_("-",2d,00,00,00)),HX_("",00,00,00,00))).toLowerCase()) + HX_("/Inst",95,b3,69,40)),HX_("songs",fe,36,c7,80),modsAllowed,null());
             	}
 
 
@@ -660,14 +669,14 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC2(Paths_obj,inst,return )
  ::openfl::media::Sound Paths_obj::voices(::String song,::String postfix, ::Dynamic __o_modsAllowed){
             		 ::Dynamic modsAllowed = __o_modsAllowed;
             		if (::hx::IsNull(__o_modsAllowed)) modsAllowed = true;
-            	HX_GC_STACKFRAME(&_hx_pos_359943aa63fd1400_218_voices)
-HXLINE( 219)		 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&;:<>#\\s]",07,34,b4,25),HX_("g",67,00,00,00));
-HXDLIN( 219)		 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("g",67,00,00,00));
-HXDLIN( 219)		::String songKey = ((HX_("",00,00,00,00) + ::StringTools_obj::trim(hideChars->replace(invalidChars->replace(song,HX_("-",2d,00,00,00)),HX_("",00,00,00,00))).toLowerCase()) + HX_("/Voices",10,18,4f,34));
-HXLINE( 220)		if (::hx::IsNotNull( postfix )) {
-HXLINE( 220)			songKey = (songKey + (HX_("-",2d,00,00,00) + postfix));
+            	HX_GC_STACKFRAME(&_hx_pos_359943aa63fd1400_221_voices)
+HXLINE( 222)		 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&;:<>#\\s]",07,34,b4,25),HX_("g",67,00,00,00));
+HXDLIN( 222)		 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("g",67,00,00,00));
+HXDLIN( 222)		::String songKey = ((HX_("",00,00,00,00) + ::StringTools_obj::trim(hideChars->replace(invalidChars->replace(song,HX_("-",2d,00,00,00)),HX_("",00,00,00,00))).toLowerCase()) + HX_("/Voices",10,18,4f,34));
+HXLINE( 223)		if (::hx::IsNotNull( postfix )) {
+HXLINE( 223)			songKey = (songKey + (HX_("-",2d,00,00,00) + postfix));
             		}
-HXLINE( 222)		return ::backend::Paths_obj::returnSound(songKey,HX_("songs",fe,36,c7,80),modsAllowed,false);
+HXLINE( 225)		return ::backend::Paths_obj::returnSound(songKey,HX_("songs",fe,36,c7,80),modsAllowed,false);
             	}
 
 
@@ -676,13 +685,13 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC3(Paths_obj,voices,return )
  ::openfl::media::Sound Paths_obj::soundRandom(::String key,int min,int max, ::Dynamic __o_modsAllowed){
             		 ::Dynamic modsAllowed = __o_modsAllowed;
             		if (::hx::IsNull(__o_modsAllowed)) modsAllowed = true;
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_226_soundRandom)
-HXDLIN( 226)		::String key1 = (key + ::flixel::FlxG_obj::random->_hx_int(min,max,null()));
-HXDLIN( 226)		 ::Dynamic modsAllowed1 = modsAllowed;
-HXDLIN( 226)		if (::hx::IsNull( modsAllowed1 )) {
-HXDLIN( 226)			modsAllowed1 = true;
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_229_soundRandom)
+HXDLIN( 229)		::String key1 = (key + ::flixel::FlxG_obj::random->_hx_int(min,max,null()));
+HXDLIN( 229)		 ::Dynamic modsAllowed1 = modsAllowed;
+HXDLIN( 229)		if (::hx::IsNull( modsAllowed1 )) {
+HXDLIN( 229)			modsAllowed1 = true;
             		}
-HXDLIN( 226)		return ::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + key1),null(),modsAllowed1,null());
+HXDLIN( 229)		return ::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + key1),null(),modsAllowed1,null());
             	}
 
 
@@ -693,20 +702,20 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC4(Paths_obj,soundRandom,return )
  ::flixel::graphics::FlxGraphic Paths_obj::image(::String key,::String parentFolder, ::Dynamic __o_allowGPU){
             		 ::Dynamic allowGPU = __o_allowGPU;
             		if (::hx::IsNull(__o_allowGPU)) allowGPU = true;
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_230_image)
-HXLINE( 231)		::String key1 = (HX_("images/",77,50,74,c1) + key);
-HXDLIN( 231)		::Dynamic this1 = ::backend::Language_obj::phrases;
-HXDLIN( 231)		::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
-HXDLIN( 231)		if (::hx::IsNotNull( str )) {
-HXLINE( 231)			key1 = str;
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_233_image)
+HXLINE( 234)		::String key1 = (HX_("images/",77,50,74,c1) + key);
+HXDLIN( 234)		::Dynamic this1 = ::backend::Language_obj::phrases;
+HXDLIN( 234)		::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
+HXDLIN( 234)		if (::hx::IsNotNull( str )) {
+HXLINE( 234)			key1 = str;
             		}
-HXDLIN( 231)		key = (key1 + HX_(".png",3b,2d,bd,1e));
-HXLINE( 232)		 ::openfl::display::BitmapData bitmap = null();
-HXLINE( 233)		if (::backend::Paths_obj::currentTrackedAssets->exists(key)) {
-HXLINE( 235)			::backend::Paths_obj::localTrackedAssets->push(key);
-HXLINE( 236)			return ( ( ::flixel::graphics::FlxGraphic)(::backend::Paths_obj::currentTrackedAssets->get(key)) );
+HXDLIN( 234)		key = (key1 + HX_(".png",3b,2d,bd,1e));
+HXLINE( 235)		 ::openfl::display::BitmapData bitmap = null();
+HXLINE( 236)		if (::backend::Paths_obj::currentTrackedAssets->exists(key)) {
+HXLINE( 238)			::backend::Paths_obj::localTrackedAssets->push(key);
+HXLINE( 239)			return ( ( ::flixel::graphics::FlxGraphic)(::backend::Paths_obj::currentTrackedAssets->get(key)) );
             		}
-HXLINE( 238)		return ::backend::Paths_obj::cacheBitmap(key,parentFolder,bitmap,allowGPU);
+HXLINE( 241)		return ::backend::Paths_obj::cacheBitmap(key,parentFolder,bitmap,allowGPU);
             	}
 
 
@@ -715,54 +724,54 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC3(Paths_obj,image,return )
  ::flixel::graphics::FlxGraphic Paths_obj::cacheBitmap(::String key,::String parentFolder, ::openfl::display::BitmapData bitmap, ::Dynamic __o_allowGPU){
             		 ::Dynamic allowGPU = __o_allowGPU;
             		if (::hx::IsNull(__o_allowGPU)) allowGPU = true;
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_242_cacheBitmap)
-HXLINE( 243)		if (::hx::IsNull( bitmap )) {
-HXLINE( 245)			::String file = ::backend::Paths_obj::getPath(key,HX_("IMAGE",3b,57,57,3b),parentFolder,true);
-HXLINE( 247)			if (::sys::FileSystem_obj::exists(file)) {
-HXLINE( 248)				bitmap = ::openfl::display::BitmapData_obj::fromFile(file);
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_245_cacheBitmap)
+HXLINE( 246)		if (::hx::IsNull( bitmap )) {
+HXLINE( 248)			::String file = ::backend::Paths_obj::getPath(key,HX_("IMAGE",3b,57,57,3b),parentFolder,true);
+HXLINE( 250)			if (::sys::FileSystem_obj::exists(file)) {
+HXLINE( 251)				bitmap = ::openfl::display::BitmapData_obj::fromFile(file);
             			}
             			else {
-HXLINE( 249)				if (::openfl::utils::Assets_obj::exists(file,HX_("IMAGE",3b,57,57,3b))) {
-HXLINE( 250)					bitmap = ::openfl::utils::Assets_obj::getBitmapData(file,null());
+HXLINE( 252)				if (::openfl::utils::Assets_obj::exists(file,HX_("IMAGE",3b,57,57,3b))) {
+HXLINE( 253)					bitmap = ::openfl::utils::Assets_obj::getBitmapData(file,null());
             				}
             			}
-HXLINE( 252)			if (::hx::IsNull( bitmap )) {
-HXLINE( 254)				::haxe::Log_obj::trace((((HX_("Bitmap not found: ",ca,43,27,ba) + file) + HX_(" | key: ",41,f7,1d,f5)) + key),::hx::SourceInfo(HX_("source/backend/Paths.hx",ff,43,8c,3d),254,HX_("backend.Paths",34,17,99,92),HX_("cacheBitmap",d1,3b,ad,0f)));
-HXLINE( 255)				return null();
+HXLINE( 255)			if (::hx::IsNull( bitmap )) {
+HXLINE( 257)				::haxe::Log_obj::trace((((HX_("Bitmap not found: ",ca,43,27,ba) + file) + HX_(" | key: ",41,f7,1d,f5)) + key),::hx::SourceInfo(HX_("source/backend/Paths.hx",ff,43,8c,3d),257,HX_("backend.Paths",34,17,99,92),HX_("cacheBitmap",d1,3b,ad,0f)));
+HXLINE( 258)				return null();
             			}
             		}
-HXLINE( 259)		bool _hx_tmp;
-HXDLIN( 259)		bool _hx_tmp1;
-HXDLIN( 259)		if (( (bool)(allowGPU) )) {
-HXLINE( 259)			_hx_tmp1 = ::backend::ClientPrefs_obj::data->cacheOnGPU;
+HXLINE( 262)		bool _hx_tmp;
+HXDLIN( 262)		bool _hx_tmp1;
+HXDLIN( 262)		if (( (bool)(allowGPU) )) {
+HXLINE( 262)			_hx_tmp1 = ::backend::ClientPrefs_obj::data->cacheOnGPU;
             		}
             		else {
-HXLINE( 259)			_hx_tmp1 = false;
+HXLINE( 262)			_hx_tmp1 = false;
             		}
-HXDLIN( 259)		if (_hx_tmp1) {
-HXLINE( 259)			_hx_tmp = ::hx::IsNotNull( bitmap->image );
+HXDLIN( 262)		if (_hx_tmp1) {
+HXLINE( 262)			_hx_tmp = ::hx::IsNotNull( bitmap->image );
             		}
             		else {
-HXLINE( 259)			_hx_tmp = false;
+HXLINE( 262)			_hx_tmp = false;
             		}
-HXDLIN( 259)		if (_hx_tmp) {
-HXLINE( 261)			bitmap->lock();
-HXLINE( 262)			if (::hx::IsNull( bitmap->_hx___texture )) {
-HXLINE( 264)				bitmap->image->set_premultiplied(true);
-HXLINE( 265)				bitmap->getTexture(::openfl::Lib_obj::get_current()->stage->context3D);
+HXDLIN( 262)		if (_hx_tmp) {
+HXLINE( 264)			bitmap->lock();
+HXLINE( 265)			if (::hx::IsNull( bitmap->_hx___texture )) {
+HXLINE( 267)				bitmap->image->set_premultiplied(true);
+HXLINE( 268)				bitmap->getTexture(::openfl::Lib_obj::get_current()->stage->context3D);
             			}
-HXLINE( 267)			bitmap->getSurface();
-HXLINE( 268)			bitmap->disposeImage();
-HXLINE( 269)			bitmap->image->set_data(null());
-HXLINE( 270)			bitmap->image = null();
-HXLINE( 271)			bitmap->readable = true;
+HXLINE( 270)			bitmap->getSurface();
+HXLINE( 271)			bitmap->disposeImage();
+HXLINE( 272)			bitmap->image->set_data(null());
+HXLINE( 273)			bitmap->image = null();
+HXLINE( 274)			bitmap->readable = true;
             		}
-HXLINE( 274)		 ::flixel::graphics::FlxGraphic graph = ::flixel::graphics::FlxGraphic_obj::fromBitmapData(bitmap,false,key,null());
-HXLINE( 275)		graph->persist = true;
-HXLINE( 276)		graph->set_destroyOnNoUse(false);
-HXLINE( 278)		::backend::Paths_obj::currentTrackedAssets->set(key,graph);
-HXLINE( 279)		::backend::Paths_obj::localTrackedAssets->push(key);
-HXLINE( 280)		return graph;
+HXLINE( 277)		 ::flixel::graphics::FlxGraphic graph = ::flixel::graphics::FlxGraphic_obj::fromBitmapData(bitmap,false,key,null());
+HXLINE( 278)		graph->persist = true;
+HXLINE( 279)		graph->set_destroyOnNoUse(false);
+HXLINE( 281)		::backend::Paths_obj::currentTrackedAssets->set(key,graph);
+HXLINE( 282)		::backend::Paths_obj::localTrackedAssets->push(key);
+HXLINE( 283)		return graph;
             	}
 
 
@@ -771,34 +780,34 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC4(Paths_obj,cacheBitmap,return )
 ::String Paths_obj::getTextFromFile(::String key, ::Dynamic __o_ignoreMods){
             		 ::Dynamic ignoreMods = __o_ignoreMods;
             		if (::hx::IsNull(__o_ignoreMods)) ignoreMods = false;
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_284_getTextFromFile)
-HXLINE( 285)		::String path = ::backend::Paths_obj::getPath(key,HX_("TEXT",ad,94,ba,37),null(),!(( (bool)(ignoreMods) )));
-HXLINE( 287)		if (::sys::FileSystem_obj::exists(path)) {
-HXLINE( 287)			return ::sys::io::File_obj::getContent(path);
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_287_getTextFromFile)
+HXLINE( 288)		::String path = ::backend::Paths_obj::getPath(key,HX_("TEXT",ad,94,ba,37),null(),!(( (bool)(ignoreMods) )));
+HXLINE( 290)		if (::sys::FileSystem_obj::exists(path)) {
+HXLINE( 290)			return ::sys::io::File_obj::getContent(path);
             		}
             		else {
-HXLINE( 287)			return null();
+HXLINE( 290)			return null();
             		}
-HXDLIN( 287)		return null();
+HXDLIN( 290)		return null();
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(Paths_obj,getTextFromFile,return )
 
 ::String Paths_obj::font(::String key){
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_294_font)
-HXLINE( 295)		::String key1 = (HX_("fonts/",eb,13,ef,fa) + key);
-HXDLIN( 295)		::Dynamic this1 = ::backend::Language_obj::phrases;
-HXDLIN( 295)		::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
-HXDLIN( 295)		if (::hx::IsNotNull( str )) {
-HXLINE( 295)			key1 = str;
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_297_font)
+HXLINE( 298)		::String key1 = (HX_("fonts/",eb,13,ef,fa) + key);
+HXDLIN( 298)		::Dynamic this1 = ::backend::Language_obj::phrases;
+HXDLIN( 298)		::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
+HXDLIN( 298)		if (::hx::IsNotNull( str )) {
+HXLINE( 298)			key1 = str;
             		}
-HXDLIN( 295)		::String folderKey = key1;
-HXLINE( 297)		::String file = ::backend::Paths_obj::modFolders(folderKey);
-HXLINE( 298)		if (::sys::FileSystem_obj::exists(file)) {
-HXLINE( 298)			return file;
+HXDLIN( 298)		::String folderKey = key1;
+HXLINE( 300)		::String file = ::backend::Paths_obj::modFolders(folderKey);
+HXLINE( 301)		if (::sys::FileSystem_obj::exists(file)) {
+HXLINE( 301)			return file;
             		}
-HXLINE( 300)		return (HX_("assets/",4c,2a,dc,36) + folderKey);
+HXLINE( 303)		return (HX_("assets/",4c,2a,dc,36) + folderKey);
             	}
 
 
@@ -807,47 +816,47 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(Paths_obj,font,return )
 bool Paths_obj::fileExists(::String key,::String type, ::Dynamic __o_ignoreMods,::String parentFolder){
             		 ::Dynamic ignoreMods = __o_ignoreMods;
             		if (::hx::IsNull(__o_ignoreMods)) ignoreMods = false;
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_304_fileExists)
-HXLINE( 306)		if (!(( (bool)(ignoreMods) ))) {
-HXLINE( 308)			::String modKey = key;
-HXLINE( 309)			if ((parentFolder == HX_("songs",fe,36,c7,80))) {
-HXLINE( 309)				modKey = (HX_("songs/",71,e7,88,2d) + key);
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_307_fileExists)
+HXLINE( 309)		if (!(( (bool)(ignoreMods) ))) {
+HXLINE( 311)			::String modKey = key;
+HXLINE( 312)			if ((parentFolder == HX_("songs",fe,36,c7,80))) {
+HXLINE( 312)				modKey = (HX_("songs/",71,e7,88,2d) + key);
             			}
-HXLINE( 311)			{
-HXLINE( 311)				int _g = 0;
-HXDLIN( 311)				::Array< ::String > _g1 = ::backend::Mods_obj::globalMods;
-HXDLIN( 311)				while((_g < _g1->length)){
-HXLINE( 311)					::String mod = _g1->__get(_g);
-HXDLIN( 311)					_g = (_g + 1);
-HXLINE( 312)					::String key1 = (((HX_("",00,00,00,00) + mod) + HX_("/",2f,00,00,00)) + modKey);
-HXDLIN( 312)					if (::hx::IsNull( key1 )) {
-HXLINE( 312)						key1 = HX_("",00,00,00,00);
+HXLINE( 314)			{
+HXLINE( 314)				int _g = 0;
+HXDLIN( 314)				::Array< ::String > _g1 = ::backend::Mods_obj::globalMods;
+HXDLIN( 314)				while((_g < _g1->length)){
+HXLINE( 314)					::String mod = _g1->__get(_g);
+HXDLIN( 314)					_g = (_g + 1);
+HXLINE( 315)					::String key1 = (((HX_("",00,00,00,00) + mod) + HX_("/",2f,00,00,00)) + modKey);
+HXDLIN( 315)					if (::hx::IsNull( key1 )) {
+HXLINE( 315)						key1 = HX_("",00,00,00,00);
             					}
-HXDLIN( 312)					if (::sys::FileSystem_obj::exists((HX_("mods/",9e,2f,58,0c) + key1))) {
-HXLINE( 313)						return true;
+HXDLIN( 315)					if (::sys::FileSystem_obj::exists((HX_("mods/",9e,2f,58,0c) + key1))) {
+HXLINE( 316)						return true;
             					}
             				}
             			}
-HXLINE( 315)			bool _hx_tmp;
-HXDLIN( 315)			::String key2 = ((::backend::Mods_obj::currentModDirectory + HX_("/",2f,00,00,00)) + modKey);
-HXDLIN( 315)			if (::hx::IsNull( key2 )) {
-HXLINE( 315)				key2 = HX_("",00,00,00,00);
+HXLINE( 318)			bool _hx_tmp;
+HXDLIN( 318)			::String key2 = ((::backend::Mods_obj::currentModDirectory + HX_("/",2f,00,00,00)) + modKey);
+HXDLIN( 318)			if (::hx::IsNull( key2 )) {
+HXLINE( 318)				key2 = HX_("",00,00,00,00);
             			}
-HXDLIN( 315)			if (!(::sys::FileSystem_obj::exists((HX_("mods/",9e,2f,58,0c) + key2)))) {
-HXLINE( 315)				::String key3 = modKey;
-HXDLIN( 315)				if (::hx::IsNull( key3 )) {
-HXLINE( 315)					key3 = HX_("",00,00,00,00);
+HXDLIN( 318)			if (!(::sys::FileSystem_obj::exists((HX_("mods/",9e,2f,58,0c) + key2)))) {
+HXLINE( 318)				::String key3 = modKey;
+HXDLIN( 318)				if (::hx::IsNull( key3 )) {
+HXLINE( 318)					key3 = HX_("",00,00,00,00);
             				}
-HXDLIN( 315)				_hx_tmp = ::sys::FileSystem_obj::exists((HX_("mods/",9e,2f,58,0c) + key3));
+HXDLIN( 318)				_hx_tmp = ::sys::FileSystem_obj::exists((HX_("mods/",9e,2f,58,0c) + key3));
             			}
             			else {
-HXLINE( 315)				_hx_tmp = true;
+HXLINE( 318)				_hx_tmp = true;
             			}
-HXDLIN( 315)			if (_hx_tmp) {
-HXLINE( 316)				return true;
+HXDLIN( 318)			if (_hx_tmp) {
+HXLINE( 319)				return true;
             			}
             		}
-HXLINE( 319)		return ::openfl::utils::Assets_obj::exists(::backend::Paths_obj::getPath(key,type,parentFolder,false),null());
+HXLINE( 322)		return ::openfl::utils::Assets_obj::exists(::backend::Paths_obj::getPath(key,type,parentFolder,false),null());
             	}
 
 
@@ -856,79 +865,79 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC4(Paths_obj,fileExists,return )
  ::flixel::graphics::frames::FlxAtlasFrames Paths_obj::getAtlas(::String key,::String parentFolder, ::Dynamic __o_allowGPU){
             		 ::Dynamic allowGPU = __o_allowGPU;
             		if (::hx::IsNull(__o_allowGPU)) allowGPU = true;
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_323_getAtlas)
-HXLINE( 324)		bool useMod = false;
-HXLINE( 325)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(key,parentFolder,allowGPU);
-HXLINE( 327)		 ::Dynamic myXml = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + key) + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,true);
-HXLINE( 328)		bool _hx_tmp;
-HXDLIN( 328)		if (!(::openfl::utils::Assets_obj::exists(( (::String)(myXml) ),null()))) {
-HXLINE( 328)			if (::sys::FileSystem_obj::exists(( (::String)(myXml) ))) {
-HXLINE( 328)				useMod = true;
-HXDLIN( 328)				_hx_tmp = useMod;
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_326_getAtlas)
+HXLINE( 327)		bool useMod = false;
+HXLINE( 328)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(key,parentFolder,allowGPU);
+HXLINE( 330)		 ::Dynamic myXml = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + key) + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,true);
+HXLINE( 331)		bool _hx_tmp;
+HXDLIN( 331)		if (!(::openfl::utils::Assets_obj::exists(( (::String)(myXml) ),null()))) {
+HXLINE( 331)			if (::sys::FileSystem_obj::exists(( (::String)(myXml) ))) {
+HXLINE( 331)				useMod = true;
+HXDLIN( 331)				_hx_tmp = useMod;
             			}
             			else {
-HXLINE( 328)				_hx_tmp = false;
+HXLINE( 331)				_hx_tmp = false;
             			}
             		}
             		else {
-HXLINE( 328)			_hx_tmp = true;
+HXLINE( 331)			_hx_tmp = true;
             		}
-HXDLIN( 328)		if (_hx_tmp) {
-HXLINE( 331)			 ::Dynamic _hx_tmp1;
-HXDLIN( 331)			if (useMod) {
-HXLINE( 331)				_hx_tmp1 = ::sys::io::File_obj::getContent(( (::String)(myXml) ));
+HXDLIN( 331)		if (_hx_tmp) {
+HXLINE( 334)			 ::Dynamic _hx_tmp1;
+HXDLIN( 334)			if (useMod) {
+HXLINE( 334)				_hx_tmp1 = ::sys::io::File_obj::getContent(( (::String)(myXml) ));
             			}
             			else {
-HXLINE( 331)				_hx_tmp1 = myXml;
+HXLINE( 334)				_hx_tmp1 = myXml;
             			}
-HXDLIN( 331)			return ::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded,_hx_tmp1);
+HXDLIN( 334)			return ::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded,_hx_tmp1);
             		}
             		else {
-HXLINE( 338)			 ::Dynamic myJson = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + key) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),parentFolder,true);
-HXLINE( 339)			bool _hx_tmp2;
-HXDLIN( 339)			if (!(::openfl::utils::Assets_obj::exists(( (::String)(myJson) ),null()))) {
-HXLINE( 339)				if (::sys::FileSystem_obj::exists(( (::String)(myJson) ))) {
-HXLINE( 339)					useMod = true;
-HXDLIN( 339)					_hx_tmp2 = useMod;
+HXLINE( 341)			 ::Dynamic myJson = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + key) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),parentFolder,true);
+HXLINE( 342)			bool _hx_tmp2;
+HXDLIN( 342)			if (!(::openfl::utils::Assets_obj::exists(( (::String)(myJson) ),null()))) {
+HXLINE( 342)				if (::sys::FileSystem_obj::exists(( (::String)(myJson) ))) {
+HXLINE( 342)					useMod = true;
+HXDLIN( 342)					_hx_tmp2 = useMod;
             				}
             				else {
-HXLINE( 339)					_hx_tmp2 = false;
+HXLINE( 342)					_hx_tmp2 = false;
             				}
             			}
             			else {
-HXLINE( 339)				_hx_tmp2 = true;
+HXLINE( 342)				_hx_tmp2 = true;
             			}
-HXDLIN( 339)			if (_hx_tmp2) {
-HXLINE( 342)				 ::Dynamic _hx_tmp3;
-HXDLIN( 342)				if (useMod) {
-HXLINE( 342)					_hx_tmp3 = ::sys::io::File_obj::getContent(( (::String)(myJson) ));
+HXDLIN( 342)			if (_hx_tmp2) {
+HXLINE( 345)				 ::Dynamic _hx_tmp3;
+HXDLIN( 345)				if (useMod) {
+HXLINE( 345)					_hx_tmp3 = ::sys::io::File_obj::getContent(( (::String)(myJson) ));
             				}
             				else {
-HXLINE( 342)					_hx_tmp3 = myJson;
+HXLINE( 345)					_hx_tmp3 = myJson;
             				}
-HXDLIN( 342)				return ::flixel::graphics::frames::FlxAtlasFrames_obj::fromTexturePackerJson(imageLoaded,_hx_tmp3,null());
+HXDLIN( 345)				return ::flixel::graphics::frames::FlxAtlasFrames_obj::fromTexturePackerJson(imageLoaded,_hx_tmp3,null());
             			}
             		}
-HXLINE( 348)		 ::flixel::graphics::FlxGraphic imageLoaded1 = ::backend::Paths_obj::image(key,parentFolder,true);
-HXDLIN( 348)		bool txtExists = false;
-HXDLIN( 348)		::String txt = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".txt",02,3f,c0,1e)));
-HXDLIN( 348)		if (::sys::FileSystem_obj::exists(txt)) {
-HXLINE( 348)			txtExists = true;
+HXLINE( 351)		 ::flixel::graphics::FlxGraphic imageLoaded1 = ::backend::Paths_obj::image(key,parentFolder,true);
+HXDLIN( 351)		bool txtExists = false;
+HXDLIN( 351)		::String txt = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".txt",02,3f,c0,1e)));
+HXDLIN( 351)		if (::sys::FileSystem_obj::exists(txt)) {
+HXLINE( 351)			txtExists = true;
             		}
-HXDLIN( 348)		::String _hx_tmp4;
-HXDLIN( 348)		if (txtExists) {
-HXLINE( 348)			_hx_tmp4 = ::sys::io::File_obj::getContent(txt);
+HXDLIN( 351)		::String _hx_tmp4;
+HXDLIN( 351)		if (txtExists) {
+HXLINE( 351)			_hx_tmp4 = ::sys::io::File_obj::getContent(txt);
             		}
             		else {
-HXLINE( 348)			::String key1 = (HX_("images/",77,50,74,c1) + key);
-HXDLIN( 348)			::Dynamic this1 = ::backend::Language_obj::phrases;
-HXDLIN( 348)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
-HXDLIN( 348)			if (::hx::IsNotNull( str )) {
-HXLINE( 348)				key1 = str;
+HXLINE( 351)			::String key1 = (HX_("images/",77,50,74,c1) + key);
+HXDLIN( 351)			::Dynamic this1 = ::backend::Language_obj::phrases;
+HXDLIN( 351)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
+HXDLIN( 351)			if (::hx::IsNotNull( str )) {
+HXLINE( 351)				key1 = str;
             			}
-HXDLIN( 348)			_hx_tmp4 = ::backend::Paths_obj::getPath((key1 + HX_(".txt",02,3f,c0,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
+HXDLIN( 351)			_hx_tmp4 = ::backend::Paths_obj::getPath((key1 + HX_(".txt",02,3f,c0,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
             		}
-HXDLIN( 348)		return ::flixel::graphics::frames::FlxAtlasFrames_obj::fromSpriteSheetPacker(imageLoaded1,_hx_tmp4);
+HXDLIN( 351)		return ::flixel::graphics::frames::FlxAtlasFrames_obj::fromSpriteSheetPacker(imageLoaded1,_hx_tmp4);
             	}
 
 
@@ -937,26 +946,26 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC3(Paths_obj,getAtlas,return )
  ::flixel::graphics::frames::FlxAtlasFrames Paths_obj::getMultiAtlas(::Array< ::String > keys,::String parentFolder, ::Dynamic __o_allowGPU){
             		 ::Dynamic allowGPU = __o_allowGPU;
             		if (::hx::IsNull(__o_allowGPU)) allowGPU = true;
-            	HX_GC_STACKFRAME(&_hx_pos_359943aa63fd1400_352_getMultiAtlas)
-HXLINE( 354)		 ::flixel::graphics::frames::FlxAtlasFrames parentFrames = ::backend::Paths_obj::getAtlas(::StringTools_obj::trim(keys->__get(0)),null(),null());
-HXLINE( 355)		if ((keys->length > 1)) {
-HXLINE( 357)			 ::flixel::graphics::frames::FlxAtlasFrames original = parentFrames;
-HXLINE( 358)			parentFrames =  ::flixel::graphics::frames::FlxAtlasFrames_obj::__alloc( HX_CTX ,parentFrames->parent,null());
-HXLINE( 359)			parentFrames->addAtlas(original,true);
-HXLINE( 360)			{
-HXLINE( 360)				int _g = 1;
-HXDLIN( 360)				int _g1 = keys->length;
-HXDLIN( 360)				while((_g < _g1)){
-HXLINE( 360)					_g = (_g + 1);
-HXDLIN( 360)					int i = (_g - 1);
-HXLINE( 362)					 ::flixel::graphics::frames::FlxAtlasFrames extraFrames = ::backend::Paths_obj::getAtlas(::StringTools_obj::trim(keys->__get(i)),parentFolder,allowGPU);
-HXLINE( 363)					if (::hx::IsNotNull( extraFrames )) {
-HXLINE( 364)						parentFrames->addAtlas(extraFrames,true);
+            	HX_GC_STACKFRAME(&_hx_pos_359943aa63fd1400_355_getMultiAtlas)
+HXLINE( 357)		 ::flixel::graphics::frames::FlxAtlasFrames parentFrames = ::backend::Paths_obj::getAtlas(::StringTools_obj::trim(keys->__get(0)),null(),null());
+HXLINE( 358)		if ((keys->length > 1)) {
+HXLINE( 360)			 ::flixel::graphics::frames::FlxAtlasFrames original = parentFrames;
+HXLINE( 361)			parentFrames =  ::flixel::graphics::frames::FlxAtlasFrames_obj::__alloc( HX_CTX ,parentFrames->parent,null());
+HXLINE( 362)			parentFrames->addAtlas(original,true);
+HXLINE( 363)			{
+HXLINE( 363)				int _g = 1;
+HXDLIN( 363)				int _g1 = keys->length;
+HXDLIN( 363)				while((_g < _g1)){
+HXLINE( 363)					_g = (_g + 1);
+HXDLIN( 363)					int i = (_g - 1);
+HXLINE( 365)					 ::flixel::graphics::frames::FlxAtlasFrames extraFrames = ::backend::Paths_obj::getAtlas(::StringTools_obj::trim(keys->__get(i)),parentFolder,allowGPU);
+HXLINE( 366)					if (::hx::IsNotNull( extraFrames )) {
+HXLINE( 367)						parentFrames->addAtlas(extraFrames,true);
             					}
             				}
             			}
             		}
-HXLINE( 367)		return parentFrames;
+HXLINE( 370)		return parentFrames;
             	}
 
 
@@ -965,35 +974,35 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC3(Paths_obj,getMultiAtlas,return )
  ::flixel::graphics::frames::FlxAtlasFrames Paths_obj::getSparrowAtlas(::String key,::String parentFolder, ::Dynamic __o_allowGPU){
             		 ::Dynamic allowGPU = __o_allowGPU;
             		if (::hx::IsNull(__o_allowGPU)) allowGPU = true;
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_371_getSparrowAtlas)
-HXLINE( 372)		if ((key.indexOf(HX_("psychic",d5,09,aa,19),null()) != -1)) {
-HXLINE( 372)			::haxe::Log_obj::trace(key, ::Dynamic(::hx::Anon_obj::Create(5)
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_374_getSparrowAtlas)
+HXLINE( 375)		if ((key.indexOf(HX_("psychic",d5,09,aa,19),null()) != -1)) {
+HXLINE( 375)			::haxe::Log_obj::trace(key, ::Dynamic(::hx::Anon_obj::Create(5)
             				->setFixed(0,HX_("className",a3,92,3d,dc),HX_("backend.Paths",34,17,99,92))
             				->setFixed(1,HX_("customParams",d7,51,18,ed),::cpp::VirtualArray_obj::__new(2)->init(0,parentFolder)->init(1,allowGPU))
             				->setFixed(2,HX_("methodName",cc,19,0f,12),HX_("getSparrowAtlas",55,ab,b7,a7))
             				->setFixed(3,HX_("fileName",e7,5a,43,62),HX_("source/backend/Paths.hx",ff,43,8c,3d))
-            				->setFixed(4,HX_("lineNumber",dd,81,22,76),372)));
+            				->setFixed(4,HX_("lineNumber",dd,81,22,76),375)));
             		}
-HXLINE( 373)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(key,parentFolder,allowGPU);
-HXLINE( 375)		bool xmlExists = false;
-HXLINE( 377)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".xml",69,3e,c3,1e)));
-HXLINE( 378)		if (::sys::FileSystem_obj::exists(xml)) {
-HXLINE( 378)			xmlExists = true;
+HXLINE( 376)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(key,parentFolder,allowGPU);
+HXLINE( 378)		bool xmlExists = false;
+HXLINE( 380)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".xml",69,3e,c3,1e)));
+HXLINE( 381)		if (::sys::FileSystem_obj::exists(xml)) {
+HXLINE( 381)			xmlExists = true;
             		}
-HXLINE( 380)		 ::Dynamic _hx_tmp;
-HXDLIN( 380)		if (xmlExists) {
-HXLINE( 380)			_hx_tmp = ::sys::io::File_obj::getContent(xml);
+HXLINE( 383)		 ::Dynamic _hx_tmp;
+HXDLIN( 383)		if (xmlExists) {
+HXLINE( 383)			_hx_tmp = ::sys::io::File_obj::getContent(xml);
             		}
             		else {
-HXLINE( 380)			::String key1 = (HX_("images/",77,50,74,c1) + key);
-HXDLIN( 380)			::Dynamic this1 = ::backend::Language_obj::phrases;
-HXDLIN( 380)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
-HXDLIN( 380)			if (::hx::IsNotNull( str )) {
-HXLINE( 380)				key1 = str;
+HXLINE( 383)			::String key1 = (HX_("images/",77,50,74,c1) + key);
+HXDLIN( 383)			::Dynamic this1 = ::backend::Language_obj::phrases;
+HXDLIN( 383)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
+HXDLIN( 383)			if (::hx::IsNotNull( str )) {
+HXLINE( 383)				key1 = str;
             			}
-HXDLIN( 380)			_hx_tmp = ::backend::Paths_obj::getPath((key1 + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
+HXDLIN( 383)			_hx_tmp = ::backend::Paths_obj::getPath((key1 + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
             		}
-HXDLIN( 380)		return ::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded,_hx_tmp);
+HXDLIN( 383)		return ::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded,_hx_tmp);
             	}
 
 
@@ -1002,27 +1011,27 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC3(Paths_obj,getSparrowAtlas,return )
  ::flixel::graphics::frames::FlxAtlasFrames Paths_obj::getPackerAtlas(::String key,::String parentFolder, ::Dynamic __o_allowGPU){
             		 ::Dynamic allowGPU = __o_allowGPU;
             		if (::hx::IsNull(__o_allowGPU)) allowGPU = true;
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_387_getPackerAtlas)
-HXLINE( 388)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(key,parentFolder,allowGPU);
-HXLINE( 390)		bool txtExists = false;
-HXLINE( 392)		::String txt = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".txt",02,3f,c0,1e)));
-HXLINE( 393)		if (::sys::FileSystem_obj::exists(txt)) {
-HXLINE( 393)			txtExists = true;
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_390_getPackerAtlas)
+HXLINE( 391)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(key,parentFolder,allowGPU);
+HXLINE( 393)		bool txtExists = false;
+HXLINE( 395)		::String txt = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".txt",02,3f,c0,1e)));
+HXLINE( 396)		if (::sys::FileSystem_obj::exists(txt)) {
+HXLINE( 396)			txtExists = true;
             		}
-HXLINE( 395)		::String _hx_tmp;
-HXDLIN( 395)		if (txtExists) {
-HXLINE( 395)			_hx_tmp = ::sys::io::File_obj::getContent(txt);
+HXLINE( 398)		::String _hx_tmp;
+HXDLIN( 398)		if (txtExists) {
+HXLINE( 398)			_hx_tmp = ::sys::io::File_obj::getContent(txt);
             		}
             		else {
-HXLINE( 395)			::String key1 = (HX_("images/",77,50,74,c1) + key);
-HXDLIN( 395)			::Dynamic this1 = ::backend::Language_obj::phrases;
-HXDLIN( 395)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
-HXDLIN( 395)			if (::hx::IsNotNull( str )) {
-HXLINE( 395)				key1 = str;
+HXLINE( 398)			::String key1 = (HX_("images/",77,50,74,c1) + key);
+HXDLIN( 398)			::Dynamic this1 = ::backend::Language_obj::phrases;
+HXDLIN( 398)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
+HXDLIN( 398)			if (::hx::IsNotNull( str )) {
+HXLINE( 398)				key1 = str;
             			}
-HXDLIN( 395)			_hx_tmp = ::backend::Paths_obj::getPath((key1 + HX_(".txt",02,3f,c0,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
+HXDLIN( 398)			_hx_tmp = ::backend::Paths_obj::getPath((key1 + HX_(".txt",02,3f,c0,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
             		}
-HXDLIN( 395)		return ::flixel::graphics::frames::FlxAtlasFrames_obj::fromSpriteSheetPacker(imageLoaded,_hx_tmp);
+HXDLIN( 398)		return ::flixel::graphics::frames::FlxAtlasFrames_obj::fromSpriteSheetPacker(imageLoaded,_hx_tmp);
             	}
 
 
@@ -1031,37 +1040,37 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC3(Paths_obj,getPackerAtlas,return )
  ::flixel::graphics::frames::FlxAtlasFrames Paths_obj::getAsepriteAtlas(::String key,::String parentFolder, ::Dynamic __o_allowGPU){
             		 ::Dynamic allowGPU = __o_allowGPU;
             		if (::hx::IsNull(__o_allowGPU)) allowGPU = true;
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_402_getAsepriteAtlas)
-HXLINE( 403)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(key,parentFolder,allowGPU);
-HXLINE( 405)		bool jsonExists = false;
-HXLINE( 407)		::String json = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".json",56,f1,d6,c2)));
-HXLINE( 408)		if (::sys::FileSystem_obj::exists(json)) {
-HXLINE( 408)			jsonExists = true;
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_405_getAsepriteAtlas)
+HXLINE( 406)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(key,parentFolder,allowGPU);
+HXLINE( 408)		bool jsonExists = false;
+HXLINE( 410)		::String json = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".json",56,f1,d6,c2)));
+HXLINE( 411)		if (::sys::FileSystem_obj::exists(json)) {
+HXLINE( 411)			jsonExists = true;
             		}
-HXLINE( 410)		 ::Dynamic _hx_tmp;
-HXDLIN( 410)		if (jsonExists) {
-HXLINE( 410)			_hx_tmp = ::sys::io::File_obj::getContent(json);
+HXLINE( 413)		 ::Dynamic _hx_tmp;
+HXDLIN( 413)		if (jsonExists) {
+HXLINE( 413)			_hx_tmp = ::sys::io::File_obj::getContent(json);
             		}
             		else {
-HXLINE( 410)			::String key1 = (HX_("images/",77,50,74,c1) + key);
-HXDLIN( 410)			::Dynamic this1 = ::backend::Language_obj::phrases;
-HXDLIN( 410)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
-HXDLIN( 410)			if (::hx::IsNotNull( str )) {
-HXLINE( 410)				key1 = str;
+HXLINE( 413)			::String key1 = (HX_("images/",77,50,74,c1) + key);
+HXDLIN( 413)			::Dynamic this1 = ::backend::Language_obj::phrases;
+HXDLIN( 413)			::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
+HXDLIN( 413)			if (::hx::IsNotNull( str )) {
+HXLINE( 413)				key1 = str;
             			}
-HXDLIN( 410)			_hx_tmp = ::backend::Paths_obj::getPath((key1 + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
+HXDLIN( 413)			_hx_tmp = ::backend::Paths_obj::getPath((key1 + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
             		}
-HXDLIN( 410)		return ::flixel::graphics::frames::FlxAtlasFrames_obj::fromTexturePackerJson(imageLoaded,_hx_tmp,null());
+HXDLIN( 413)		return ::flixel::graphics::frames::FlxAtlasFrames_obj::fromTexturePackerJson(imageLoaded,_hx_tmp,null());
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC3(Paths_obj,getAsepriteAtlas,return )
 
 ::String Paths_obj::formatToSongPath(::String path){
-            	HX_GC_STACKFRAME(&_hx_pos_359943aa63fd1400_416_formatToSongPath)
-HXLINE( 417)		 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&;:<>#\\s]",07,34,b4,25),HX_("g",67,00,00,00));
-HXLINE( 418)		 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("g",67,00,00,00));
-HXLINE( 420)		return ::StringTools_obj::trim(hideChars->replace(invalidChars->replace(path,HX_("-",2d,00,00,00)),HX_("",00,00,00,00))).toLowerCase();
+            	HX_GC_STACKFRAME(&_hx_pos_359943aa63fd1400_419_formatToSongPath)
+HXLINE( 420)		 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&;:<>#\\s]",07,34,b4,25),HX_("g",67,00,00,00));
+HXLINE( 421)		 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("g",67,00,00,00));
+HXLINE( 423)		return ::StringTools_obj::trim(hideChars->replace(invalidChars->replace(path,HX_("-",2d,00,00,00)),HX_("",00,00,00,00))).toLowerCase();
             	}
 
 
@@ -1074,29 +1083,29 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(Paths_obj,formatToSongPath,return )
             		if (::hx::IsNull(__o_modsAllowed)) modsAllowed = true;
             		 ::Dynamic beepOnNull = __o_beepOnNull;
             		if (::hx::IsNull(__o_beepOnNull)) beepOnNull = true;
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_425_returnSound)
-HXLINE( 426)		::String key1 = key;
-HXDLIN( 426)		::Dynamic this1 = ::backend::Language_obj::phrases;
-HXDLIN( 426)		::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
-HXDLIN( 426)		if (::hx::IsNotNull( str )) {
-HXLINE( 426)			key1 = str;
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_428_returnSound)
+HXLINE( 429)		::String key1 = key;
+HXDLIN( 429)		::Dynamic this1 = ::backend::Language_obj::phrases;
+HXDLIN( 429)		::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key1).toLowerCase());
+HXDLIN( 429)		if (::hx::IsNotNull( str )) {
+HXLINE( 429)			key1 = str;
             		}
-HXDLIN( 426)		::String file = ::backend::Paths_obj::getPath((key1 + (HX_(".",2e,00,00,00) + HX_("ogg",4f,94,54,00))),HX_("SOUND",af,c4,ba,fe),path,modsAllowed);
-HXLINE( 429)		if (!(::backend::Paths_obj::currentTrackedSounds->exists(file))) {
-HXLINE( 432)			if (::sys::FileSystem_obj::exists(file)) {
-HXLINE( 433)				::Dynamic this2 = ::backend::Paths_obj::currentTrackedSounds;
-HXDLIN( 433)				( ( ::haxe::ds::StringMap)(this2) )->set(file,::openfl::media::Sound_obj::fromFile(file));
+HXDLIN( 429)		::String file = ::backend::Paths_obj::getPath((key1 + (HX_(".",2e,00,00,00) + HX_("ogg",4f,94,54,00))),HX_("SOUND",af,c4,ba,fe),path,modsAllowed);
+HXLINE( 432)		if (!(::backend::Paths_obj::currentTrackedSounds->exists(file))) {
+HXLINE( 435)			if (::sys::FileSystem_obj::exists(file)) {
+HXLINE( 436)				::Dynamic this2 = ::backend::Paths_obj::currentTrackedSounds;
+HXDLIN( 436)				( ( ::haxe::ds::StringMap)(this2) )->set(file,::openfl::media::Sound_obj::fromFile(file));
             			}
             			else {
-HXLINE( 438)				if (( (bool)(beepOnNull) )) {
-HXLINE( 440)					::haxe::Log_obj::trace((((HX_("SOUND NOT FOUND: ",2a,60,7a,86) + key) + HX_(", PATH: ",ff,c8,af,a8)) + path),::hx::SourceInfo(HX_("source/backend/Paths.hx",ff,43,8c,3d),440,HX_("backend.Paths",34,17,99,92),HX_("returnSound",ff,59,a9,8d)));
-HXLINE( 441)					::flixel::FlxG_obj::log->advanced((((HX_("SOUND NOT FOUND: ",2a,60,7a,86) + key) + HX_(", PATH: ",ff,c8,af,a8)) + path),::flixel::_hx_system::debug::log::LogStyle_obj::ERROR,true,::hx::SourceInfo(HX_("source/backend/Paths.hx",ff,43,8c,3d),441,HX_("backend.Paths",34,17,99,92),HX_("returnSound",ff,59,a9,8d)));
-HXLINE( 442)					return ::flixel::_hx_system::FlxAssets_obj::getSoundAddExtension(HX_("flixel/sounds/beep",e6,b5,a9,33),null());
+HXLINE( 441)				if (( (bool)(beepOnNull) )) {
+HXLINE( 443)					::haxe::Log_obj::trace((((HX_("SOUND NOT FOUND: ",2a,60,7a,86) + key) + HX_(", PATH: ",ff,c8,af,a8)) + path),::hx::SourceInfo(HX_("source/backend/Paths.hx",ff,43,8c,3d),443,HX_("backend.Paths",34,17,99,92),HX_("returnSound",ff,59,a9,8d)));
+HXLINE( 444)					::flixel::FlxG_obj::log->advanced((((HX_("SOUND NOT FOUND: ",2a,60,7a,86) + key) + HX_(", PATH: ",ff,c8,af,a8)) + path),::flixel::_hx_system::debug::log::LogStyle_obj::ERROR,true,::hx::SourceInfo(HX_("source/backend/Paths.hx",ff,43,8c,3d),444,HX_("backend.Paths",34,17,99,92),HX_("returnSound",ff,59,a9,8d)));
+HXLINE( 445)					return ::flixel::_hx_system::FlxAssets_obj::getSoundAddExtension(HX_("flixel/sounds/beep",e6,b5,a9,33),null());
             				}
             			}
             		}
-HXLINE( 445)		::backend::Paths_obj::localTrackedAssets->push(file);
-HXLINE( 446)		return ( ( ::openfl::media::Sound)(::backend::Paths_obj::currentTrackedSounds->get(file)) );
+HXLINE( 448)		::backend::Paths_obj::localTrackedAssets->push(file);
+HXLINE( 449)		return ( ( ::openfl::media::Sound)(::backend::Paths_obj::currentTrackedSounds->get(file)) );
             	}
 
 
@@ -1105,175 +1114,175 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC4(Paths_obj,returnSound,return )
 ::String Paths_obj::mods(::String __o_key){
             		::String key = __o_key;
             		if (::hx::IsNull(__o_key)) key = HX_("",00,00,00,00);
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_451_mods)
-HXDLIN( 451)		return (HX_("mods/",9e,2f,58,0c) + key);
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_454_mods)
+HXDLIN( 454)		return (HX_("mods/",9e,2f,58,0c) + key);
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Paths_obj,mods,return )
 
 ::String Paths_obj::modsJson(::String key){
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_454_modsJson)
-HXDLIN( 454)		return ::backend::Paths_obj::modFolders(((HX_("data/",c5,0e,88,d4) + key) + HX_(".json",56,f1,d6,c2)));
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_457_modsJson)
+HXDLIN( 457)		return ::backend::Paths_obj::modFolders(((HX_("data/",c5,0e,88,d4) + key) + HX_(".json",56,f1,d6,c2)));
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Paths_obj,modsJson,return )
 
 ::String Paths_obj::modsVideo(::String key){
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_457_modsVideo)
-HXDLIN( 457)		return ::backend::Paths_obj::modFolders((((HX_("videos/",97,cd,86,fd) + key) + HX_(".",2e,00,00,00)) + HX_("mp4",71,17,53,00)));
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_460_modsVideo)
+HXDLIN( 460)		return ::backend::Paths_obj::modFolders((((HX_("videos/",97,cd,86,fd) + key) + HX_(".",2e,00,00,00)) + HX_("mp4",71,17,53,00)));
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Paths_obj,modsVideo,return )
 
 ::String Paths_obj::modsSounds(::String path,::String key){
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_460_modsSounds)
-HXDLIN( 460)		return ::backend::Paths_obj::modFolders(((((path + HX_("/",2f,00,00,00)) + key) + HX_(".",2e,00,00,00)) + HX_("ogg",4f,94,54,00)));
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_463_modsSounds)
+HXDLIN( 463)		return ::backend::Paths_obj::modFolders(((((path + HX_("/",2f,00,00,00)) + key) + HX_(".",2e,00,00,00)) + HX_("ogg",4f,94,54,00)));
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(Paths_obj,modsSounds,return )
 
 ::String Paths_obj::modsImages(::String key){
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_463_modsImages)
-HXDLIN( 463)		return ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".png",3b,2d,bd,1e)));
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_466_modsImages)
+HXDLIN( 466)		return ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".png",3b,2d,bd,1e)));
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Paths_obj,modsImages,return )
 
 ::String Paths_obj::modsXml(::String key){
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_466_modsXml)
-HXDLIN( 466)		return ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".xml",69,3e,c3,1e)));
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_469_modsXml)
+HXDLIN( 469)		return ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".xml",69,3e,c3,1e)));
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Paths_obj,modsXml,return )
 
 ::String Paths_obj::modsTxt(::String key){
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_469_modsTxt)
-HXDLIN( 469)		return ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".txt",02,3f,c0,1e)));
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_472_modsTxt)
+HXDLIN( 472)		return ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".txt",02,3f,c0,1e)));
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Paths_obj,modsTxt,return )
 
 ::String Paths_obj::modsImagesJson(::String key){
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_472_modsImagesJson)
-HXDLIN( 472)		return ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".json",56,f1,d6,c2)));
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_475_modsImagesJson)
+HXDLIN( 475)		return ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + key) + HX_(".json",56,f1,d6,c2)));
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Paths_obj,modsImagesJson,return )
 
 ::String Paths_obj::modFolders(::String key){
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_475_modFolders)
-HXLINE( 476)		bool _hx_tmp;
-HXDLIN( 476)		if (::hx::IsNotNull( ::backend::Mods_obj::currentModDirectory )) {
-HXLINE( 476)			_hx_tmp = (::backend::Mods_obj::currentModDirectory.length > 0);
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_478_modFolders)
+HXLINE( 479)		bool _hx_tmp;
+HXDLIN( 479)		if (::hx::IsNotNull( ::backend::Mods_obj::currentModDirectory )) {
+HXLINE( 479)			_hx_tmp = (::backend::Mods_obj::currentModDirectory.length > 0);
             		}
             		else {
-HXLINE( 476)			_hx_tmp = false;
+HXLINE( 479)			_hx_tmp = false;
             		}
-HXDLIN( 476)		if (_hx_tmp) {
-HXLINE( 478)			::String key1 = ((::backend::Mods_obj::currentModDirectory + HX_("/",2f,00,00,00)) + key);
-HXDLIN( 478)			if (::hx::IsNull( key1 )) {
-HXLINE( 478)				key1 = HX_("",00,00,00,00);
+HXDLIN( 479)		if (_hx_tmp) {
+HXLINE( 481)			::String key1 = ((::backend::Mods_obj::currentModDirectory + HX_("/",2f,00,00,00)) + key);
+HXDLIN( 481)			if (::hx::IsNull( key1 )) {
+HXLINE( 481)				key1 = HX_("",00,00,00,00);
             			}
-HXDLIN( 478)			::String fileToCheck = (HX_("mods/",9e,2f,58,0c) + key1);
-HXLINE( 479)			if (::sys::FileSystem_obj::exists(fileToCheck)) {
-HXLINE( 480)				return fileToCheck;
+HXDLIN( 481)			::String fileToCheck = (HX_("mods/",9e,2f,58,0c) + key1);
+HXLINE( 482)			if (::sys::FileSystem_obj::exists(fileToCheck)) {
+HXLINE( 483)				return fileToCheck;
             			}
             		}
-HXLINE( 483)		{
-HXLINE( 483)			int _g = 0;
-HXDLIN( 483)			::Array< ::String > _g1 = ::backend::Mods_obj::globalMods;
-HXDLIN( 483)			while((_g < _g1->length)){
-HXLINE( 483)				::String mod = _g1->__get(_g);
-HXDLIN( 483)				_g = (_g + 1);
-HXLINE( 485)				::String key2 = ((mod + HX_("/",2f,00,00,00)) + key);
-HXDLIN( 485)				if (::hx::IsNull( key2 )) {
-HXLINE( 485)					key2 = HX_("",00,00,00,00);
+HXLINE( 486)		{
+HXLINE( 486)			int _g = 0;
+HXDLIN( 486)			::Array< ::String > _g1 = ::backend::Mods_obj::globalMods;
+HXDLIN( 486)			while((_g < _g1->length)){
+HXLINE( 486)				::String mod = _g1->__get(_g);
+HXDLIN( 486)				_g = (_g + 1);
+HXLINE( 488)				::String key2 = ((mod + HX_("/",2f,00,00,00)) + key);
+HXDLIN( 488)				if (::hx::IsNull( key2 )) {
+HXLINE( 488)					key2 = HX_("",00,00,00,00);
             				}
-HXDLIN( 485)				::String fileToCheck1 = (HX_("mods/",9e,2f,58,0c) + key2);
-HXLINE( 486)				if (::sys::FileSystem_obj::exists(fileToCheck1)) {
-HXLINE( 487)					return fileToCheck1;
+HXDLIN( 488)				::String fileToCheck1 = (HX_("mods/",9e,2f,58,0c) + key2);
+HXLINE( 489)				if (::sys::FileSystem_obj::exists(fileToCheck1)) {
+HXLINE( 490)					return fileToCheck1;
             				}
             			}
             		}
-HXLINE( 489)		return (HX_("mods/",9e,2f,58,0c) + key);
+HXLINE( 492)		return (HX_("mods/",9e,2f,58,0c) + key);
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Paths_obj,modFolders,return )
 
 void Paths_obj::loadAnimateAtlas( ::flxanimate::PsychFlxAnimate spr, ::Dynamic folderOrImg, ::Dynamic spriteJson, ::Dynamic animationJson){
-            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_495_loadAnimateAtlas)
-HXLINE( 496)		bool changedAnimJson = false;
-HXLINE( 497)		bool changedAtlasJson = false;
-HXLINE( 498)		bool changedImage = false;
-HXLINE( 500)		if (::hx::IsNotNull( spriteJson )) {
-HXLINE( 502)			changedAtlasJson = true;
-HXLINE( 503)			spriteJson = ::sys::io::File_obj::getContent(( (::String)(spriteJson) ));
+            	HX_STACKFRAME(&_hx_pos_359943aa63fd1400_498_loadAnimateAtlas)
+HXLINE( 499)		bool changedAnimJson = false;
+HXLINE( 500)		bool changedAtlasJson = false;
+HXLINE( 501)		bool changedImage = false;
+HXLINE( 503)		if (::hx::IsNotNull( spriteJson )) {
+HXLINE( 505)			changedAtlasJson = true;
+HXLINE( 506)			spriteJson = ::sys::io::File_obj::getContent(( (::String)(spriteJson) ));
             		}
-HXLINE( 506)		if (::hx::IsNotNull( animationJson )) {
-HXLINE( 508)			changedAnimJson = true;
-HXLINE( 509)			animationJson = ::sys::io::File_obj::getContent(( (::String)(animationJson) ));
+HXLINE( 509)		if (::hx::IsNotNull( animationJson )) {
+HXLINE( 511)			changedAnimJson = true;
+HXLINE( 512)			animationJson = ::sys::io::File_obj::getContent(( (::String)(animationJson) ));
             		}
-HXLINE( 513)		if (::Std_obj::isOfType(folderOrImg,::hx::ClassOf< ::String >())) {
-HXLINE( 515)			::String originalPath = ( (::String)(folderOrImg) );
-HXLINE( 516)			{
-HXLINE( 516)				int _g = 0;
-HXDLIN( 516)				while((_g < 10)){
-HXLINE( 516)					_g = (_g + 1);
-HXDLIN( 516)					int i = (_g - 1);
-HXLINE( 518)					::String st = (HX_("",00,00,00,00) + i);
-HXLINE( 519)					if ((i == 0)) {
-HXLINE( 519)						st = HX_("",00,00,00,00);
+HXLINE( 516)		if (::Std_obj::isOfType(folderOrImg,::hx::ClassOf< ::String >())) {
+HXLINE( 518)			::String originalPath = ( (::String)(folderOrImg) );
+HXLINE( 519)			{
+HXLINE( 519)				int _g = 0;
+HXDLIN( 519)				while((_g < 10)){
+HXLINE( 519)					_g = (_g + 1);
+HXDLIN( 519)					int i = (_g - 1);
+HXLINE( 521)					::String st = (HX_("",00,00,00,00) + i);
+HXLINE( 522)					if ((i == 0)) {
+HXLINE( 522)						st = HX_("",00,00,00,00);
             					}
-HXLINE( 521)					if (!(changedAtlasJson)) {
-HXLINE( 523)						::String path = ::backend::Paths_obj::getPath(((((HX_("images/",77,50,74,c1) + originalPath) + HX_("/spritemap",a8,c1,c8,a3)) + st) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),null(),true);
-HXDLIN( 523)						if (::sys::FileSystem_obj::exists(path)) {
-HXLINE( 523)							spriteJson = ::sys::io::File_obj::getContent(path);
+HXLINE( 524)					if (!(changedAtlasJson)) {
+HXLINE( 526)						::String path = ::backend::Paths_obj::getPath(((((HX_("images/",77,50,74,c1) + originalPath) + HX_("/spritemap",a8,c1,c8,a3)) + st) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),null(),true);
+HXDLIN( 526)						if (::sys::FileSystem_obj::exists(path)) {
+HXLINE( 526)							spriteJson = ::sys::io::File_obj::getContent(path);
             						}
             						else {
-HXLINE( 523)							spriteJson = null();
+HXLINE( 526)							spriteJson = null();
             						}
-HXLINE( 524)						if (::hx::IsNotNull( spriteJson )) {
-HXLINE( 527)							changedImage = true;
-HXLINE( 528)							changedAtlasJson = true;
-HXLINE( 529)							folderOrImg = ::backend::Paths_obj::image((((HX_("",00,00,00,00) + originalPath) + HX_("/spritemap",a8,c1,c8,a3)) + st),null(),null());
-HXLINE( 530)							goto _hx_goto_53;
+HXLINE( 527)						if (::hx::IsNotNull( spriteJson )) {
+HXLINE( 530)							changedImage = true;
+HXLINE( 531)							changedAtlasJson = true;
+HXLINE( 532)							folderOrImg = ::backend::Paths_obj::image((((HX_("",00,00,00,00) + originalPath) + HX_("/spritemap",a8,c1,c8,a3)) + st),null(),null());
+HXLINE( 533)							goto _hx_goto_54;
             						}
             					}
             					else {
-HXLINE( 533)						if (::backend::Paths_obj::fileExists(((((HX_("images/",77,50,74,c1) + originalPath) + HX_("/spritemap",a8,c1,c8,a3)) + st) + HX_(".png",3b,2d,bd,1e)),HX_("IMAGE",3b,57,57,3b),null(),null())) {
-HXLINE( 536)							changedImage = true;
-HXLINE( 537)							folderOrImg = ::backend::Paths_obj::image((((HX_("",00,00,00,00) + originalPath) + HX_("/spritemap",a8,c1,c8,a3)) + st),null(),null());
-HXLINE( 538)							goto _hx_goto_53;
+HXLINE( 536)						if (::backend::Paths_obj::fileExists(((((HX_("images/",77,50,74,c1) + originalPath) + HX_("/spritemap",a8,c1,c8,a3)) + st) + HX_(".png",3b,2d,bd,1e)),HX_("IMAGE",3b,57,57,3b),null(),null())) {
+HXLINE( 539)							changedImage = true;
+HXLINE( 540)							folderOrImg = ::backend::Paths_obj::image((((HX_("",00,00,00,00) + originalPath) + HX_("/spritemap",a8,c1,c8,a3)) + st),null(),null());
+HXLINE( 541)							goto _hx_goto_54;
             						}
             					}
             				}
-            				_hx_goto_53:;
+            				_hx_goto_54:;
             			}
-HXLINE( 542)			if (!(changedImage)) {
-HXLINE( 545)				changedImage = true;
-HXLINE( 546)				folderOrImg = ::backend::Paths_obj::image(originalPath,null(),null());
+HXLINE( 545)			if (!(changedImage)) {
+HXLINE( 548)				changedImage = true;
+HXLINE( 549)				folderOrImg = ::backend::Paths_obj::image(originalPath,null(),null());
             			}
-HXLINE( 549)			if (!(changedAnimJson)) {
-HXLINE( 552)				changedAnimJson = true;
-HXLINE( 553)				::String path1 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + originalPath) + HX_("/Animation.json",61,fc,54,44)),HX_("TEXT",ad,94,ba,37),null(),true);
-HXDLIN( 553)				if (::sys::FileSystem_obj::exists(path1)) {
-HXLINE( 553)					animationJson = ::sys::io::File_obj::getContent(path1);
+HXLINE( 552)			if (!(changedAnimJson)) {
+HXLINE( 555)				changedAnimJson = true;
+HXLINE( 556)				::String path1 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + originalPath) + HX_("/Animation.json",61,fc,54,44)),HX_("TEXT",ad,94,ba,37),null(),true);
+HXDLIN( 556)				if (::sys::FileSystem_obj::exists(path1)) {
+HXLINE( 556)					animationJson = ::sys::io::File_obj::getContent(path1);
             				}
             				else {
-HXLINE( 553)					animationJson = null();
+HXLINE( 556)					animationJson = null();
             				}
             			}
             		}
-HXLINE( 560)		spr->loadAtlasEx(folderOrImg,( (::String)(spriteJson) ),animationJson);
+HXLINE( 563)		spr->loadAtlasEx(folderOrImg,( (::String)(spriteJson) ),animationJson);
             	}
 
 
@@ -1313,6 +1322,7 @@ bool Paths_obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::hx::Pro
 		if (HX_FIELD_EQ(inName,"modsTxt") ) { outValue = modsTxt_dyn(); return true; }
 		break;
 	case 8:
+		if (HX_FIELD_EQ(inName,"dialogue") ) { outValue = dialogue_dyn(); return true; }
 		if (HX_FIELD_EQ(inName,"getAtlas") ) { outValue = getAtlas_dyn(); return true; }
 		if (HX_FIELD_EQ(inName,"modsJson") ) { outValue = modsJson_dyn(); return true; }
 		break;
@@ -1450,6 +1460,7 @@ static ::String Paths_obj_sStaticFields[] = {
 	HX_("txt",70,6e,58,00),
 	HX_("xml",d7,6d,5b,00),
 	HX_("json",28,42,68,46),
+	HX_("dialogue",18,2d,94,a7),
 	HX_("shaderFragment",15,08,f3,5e),
 	HX_("shaderVertex",69,78,30,11),
 	HX_("lua",b8,59,52,00),
@@ -1532,12 +1543,12 @@ HXDLIN(  37)		dumpExclusions = ::Array_obj< ::String >::__new(1)->init(0,(HX_("a
 HXDLIN(  57)		localTrackedAssets = ::Array_obj< ::String >::__new(0);
             	}
 {
-            	HX_GC_STACKFRAME(&_hx_pos_359943aa63fd1400_228_boot)
-HXDLIN( 228)		currentTrackedAssets =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
+            	HX_GC_STACKFRAME(&_hx_pos_359943aa63fd1400_231_boot)
+HXDLIN( 231)		currentTrackedAssets =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
             	}
 {
-            	HX_GC_STACKFRAME(&_hx_pos_359943aa63fd1400_423_boot)
-HXDLIN( 423)		currentTrackedSounds =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
+            	HX_GC_STACKFRAME(&_hx_pos_359943aa63fd1400_426_boot)
+HXDLIN( 426)		currentTrackedSounds =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
             	}
 }
 

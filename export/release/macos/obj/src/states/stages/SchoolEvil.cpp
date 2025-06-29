@@ -28,9 +28,6 @@
 #ifndef INCLUDED_backend_SaveVariables
 #include <backend/SaveVariables.h>
 #endif
-#ifndef INCLUDED_cutscenes_DialogueBox
-#include <cutscenes/DialogueBox.h>
-#endif
 #ifndef INCLUDED_flixel_FlxBasic
 #include <flixel/FlxBasic.h>
 #endif
@@ -170,32 +167,30 @@
 #include <sys/io/File.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_714d70debec6fef1_9_new,"states.stages.SchoolEvil","new",0xd450b667,"states.stages.SchoolEvil.new","states/stages/SchoolEvil.hx",9,0x8cd50cc9)
-HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_12_create,"states.stages.SchoolEvil","create",0x5946bf55,"states.stages.SchoolEvil.create","states/stages/SchoolEvil.hx",12,0x8cd50cc9)
+HX_DEFINE_STACK_FRAME(_hx_pos_714d70debec6fef1_8_new,"states.stages.SchoolEvil","new",0xd450b667,"states.stages.SchoolEvil.new","states/stages/SchoolEvil.hx",8,0x8cd50cc9)
+HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_11_create,"states.stages.SchoolEvil","create",0x5946bf55,"states.stages.SchoolEvil.create","states/stages/SchoolEvil.hx",11,0x8cd50cc9)
 static const ::String _hx_array_data_d335f6f5_2[] = {
 	HX_("background 2",80,07,9d,17),
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_42_createPost,"states.stages.SchoolEvil","createPost",0x23573e55,"states.stages.SchoolEvil.createPost","states/stages/SchoolEvil.hx",42,0x8cd50cc9)
-HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_51_eventCalled,"states.stages.SchoolEvil","eventCalled",0xe322653e,"states.stages.SchoolEvil.eventCalled","states/stages/SchoolEvil.hx",51,0x8cd50cc9)
-HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_62_eventPushed,"states.stages.SchoolEvil","eventPushed",0x9e67257a,"states.stages.SchoolEvil.eventPushed","states/stages/SchoolEvil.hx",62,0x8cd50cc9)
-HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_76_eventPushed,"states.stages.SchoolEvil","eventPushed",0x9e67257a,"states.stages.SchoolEvil.eventPushed","states/stages/SchoolEvil.hx",76,0x8cd50cc9)
+HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_40_createPost,"states.stages.SchoolEvil","createPost",0x23573e55,"states.stages.SchoolEvil.createPost","states/stages/SchoolEvil.hx",40,0x8cd50cc9)
+HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_49_eventCalled,"states.stages.SchoolEvil","eventCalled",0xe322653e,"states.stages.SchoolEvil.eventCalled","states/stages/SchoolEvil.hx",49,0x8cd50cc9)
+HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_60_eventPushed,"states.stages.SchoolEvil","eventPushed",0x9e67257a,"states.stages.SchoolEvil.eventPushed","states/stages/SchoolEvil.hx",60,0x8cd50cc9)
+HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_74_eventPushed,"states.stages.SchoolEvil","eventPushed",0x9e67257a,"states.stages.SchoolEvil.eventPushed","states/stages/SchoolEvil.hx",74,0x8cd50cc9)
 static const ::String _hx_array_data_d335f6f5_7[] = {
 	HX_("BG freaks glitch instance",4b,b4,f8,52),
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_86_initDoof,"states.stages.SchoolEvil","initDoof",0x6326012b,"states.stages.SchoolEvil.initDoof","states/stages/SchoolEvil.hx",86,0x8cd50cc9)
-HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_134_schoolIntro,"states.stages.SchoolEvil","schoolIntro",0x203d225f,"states.stages.SchoolEvil.schoolIntro","states/stages/SchoolEvil.hx",134,0x8cd50cc9)
-HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_139_schoolIntro,"states.stages.SchoolEvil","schoolIntro",0x203d225f,"states.stages.SchoolEvil.schoolIntro","states/stages/SchoolEvil.hx",139,0x8cd50cc9)
-HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_155_schoolIntro,"states.stages.SchoolEvil","schoolIntro",0x203d225f,"states.stages.SchoolEvil.schoolIntro","states/stages/SchoolEvil.hx",155,0x8cd50cc9)
-HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_149_schoolIntro,"states.stages.SchoolEvil","schoolIntro",0x203d225f,"states.stages.SchoolEvil.schoolIntro","states/stages/SchoolEvil.hx",149,0x8cd50cc9)
-HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_162_schoolIntro,"states.stages.SchoolEvil","schoolIntro",0x203d225f,"states.stages.SchoolEvil.schoolIntro","states/stages/SchoolEvil.hx",162,0x8cd50cc9)
+HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_106_schoolIntro,"states.stages.SchoolEvil","schoolIntro",0x203d225f,"states.stages.SchoolEvil.schoolIntro","states/stages/SchoolEvil.hx",106,0x8cd50cc9)
+HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_124_schoolIntro,"states.stages.SchoolEvil","schoolIntro",0x203d225f,"states.stages.SchoolEvil.schoolIntro","states/stages/SchoolEvil.hx",124,0x8cd50cc9)
 HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_116_schoolIntro,"states.stages.SchoolEvil","schoolIntro",0x203d225f,"states.stages.SchoolEvil.schoolIntro","states/stages/SchoolEvil.hx",116,0x8cd50cc9)
+HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_129_schoolIntro,"states.stages.SchoolEvil","schoolIntro",0x203d225f,"states.stages.SchoolEvil.schoolIntro","states/stages/SchoolEvil.hx",129,0x8cd50cc9)
+HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_100_schoolIntro,"states.stages.SchoolEvil","schoolIntro",0x203d225f,"states.stages.SchoolEvil.schoolIntro","states/stages/SchoolEvil.hx",100,0x8cd50cc9)
+HX_LOCAL_STACK_FRAME(_hx_pos_714d70debec6fef1_83_schoolIntro,"states.stages.SchoolEvil","schoolIntro",0x203d225f,"states.stages.SchoolEvil.schoolIntro","states/stages/SchoolEvil.hx",83,0x8cd50cc9)
 namespace states{
 namespace stages{
 
 void SchoolEvil_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_714d70debec6fef1_9_new)
-HXLINE(  84)		this->doof = null();
-HXLINE(   9)		super::__construct();
+            	HX_STACKFRAME(&_hx_pos_714d70debec6fef1_8_new)
+HXDLIN(   8)		super::__construct();
             	}
 
 Dynamic SchoolEvil_obj::__CreateEmpty() { return new SchoolEvil_obj; }
@@ -222,324 +217,271 @@ bool SchoolEvil_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void SchoolEvil_obj::create(){
-            	HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_12_create)
-HXLINE(  13)		 ::Dynamic _song = ::states::PlayState_obj::SONG;
-HXLINE(  14)		bool _hx_tmp;
-HXDLIN(  14)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverSound",89,f8,70,3c),::hx::paccDynamic) )) {
-HXLINE(  14)			_hx_tmp = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverSound",89,f8,70,3c),::hx::paccDynamic)) )).length < 1);
+            	HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_11_create)
+HXLINE(  12)		 ::Dynamic _song = ::states::PlayState_obj::SONG;
+HXLINE(  13)		bool _hx_tmp;
+HXDLIN(  13)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverSound",89,f8,70,3c),::hx::paccDynamic) )) {
+HXLINE(  13)			_hx_tmp = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverSound",89,f8,70,3c),::hx::paccDynamic)) )).length < 1);
             		}
             		else {
-HXLINE(  14)			_hx_tmp = true;
+HXLINE(  13)			_hx_tmp = true;
             		}
-HXDLIN(  14)		if (_hx_tmp) {
-HXLINE(  14)			::substates::GameOverSubstate_obj::deathSoundName = HX_("fnf_loss_sfx-pixel",23,e5,94,32);
+HXDLIN(  13)		if (_hx_tmp) {
+HXLINE(  13)			::substates::GameOverSubstate_obj::deathSoundName = HX_("fnf_loss_sfx-pixel",23,e5,94,32);
             		}
-HXLINE(  15)		bool _hx_tmp1;
-HXDLIN(  15)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverLoop",ea,8f,ff,6a),::hx::paccDynamic) )) {
-HXLINE(  15)			_hx_tmp1 = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverLoop",ea,8f,ff,6a),::hx::paccDynamic)) )).length < 1);
-            		}
-            		else {
-HXLINE(  15)			_hx_tmp1 = true;
-            		}
-HXDLIN(  15)		if (_hx_tmp1) {
-HXLINE(  15)			::substates::GameOverSubstate_obj::loopSoundName = HX_("gameOver-pixel",1f,66,58,00);
-            		}
-HXLINE(  16)		bool _hx_tmp2;
-HXDLIN(  16)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverEnd",15,2d,a9,8d),::hx::paccDynamic) )) {
-HXLINE(  16)			_hx_tmp2 = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverEnd",15,2d,a9,8d),::hx::paccDynamic)) )).length < 1);
+HXLINE(  14)		bool _hx_tmp1;
+HXDLIN(  14)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverLoop",ea,8f,ff,6a),::hx::paccDynamic) )) {
+HXLINE(  14)			_hx_tmp1 = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverLoop",ea,8f,ff,6a),::hx::paccDynamic)) )).length < 1);
             		}
             		else {
-HXLINE(  16)			_hx_tmp2 = true;
+HXLINE(  14)			_hx_tmp1 = true;
             		}
-HXDLIN(  16)		if (_hx_tmp2) {
-HXLINE(  16)			::substates::GameOverSubstate_obj::endSoundName = HX_("gameOverEnd-pixel",0e,ae,3e,22);
+HXDLIN(  14)		if (_hx_tmp1) {
+HXLINE(  14)			::substates::GameOverSubstate_obj::loopSoundName = HX_("gameOver-pixel",1f,66,58,00);
             		}
-HXLINE(  17)		bool _hx_tmp3;
-HXDLIN(  17)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverChar",5c,48,07,65),::hx::paccDynamic) )) {
-HXLINE(  17)			_hx_tmp3 = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverChar",5c,48,07,65),::hx::paccDynamic)) )).length < 1);
-            		}
-            		else {
-HXLINE(  17)			_hx_tmp3 = true;
-            		}
-HXDLIN(  17)		if (_hx_tmp3) {
-HXLINE(  17)			::substates::GameOverSubstate_obj::characterName = HX_("bf-pixel-dead",34,d0,3d,c4);
-            		}
-HXLINE(  19)		int posX = 400;
-HXLINE(  20)		int posY = 200;
-HXLINE(  22)		 ::objects::BGSprite bg;
-HXLINE(  23)		if (!(::backend::ClientPrefs_obj::data->lowQuality)) {
-HXLINE(  24)			bg =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/animatedEvilSchool",8f,dd,53,cd),posX,posY,((Float)0.8),((Float)0.9),::Array_obj< ::String >::fromData( _hx_array_data_d335f6f5_2,1),true);
+HXLINE(  15)		bool _hx_tmp2;
+HXDLIN(  15)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverEnd",15,2d,a9,8d),::hx::paccDynamic) )) {
+HXLINE(  15)			_hx_tmp2 = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverEnd",15,2d,a9,8d),::hx::paccDynamic)) )).length < 1);
             		}
             		else {
-HXLINE(  26)			bg =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/animatedEvilSchool_low",a4,ea,70,96),posX,posY,((Float)0.8),((Float)0.9),null(),null());
+HXLINE(  15)			_hx_tmp2 = true;
             		}
-HXLINE(  28)		{
-HXLINE(  28)			 ::flixel::math::FlxBasePoint this1 = bg->scale;
-HXDLIN(  28)			Float y = ::states::PlayState_obj::daPixelZoom;
-HXDLIN(  28)			this1->set_x(::states::PlayState_obj::daPixelZoom);
-HXDLIN(  28)			this1->set_y(y);
+HXDLIN(  15)		if (_hx_tmp2) {
+HXLINE(  15)			::substates::GameOverSubstate_obj::endSoundName = HX_("gameOverEnd-pixel",0e,ae,3e,22);
             		}
-HXLINE(  29)		bg->set_antialiasing(false);
-HXLINE(  30)		this->add(bg);
-HXLINE(  31)		this->setDefaultGF(HX_("gf-pixel",98,3e,8c,55));
-HXLINE(  33)		 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp4 = ::flixel::FlxG_obj::sound;
-HXDLIN(  33)		_hx_tmp4->playMusic(::backend::Paths_obj::returnSound((HX_("music/",ea,bf,1b,3f) + HX_("LunchboxScary",57,33,01,24)),null(),true,null()),0,null(),null());
-HXLINE(  34)		{
-HXLINE(  34)			 ::flixel::sound::FlxSound _this = ::flixel::FlxG_obj::sound->music;
-HXDLIN(  34)			 ::Dynamic onComplete = null();
-HXDLIN(  34)			if (::hx::IsNull( _this->_channel )) {
-HXLINE(  34)				_this->play(null(),null(),null());
+HXLINE(  16)		bool _hx_tmp3;
+HXDLIN(  16)		if (::hx::IsNotNull( _song->__Field(HX_("gameOverChar",5c,48,07,65),::hx::paccDynamic) )) {
+HXLINE(  16)			_hx_tmp3 = (::StringTools_obj::trim(( (::String)(_song->__Field(HX_("gameOverChar",5c,48,07,65),::hx::paccDynamic)) )).length < 1);
+            		}
+            		else {
+HXLINE(  16)			_hx_tmp3 = true;
+            		}
+HXDLIN(  16)		if (_hx_tmp3) {
+HXLINE(  16)			::substates::GameOverSubstate_obj::characterName = HX_("bf-pixel-dead",34,d0,3d,c4);
+            		}
+HXLINE(  18)		int posX = 400;
+HXLINE(  19)		int posY = 200;
+HXLINE(  21)		 ::objects::BGSprite bg;
+HXLINE(  22)		if (!(::backend::ClientPrefs_obj::data->lowQuality)) {
+HXLINE(  23)			bg =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/animatedEvilSchool",8f,dd,53,cd),posX,posY,((Float)0.8),((Float)0.9),::Array_obj< ::String >::fromData( _hx_array_data_d335f6f5_2,1),true);
+            		}
+            		else {
+HXLINE(  25)			bg =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/animatedEvilSchool_low",a4,ea,70,96),posX,posY,((Float)0.8),((Float)0.9),null(),null());
+            		}
+HXLINE(  27)		{
+HXLINE(  27)			 ::flixel::math::FlxBasePoint this1 = bg->scale;
+HXDLIN(  27)			Float y = ::states::PlayState_obj::daPixelZoom;
+HXDLIN(  27)			this1->set_x(::states::PlayState_obj::daPixelZoom);
+HXDLIN(  27)			this1->set_y(y);
+            		}
+HXLINE(  28)		bg->set_antialiasing(false);
+HXLINE(  29)		this->add(bg);
+HXLINE(  30)		this->setDefaultGF(HX_("gf-pixel",98,3e,8c,55));
+HXLINE(  32)		 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp4 = ::flixel::FlxG_obj::sound;
+HXDLIN(  32)		_hx_tmp4->playMusic(::backend::Paths_obj::returnSound((HX_("music/",ea,bf,1b,3f) + HX_("LunchboxScary",57,33,01,24)),null(),true,null()),0,null(),null());
+HXLINE(  33)		{
+HXLINE(  33)			 ::flixel::sound::FlxSound _this = ::flixel::FlxG_obj::sound->music;
+HXDLIN(  33)			 ::Dynamic onComplete = null();
+HXDLIN(  33)			if (::hx::IsNull( _this->_channel )) {
+HXLINE(  33)				_this->play(null(),null(),null());
             			}
-HXDLIN(  34)			if (::hx::IsNotNull( _this->fadeTween )) {
-HXLINE(  34)				_this->fadeTween->cancel();
+HXDLIN(  33)			if (::hx::IsNotNull( _this->fadeTween )) {
+HXLINE(  33)				_this->fadeTween->cancel();
             			}
-HXDLIN(  34)			_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(( (Float)(0) ),((Float)0.8),1, ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN(  33)			_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(( (Float)(0) ),((Float)0.8),1, ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("onComplete",f8,d4,7e,5d),onComplete)),_this->volumeTween_dyn());
             		}
-HXLINE(  35)		bool _hx_tmp5;
-HXDLIN(  35)		if (::states::PlayState_obj::isStoryMode) {
-HXLINE(  35)			_hx_tmp5 = !(::states::PlayState_obj::seenCutscene);
+HXLINE(  34)		bool _hx_tmp5;
+HXDLIN(  34)		if (::states::PlayState_obj::isStoryMode) {
+HXLINE(  34)			_hx_tmp5 = !(::states::PlayState_obj::seenCutscene);
             		}
             		else {
-HXLINE(  35)			_hx_tmp5 = false;
+HXLINE(  34)			_hx_tmp5 = false;
             		}
-HXDLIN(  35)		if (_hx_tmp5) {
-HXLINE(  37)			this->initDoof();
-HXLINE(  38)			this->setStartCallback(this->schoolIntro_dyn());
+HXDLIN(  34)		if (_hx_tmp5) {
+HXLINE(  36)			this->setStartCallback(this->schoolIntro_dyn());
             		}
             	}
 
 
 void SchoolEvil_obj::createPost(){
-            	HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_42_createPost)
-HXLINE(  43)		 ::flixel::addons::effects::FlxTrail trail =  ::flixel::addons::effects::FlxTrail_obj::__alloc( HX_CTX ,( ( ::objects::Character)(::flixel::FlxG_obj::game->_state->__Field(HX_("dad",47,36,4c,00),::hx::paccDynamic)) ),null(),4,24,((Float)0.3),((Float)0.069));
-HXLINE(  44)		this->addBehindDad(trail);
+            	HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_40_createPost)
+HXLINE(  41)		 ::flixel::addons::effects::FlxTrail trail =  ::flixel::addons::effects::FlxTrail_obj::__alloc( HX_CTX ,( ( ::objects::Character)(::flixel::FlxG_obj::game->_state->__Field(HX_("dad",47,36,4c,00),::hx::paccDynamic)) ),null(),4,24,((Float)0.3),((Float)0.069));
+HXLINE(  42)		this->addBehindDad(trail);
             	}
 
 
 void SchoolEvil_obj::eventCalled(::String eventName,::String value1,::String value2, ::Dynamic flValue1, ::Dynamic flValue2,Float strumTime){
-            	HX_STACKFRAME(&_hx_pos_714d70debec6fef1_51_eventCalled)
-HXDLIN(  51)		if ((eventName == HX_("Trigger BG Ghouls",e1,1f,5c,88))) {
-HXLINE(  54)			if (!(::backend::ClientPrefs_obj::data->lowQuality)) {
-HXLINE(  56)				this->bgGhouls->dance(true);
-HXLINE(  57)				this->bgGhouls->set_visible(true);
+            	HX_STACKFRAME(&_hx_pos_714d70debec6fef1_49_eventCalled)
+HXDLIN(  49)		if ((eventName == HX_("Trigger BG Ghouls",e1,1f,5c,88))) {
+HXLINE(  52)			if (!(::backend::ClientPrefs_obj::data->lowQuality)) {
+HXLINE(  54)				this->bgGhouls->dance(true);
+HXLINE(  55)				this->bgGhouls->set_visible(true);
             			}
             		}
             	}
 
 
 void SchoolEvil_obj::eventPushed( ::Dynamic event){
-            	HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_62_eventPushed)
-HXDLIN(  62)		 ::states::stages::SchoolEvil _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE(  64)		if (::hx::IsEq( event->__Field(HX_("event",1a,c8,c4,75),::hx::paccDynamic),HX_("Trigger BG Ghouls",e1,1f,5c,88) )) {
-HXLINE(  67)			if (!(::backend::ClientPrefs_obj::data->lowQuality)) {
+            	HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_60_eventPushed)
+HXDLIN(  60)		 ::states::stages::SchoolEvil _gthis = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE(  62)		if (::hx::IsEq( event->__Field(HX_("event",1a,c8,c4,75),::hx::paccDynamic),HX_("Trigger BG Ghouls",e1,1f,5c,88) )) {
+HXLINE(  65)			if (!(::backend::ClientPrefs_obj::data->lowQuality)) {
             				HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_0, ::states::stages::SchoolEvil,_gthis) HXARGC(1)
             				void _hx_run(::String name){
-            					HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_76_eventPushed)
-HXLINE(  76)					if ((name == HX_("BG freaks glitch instance",4b,b4,f8,52))) {
-HXLINE(  77)						_gthis->bgGhouls->set_visible(false);
+            					HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_74_eventPushed)
+HXLINE(  74)					if ((name == HX_("BG freaks glitch instance",4b,b4,f8,52))) {
+HXLINE(  75)						_gthis->bgGhouls->set_visible(false);
             					}
             				}
             				HX_END_LOCAL_FUNC1((void))
 
-HXLINE(  69)				this->bgGhouls =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/bgGhouls",57,51,c2,ba),-100,190,((Float)0.9),((Float)0.9),::Array_obj< ::String >::fromData( _hx_array_data_d335f6f5_7,1),false);
-HXLINE(  70)				 ::objects::BGSprite _hx_tmp = this->bgGhouls;
-HXDLIN(  70)				Float _hx_tmp1 = this->bgGhouls->get_width();
-HXDLIN(  70)				_hx_tmp->setGraphicSize(::Std_obj::_hx_int((_hx_tmp1 * ::states::PlayState_obj::daPixelZoom)),null());
-HXLINE(  71)				this->bgGhouls->updateHitbox();
-HXLINE(  72)				this->bgGhouls->set_visible(false);
-HXLINE(  73)				this->bgGhouls->set_antialiasing(false);
-HXLINE(  74)				this->bgGhouls->animation->finishCallback =  ::Dynamic(new _hx_Closure_0(_gthis));
-HXLINE(  79)				this->addBehindGF(this->bgGhouls);
+HXLINE(  67)				this->bgGhouls =  ::objects::BGSprite_obj::__alloc( HX_CTX ,HX_("weeb/bgGhouls",57,51,c2,ba),-100,190,((Float)0.9),((Float)0.9),::Array_obj< ::String >::fromData( _hx_array_data_d335f6f5_7,1),false);
+HXLINE(  68)				 ::objects::BGSprite _hx_tmp = this->bgGhouls;
+HXDLIN(  68)				Float _hx_tmp1 = this->bgGhouls->get_width();
+HXDLIN(  68)				_hx_tmp->setGraphicSize(::Std_obj::_hx_int((_hx_tmp1 * ::states::PlayState_obj::daPixelZoom)),null());
+HXLINE(  69)				this->bgGhouls->updateHitbox();
+HXLINE(  70)				this->bgGhouls->set_visible(false);
+HXLINE(  71)				this->bgGhouls->set_antialiasing(false);
+HXLINE(  72)				this->bgGhouls->animation->finishCallback =  ::Dynamic(new _hx_Closure_0(_gthis));
+HXLINE(  77)				this->addBehindGF(this->bgGhouls);
             			}
             		}
             	}
 
-
-void SchoolEvil_obj::initDoof(){
-            	HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_86_initDoof)
-HXLINE(  87)		::String folder = null();
-HXDLIN(  87)		::String file = ::backend::Paths_obj::getPath(((HX_("data/",c5,0e,88,d4) + (((((HX_("",00,00,00,00) + ( (::String)(::flixel::FlxG_obj::game->_state->__Field(HX_("songName",c0,d0,d7,36),::hx::paccDynamic)) )) + HX_("/",2f,00,00,00)) + ( (::String)(::flixel::FlxG_obj::game->_state->__Field(HX_("songName",c0,d0,d7,36),::hx::paccDynamic)) )) + HX_("Dialogue_",27,28,e6,9b)) + ::backend::ClientPrefs_obj::data->language)) + HX_(".txt",02,3f,c0,1e)),HX_("TEXT",ad,94,ba,37),folder,true);
-HXLINE(  89)		if (!(::sys::FileSystem_obj::exists(file))) {
-HXLINE(  94)			::String folder1 = null();
-HXDLIN(  94)			file = ::backend::Paths_obj::getPath(((HX_("data/",c5,0e,88,d4) + ((((HX_("",00,00,00,00) + ( (::String)(::flixel::FlxG_obj::game->_state->__Field(HX_("songName",c0,d0,d7,36),::hx::paccDynamic)) )) + HX_("/",2f,00,00,00)) + ( (::String)(::flixel::FlxG_obj::game->_state->__Field(HX_("songName",c0,d0,d7,36),::hx::paccDynamic)) )) + HX_("Dialogue",38,e9,45,81))) + HX_(".txt",02,3f,c0,1e)),HX_("TEXT",ad,94,ba,37),folder1,true);
-            		}
-HXLINE(  98)		if (!(::sys::FileSystem_obj::exists(file))) {
-HXLINE( 103)			this->startCountdown();
-HXLINE( 104)			return;
-            		}
-HXLINE( 107)		::String daList = null();
-HXDLIN( 107)		if (::sys::FileSystem_obj::exists(file)) {
-HXLINE( 107)			daList = ::sys::io::File_obj::getContent(file);
-            		}
-HXDLIN( 107)		::Array< ::String > _hx_tmp;
-HXDLIN( 107)		if (::hx::IsNotNull( daList )) {
-HXLINE( 107)			::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
-HXDLIN( 107)			daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
-HXDLIN( 107)			{
-HXLINE( 107)				int _g = 0;
-HXDLIN( 107)				int _g1 = daList1->length;
-HXDLIN( 107)				while((_g < _g1)){
-HXLINE( 107)					_g = (_g + 1);
-HXDLIN( 107)					int i = (_g - 1);
-HXDLIN( 107)					daList1[i] = ::StringTools_obj::trim(daList1->__get(i));
-            				}
-            			}
-HXDLIN( 107)			_hx_tmp = daList1;
-            		}
-            		else {
-HXLINE( 107)			_hx_tmp = ::Array_obj< ::String >::__new(0);
-            		}
-HXDLIN( 107)		this->doof =  ::cutscenes::DialogueBox_obj::__alloc( HX_CTX ,false,_hx_tmp);
-HXLINE( 108)		this->doof->set_cameras(::Array_obj< ::Dynamic>::__new(1)->init(0,( ( ::flixel::FlxCamera)(::flixel::FlxG_obj::game->_state->__Field(HX_("camHUD",e8,2b,76,b7),::hx::paccDynamic)) )));
-HXLINE( 109)		{
-HXLINE( 109)			 ::flixel::math::FlxBasePoint this1 = this->doof->scrollFactor;
-HXDLIN( 109)			this1->set_x(( (Float)(0) ));
-HXDLIN( 109)			this1->set_y(( (Float)(0) ));
-            		}
-HXLINE( 110)		this->doof->finishThing = this->startCountdown_dyn();
-HXLINE( 111)		this->doof->nextDialogueThing = ::states::PlayState_obj::instance->startNextDialogue_dyn();
-HXLINE( 112)		this->doof->skipDialogueThing = ::states::PlayState_obj::instance->skipDialogue_dyn();
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC0(SchoolEvil_obj,initDoof,(void))
 
 void SchoolEvil_obj::schoolIntro(){
             		HX_BEGIN_LOCAL_FUNC_S3(::hx::LocalFunc,_hx_Closure_4, ::states::stages::SchoolEvil,_gthis, ::flixel::FlxSprite,red1, ::flixel::FlxSprite,senpaiEvil) HXARGC(1)
             		void _hx_run( ::flixel::util::FlxTimer tmr){
-            			HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_134_schoolIntro)
-HXLINE( 134)			if (::hx::IsNotNull( _gthis->doof )) {
-            				HX_BEGIN_LOCAL_FUNC_S3(::hx::LocalFunc,_hx_Closure_3, ::states::stages::SchoolEvil,_gthis, ::flixel::FlxSprite,red1, ::flixel::FlxSprite,senpaiEvil) HXARGC(1)
-            				void _hx_run( ::flixel::util::FlxTimer swagTimer){
-            					HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_139_schoolIntro)
-HXLINE( 140)					senpaiEvil->set_alpha((senpaiEvil->alpha + ((Float)0.15)));
-HXLINE( 141)					if ((senpaiEvil->alpha < 1)) {
-HXLINE( 143)						swagTimer->reset(null());
-            					}
-            					else {
-            						HX_BEGIN_LOCAL_FUNC_S3(::hx::LocalFunc,_hx_Closure_1, ::states::stages::SchoolEvil,_gthis, ::flixel::FlxSprite,red1, ::flixel::FlxSprite,senpaiEvil) HXARGC(0)
+            			HX_BEGIN_LOCAL_FUNC_S3(::hx::LocalFunc,_hx_Closure_3, ::states::stages::SchoolEvil,_gthis, ::flixel::FlxSprite,red1, ::flixel::FlxSprite,senpaiEvil) HXARGC(1)
+            			void _hx_run( ::flixel::util::FlxTimer swagTimer){
+            				HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_106_schoolIntro)
+HXLINE( 107)				senpaiEvil->set_alpha((senpaiEvil->alpha + ((Float)0.15)));
+HXLINE( 108)				if ((senpaiEvil->alpha < 1)) {
+HXLINE( 110)					swagTimer->reset(null());
+            				}
+            				else {
+            					HX_BEGIN_LOCAL_FUNC_S3(::hx::LocalFunc,_hx_Closure_1, ::states::stages::SchoolEvil,_gthis, ::flixel::FlxSprite,red1, ::flixel::FlxSprite,senpaiEvil) HXARGC(0)
+            					void _hx_run(){
+            						HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_0) HXARGC(0)
             						void _hx_run(){
-            							HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_0, ::states::stages::SchoolEvil,_gthis) HXARGC(0)
-            							void _hx_run(){
-            								HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_155_schoolIntro)
-HXLINE( 156)								_gthis->add(_gthis->doof);
-HXLINE( 157)								( ( ::flixel::FlxCamera)(::flixel::FlxG_obj::game->_state->__Field(HX_("camHUD",e8,2b,76,b7),::hx::paccDynamic)) )->set_visible(true);
-            							}
-            							HX_END_LOCAL_FUNC0((void))
-
-            							HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_149_schoolIntro)
-HXLINE( 150)							_gthis->remove(senpaiEvil,null());
-HXLINE( 151)							senpaiEvil->destroy();
-HXLINE( 152)							_gthis->remove(red1,null());
-HXLINE( 153)							red1->destroy();
-HXLINE( 154)							::flixel::FlxG_obj::camera->fade(-1,((Float)0.01),true, ::Dynamic(new _hx_Closure_0(_gthis)),true);
+            							HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_124_schoolIntro)
+HXLINE( 124)							( ( ::flixel::FlxCamera)(::flixel::FlxG_obj::game->_state->__Field(HX_("camHUD",e8,2b,76,b7),::hx::paccDynamic)) )->set_visible(true);
             						}
             						HX_END_LOCAL_FUNC0((void))
 
-            						HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_2) HXARGC(1)
-            						void _hx_run( ::flixel::util::FlxTimer deadTime){
-            							HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_162_schoolIntro)
-HXLINE( 162)							::flixel::FlxG_obj::camera->fade(-1,((Float)1.6),false,null(),null());
-            						}
-            						HX_END_LOCAL_FUNC1((void))
-
-HXLINE( 147)						senpaiEvil->animation->play(HX_("idle",14,a7,b3,45),null(),null(),null());
-HXLINE( 148)						 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN( 148)						_hx_tmp->play(::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + HX_("Senpai_Dies",56,a2,b9,ec)),null(),true,null()),1,false,null(),true, ::Dynamic(new _hx_Closure_1(_gthis,red1,senpaiEvil)));
-HXLINE( 160)						 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(((Float)3.2), ::Dynamic(new _hx_Closure_2()),null());
+            						HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_116_schoolIntro)
+HXLINE( 117)						_gthis->remove(senpaiEvil,null());
+HXLINE( 118)						senpaiEvil->destroy();
+HXLINE( 119)						_gthis->remove(red1,null());
+HXLINE( 120)						red1->destroy();
+HXLINE( 121)						::flixel::FlxG_obj::camera->fade(-1,((Float)0.01),true, ::Dynamic(new _hx_Closure_0()),true);
             					}
-            				}
-            				HX_END_LOCAL_FUNC1((void))
+            					HX_END_LOCAL_FUNC0((void))
 
-HXLINE( 136)				_gthis->add(senpaiEvil);
-HXLINE( 137)				senpaiEvil->set_alpha(( (Float)(0) ));
-HXLINE( 138)				 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(((Float)0.3), ::Dynamic(new _hx_Closure_3(_gthis,red1,senpaiEvil)),null());
+            					HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_2) HXARGC(1)
+            					void _hx_run( ::flixel::util::FlxTimer deadTime){
+            						HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_129_schoolIntro)
+HXLINE( 129)						::flixel::FlxG_obj::camera->fade(-1,((Float)1.6),false,null(),null());
+            					}
+            					HX_END_LOCAL_FUNC1((void))
+
+HXLINE( 114)					senpaiEvil->animation->play(HX_("idle",14,a7,b3,45),null(),null(),null());
+HXLINE( 115)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
+HXDLIN( 115)					_hx_tmp->play(::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + HX_("Senpai_Dies",56,a2,b9,ec)),null(),true,null()),1,false,null(),true, ::Dynamic(new _hx_Closure_1(_gthis,red1,senpaiEvil)));
+HXLINE( 127)					 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(((Float)3.2), ::Dynamic(new _hx_Closure_2()),null());
+            				}
             			}
+            			HX_END_LOCAL_FUNC1((void))
+
+            			HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_100_schoolIntro)
+HXLINE( 103)			_gthis->add(senpaiEvil);
+HXLINE( 104)			senpaiEvil->set_alpha(( (Float)(0) ));
+HXLINE( 105)			 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(((Float)0.3), ::Dynamic(new _hx_Closure_3(_gthis,red1,senpaiEvil)),null());
             		}
             		HX_END_LOCAL_FUNC1((void))
 
-            	HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_116_schoolIntro)
-HXDLIN( 116)		 ::states::stages::SchoolEvil _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE( 117)		::flixel::FlxG_obj::game->_state->__SetField(HX_("inCutscene",8f,21,01,56),true,::hx::paccDynamic);
-HXLINE( 118)		 ::flixel::FlxSprite red =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,-100,-100,null());
-HXDLIN( 118)		 ::flixel::FlxSprite red1 = red->makeGraphic((::flixel::FlxG_obj::width * 2),(::flixel::FlxG_obj::height * 2),-58575,null(),null());
-HXLINE( 119)		{
-HXLINE( 119)			 ::flixel::math::FlxBasePoint this1 = red1->scrollFactor;
-HXDLIN( 119)			this1->set_x(( (Float)(0) ));
-HXDLIN( 119)			this1->set_y(( (Float)(0) ));
+            	HX_GC_STACKFRAME(&_hx_pos_714d70debec6fef1_83_schoolIntro)
+HXDLIN(  83)		 ::states::stages::SchoolEvil _gthis = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE(  84)		::flixel::FlxG_obj::game->_state->__SetField(HX_("inCutscene",8f,21,01,56),true,::hx::paccDynamic);
+HXLINE(  85)		 ::flixel::FlxSprite red =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,-100,-100,null());
+HXDLIN(  85)		 ::flixel::FlxSprite red1 = red->makeGraphic((::flixel::FlxG_obj::width * 2),(::flixel::FlxG_obj::height * 2),-58575,null(),null());
+HXLINE(  86)		{
+HXLINE(  86)			 ::flixel::math::FlxBasePoint this1 = red1->scrollFactor;
+HXDLIN(  86)			this1->set_x(( (Float)(0) ));
+HXDLIN(  86)			this1->set_y(( (Float)(0) ));
             		}
-HXLINE( 120)		this->add(red1);
-HXLINE( 122)		 ::flixel::FlxSprite senpaiEvil =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
-HXLINE( 123)		 ::flixel::FlxSprite senpaiEvil1 = senpaiEvil;
-HXDLIN( 123)		::String parentFolder = null();
-HXDLIN( 123)		if ((HX_("weeb/senpaiCrazy",d1,d1,90,fa).indexOf(HX_("psychic",d5,09,aa,19),null()) != -1)) {
-HXLINE( 123)			::haxe::Log_obj::trace(HX_("weeb/senpaiCrazy",d1,d1,90,fa), ::Dynamic(::hx::Anon_obj::Create(5)
+HXLINE(  87)		this->add(red1);
+HXLINE(  89)		 ::flixel::FlxSprite senpaiEvil =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
+HXLINE(  90)		 ::flixel::FlxSprite senpaiEvil1 = senpaiEvil;
+HXDLIN(  90)		::String parentFolder = null();
+HXDLIN(  90)		if ((HX_("weeb/senpaiCrazy",d1,d1,90,fa).indexOf(HX_("psychic",d5,09,aa,19),null()) != -1)) {
+HXLINE(  90)			::haxe::Log_obj::trace(HX_("weeb/senpaiCrazy",d1,d1,90,fa), ::Dynamic(::hx::Anon_obj::Create(5)
             				->setFixed(0,HX_("className",a3,92,3d,dc),HX_("backend.Paths",34,17,99,92))
             				->setFixed(1,HX_("customParams",d7,51,18,ed),::cpp::VirtualArray_obj::__new(2)->init(0,parentFolder)->init(1,true))
             				->setFixed(2,HX_("methodName",cc,19,0f,12),HX_("getSparrowAtlas",55,ab,b7,a7))
             				->setFixed(3,HX_("fileName",e7,5a,43,62),HX_("source/backend/Paths.hx",ff,43,8c,3d))
-            				->setFixed(4,HX_("lineNumber",dd,81,22,76),372)));
+            				->setFixed(4,HX_("lineNumber",dd,81,22,76),375)));
             		}
-HXDLIN( 123)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("weeb/senpaiCrazy",d1,d1,90,fa),parentFolder,true);
-HXDLIN( 123)		bool xmlExists = false;
-HXDLIN( 123)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("weeb/senpaiCrazy",d1,d1,90,fa)) + HX_(".xml",69,3e,c3,1e)));
-HXDLIN( 123)		if (::sys::FileSystem_obj::exists(xml)) {
-HXLINE( 123)			xmlExists = true;
+HXDLIN(  90)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("weeb/senpaiCrazy",d1,d1,90,fa),parentFolder,true);
+HXDLIN(  90)		bool xmlExists = false;
+HXDLIN(  90)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("weeb/senpaiCrazy",d1,d1,90,fa)) + HX_(".xml",69,3e,c3,1e)));
+HXDLIN(  90)		if (::sys::FileSystem_obj::exists(xml)) {
+HXLINE(  90)			xmlExists = true;
             		}
-HXDLIN( 123)		 ::Dynamic _hx_tmp;
-HXDLIN( 123)		if (xmlExists) {
-HXLINE( 123)			_hx_tmp = ::sys::io::File_obj::getContent(xml);
+HXDLIN(  90)		 ::Dynamic _hx_tmp;
+HXDLIN(  90)		if (xmlExists) {
+HXLINE(  90)			_hx_tmp = ::sys::io::File_obj::getContent(xml);
             		}
             		else {
-HXLINE( 123)			::String key = (HX_("images/",77,50,74,c1) + HX_("weeb/senpaiCrazy",d1,d1,90,fa));
-HXDLIN( 123)			::Dynamic this2 = ::backend::Language_obj::phrases;
-HXDLIN( 123)			::String str = ( ( ::haxe::ds::StringMap)(this2) )->get_string(::StringTools_obj::trim(key).toLowerCase());
-HXDLIN( 123)			if (::hx::IsNotNull( str )) {
-HXLINE( 123)				key = str;
+HXLINE(  90)			::String key = (HX_("images/",77,50,74,c1) + HX_("weeb/senpaiCrazy",d1,d1,90,fa));
+HXDLIN(  90)			::Dynamic this2 = ::backend::Language_obj::phrases;
+HXDLIN(  90)			::String str = ( ( ::haxe::ds::StringMap)(this2) )->get_string(::StringTools_obj::trim(key).toLowerCase());
+HXDLIN(  90)			if (::hx::IsNotNull( str )) {
+HXLINE(  90)				key = str;
             			}
-HXDLIN( 123)			_hx_tmp = ::backend::Paths_obj::getPath((key + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
+HXDLIN(  90)			_hx_tmp = ::backend::Paths_obj::getPath((key + HX_(".xml",69,3e,c3,1e)),HX_("TEXT",ad,94,ba,37),parentFolder,null());
             		}
-HXDLIN( 123)		senpaiEvil1->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded,_hx_tmp));
-HXLINE( 124)		senpaiEvil->animation->addByPrefix(HX_("idle",14,a7,b3,45),HX_("Senpai Pre Explosion",54,71,6e,81),24,false,null(),null());
-HXLINE( 125)		 ::flixel::FlxSprite senpaiEvil2 = senpaiEvil;
-HXDLIN( 125)		senpaiEvil2->setGraphicSize(::Std_obj::_hx_int((senpaiEvil->get_width() * ( (Float)(6) ))),null());
-HXLINE( 126)		{
-HXLINE( 126)			 ::flixel::math::FlxBasePoint this3 = senpaiEvil->scrollFactor;
-HXDLIN( 126)			this3->set_x(( (Float)(0) ));
-HXDLIN( 126)			this3->set_y(( (Float)(0) ));
+HXDLIN(  90)		senpaiEvil1->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(imageLoaded,_hx_tmp));
+HXLINE(  91)		senpaiEvil->animation->addByPrefix(HX_("idle",14,a7,b3,45),HX_("Senpai Pre Explosion",54,71,6e,81),24,false,null(),null());
+HXLINE(  92)		 ::flixel::FlxSprite senpaiEvil2 = senpaiEvil;
+HXDLIN(  92)		senpaiEvil2->setGraphicSize(::Std_obj::_hx_int((senpaiEvil->get_width() * ( (Float)(6) ))),null());
+HXLINE(  93)		{
+HXLINE(  93)			 ::flixel::math::FlxBasePoint this3 = senpaiEvil->scrollFactor;
+HXDLIN(  93)			this3->set_x(( (Float)(0) ));
+HXDLIN(  93)			this3->set_y(( (Float)(0) ));
             		}
-HXLINE( 127)		senpaiEvil->updateHitbox();
-HXLINE( 128)		{
-HXLINE( 128)			int axes = 17;
-HXDLIN( 128)			bool _hx_tmp1;
-HXDLIN( 128)			if ((axes != 1)) {
-HXLINE( 128)				_hx_tmp1 = (axes == 17);
+HXLINE(  94)		senpaiEvil->updateHitbox();
+HXLINE(  95)		{
+HXLINE(  95)			int axes = 17;
+HXDLIN(  95)			bool _hx_tmp1;
+HXDLIN(  95)			if ((axes != 1)) {
+HXLINE(  95)				_hx_tmp1 = (axes == 17);
             			}
             			else {
-HXLINE( 128)				_hx_tmp1 = true;
+HXLINE(  95)				_hx_tmp1 = true;
             			}
-HXDLIN( 128)			if (_hx_tmp1) {
-HXLINE( 128)				 ::flixel::FlxSprite senpaiEvil3 = senpaiEvil;
-HXDLIN( 128)				int _hx_tmp2 = ::flixel::FlxG_obj::width;
-HXDLIN( 128)				senpaiEvil3->set_x(((( (Float)(_hx_tmp2) ) - senpaiEvil->get_width()) / ( (Float)(2) )));
+HXDLIN(  95)			if (_hx_tmp1) {
+HXLINE(  95)				 ::flixel::FlxSprite senpaiEvil3 = senpaiEvil;
+HXDLIN(  95)				int _hx_tmp2 = ::flixel::FlxG_obj::width;
+HXDLIN(  95)				senpaiEvil3->set_x(((( (Float)(_hx_tmp2) ) - senpaiEvil->get_width()) / ( (Float)(2) )));
             			}
-HXDLIN( 128)			bool _hx_tmp3;
-HXDLIN( 128)			if ((axes != 16)) {
-HXLINE( 128)				_hx_tmp3 = (axes == 17);
+HXDLIN(  95)			bool _hx_tmp3;
+HXDLIN(  95)			if ((axes != 16)) {
+HXLINE(  95)				_hx_tmp3 = (axes == 17);
             			}
             			else {
-HXLINE( 128)				_hx_tmp3 = true;
+HXLINE(  95)				_hx_tmp3 = true;
             			}
-HXDLIN( 128)			if (_hx_tmp3) {
-HXLINE( 128)				 ::flixel::FlxSprite senpaiEvil4 = senpaiEvil;
-HXDLIN( 128)				int _hx_tmp4 = ::flixel::FlxG_obj::height;
-HXDLIN( 128)				senpaiEvil4->set_y(((( (Float)(_hx_tmp4) ) - senpaiEvil->get_height()) / ( (Float)(2) )));
+HXDLIN(  95)			if (_hx_tmp3) {
+HXLINE(  95)				 ::flixel::FlxSprite senpaiEvil4 = senpaiEvil;
+HXDLIN(  95)				int _hx_tmp4 = ::flixel::FlxG_obj::height;
+HXDLIN(  95)				senpaiEvil4->set_y(((( (Float)(_hx_tmp4) ) - senpaiEvil->get_height()) / ( (Float)(2) )));
             			}
             		}
-HXLINE( 129)		senpaiEvil->set_x((senpaiEvil->x + 300));
-HXLINE( 130)		( ( ::flixel::FlxCamera)(::flixel::FlxG_obj::game->_state->__Field(HX_("camHUD",e8,2b,76,b7),::hx::paccDynamic)) )->set_visible(false);
-HXLINE( 132)		 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(((Float)2.1), ::Dynamic(new _hx_Closure_4(_gthis,red1,senpaiEvil)),null());
+HXLINE(  96)		senpaiEvil->set_x((senpaiEvil->x + 300));
+HXLINE(  97)		( ( ::flixel::FlxCamera)(::flixel::FlxG_obj::game->_state->__Field(HX_("camHUD",e8,2b,76,b7),::hx::paccDynamic)) )->set_visible(false);
+HXLINE(  99)		 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(((Float)2.1), ::Dynamic(new _hx_Closure_4(_gthis,red1,senpaiEvil)),null());
             	}
 
 
@@ -567,7 +509,6 @@ void SchoolEvil_obj::__Mark(HX_MARK_PARAMS)
 {
 	HX_MARK_BEGIN_CLASS(SchoolEvil);
 	HX_MARK_MEMBER_NAME(bgGhouls,"bgGhouls");
-	HX_MARK_MEMBER_NAME(doof,"doof");
 	 ::flixel::FlxBasic_obj::__Mark(HX_MARK_ARG);
 	HX_MARK_END_CLASS();
 }
@@ -575,22 +516,17 @@ void SchoolEvil_obj::__Mark(HX_MARK_PARAMS)
 void SchoolEvil_obj::__Visit(HX_VISIT_PARAMS)
 {
 	HX_VISIT_MEMBER_NAME(bgGhouls,"bgGhouls");
-	HX_VISIT_MEMBER_NAME(doof,"doof");
 	 ::flixel::FlxBasic_obj::__Visit(HX_VISIT_ARG);
 }
 
 ::hx::Val SchoolEvil_obj::__Field(const ::String &inName,::hx::PropertyAccess inCallProp)
 {
 	switch(inName.length) {
-	case 4:
-		if (HX_FIELD_EQ(inName,"doof") ) { return ::hx::Val( doof ); }
-		break;
 	case 6:
 		if (HX_FIELD_EQ(inName,"create") ) { return ::hx::Val( create_dyn() ); }
 		break;
 	case 8:
 		if (HX_FIELD_EQ(inName,"bgGhouls") ) { return ::hx::Val( bgGhouls ); }
-		if (HX_FIELD_EQ(inName,"initDoof") ) { return ::hx::Val( initDoof_dyn() ); }
 		break;
 	case 10:
 		if (HX_FIELD_EQ(inName,"createPost") ) { return ::hx::Val( createPost_dyn() ); }
@@ -606,9 +542,6 @@ void SchoolEvil_obj::__Visit(HX_VISIT_PARAMS)
 ::hx::Val SchoolEvil_obj::__SetField(const ::String &inName,const ::hx::Val &inValue,::hx::PropertyAccess inCallProp)
 {
 	switch(inName.length) {
-	case 4:
-		if (HX_FIELD_EQ(inName,"doof") ) { doof=inValue.Cast<  ::cutscenes::DialogueBox >(); return inValue; }
-		break;
 	case 8:
 		if (HX_FIELD_EQ(inName,"bgGhouls") ) { bgGhouls=inValue.Cast<  ::objects::BGSprite >(); return inValue; }
 	}
@@ -618,14 +551,12 @@ void SchoolEvil_obj::__Visit(HX_VISIT_PARAMS)
 void SchoolEvil_obj::__GetFields(Array< ::String> &outFields)
 {
 	outFields->push(HX_("bgGhouls",73,3f,2d,2f));
-	outFields->push(HX_("doof",62,f1,6d,42));
 	super::__GetFields(outFields);
 };
 
 #ifdef HXCPP_SCRIPTABLE
 static ::hx::StorageInfo SchoolEvil_obj_sMemberStorageInfo[] = {
 	{::hx::fsObject /*  ::objects::BGSprite */ ,(int)offsetof(SchoolEvil_obj,bgGhouls),HX_("bgGhouls",73,3f,2d,2f)},
-	{::hx::fsObject /*  ::cutscenes::DialogueBox */ ,(int)offsetof(SchoolEvil_obj,doof),HX_("doof",62,f1,6d,42)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *SchoolEvil_obj_sStaticStorageInfo = 0;
@@ -637,8 +568,6 @@ static ::String SchoolEvil_obj_sMemberFields[] = {
 	HX_("bgGhouls",73,3f,2d,2f),
 	HX_("eventCalled",37,a0,35,0a),
 	HX_("eventPushed",73,60,7a,c5),
-	HX_("doof",62,f1,6d,42),
-	HX_("initDoof",92,20,25,47),
 	HX_("schoolIntro",58,5d,50,47),
 	::String(null()) };
 

@@ -229,13 +229,13 @@ HXLINE(  75)			::haxe::Log_obj::trace(HX_("speech_bubble",49,db,97,da), ::Dynami
             				->setFixed(1,HX_("customParams",d7,51,18,ed),::cpp::VirtualArray_obj::__new(2)->init(0,parentFolder)->init(1,true))
             				->setFixed(2,HX_("methodName",cc,19,0f,12),HX_("getSparrowAtlas",55,ab,b7,a7))
             				->setFixed(3,HX_("fileName",e7,5a,43,62),HX_("source/backend/Paths.hx",ff,43,8c,3d))
-            				->setFixed(4,HX_("lineNumber",dd,81,22,76),372)));
+            				->setFixed(4,HX_("lineNumber",dd,81,22,76),375)));
             		}
 HXDLIN(  75)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("speech_bubble",49,db,97,da),parentFolder,true);
 HXDLIN(  75)		bool xmlExists = false;
 HXDLIN(  75)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("speech_bubble",49,db,97,da)) + HX_(".xml",69,3e,c3,1e)));
 HXDLIN(  75)		if (::sys::FileSystem_obj::exists(xml)) {
-HXLINE( 378)			xmlExists = true;
+HXLINE( 381)			xmlExists = true;
             		}
 HXLINE(  75)		 ::Dynamic _hx_tmp4;
 HXDLIN(  75)		if (xmlExists) {

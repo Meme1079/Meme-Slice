@@ -31,13 +31,13 @@ class HXCPP_CLASS_ATTRIBUTES DialogueBoxMeme_obj : public  ::flixel::group::FlxT
 	public:
 		enum { _hx_ClassId = 0x40ccc33a };
 
-		void __construct();
+		void __construct( ::Dynamic dialogueList);
 		inline void *operator new(size_t inSize, bool inContainer=true,const char *inName="cutscenes.DialogueBoxMeme")
 			{ return ::hx::Object::operator new(inSize,inContainer,inName); }
 		inline void *operator new(size_t inSize, int extra)
 			{ return ::hx::Object::operator new(inSize+extra,true,"cutscenes.DialogueBoxMeme"); }
-		static ::hx::ObjectPtr< DialogueBoxMeme_obj > __new();
-		static ::hx::ObjectPtr< DialogueBoxMeme_obj > __alloc(::hx::Ctx *_hx_ctx);
+		static ::hx::ObjectPtr< DialogueBoxMeme_obj > __new( ::Dynamic dialogueList);
+		static ::hx::ObjectPtr< DialogueBoxMeme_obj > __alloc(::hx::Ctx *_hx_ctx, ::Dynamic dialogueList);
 		static void * _hx_vtable;
 		static Dynamic __CreateEmpty();
 		static Dynamic __Create(::hx::DynamicArray inArgs);
@@ -45,6 +45,7 @@ class HXCPP_CLASS_ATTRIBUTES DialogueBoxMeme_obj : public  ::flixel::group::FlxT
 
 		HX_DO_RTTI_ALL;
 		::hx::Val __Field(const ::String &inString, ::hx::PropertyAccess inCallProp);
+		static bool __GetStatic(const ::String &inString, Dynamic &outValue, ::hx::PropertyAccess inCallProp);
 		::hx::Val __SetField(const ::String &inString,const ::hx::Val &inValue, ::hx::PropertyAccess inCallProp);
 		void __GetFields(Array< ::String> &outFields);
 		static void __register();
@@ -53,10 +54,13 @@ class HXCPP_CLASS_ATTRIBUTES DialogueBoxMeme_obj : public  ::flixel::group::FlxT
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_("DialogueBoxMeme",03,e6,af,33); }
 
+		static  ::Dynamic parseDialogue(::String path);
+		static ::Dynamic parseDialogue_dyn();
+
+		static  ::Dynamic dialogueTemplate();
+		static ::Dynamic dialogueTemplate_dyn();
+
 		 ::flixel::addons::text::FlxTypeText swagDialogue;
-		::Array< ::String > dialogues;
-		int dr;
-		::Array< int > de;
 		int index;
 		void update(Float elapsed);
 

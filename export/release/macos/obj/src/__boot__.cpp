@@ -4321,14 +4321,14 @@
 #ifndef INCLUDED_debug_FPSCounter
 #include <debug/FPSCounter.h>
 #endif
-#ifndef INCLUDED_cutscenes_DialogueBoxMeme
-#include <cutscenes/DialogueBoxMeme.h>
-#endif
 #ifndef INCLUDED_cutscenes_DialogueBox
 #include <cutscenes/DialogueBox.h>
 #endif
 #ifndef INCLUDED_cutscenes_CutsceneHandler
 #include <cutscenes/CutsceneHandler.h>
+#endif
+#ifndef INCLUDED_cutscenes_Conversation
+#include <cutscenes/Conversation.h>
 #endif
 #ifndef INCLUDED_crowplexus_iris_IrisConfig
 #include <crowplexus/iris/IrisConfig.h>
@@ -6134,9 +6134,9 @@ __files__boot();
 ::flixel::_hx_system::frontEnds::AssetFrontEnd_obj::__register();
 ::flixel::IFlxBasic_obj::__register();
 ::debug::FPSCounter_obj::__register();
-::cutscenes::DialogueBoxMeme_obj::__register();
 ::cutscenes::DialogueBox_obj::__register();
 ::cutscenes::CutsceneHandler_obj::__register();
+::cutscenes::Conversation_obj::__register();
 ::crowplexus::iris::IrisConfig_obj::__register();
 ::crowplexus::iris::utils::UsingEntry_obj::__register();
 ::haxe::ds::StringMap_obj::__register();

@@ -11,13 +11,13 @@
 #include <lime/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_28506bf8a6522750_1504_new,"__ASSET__assets_fonts_inconsolata_bold_ttf","new",0xa3ee4aa9,"__ASSET__assets_fonts_inconsolata_bold_ttf.new","ManifestResources.hx",1504,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_28506bf8a6522750_1510_new,"__ASSET__assets_fonts_inconsolata_bold_ttf","new",0xa3ee4aa9,"__ASSET__assets_fonts_inconsolata_bold_ttf.new","ManifestResources.hx",1510,0xf77aa668)
 
 void __ASSET__assets_fonts_inconsolata_bold_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_28506bf8a6522750_1504_new)
-HXDLIN(1504)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-Bold.ttf",46,43,fd,97));
-HXDLIN(1504)		this->name = HX_("Inconsolata Bold",0a,e1,e1,bf);
-HXDLIN(1504)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_28506bf8a6522750_1510_new)
+HXDLIN(1510)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-Bold.ttf",46,43,fd,97));
+HXDLIN(1510)		this->name = HX_("Inconsolata Bold",0a,e1,e1,bf);
+HXDLIN(1510)		super::__construct(null());
             	}
 
 Dynamic __ASSET__assets_fonts_inconsolata_bold_ttf_obj::__CreateEmpty() { return new __ASSET__assets_fonts_inconsolata_bold_ttf_obj; }

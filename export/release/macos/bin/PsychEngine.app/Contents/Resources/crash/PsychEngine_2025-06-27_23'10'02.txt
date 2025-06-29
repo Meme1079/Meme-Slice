@@ -1,0 +1,14 @@
+cutscenes/Conversation.hx (line 93)
+flixel/group/FlxGroup.hx (line 161)
+flixel/group/FlxSpriteGroup.hx (line 223)
+flixel/group/FlxGroup.hx (line 161)
+backend/MusicBeatState.hx (line 83)
+states/PlayState.hx (line 1702)
+flixel/FlxState.hx (line 225)
+flixel/FlxGame.hx (line 693)
+flixel/FlxGame.hx (line 628)
+flixel/FlxGame.hx (line 501)
+
+Uncaught Error: Null Object Reference
+
+> Crash Handler written by: sqirra-rng
