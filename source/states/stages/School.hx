@@ -123,6 +123,7 @@ class School extends BaseStage {
 			if (black.alpha <= 0)
 			{
 				add(doof);
+
 				remove(black);
 				black.destroy();
 			}

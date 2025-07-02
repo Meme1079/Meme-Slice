@@ -54,6 +54,10 @@ class Conversation extends FlxSpriteGroup {
      var textIndex:Int = 0;
      var textIndexLength:Int = 0;
 	var textIndexLengthList:Array<Int> = [];
+
+     var dialogueOpened:Bool  = false;
+	var dialogueStarted:Bool = false;
+	var dialogueEnded:Bool   = false;
      public function new(conversation:ConversationData) {
           super();
           for (dialogues in conversation.dialogue) {
@@ -65,7 +69,7 @@ class Conversation extends FlxSpriteGroup {
 			}
 		}
 
-	     convDialogue = new FlxTypeText(240, 500, Std.int(FlxG.width * 0.6), "sawg", 32);
+	     convDialogue = new FlxTypeText(240, 500, Std.int(FlxG.width * 0.6), convTextContent[0].join(''), 32);
 		convDialogue.font = Paths.font('pixel-latin.ttf');
 		convDialogue.color = 0xFF3F2021;
 		convDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
@@ -103,14 +107,61 @@ class Conversation extends FlxSpriteGroup {
      override function update(elapsed:Float) {
           super.update(elapsed);
 
+          if (convTextContent[pageIndex] != null) {
+               if (convTextLength[pageIndex][textIndex] > 0) {
+                    if (convDialogue.text.length >= convTextLength[pageIndex][textIndex]) {
+                         textIndex += 1;
+                         convDialogue.paused = true;
+                    }
+               }
+          }
+          
+          if (Controls.instance.BACK) {
 
-          /* if (convDialogue.text.length >= textIndexList[textIndex]) {
-               textIndex += 1;
-               convDialogue.paused = true;
+          } else if (Controls.instance.ACCEPT) {
+               if (convTextContent[pageIndex] != null) {
+                    if (convTextLength[pageIndex][textIndex] > 0) {
+                         convDialogue.paused = false;
+                    } else {
+                         textIndex = 0;
+                         pageIndex += 1;
+
+                         if (convTextContent[pageIndex] == null) {
+                              return;
+                         }
+
+                         convDialogue.resetText(convTextContent[pageIndex].join(''));
+                         convDialogue.start(0.04, true);
+                         FlxG.sound.play(Paths.sound('clickText'), 0.8);
+                    }
+               }
+               
           }
 
-          if (Controls.instance.ACCEPT) {
-               convDialogue.paused = false;
+          /* if (convTextContent[pageIndex] != null) {
+               if (convTextLength[pageIndex][textIndex] > 0) {
+                    if (convDialogue.text.length >= convTextLength[pageIndex][textIndex]) {
+                         textIndex += 1;
+                         convDialogue.paused = true;
+                    }
+
+                    if (Controls.instance.ACCEPT) {
+                         convDialogue.paused = false;
+                    }
+               } else {
+                    if (Controls.instance.ACCEPT) {
+                         textIndex = 0;
+                         pageIndex += 1;
+
+                         if (convTextContent[pageIndex] == null) {
+                              return;
+                         }
+
+                         convDialogue.resetText(convTextContent[pageIndex].join(''));
+                         convDialogue.start(0.04, true);
+                         FlxG.sound.play(Paths.sound('clickText'), 0.8);
+                    }
+               }
           } */
      }
 

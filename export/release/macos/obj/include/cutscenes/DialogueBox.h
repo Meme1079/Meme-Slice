@@ -9,6 +9,7 @@
 #ifndef INCLUDED_flixel_group_FlxTypedSpriteGroup
 #include <flixel/group/FlxTypedSpriteGroup.h>
 #endif
+HX_DECLARE_CLASS1(cutscenes,Conversation)
 HX_DECLARE_CLASS1(cutscenes,DialogueBox)
 HX_DECLARE_CLASS1(flixel,FlxBasic)
 HX_DECLARE_CLASS1(flixel,FlxObject)
@@ -42,9 +43,23 @@ class HXCPP_CLASS_ATTRIBUTES DialogueBox_obj : public  ::flixel::group::FlxTyped
 		//~DialogueBox_obj();
 
 		HX_DO_RTTI_ALL;
+		::hx::Val __Field(const ::String &inString, ::hx::PropertyAccess inCallProp);
+		::hx::Val __SetField(const ::String &inString,const ::hx::Val &inValue, ::hx::PropertyAccess inCallProp);
+		void __GetFields(Array< ::String> &outFields);
 		static void __register();
+		void __Mark(HX_MARK_PARAMS);
+		void __Visit(HX_VISIT_PARAMS);
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_("DialogueBox",b3,1f,c8,ff); }
+
+		 ::cutscenes::Conversation dialogueConversation;
+		 ::Dynamic onFinish;
+		Dynamic onFinish_dyn() { return onFinish;}
+		 ::Dynamic onNextDialogue;
+		Dynamic onNextDialogue_dyn() { return onNextDialogue;}
+		 ::Dynamic onSkipDialogue;
+		Dynamic onSkipDialogue_dyn() { return onSkipDialogue;}
+		void update(Float elapsed);
 
 };
 

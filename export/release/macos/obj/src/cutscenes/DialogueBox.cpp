@@ -23,14 +23,17 @@
 #include <flixel/util/IFlxDestroyable.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_8116a89da7f4c21e_16_new,"cutscenes.DialogueBox","new",0xc13df860,"cutscenes.DialogueBox.new","cutscenes/DialogueBox.hx",16,0x748ed2d1)
+HX_DEFINE_STACK_FRAME(_hx_pos_8116a89da7f4c21e_14_new,"cutscenes.DialogueBox","new",0xc13df860,"cutscenes.DialogueBox.new","cutscenes/DialogueBox.hx",14,0x748ed2d1)
+HX_LOCAL_STACK_FRAME(_hx_pos_8116a89da7f4c21e_28_update,"cutscenes.DialogueBox","update",0x24e45e09,"cutscenes.DialogueBox.update","cutscenes/DialogueBox.hx",28,0x748ed2d1)
 namespace cutscenes{
 
 void DialogueBox_obj::__construct( ::Dynamic conversation, ::Dynamic speaker){
-            	HX_GC_STACKFRAME(&_hx_pos_8116a89da7f4c21e_16_new)
-HXLINE(  17)		super::__construct(null(),null(),null());
-HXLINE(  19)		 ::cutscenes::Conversation d =  ::cutscenes::Conversation_obj::__alloc( HX_CTX ,conversation);
-HXLINE(  20)		this->add(d);
+            	HX_GC_STACKFRAME(&_hx_pos_8116a89da7f4c21e_14_new)
+HXLINE(  19)		this->onSkipDialogue = null();
+HXLINE(  18)		this->onNextDialogue = null();
+HXLINE(  21)		super::__construct(null(),null(),null());
+HXLINE(  23)		this->dialogueConversation =  ::cutscenes::Conversation_obj::__alloc( HX_CTX ,conversation);
+HXLINE(  24)		this->add(this->dialogueConversation);
             	}
 
 Dynamic DialogueBox_obj::__CreateEmpty() { return new DialogueBox_obj; }
@@ -60,6 +63,12 @@ bool DialogueBox_obj::_hx_isInstanceOf(int inClassId) {
 	}
 }
 
+void DialogueBox_obj::update(Float elapsed){
+            	HX_STACKFRAME(&_hx_pos_8116a89da7f4c21e_28_update)
+HXDLIN(  28)		this->super::update(elapsed);
+            	}
+
+
 
 ::hx::ObjectPtr< DialogueBox_obj > DialogueBox_obj::__new( ::Dynamic conversation, ::Dynamic speaker) {
 	::hx::ObjectPtr< DialogueBox_obj > __this = new DialogueBox_obj();
@@ -78,10 +87,85 @@ DialogueBox_obj::DialogueBox_obj()
 {
 }
 
+void DialogueBox_obj::__Mark(HX_MARK_PARAMS)
+{
+	HX_MARK_BEGIN_CLASS(DialogueBox);
+	HX_MARK_MEMBER_NAME(dialogueConversation,"dialogueConversation");
+	HX_MARK_MEMBER_NAME(onFinish,"onFinish");
+	HX_MARK_MEMBER_NAME(onNextDialogue,"onNextDialogue");
+	HX_MARK_MEMBER_NAME(onSkipDialogue,"onSkipDialogue");
+	 ::flixel::group::FlxTypedSpriteGroup_obj::__Mark(HX_MARK_ARG);
+	HX_MARK_END_CLASS();
+}
+
+void DialogueBox_obj::__Visit(HX_VISIT_PARAMS)
+{
+	HX_VISIT_MEMBER_NAME(dialogueConversation,"dialogueConversation");
+	HX_VISIT_MEMBER_NAME(onFinish,"onFinish");
+	HX_VISIT_MEMBER_NAME(onNextDialogue,"onNextDialogue");
+	HX_VISIT_MEMBER_NAME(onSkipDialogue,"onSkipDialogue");
+	 ::flixel::group::FlxTypedSpriteGroup_obj::__Visit(HX_VISIT_ARG);
+}
+
+::hx::Val DialogueBox_obj::__Field(const ::String &inName,::hx::PropertyAccess inCallProp)
+{
+	switch(inName.length) {
+	case 6:
+		if (HX_FIELD_EQ(inName,"update") ) { return ::hx::Val( update_dyn() ); }
+		break;
+	case 8:
+		if (HX_FIELD_EQ(inName,"onFinish") ) { return ::hx::Val( onFinish ); }
+		break;
+	case 14:
+		if (HX_FIELD_EQ(inName,"onNextDialogue") ) { return ::hx::Val( onNextDialogue ); }
+		if (HX_FIELD_EQ(inName,"onSkipDialogue") ) { return ::hx::Val( onSkipDialogue ); }
+		break;
+	case 20:
+		if (HX_FIELD_EQ(inName,"dialogueConversation") ) { return ::hx::Val( dialogueConversation ); }
+	}
+	return super::__Field(inName,inCallProp);
+}
+
+::hx::Val DialogueBox_obj::__SetField(const ::String &inName,const ::hx::Val &inValue,::hx::PropertyAccess inCallProp)
+{
+	switch(inName.length) {
+	case 8:
+		if (HX_FIELD_EQ(inName,"onFinish") ) { onFinish=inValue.Cast<  ::Dynamic >(); return inValue; }
+		break;
+	case 14:
+		if (HX_FIELD_EQ(inName,"onNextDialogue") ) { onNextDialogue=inValue.Cast<  ::Dynamic >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"onSkipDialogue") ) { onSkipDialogue=inValue.Cast<  ::Dynamic >(); return inValue; }
+		break;
+	case 20:
+		if (HX_FIELD_EQ(inName,"dialogueConversation") ) { dialogueConversation=inValue.Cast<  ::cutscenes::Conversation >(); return inValue; }
+	}
+	return super::__SetField(inName,inValue,inCallProp);
+}
+
+void DialogueBox_obj::__GetFields(Array< ::String> &outFields)
+{
+	outFields->push(HX_("dialogueConversation",bb,04,db,3d));
+	super::__GetFields(outFields);
+};
+
 #ifdef HXCPP_SCRIPTABLE
-static ::hx::StorageInfo *DialogueBox_obj_sMemberStorageInfo = 0;
+static ::hx::StorageInfo DialogueBox_obj_sMemberStorageInfo[] = {
+	{::hx::fsObject /*  ::cutscenes::Conversation */ ,(int)offsetof(DialogueBox_obj,dialogueConversation),HX_("dialogueConversation",bb,04,db,3d)},
+	{::hx::fsObject /*  ::Dynamic */ ,(int)offsetof(DialogueBox_obj,onFinish),HX_("onFinish",d2,36,2c,66)},
+	{::hx::fsObject /*  ::Dynamic */ ,(int)offsetof(DialogueBox_obj,onNextDialogue),HX_("onNextDialogue",ea,78,82,7b)},
+	{::hx::fsObject /*  ::Dynamic */ ,(int)offsetof(DialogueBox_obj,onSkipDialogue),HX_("onSkipDialogue",76,76,53,39)},
+	{ ::hx::fsUnknown, 0, null()}
+};
 static ::hx::StaticInfo *DialogueBox_obj_sStaticStorageInfo = 0;
 #endif
+
+static ::String DialogueBox_obj_sMemberFields[] = {
+	HX_("dialogueConversation",bb,04,db,3d),
+	HX_("onFinish",d2,36,2c,66),
+	HX_("onNextDialogue",ea,78,82,7b),
+	HX_("onSkipDialogue",76,76,53,39),
+	HX_("update",09,86,05,87),
+	::String(null()) };
 
 ::hx::Class DialogueBox_obj::__mClass;
 
@@ -97,7 +181,7 @@ void DialogueBox_obj::__register()
 	__mClass->mGetStaticField = &::hx::Class_obj::GetNoStaticField;
 	__mClass->mSetStaticField = &::hx::Class_obj::SetNoStaticField;
 	__mClass->mStatics = ::hx::Class_obj::dupFunctions(0 /* sStaticFields */);
-	__mClass->mMembers = ::hx::Class_obj::dupFunctions(0 /* sMemberFields */);
+	__mClass->mMembers = ::hx::Class_obj::dupFunctions(DialogueBox_obj_sMemberFields);
 	__mClass->mCanCast = ::hx::TCanCast< DialogueBox_obj >;
 #ifdef HXCPP_SCRIPTABLE
 	__mClass->mMemberStorageInfo = DialogueBox_obj_sMemberStorageInfo;

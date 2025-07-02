@@ -68,6 +68,9 @@ class HXCPP_CLASS_ATTRIBUTES Conversation_obj : public  ::flixel::group::FlxType
 		int textIndex;
 		int textIndexLength;
 		::Array< int > textIndexLengthList;
+		bool dialogueOpened;
+		bool dialogueStarted;
+		bool dialogueEnded;
 		void textLengthList(::Array< ::String > dialogues,::String lines);
 		::Dynamic textLengthList_dyn();
 

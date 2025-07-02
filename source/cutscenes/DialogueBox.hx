@@ -12,11 +12,19 @@ import backend.Paths;
 import backend.CoolUtil;
 
 class DialogueBox extends FlxSpriteGroup {
-	
+	var dialogueConversation:Conversation;
+
+	public var onFinish:Void -> Void;
+	public var onNextDialogue:Void -> Void = null;
+	public var onSkipDialogue:Void -> Void = null;
 	public function new(conversation:ConversationData, ?speaker) {
 		super();
 		
-		var d = new Conversation(conversation);
-		add(d);
+		dialogueConversation = new Conversation(conversation);
+		add(dialogueConversation);
+	}
+
+	override function update(elapsed:Float) {
+		super.update(elapsed);
 	}
 }

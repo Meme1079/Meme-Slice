@@ -422,11 +422,11 @@ void School_obj::schoolIntro(){
 HXLINE( 121)			black1->set_alpha((black1->alpha - ((Float)0.15)));
 HXLINE( 123)			if ((black1->alpha <= 0)) {
 HXLINE( 125)				_gthis->add(_gthis->doof);
-HXLINE( 126)				_gthis->remove(black1,null());
-HXLINE( 127)				black1->destroy();
+HXLINE( 127)				_gthis->remove(black1,null());
+HXLINE( 128)				black1->destroy();
             			}
             			else {
-HXLINE( 129)				tmr->reset(((Float)0.3));
+HXLINE( 130)				tmr->reset(((Float)0.3));
             			}
             		}
             		HX_END_LOCAL_FUNC1((void))

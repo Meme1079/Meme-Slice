@@ -7,6 +7,9 @@
 #ifndef INCLUDED_StringTools
 #include <StringTools.h>
 #endif
+#ifndef INCLUDED_backend_Controls
+#include <backend/Controls.h>
+#endif
 #ifndef INCLUDED_backend_Language
 #include <backend/Language.h>
 #endif
@@ -61,9 +64,6 @@
 #ifndef INCLUDED_haxe_IMap
 #include <haxe/IMap.h>
 #endif
-#ifndef INCLUDED_haxe_Log
-#include <haxe/Log.h>
-#endif
 #ifndef INCLUDED_haxe_ds_StringMap
 #include <haxe/ds/StringMap.h>
 #endif
@@ -87,13 +87,13 @@
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_47_new,"cutscenes.Conversation","new",0x1c3e537a,"cutscenes.Conversation.new","cutscenes/Conversation.hx",47,0x04286255)
-HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_91_textLengthList,"cutscenes.Conversation","textLengthList",0xa0a71297,"cutscenes.Conversation.textLengthList","cutscenes/Conversation.hx",91,0x04286255)
+HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_92_textLengthList,"cutscenes.Conversation","textLengthList",0xa0a71297,"cutscenes.Conversation.textLengthList","cutscenes/Conversation.hx",92,0x04286255)
 HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_107_update,"cutscenes.Conversation","update",0xe17e6f2f,"cutscenes.Conversation.update","cutscenes/Conversation.hx",107,0x04286255)
-HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_128_dialogueParse,"cutscenes.Conversation","dialogueParse",0x241f8395,"cutscenes.Conversation.dialogueParse","cutscenes/Conversation.hx",128,0x04286255)
+HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_176_dialogueParse,"cutscenes.Conversation","dialogueParse",0x241f8395,"cutscenes.Conversation.dialogueParse","cutscenes/Conversation.hx",176,0x04286255)
 static const ::String _hx_array_data_1184ce88_7[] = {
 	HX_("coolswag",d3,7d,92,03),
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_141_dialogueTemplate,"cutscenes.Conversation","dialogueTemplate",0xc8bebe18,"cutscenes.Conversation.dialogueTemplate","cutscenes/Conversation.hx",141,0x04286255)
+HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_189_dialogueTemplate,"cutscenes.Conversation","dialogueTemplate",0xc8bebe18,"cutscenes.Conversation.dialogueTemplate","cutscenes/Conversation.hx",189,0x04286255)
 static const ::String _hx_array_data_1184ce88_9[] = {
 	HX_("coolswag",d3,7d,92,03),
 };
@@ -101,6 +101,9 @@ namespace cutscenes{
 
 void Conversation_obj::__construct( ::Dynamic conversation){
             	HX_GC_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_47_new)
+HXLINE(  60)		this->dialogueEnded = false;
+HXLINE(  59)		this->dialogueStarted = false;
+HXLINE(  58)		this->dialogueOpened = false;
 HXLINE(  56)		this->textIndexLengthList = ::Array_obj< int >::__new(0);
 HXLINE(  55)		this->textIndexLength = 0;
 HXLINE(  54)		this->textIndex = 0;
@@ -108,65 +111,64 @@ HXLINE(  53)		this->pageIndex = 0;
 HXLINE(  51)		this->convTextLength = ::Array_obj< ::Dynamic>::__new(0);
 HXLINE(  50)		this->convTextContent = ::Array_obj< ::Dynamic>::__new(0);
 HXLINE(  49)		this->convTextStr = HX_("",00,00,00,00);
-HXLINE(  58)		super::__construct(null(),null(),null());
-HXLINE(  59)		{
-HXLINE(  59)			int _g = 0;
-HXDLIN(  59)			::Array< ::Dynamic> _g1 = ( (::Array< ::Dynamic>)(conversation->__Field(HX_("dialogue",18,2d,94,a7),::hx::paccDynamic)) );
-HXDLIN(  59)			while((_g < _g1->length)){
-HXLINE(  59)				 ::Dynamic dialogues = _g1->__get(_g);
-HXDLIN(  59)				_g = (_g + 1);
-HXLINE(  60)				this->convTextContent->push( ::Dynamic(dialogues->__Field(HX_("text",ad,cc,f9,4c),::hx::paccDynamic)));
+HXLINE(  62)		super::__construct(null(),null(),null());
+HXLINE(  63)		{
+HXLINE(  63)			int _g = 0;
+HXDLIN(  63)			::Array< ::Dynamic> _g1 = ( (::Array< ::Dynamic>)(conversation->__Field(HX_("dialogue",18,2d,94,a7),::hx::paccDynamic)) );
+HXDLIN(  63)			while((_g < _g1->length)){
+HXLINE(  63)				 ::Dynamic dialogues = _g1->__get(_g);
+HXDLIN(  63)				_g = (_g + 1);
+HXLINE(  64)				this->convTextContent->push( ::Dynamic(dialogues->__Field(HX_("text",ad,cc,f9,4c),::hx::paccDynamic)));
             			}
             		}
-HXLINE(  62)		{
-HXLINE(  62)			int _g2 = 0;
-HXDLIN(  62)			::Array< ::Dynamic> _g3 = this->convTextContent;
-HXDLIN(  62)			while((_g2 < _g3->length)){
-HXLINE(  62)				::Array< ::String > dialogues1 = _g3->__get(_g2).StaticCast< ::Array< ::String > >();
-HXDLIN(  62)				_g2 = (_g2 + 1);
-HXLINE(  63)				{
-HXLINE(  63)					int _g4 = 0;
-HXDLIN(  63)					while((_g4 < dialogues1->length)){
-HXLINE(  63)						::String lines = dialogues1->__get(_g4);
-HXDLIN(  63)						_g4 = (_g4 + 1);
-HXLINE(  64)						this->textLengthList(dialogues1,lines);
+HXLINE(  66)		{
+HXLINE(  66)			int _g2 = 0;
+HXDLIN(  66)			::Array< ::Dynamic> _g3 = this->convTextContent;
+HXDLIN(  66)			while((_g2 < _g3->length)){
+HXLINE(  66)				::Array< ::String > dialogues1 = _g3->__get(_g2).StaticCast< ::Array< ::String > >();
+HXDLIN(  66)				_g2 = (_g2 + 1);
+HXLINE(  67)				{
+HXLINE(  67)					int _g4 = 0;
+HXDLIN(  67)					while((_g4 < dialogues1->length)){
+HXLINE(  67)						::String lines = dialogues1->__get(_g4);
+HXDLIN(  67)						_g4 = (_g4 + 1);
+HXLINE(  68)						this->textLengthList(dialogues1,lines);
             					}
             				}
             			}
             		}
-HXLINE(  68)		::haxe::Log_obj::trace(this->convTextContent,::hx::SourceInfo(HX_("source/cutscenes/Conversation.hx",e1,ac,22,52),68,HX_("cutscenes.Conversation",88,ce,84,11),HX_("new",60,d0,53,00)));
-HXLINE(  69)		::haxe::Log_obj::trace(this->convTextLength,::hx::SourceInfo(HX_("source/cutscenes/Conversation.hx",e1,ac,22,52),69,HX_("cutscenes.Conversation",88,ce,84,11),HX_("new",60,d0,53,00)));
-HXLINE(  71)		this->convDialogue =  ::flixel::addons::text::FlxTypeText_obj::__alloc( HX_CTX ,( (Float)(240) ),( (Float)(500) ),::Std_obj::_hx_int((( (Float)(::flixel::FlxG_obj::width) ) * ((Float)0.6))),HX_("sawg",1e,8c,4d,4c),32,null());
-HXLINE(  72)		 ::flixel::addons::text::FlxTypeText _hx_tmp = this->convDialogue;
-HXDLIN(  72)		::String key = (HX_("fonts/",eb,13,ef,fa) + HX_("pixel-latin.ttf",b5,c3,d6,c6));
-HXDLIN(  72)		::Dynamic this1 = ::backend::Language_obj::phrases;
-HXDLIN(  72)		::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key).toLowerCase());
-HXDLIN(  72)		if (::hx::IsNotNull( str )) {
-HXLINE(  72)			key = str;
+HXLINE(  72)		int _hx_tmp = ::Std_obj::_hx_int((( (Float)(::flixel::FlxG_obj::width) ) * ((Float)0.6)));
+HXDLIN(  72)		this->convDialogue =  ::flixel::addons::text::FlxTypeText_obj::__alloc( HX_CTX ,( (Float)(240) ),( (Float)(500) ),_hx_tmp,this->convTextContent->__get(0).StaticCast< ::Array< ::String > >()->join(HX_("",00,00,00,00)),32,null());
+HXLINE(  73)		 ::flixel::addons::text::FlxTypeText _hx_tmp1 = this->convDialogue;
+HXDLIN(  73)		::String key = (HX_("fonts/",eb,13,ef,fa) + HX_("pixel-latin.ttf",b5,c3,d6,c6));
+HXDLIN(  73)		::Dynamic this1 = ::backend::Language_obj::phrases;
+HXDLIN(  73)		::String str = ( ( ::haxe::ds::StringMap)(this1) )->get_string(::StringTools_obj::trim(key).toLowerCase());
+HXDLIN(  73)		if (::hx::IsNotNull( str )) {
+HXLINE(  73)			key = str;
             		}
-HXDLIN(  72)		::String folderKey = key;
-HXDLIN(  72)		::String file = ::backend::Paths_obj::modFolders(folderKey);
-HXDLIN(  72)		::String _hx_tmp1;
-HXDLIN(  72)		if (::sys::FileSystem_obj::exists(file)) {
-HXLINE(  72)			_hx_tmp1 = file;
+HXDLIN(  73)		::String folderKey = key;
+HXDLIN(  73)		::String file = ::backend::Paths_obj::modFolders(folderKey);
+HXDLIN(  73)		::String _hx_tmp2;
+HXDLIN(  73)		if (::sys::FileSystem_obj::exists(file)) {
+HXLINE(  73)			_hx_tmp2 = file;
             		}
             		else {
-HXLINE(  72)			_hx_tmp1 = (HX_("assets/",4c,2a,dc,36) + folderKey);
+HXLINE(  73)			_hx_tmp2 = (HX_("assets/",4c,2a,dc,36) + folderKey);
             		}
-HXDLIN(  72)		_hx_tmp->set_font(_hx_tmp1);
-HXLINE(  73)		this->convDialogue->set_color(-12640223);
-HXLINE(  74)		 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp2 = ::flixel::FlxG_obj::sound;
-HXDLIN(  74)		 ::flixel::sound::FlxSound _hx_tmp3 = _hx_tmp2->load(::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + HX_("pixelText",53,7a,83,06)),null(),true,null()),((Float)0.6),null(),null(),null(),null(),null(),null(),null());
-HXDLIN(  74)		this->convDialogue->sounds = ::Array_obj< ::Dynamic>::__new(1)->init(0,_hx_tmp3);
-HXLINE(  75)		this->convDialogue->set_borderStyle(::flixel::text::FlxTextBorderStyle_obj::SHADOW_dyn());
-HXLINE(  76)		this->convDialogue->set_borderColor(-2583404);
-HXLINE(  77)		{
-HXLINE(  77)			 ::flixel::math::FlxBasePoint this2 = this->convDialogue->_shadowOffset;
-HXDLIN(  77)			this2->set_x(( (Float)(2) ));
-HXDLIN(  77)			this2->set_y(( (Float)(2) ));
+HXDLIN(  73)		_hx_tmp1->set_font(_hx_tmp2);
+HXLINE(  74)		this->convDialogue->set_color(-12640223);
+HXLINE(  75)		 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp3 = ::flixel::FlxG_obj::sound;
+HXDLIN(  75)		 ::flixel::sound::FlxSound _hx_tmp4 = _hx_tmp3->load(::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + HX_("pixelText",53,7a,83,06)),null(),true,null()),((Float)0.6),null(),null(),null(),null(),null(),null(),null());
+HXDLIN(  75)		this->convDialogue->sounds = ::Array_obj< ::Dynamic>::__new(1)->init(0,_hx_tmp4);
+HXLINE(  76)		this->convDialogue->set_borderStyle(::flixel::text::FlxTextBorderStyle_obj::SHADOW_dyn());
+HXLINE(  77)		this->convDialogue->set_borderColor(-2583404);
+HXLINE(  78)		{
+HXLINE(  78)			 ::flixel::math::FlxBasePoint this2 = this->convDialogue->_shadowOffset;
+HXDLIN(  78)			this2->set_x(( (Float)(2) ));
+HXDLIN(  78)			this2->set_y(( (Float)(2) ));
             		}
-HXLINE(  78)		this->add(this->convDialogue);
-HXLINE(  80)		this->convDialogue->start(((Float)0.04),false,null(),null(),null());
+HXLINE(  79)		this->add(this->convDialogue);
+HXLINE(  81)		this->convDialogue->start(((Float)0.04),false,null(),null(),null());
             	}
 
 Dynamic Conversation_obj::__CreateEmpty() { return new Conversation_obj; }
@@ -197,26 +199,26 @@ bool Conversation_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void Conversation_obj::textLengthList(::Array< ::String > dialogues,::String lines){
-            	HX_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_91_textLengthList)
-HXDLIN(  91)		bool _hx_tmp;
-HXDLIN(  91)		if ((dialogues->indexOf(lines,null()) == 0)) {
-HXDLIN(  91)			_hx_tmp = ((dialogues->length - 1) == 0);
+            	HX_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_92_textLengthList)
+HXDLIN(  92)		bool _hx_tmp;
+HXDLIN(  92)		if ((dialogues->indexOf(lines,null()) == 0)) {
+HXDLIN(  92)			_hx_tmp = ((dialogues->length - 1) == 0);
             		}
             		else {
-HXDLIN(  91)			_hx_tmp = false;
+HXDLIN(  92)			_hx_tmp = false;
             		}
-HXDLIN(  91)		if (_hx_tmp) {
-HXLINE(  92)			this->textIndexLength = 0;
-HXLINE(  93)			this->textIndexLengthList = ::Array_obj< int >::__new(0);
-HXLINE(  95)			this->convTextLength->push(::Array_obj< int >::__new(1)->init(0,lines.length));
+HXDLIN(  92)		if (_hx_tmp) {
+HXLINE(  93)			this->textIndexLength = 0;
+HXLINE(  94)			this->textIndexLengthList = ::Array_obj< int >::__new(0);
+HXLINE(  96)			this->convTextLength->push(::Array_obj< int >::__new(1)->init(0,lines.length));
             		}
             		else {
-HXLINE(  97)			 ::cutscenes::Conversation _hx_tmp1 = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(  97)			_hx_tmp1->textIndexLength = (_hx_tmp1->textIndexLength + lines.length);
-HXLINE(  98)			this->textIndexLengthList->push(this->textIndexLength);
-HXLINE( 100)			int _hx_tmp2 = dialogues->indexOf(lines,null());
-HXDLIN( 100)			if ((_hx_tmp2 == (dialogues->length - 1))) {
-HXLINE( 101)				this->convTextLength->push(this->textIndexLengthList);
+HXLINE(  98)			 ::cutscenes::Conversation _hx_tmp1 = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(  98)			_hx_tmp1->textIndexLength = (_hx_tmp1->textIndexLength + lines.length);
+HXLINE(  99)			this->textIndexLengthList->push(this->textIndexLength);
+HXLINE( 101)			int _hx_tmp2 = dialogues->indexOf(lines,null());
+HXDLIN( 101)			if ((_hx_tmp2 == (dialogues->length - 1))) {
+HXLINE( 102)				this->convTextLength->push(this->textIndexLengthList);
             			}
             		}
             	}
@@ -226,17 +228,48 @@ HX_DEFINE_DYNAMIC_FUNC2(Conversation_obj,textLengthList,(void))
 
 void Conversation_obj::update(Float elapsed){
             	HX_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_107_update)
-HXDLIN( 107)		this->super::update(elapsed);
+HXLINE( 108)		this->super::update(elapsed);
+HXLINE( 110)		if (::hx::IsNotNull( this->convTextContent->__get(this->pageIndex).StaticCast< ::Array< ::String > >() )) {
+HXLINE( 111)			if ((this->convTextLength->__get(this->pageIndex).StaticCast< ::Array< int > >()->__get(this->textIndex) > 0)) {
+HXLINE( 112)				if ((this->convDialogue->text.length >= this->convTextLength->__get(this->pageIndex).StaticCast< ::Array< int > >()->__get(this->textIndex))) {
+HXLINE( 113)					 ::cutscenes::Conversation _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 113)					_hx_tmp->textIndex = (_hx_tmp->textIndex + 1);
+HXLINE( 114)					this->convDialogue->paused = true;
+            				}
+            			}
+            		}
+HXLINE( 119)		if (!(::backend::Controls_obj::instance->get_BACK())) {
+HXLINE( 121)			if (::backend::Controls_obj::instance->get_ACCEPT()) {
+HXLINE( 122)				if (::hx::IsNotNull( this->convTextContent->__get(this->pageIndex).StaticCast< ::Array< ::String > >() )) {
+HXLINE( 123)					if ((this->convTextLength->__get(this->pageIndex).StaticCast< ::Array< int > >()->__get(this->textIndex) > 0)) {
+HXLINE( 124)						this->convDialogue->paused = false;
+            					}
+            					else {
+HXLINE( 126)						this->textIndex = 0;
+HXLINE( 127)						 ::cutscenes::Conversation _hx_tmp1 = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 127)						_hx_tmp1->pageIndex = (_hx_tmp1->pageIndex + 1);
+HXLINE( 129)						if (::hx::IsNull( this->convTextContent->__get(this->pageIndex).StaticCast< ::Array< ::String > >() )) {
+HXLINE( 130)							return;
+            						}
+HXLINE( 133)						 ::flixel::addons::text::FlxTypeText _hx_tmp2 = this->convDialogue;
+HXDLIN( 133)						_hx_tmp2->resetText(this->convTextContent->__get(this->pageIndex).StaticCast< ::Array< ::String > >()->join(HX_("",00,00,00,00)));
+HXLINE( 134)						this->convDialogue->start(((Float)0.04),true,null(),null(),null());
+HXLINE( 135)						 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp3 = ::flixel::FlxG_obj::sound;
+HXDLIN( 135)						_hx_tmp3->play(::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + HX_("clickText",15,39,f9,2b)),null(),true,null()),((Float)0.8),null(),null(),null(),null());
+            					}
+            				}
+            			}
+            		}
             	}
 
 
  ::Dynamic Conversation_obj::dialogueParse(::String path){
-            	HX_GC_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_128_dialogueParse)
-HXDLIN( 128)		if (::sys::FileSystem_obj::exists(path)) {
-HXDLIN( 128)			return  ::haxe::format::JsonParser_obj::__alloc( HX_CTX ,::sys::io::File_obj::getContent(path))->doParse();
+            	HX_GC_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_176_dialogueParse)
+HXDLIN( 176)		if (::sys::FileSystem_obj::exists(path)) {
+HXDLIN( 176)			return  ::haxe::format::JsonParser_obj::__alloc( HX_CTX ,::sys::io::File_obj::getContent(path))->doParse();
             		}
             		else {
-HXDLIN( 128)			return  ::Dynamic(::hx::Anon_obj::Create(4)
+HXDLIN( 176)			return  ::Dynamic(::hx::Anon_obj::Create(4)
             				->setFixed(0,HX_("dialogue",18,2d,94,a7),::Array_obj< ::Dynamic>::__new(1)->init(0, ::Dynamic(::hx::Anon_obj::Create(6)
             					->setFixed(0,HX_("speed",87,97,69,81),((Float)1.0))
             					->setFixed(1,HX_("speakerAnimation",05,22,fe,c5),HX_("BF",c4,39,00,00))
@@ -256,15 +289,15 @@ HXDLIN( 128)			return  ::Dynamic(::hx::Anon_obj::Create(4)
             					->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)1.0))
             					->setFixed(1,HX_("type",ba,f2,08,4d),HX_("none",b8,12,0a,49)))));
             		}
-HXDLIN( 128)		return null();
+HXDLIN( 176)		return null();
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Conversation_obj,dialogueParse,return )
 
  ::Dynamic Conversation_obj::dialogueTemplate(){
-            	HX_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_141_dialogueTemplate)
-HXDLIN( 141)		return  ::Dynamic(::hx::Anon_obj::Create(4)
+            	HX_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_189_dialogueTemplate)
+HXDLIN( 189)		return  ::Dynamic(::hx::Anon_obj::Create(4)
             			->setFixed(0,HX_("dialogue",18,2d,94,a7),::Array_obj< ::Dynamic>::__new(1)->init(0, ::Dynamic(::hx::Anon_obj::Create(6)
             				->setFixed(0,HX_("speed",87,97,69,81),((Float)1.0))
             				->setFixed(1,HX_("speakerAnimation",05,22,fe,c5),HX_("BF",c4,39,00,00))
@@ -317,6 +350,9 @@ void Conversation_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(textIndex,"textIndex");
 	HX_MARK_MEMBER_NAME(textIndexLength,"textIndexLength");
 	HX_MARK_MEMBER_NAME(textIndexLengthList,"textIndexLengthList");
+	HX_MARK_MEMBER_NAME(dialogueOpened,"dialogueOpened");
+	HX_MARK_MEMBER_NAME(dialogueStarted,"dialogueStarted");
+	HX_MARK_MEMBER_NAME(dialogueEnded,"dialogueEnded");
 	 ::flixel::group::FlxTypedSpriteGroup_obj::__Mark(HX_MARK_ARG);
 	HX_MARK_END_CLASS();
 }
@@ -331,6 +367,9 @@ void Conversation_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(textIndex,"textIndex");
 	HX_VISIT_MEMBER_NAME(textIndexLength,"textIndexLength");
 	HX_VISIT_MEMBER_NAME(textIndexLengthList,"textIndexLengthList");
+	HX_VISIT_MEMBER_NAME(dialogueOpened,"dialogueOpened");
+	HX_VISIT_MEMBER_NAME(dialogueStarted,"dialogueStarted");
+	HX_VISIT_MEMBER_NAME(dialogueEnded,"dialogueEnded");
 	 ::flixel::group::FlxTypedSpriteGroup_obj::__Visit(HX_VISIT_ARG);
 }
 
@@ -350,13 +389,18 @@ void Conversation_obj::__Visit(HX_VISIT_PARAMS)
 	case 12:
 		if (HX_FIELD_EQ(inName,"convDialogue") ) { return ::hx::Val( convDialogue ); }
 		break;
+	case 13:
+		if (HX_FIELD_EQ(inName,"dialogueEnded") ) { return ::hx::Val( dialogueEnded ); }
+		break;
 	case 14:
 		if (HX_FIELD_EQ(inName,"convTextLength") ) { return ::hx::Val( convTextLength ); }
+		if (HX_FIELD_EQ(inName,"dialogueOpened") ) { return ::hx::Val( dialogueOpened ); }
 		if (HX_FIELD_EQ(inName,"textLengthList") ) { return ::hx::Val( textLengthList_dyn() ); }
 		break;
 	case 15:
 		if (HX_FIELD_EQ(inName,"convTextContent") ) { return ::hx::Val( convTextContent ); }
 		if (HX_FIELD_EQ(inName,"textIndexLength") ) { return ::hx::Val( textIndexLength ); }
+		if (HX_FIELD_EQ(inName,"dialogueStarted") ) { return ::hx::Val( dialogueStarted ); }
 		break;
 	case 19:
 		if (HX_FIELD_EQ(inName,"textIndexLengthList") ) { return ::hx::Val( textIndexLengthList ); }
@@ -389,12 +433,17 @@ bool Conversation_obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::
 	case 12:
 		if (HX_FIELD_EQ(inName,"convDialogue") ) { convDialogue=inValue.Cast<  ::flixel::addons::text::FlxTypeText >(); return inValue; }
 		break;
+	case 13:
+		if (HX_FIELD_EQ(inName,"dialogueEnded") ) { dialogueEnded=inValue.Cast< bool >(); return inValue; }
+		break;
 	case 14:
 		if (HX_FIELD_EQ(inName,"convTextLength") ) { convTextLength=inValue.Cast< ::Array< ::Dynamic> >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"dialogueOpened") ) { dialogueOpened=inValue.Cast< bool >(); return inValue; }
 		break;
 	case 15:
 		if (HX_FIELD_EQ(inName,"convTextContent") ) { convTextContent=inValue.Cast< ::Array< ::Dynamic> >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"textIndexLength") ) { textIndexLength=inValue.Cast< int >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"dialogueStarted") ) { dialogueStarted=inValue.Cast< bool >(); return inValue; }
 		break;
 	case 19:
 		if (HX_FIELD_EQ(inName,"textIndexLengthList") ) { textIndexLengthList=inValue.Cast< ::Array< int > >(); return inValue; }
@@ -412,6 +461,9 @@ void Conversation_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_("textIndex",25,2b,02,57));
 	outFields->push(HX_("textIndexLength",eb,9d,aa,75));
 	outFields->push(HX_("textIndexLengthList",e9,b7,73,fd));
+	outFields->push(HX_("dialogueOpened",e1,e5,9f,10));
+	outFields->push(HX_("dialogueStarted",09,77,22,70));
+	outFields->push(HX_("dialogueEnded",c2,14,61,0b));
 	super::__GetFields(outFields);
 };
 
@@ -425,6 +477,9 @@ static ::hx::StorageInfo Conversation_obj_sMemberStorageInfo[] = {
 	{::hx::fsInt,(int)offsetof(Conversation_obj,textIndex),HX_("textIndex",25,2b,02,57)},
 	{::hx::fsInt,(int)offsetof(Conversation_obj,textIndexLength),HX_("textIndexLength",eb,9d,aa,75)},
 	{::hx::fsObject /* ::Array< int > */ ,(int)offsetof(Conversation_obj,textIndexLengthList),HX_("textIndexLengthList",e9,b7,73,fd)},
+	{::hx::fsBool,(int)offsetof(Conversation_obj,dialogueOpened),HX_("dialogueOpened",e1,e5,9f,10)},
+	{::hx::fsBool,(int)offsetof(Conversation_obj,dialogueStarted),HX_("dialogueStarted",09,77,22,70)},
+	{::hx::fsBool,(int)offsetof(Conversation_obj,dialogueEnded),HX_("dialogueEnded",c2,14,61,0b)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *Conversation_obj_sStaticStorageInfo = 0;
@@ -439,6 +494,9 @@ static ::String Conversation_obj_sMemberFields[] = {
 	HX_("textIndex",25,2b,02,57),
 	HX_("textIndexLength",eb,9d,aa,75),
 	HX_("textIndexLengthList",e9,b7,73,fd),
+	HX_("dialogueOpened",e1,e5,9f,10),
+	HX_("dialogueStarted",09,77,22,70),
+	HX_("dialogueEnded",c2,14,61,0b),
 	HX_("textLengthList",71,93,c7,05),
 	HX_("update",09,86,05,87),
 	::String(null()) };
