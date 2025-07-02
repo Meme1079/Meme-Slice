@@ -107,19 +107,24 @@ class Conversation extends FlxSpriteGroup {
      override function update(elapsed:Float) {
           super.update(elapsed);
 
-          if (convTextContent[pageIndex] != null) {
-               if (convTextLength[pageIndex][textIndex] > 0) {
-                    if (convDialogue.text.length >= convTextLength[pageIndex][textIndex]) {
-                         textIndex += 1;
-                         convDialogue.paused = true;
-                    }
+          if (convTextContent[pageIndex] == null) {
+               kill();
+               return;
+          }
+
+          if (convTextLength[pageIndex][textIndex] > 0) {
+               if (convDialogue.text.length >= convTextLength[pageIndex][textIndex]) {
+                    textIndex += 1;
+                    convDialogue.paused = true;
                }
           }
-          
+
+          dialogueStarted = true;
+
           if (Controls.instance.BACK) {
 
           } else if (Controls.instance.ACCEPT) {
-               if (convTextContent[pageIndex] != null) {
+               if (dialogueEnded) {
                     if (convTextLength[pageIndex][textIndex] > 0) {
                          convDialogue.paused = false;
                     } else {
@@ -127,16 +132,28 @@ class Conversation extends FlxSpriteGroup {
                          pageIndex += 1;
 
                          if (convTextContent[pageIndex] == null) {
+                              kill();
                               return;
                          }
 
                          convDialogue.resetText(convTextContent[pageIndex].join(''));
                          convDialogue.start(0.04, true);
+                         convDialogue.completeCallback = function() {
+			               dialogueEnded = true;
+		               };
+
+                         dialogueEnded = false;
                          FlxG.sound.play(Paths.sound('clickText'), 0.8);
                     }
+               } else if (dialogueStarted) {
+                    FlxG.sound.play(Paths.sound('clickText'), 0.8);
+				convDialogue.skip();
+
+                    dialogueEnded = true;
                }
                
           }
+          
 
           /* if (convTextContent[pageIndex] != null) {
                if (convTextLength[pageIndex][textIndex] > 0) {
