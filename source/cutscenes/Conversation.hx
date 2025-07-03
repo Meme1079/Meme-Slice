@@ -1,5 +1,6 @@
 package cutscenes;
 
+import tjson.TJSON;
 import haxe.Json;
 import openfl.utils.Assets;
 
@@ -47,7 +48,6 @@ private typedef TextContent = Array<Array<String>>;
 private typedef TextLength  = Array<Array<Int>>;
 class Conversation extends FlxSpriteGroup {
      var convDialogue:FlxTypeText;
-     var convTextStr:String = '';
      var convTextContent:TextContent = [];
      var convTextLength:TextLength   = [];
 
@@ -62,8 +62,11 @@ class Conversation extends FlxSpriteGroup {
 	var dialogueEnded:Bool   = false;
      public function new(conversation:ConversationData) {
           super();
+
           for (dialogues in conversation.dialogue) {
                convTextContent.push(dialogues.text);
+
+              var hi = dialogues.speedChanges;
           }
           for (dialogues in convTextContent) {
 			for (lines in dialogues) {
@@ -109,24 +112,11 @@ class Conversation extends FlxSpriteGroup {
      override function update(elapsed:Float) {
           super.update(elapsed);
 
-          if (convTextContent[pageIndex] == null) {
-               kill();
-               return;
-          }
-
           if (!dialogueStarted) {
                dialogueStart();
                dialogueStarted = true;
           }
-
-          if (convTextLength[pageIndex][textIndex] > 0) {
-               if (convDialogue.text.length >= convTextLength[pageIndex][textIndex]) {
-                    textIndex += 1;
-                    convDialogue.paused = true;
-
-                    dialoguePaused = true;
-               }
-          }
+          dialogueContinue();
 
           if (Controls.instance.BACK) {
 
@@ -174,6 +164,10 @@ class Conversation extends FlxSpriteGroup {
           } */
      }
 
+     /**
+          Starts the fucking dialogue.
+          @return nothing, fuck you.
+     **/
      public function dialogueStart():Void {
           if (convTextContent[pageIndex] == null) {
                return;
@@ -189,13 +183,29 @@ class Conversation extends FlxSpriteGroup {
           dialogueEnded = false;
      }
 
-     public function dialogueComplete():Void {
+     /**
+          Continues the dialogue, if it has any extra lines to begin with.
+          @return nothing.
+     **/
+     public function dialogueContinue():Void {
+          if (convTextContent[pageIndex] == null) {
+               return;
+          }
+          if (convTextLength[pageIndex][textIndex] <= 0) {
+               return;
+          }
 
+          if (convDialogue.text.length >= convTextLength[pageIndex][textIndex]) {
+               textIndex += 1;
+               convDialogue.paused = true;
+
+               dialoguePaused = true;
+          }
      }
 
      /**
           Parses the dialogue conversations' JSON.
-      
+
           @param path The given path to parse the JSON, relative to the `dialogues` folder.
           @return The parsed dialogue conversation JSON.
      **/
@@ -209,8 +219,6 @@ class Conversation extends FlxSpriteGroup {
 
      /**
           Default dialogue conversation template, if the said JSON doesn't exist.
-
-          @default fart
           @return The default template.
      **/
      inline public static function dialogueTemplate():ConversationData {

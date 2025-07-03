@@ -61,7 +61,6 @@ class HXCPP_CLASS_ATTRIBUTES Conversation_obj : public  ::flixel::group::FlxType
 		static ::Dynamic dialogueTemplate_dyn();
 
 		 ::flixel::addons::text::FlxTypeText convDialogue;
-		::String convTextStr;
 		::Array< ::Dynamic> convTextContent;
 		::Array< ::Dynamic> convTextLength;
 		int pageIndex;
@@ -80,8 +79,8 @@ class HXCPP_CLASS_ATTRIBUTES Conversation_obj : public  ::flixel::group::FlxType
 		void dialogueStart();
 		::Dynamic dialogueStart_dyn();
 
-		void dialogueComplete();
-		::Dynamic dialogueComplete_dyn();
+		void dialogueContinue();
+		::Dynamic dialogueContinue_dyn();
 
 };
 
