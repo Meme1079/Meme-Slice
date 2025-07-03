@@ -4507,9 +4507,6 @@
 #ifndef INCLUDED___ASSET__OPENFL__assets_fonts_quantico_italic_ttf
 #include <__ASSET__OPENFL__assets_fonts_quantico_italic_ttf.h>
 #endif
-#ifndef INCLUDED___ASSET__OPENFL__assets_fonts_pixel_latin_ttf
-#include <__ASSET__OPENFL__assets_fonts_pixel_latin_ttf.h>
-#endif
 #ifndef INCLUDED___ASSET__OPENFL__assets_fonts_quantico_regular_ttf
 #include <__ASSET__OPENFL__assets_fonts_quantico_regular_ttf.h>
 #endif
@@ -4558,11 +4555,11 @@
 #ifndef INCLUDED___ASSET__OPENFL__assets_fonts_ds_digi_ttf
 #include <__ASSET__OPENFL__assets_fonts_ds_digi_ttf.h>
 #endif
+#ifndef INCLUDED___ASSET__OPENFL__assets_fonts_pixel_arial_11_bold_ttf
+#include <__ASSET__OPENFL__assets_fonts_pixel_arial_11_bold_ttf.h>
+#endif
 #ifndef INCLUDED___ASSET__assets_fonts_quantico_italic_ttf
 #include <__ASSET__assets_fonts_quantico_italic_ttf.h>
-#endif
-#ifndef INCLUDED___ASSET__assets_fonts_pixel_latin_ttf
-#include <__ASSET__assets_fonts_pixel_latin_ttf.h>
 #endif
 #ifndef INCLUDED___ASSET__assets_fonts_quantico_regular_ttf
 #include <__ASSET__assets_fonts_quantico_regular_ttf.h>
@@ -4611,6 +4608,9 @@
 #endif
 #ifndef INCLUDED___ASSET__assets_fonts_ds_digi_ttf
 #include <__ASSET__assets_fonts_ds_digi_ttf.h>
+#endif
+#ifndef INCLUDED___ASSET__assets_fonts_pixel_arial_11_bold_ttf
+#include <__ASSET__assets_fonts_pixel_arial_11_bold_ttf.h>
 #endif
 #ifndef INCLUDED_lime_text_Font
 #include <lime/text/Font.h>
@@ -6196,7 +6196,6 @@ __files__boot();
 ::__ASSET__OPENFL__flixel_fonts_monsterrat_ttf_obj::__register();
 ::__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf_obj::__register();
 ::__ASSET__OPENFL__assets_fonts_quantico_italic_ttf_obj::__register();
-::__ASSET__OPENFL__assets_fonts_pixel_latin_ttf_obj::__register();
 ::__ASSET__OPENFL__assets_fonts_quantico_regular_ttf_obj::__register();
 ::__ASSET__OPENFL__assets_fonts_inconsolata_regular_ttf_obj::__register();
 ::__ASSET__OPENFL__assets_fonts_inconsolata_light_ttf_obj::__register();
@@ -6213,8 +6212,8 @@ __files__boot();
 ::__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf_obj::__register();
 ::__ASSET__OPENFL__assets_fonts_quantico_bold_ttf_obj::__register();
 ::__ASSET__OPENFL__assets_fonts_ds_digi_ttf_obj::__register();
+::__ASSET__OPENFL__assets_fonts_pixel_arial_11_bold_ttf_obj::__register();
 ::__ASSET__assets_fonts_quantico_italic_ttf_obj::__register();
-::__ASSET__assets_fonts_pixel_latin_ttf_obj::__register();
 ::__ASSET__assets_fonts_quantico_regular_ttf_obj::__register();
 ::__ASSET__assets_fonts_inconsolata_regular_ttf_obj::__register();
 ::__ASSET__assets_fonts_inconsolata_light_ttf_obj::__register();
@@ -6231,6 +6230,7 @@ __files__boot();
 ::__ASSET__assets_fonts_inconsolata_semibold_ttf_obj::__register();
 ::__ASSET__assets_fonts_quantico_bold_ttf_obj::__register();
 ::__ASSET__assets_fonts_ds_digi_ttf_obj::__register();
+::__ASSET__assets_fonts_pixel_arial_11_bold_ttf_obj::__register();
 ::lime::text::Font_obj::__register();
 ::haxe::io::Bytes_obj::__register();
 ::lime::graphics::Image_obj::__register();

@@ -16809,6 +16809,7 @@
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/flixel/util/IFlxPooled.h"/>
    <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/Log.h"/>
    <depend name="include/haxe/ds/StringMap.h"/>
    <depend name="include/haxe/format/JsonParser.h"/>
    <depend name="include/openfl/events/EventDispatcher.h"/>
@@ -18227,12 +18228,6 @@
    <depend name="include/lime/text/Font.h"/>
    <depend name="include/openfl/text/Font.h"/>
   </file>
-  <file name="src/__ASSET__OPENFL__assets_fonts_pixel_latin_ttf.cpp" >
-   <depend name="include/ManifestResources.h"/>
-   <depend name="include/__ASSET__OPENFL__assets_fonts_pixel_latin_ttf.h"/>
-   <depend name="include/lime/text/Font.h"/>
-   <depend name="include/openfl/text/Font.h"/>
-  </file>
   <file name="src/__ASSET__OPENFL__assets_fonts_quantico_regular_ttf.cpp" >
    <depend name="include/ManifestResources.h"/>
    <depend name="include/__ASSET__OPENFL__assets_fonts_quantico_regular_ttf.h"/>
@@ -18329,6 +18324,12 @@
    <depend name="include/lime/text/Font.h"/>
    <depend name="include/openfl/text/Font.h"/>
   </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_pixel_arial_11_bold_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_pixel_arial_11_bold_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
   <file name="src/openfl/text/Font.cpp" tags="haxe,release">
    <depend name="include/Type.h"/>
    <depend name="include/haxe/IMap.h"/>
@@ -18348,11 +18349,6 @@
   <file name="src/__ASSET__assets_fonts_quantico_italic_ttf.cpp" >
    <depend name="include/ManifestResources.h"/>
    <depend name="include/__ASSET__assets_fonts_quantico_italic_ttf.h"/>
-   <depend name="include/lime/text/Font.h"/>
-  </file>
-  <file name="src/__ASSET__assets_fonts_pixel_latin_ttf.cpp" >
-   <depend name="include/ManifestResources.h"/>
-   <depend name="include/__ASSET__assets_fonts_pixel_latin_ttf.h"/>
    <depend name="include/lime/text/Font.h"/>
   </file>
   <file name="src/__ASSET__assets_fonts_quantico_regular_ttf.cpp" >
@@ -18433,6 +18429,11 @@
   <file name="src/__ASSET__assets_fonts_ds_digi_ttf.cpp" >
    <depend name="include/ManifestResources.h"/>
    <depend name="include/__ASSET__assets_fonts_ds_digi_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_pixel_arial_11_bold_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_pixel_arial_11_bold_ttf.h"/>
    <depend name="include/lime/text/Font.h"/>
   </file>
   <file name="src/__ASSET__flxanimate_images_indicator_png.cpp" >
@@ -18889,7 +18890,7 @@
    <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_medium_ttf.h"/>
    <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_regular_ttf.h"/>
    <depend name="include/__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf.h"/>
-   <depend name="include/__ASSET__OPENFL__assets_fonts_pixel_latin_ttf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_pixel_arial_11_bold_ttf.h"/>
    <depend name="include/__ASSET__OPENFL__assets_fonts_quantico_bold_ttf.h"/>
    <depend name="include/__ASSET__OPENFL__assets_fonts_quantico_bolditalic_ttf.h"/>
    <depend name="include/__ASSET__OPENFL__assets_fonts_quantico_italic_ttf.h"/>

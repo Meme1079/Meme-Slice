@@ -70,11 +70,18 @@ class HXCPP_CLASS_ATTRIBUTES Conversation_obj : public  ::flixel::group::FlxType
 		::Array< int > textIndexLengthList;
 		bool dialogueOpened;
 		bool dialogueStarted;
+		bool dialoguePaused;
 		bool dialogueEnded;
 		void textLengthList(::Array< ::String > dialogues,::String lines);
 		::Dynamic textLengthList_dyn();
 
 		void update(Float elapsed);
+
+		void dialogueStart();
+		::Dynamic dialogueStart_dyn();
+
+		void dialogueComplete();
+		::Dynamic dialogueComplete_dyn();
 
 };
 

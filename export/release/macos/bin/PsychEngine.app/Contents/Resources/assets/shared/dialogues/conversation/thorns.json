@@ -19,7 +19,10 @@
                "speakerAnimation": "talk",
                "box": "thorns",
                "boxAnimation": "enter",
-               "speed": 1.0,
+               "speed": 0.05,
+               "speedChanges": {
+                    "text1": 0.1
+               },
                "text": [
                     "Direct contact with real humans, after being trapped in here for so long...",
                     " and HER of all people."
@@ -30,7 +33,8 @@
                "speakerAnimation": "talk",
                "box": "thorns",
                "boxAnimation": "idle",
-               "speed": 1.0,
+               "speed": 0.05,
+               "speedChanges": {},
                "text": [
                     "I'll make her father pay for what he's done to me and all the others..."
                ]
@@ -40,7 +44,8 @@
                "speakerAnimation": "talk",
                "box": "thorns",
                "boxAnimation": "idle",
-               "speed": 1.0,
+               "speed": 0.05,
+               "speedChanges": {},
                "text": [
                     "I'll beat you and make you take my place."
                ]
@@ -50,7 +55,8 @@
                "speakerAnimation": "talk",
                "box": "thorns",
                "boxAnimation": "idle",
-               "speed": 1.0,
+               "speed": 0.05,
+               "speedChanges": {},
                "text": [
                     "You don't mind your bodies being borrowed right?",
                     " It's only fair..."

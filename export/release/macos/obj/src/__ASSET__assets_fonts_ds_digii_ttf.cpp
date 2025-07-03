@@ -11,13 +11,13 @@
 #include <lime/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_076c0f9b06c14a44_1509_new,"__ASSET__assets_fonts_ds_digii_ttf","new",0x056339d2,"__ASSET__assets_fonts_ds_digii_ttf.new","ManifestResources.hx",1509,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_076c0f9b06c14a44_1510_new,"__ASSET__assets_fonts_ds_digii_ttf","new",0x056339d2,"__ASSET__assets_fonts_ds_digii_ttf.new","ManifestResources.hx",1510,0xf77aa668)
 
 void __ASSET__assets_fonts_ds_digii_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_076c0f9b06c14a44_1509_new)
-HXDLIN(1509)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/DS-DIGII.TTF",13,52,7c,7c));
-HXDLIN(1509)		this->name = HX_("DS-Digital Italic",b6,a4,ff,cc);
-HXDLIN(1509)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_076c0f9b06c14a44_1510_new)
+HXDLIN(1510)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/DS-DIGII.TTF",13,52,7c,7c));
+HXDLIN(1510)		this->name = HX_("DS-Digital Italic",b6,a4,ff,cc);
+HXDLIN(1510)		super::__construct(null());
             	}
 
 Dynamic __ASSET__assets_fonts_ds_digii_ttf_obj::__CreateEmpty() { return new __ASSET__assets_fonts_ds_digii_ttf_obj; }

@@ -11,13 +11,13 @@
 #include <lime/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_284ff24d7e80109e_1513_new,"__ASSET__assets_fonts_inconsolata_light_ttf","new",0xc2400d04,"__ASSET__assets_fonts_inconsolata_light_ttf.new","ManifestResources.hx",1513,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_284ff24d7e80109e_1514_new,"__ASSET__assets_fonts_inconsolata_light_ttf","new",0xc2400d04,"__ASSET__assets_fonts_inconsolata_light_ttf.new","ManifestResources.hx",1514,0xf77aa668)
 
 void __ASSET__assets_fonts_inconsolata_light_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_284ff24d7e80109e_1513_new)
-HXDLIN(1513)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-Light.ttf",65,df,26,35));
-HXDLIN(1513)		this->name = HX_("Inconsolata Light",b1,c5,c9,e3);
-HXDLIN(1513)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_284ff24d7e80109e_1514_new)
+HXDLIN(1514)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-Light.ttf",65,df,26,35));
+HXDLIN(1514)		this->name = HX_("Inconsolata Light",b1,c5,c9,e3);
+HXDLIN(1514)		super::__construct(null());
             	}
 
 Dynamic __ASSET__assets_fonts_inconsolata_light_ttf_obj::__CreateEmpty() { return new __ASSET__assets_fonts_inconsolata_light_ttf_obj; }

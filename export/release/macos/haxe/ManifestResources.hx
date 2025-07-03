@@ -68,6 +68,7 @@ import sys.FileSystem;
 		}
 
 		#if (openfl && !flash && !display)
+		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_fonts_pixel_arial_11_bold_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_fonts_ds_digi_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_fonts_quantico_bold_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf);
@@ -84,7 +85,6 @@ import sys.FileSystem;
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_fonts_inconsolata_light_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_fonts_inconsolata_regular_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_fonts_quantico_regular_ttf);
-		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_fonts_pixel_latin_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_fonts_quantico_italic_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
@@ -110,6 +110,7 @@ import sys.FileSystem;
 #if !display
 #if flash
 
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_fonts_pixel_arial_11_bold_ttf extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_fonts_ds_digi_ttf extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_fonts_quantico_bold_ttf extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_fonts_inconsolata_semibold_ttf extends null { }
@@ -127,7 +128,6 @@ import sys.FileSystem;
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_fonts_inconsolata_light_ttf extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_fonts_inconsolata_regular_ttf extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_fonts_quantico_regular_ttf extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_fonts_pixel_latin_ttf extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_fonts_quantico_italic_ttf extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_music_breakfast__pico__ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_shared_music_offsetsong_ogg extends null { }
@@ -1497,6 +1497,7 @@ import sys.FileSystem;
 @:keep @:image("/usr/local/lib/haxe/lib/flxanimate/git/assets/images/pivot.png") @:noCompletion #if display private #end class __ASSET__flxanimate_images_pivot_png extends lime.graphics.Image {}
 @:keep @:image("/usr/local/lib/haxe/lib/flxanimate/git/assets/images/indicator.png") @:noCompletion #if display private #end class __ASSET__flxanimate_images_indicator_png extends lime.graphics.Image {}
 
+@:keep @:noCompletion #if display private #end class __ASSET__assets_fonts_pixel_arial_11_bold_ttf extends lime.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/Pixel Arial 11-Bold.ttf"; name = "Pixel Arial 11 Bold Latin"; super (); }}
 @:keep @:noCompletion #if display private #end class __ASSET__assets_fonts_ds_digi_ttf extends lime.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/DS-DIGI.TTF"; name = "DS-Digital"; super (); }}
 @:keep @:noCompletion #if display private #end class __ASSET__assets_fonts_quantico_bold_ttf extends lime.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/Quantico-Bold.ttf"; name = "Quantico-Bold"; super (); }}
 @:keep @:noCompletion #if display private #end class __ASSET__assets_fonts_inconsolata_semibold_ttf extends lime.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/Inconsolata-SemiBold.ttf"; name = "Inconsolata SemiBold"; super (); }}
@@ -1513,12 +1514,12 @@ import sys.FileSystem;
 @:keep @:noCompletion #if display private #end class __ASSET__assets_fonts_inconsolata_light_ttf extends lime.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/Inconsolata-Light.ttf"; name = "Inconsolata Light"; super (); }}
 @:keep @:noCompletion #if display private #end class __ASSET__assets_fonts_inconsolata_regular_ttf extends lime.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/Inconsolata-Regular.ttf"; name = "Inconsolata Regular"; super (); }}
 @:keep @:noCompletion #if display private #end class __ASSET__assets_fonts_quantico_regular_ttf extends lime.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/Quantico-Regular.ttf"; name = "Quantico"; super (); }}
-@:keep @:noCompletion #if display private #end class __ASSET__assets_fonts_pixel_latin_ttf extends lime.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/pixel-latin.ttf"; name = "Pixel Arial 11 Bold Latin"; super (); }}
 @:keep @:noCompletion #if display private #end class __ASSET__assets_fonts_quantico_italic_ttf extends lime.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/Quantico-Italic.ttf"; name = "Quantico-Italic"; super (); }}
 
 
 #else
 
+@:keep @:expose('__ASSET__assets_fonts_pixel_arial_11_bold_ttf') @:noCompletion #if display private #end class __ASSET__assets_fonts_pixel_arial_11_bold_ttf extends lime.text.Font { public function new () { #if !html5 __fontPath = "assets/fonts/Pixel Arial 11-Bold.ttf"; #else ascender = null; descender = null; height = null; numGlyphs = null; underlinePosition = null; underlineThickness = null; unitsPerEM = null; #end name = "Pixel Arial 11 Bold Latin"; super (); }}
 @:keep @:expose('__ASSET__assets_fonts_ds_digi_ttf') @:noCompletion #if display private #end class __ASSET__assets_fonts_ds_digi_ttf extends lime.text.Font { public function new () { #if !html5 __fontPath = "assets/fonts/DS-DIGI.TTF"; #else ascender = null; descender = null; height = null; numGlyphs = null; underlinePosition = null; underlineThickness = null; unitsPerEM = null; #end name = "DS-Digital"; super (); }}
 @:keep @:expose('__ASSET__assets_fonts_quantico_bold_ttf') @:noCompletion #if display private #end class __ASSET__assets_fonts_quantico_bold_ttf extends lime.text.Font { public function new () { #if !html5 __fontPath = "assets/fonts/Quantico-Bold.ttf"; #else ascender = null; descender = null; height = null; numGlyphs = null; underlinePosition = null; underlineThickness = null; unitsPerEM = null; #end name = "Quantico-Bold"; super (); }}
 @:keep @:expose('__ASSET__assets_fonts_inconsolata_semibold_ttf') @:noCompletion #if display private #end class __ASSET__assets_fonts_inconsolata_semibold_ttf extends lime.text.Font { public function new () { #if !html5 __fontPath = "assets/fonts/Inconsolata-SemiBold.ttf"; #else ascender = null; descender = null; height = null; numGlyphs = null; underlinePosition = null; underlineThickness = null; unitsPerEM = null; #end name = "Inconsolata SemiBold"; super (); }}
@@ -1535,7 +1536,6 @@ import sys.FileSystem;
 @:keep @:expose('__ASSET__assets_fonts_inconsolata_light_ttf') @:noCompletion #if display private #end class __ASSET__assets_fonts_inconsolata_light_ttf extends lime.text.Font { public function new () { #if !html5 __fontPath = "assets/fonts/Inconsolata-Light.ttf"; #else ascender = null; descender = null; height = null; numGlyphs = null; underlinePosition = null; underlineThickness = null; unitsPerEM = null; #end name = "Inconsolata Light"; super (); }}
 @:keep @:expose('__ASSET__assets_fonts_inconsolata_regular_ttf') @:noCompletion #if display private #end class __ASSET__assets_fonts_inconsolata_regular_ttf extends lime.text.Font { public function new () { #if !html5 __fontPath = "assets/fonts/Inconsolata-Regular.ttf"; #else ascender = null; descender = null; height = null; numGlyphs = null; underlinePosition = null; underlineThickness = null; unitsPerEM = null; #end name = "Inconsolata Regular"; super (); }}
 @:keep @:expose('__ASSET__assets_fonts_quantico_regular_ttf') @:noCompletion #if display private #end class __ASSET__assets_fonts_quantico_regular_ttf extends lime.text.Font { public function new () { #if !html5 __fontPath = "assets/fonts/Quantico-Regular.ttf"; #else ascender = null; descender = null; height = null; numGlyphs = null; underlinePosition = null; underlineThickness = null; unitsPerEM = null; #end name = "Quantico"; super (); }}
-@:keep @:expose('__ASSET__assets_fonts_pixel_latin_ttf') @:noCompletion #if display private #end class __ASSET__assets_fonts_pixel_latin_ttf extends lime.text.Font { public function new () { #if !html5 __fontPath = "assets/fonts/pixel-latin.ttf"; #else ascender = null; descender = null; height = null; numGlyphs = null; underlinePosition = null; underlineThickness = null; unitsPerEM = null; #end name = "Pixel Arial 11 Bold Latin"; super (); }}
 @:keep @:expose('__ASSET__assets_fonts_quantico_italic_ttf') @:noCompletion #if display private #end class __ASSET__assets_fonts_quantico_italic_ttf extends lime.text.Font { public function new () { #if !html5 __fontPath = "assets/fonts/Quantico-Italic.ttf"; #else ascender = null; descender = null; height = null; numGlyphs = null; underlinePosition = null; underlineThickness = null; unitsPerEM = null; #end name = "Quantico-Italic"; super (); }}
 @:keep @:expose('__ASSET__flixel_fonts_nokiafc22_ttf') @:noCompletion #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends lime.text.Font { public function new () { #if !html5 __fontPath = "flixel/fonts/nokiafc22.ttf"; #else ascender = null; descender = null; height = null; numGlyphs = null; underlinePosition = null; underlineThickness = null; unitsPerEM = null; #end name = "Nokia Cellphone FC Small"; super (); }}
 @:keep @:expose('__ASSET__flixel_fonts_monsterrat_ttf') @:noCompletion #if display private #end class __ASSET__flixel_fonts_monsterrat_ttf extends lime.text.Font { public function new () { #if !html5 __fontPath = "flixel/fonts/monsterrat.ttf"; #else ascender = null; descender = null; height = null; numGlyphs = null; underlinePosition = null; underlineThickness = null; unitsPerEM = null; #end name = "Monsterrat"; super (); }}
@@ -1546,6 +1546,7 @@ import sys.FileSystem;
 #if (openfl && !flash)
 
 #if html5
+@:keep @:expose('__ASSET__OPENFL__assets_fonts_pixel_arial_11_bold_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_pixel_arial_11_bold_ttf extends openfl.text.Font { public function new () { name = "Pixel Arial 11 Bold Latin"; super (); }}
 @:keep @:expose('__ASSET__OPENFL__assets_fonts_ds_digi_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_ds_digi_ttf extends openfl.text.Font { public function new () { name = "DS-Digital"; super (); }}
 @:keep @:expose('__ASSET__OPENFL__assets_fonts_quantico_bold_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_quantico_bold_ttf extends openfl.text.Font { public function new () { name = "Quantico-Bold"; super (); }}
 @:keep @:expose('__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf extends openfl.text.Font { public function new () { name = "Inconsolata SemiBold"; super (); }}
@@ -1562,12 +1563,12 @@ import sys.FileSystem;
 @:keep @:expose('__ASSET__OPENFL__assets_fonts_inconsolata_light_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_inconsolata_light_ttf extends openfl.text.Font { public function new () { name = "Inconsolata Light"; super (); }}
 @:keep @:expose('__ASSET__OPENFL__assets_fonts_inconsolata_regular_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_inconsolata_regular_ttf extends openfl.text.Font { public function new () { name = "Inconsolata Regular"; super (); }}
 @:keep @:expose('__ASSET__OPENFL__assets_fonts_quantico_regular_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_quantico_regular_ttf extends openfl.text.Font { public function new () { name = "Quantico"; super (); }}
-@:keep @:expose('__ASSET__OPENFL__assets_fonts_pixel_latin_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_pixel_latin_ttf extends openfl.text.Font { public function new () { name = "Pixel Arial 11 Bold Latin"; super (); }}
 @:keep @:expose('__ASSET__OPENFL__assets_fonts_quantico_italic_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_quantico_italic_ttf extends openfl.text.Font { public function new () { name = "Quantico-Italic"; super (); }}
 @:keep @:expose('__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__flixel_fonts_nokiafc22_ttf extends openfl.text.Font { public function new () { __fromLimeFont (new __ASSET__flixel_fonts_nokiafc22_ttf ()); super (); }}
 @:keep @:expose('__ASSET__OPENFL__flixel_fonts_monsterrat_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__flixel_fonts_monsterrat_ttf extends openfl.text.Font { public function new () { __fromLimeFont (new __ASSET__flixel_fonts_monsterrat_ttf ()); super (); }}
 
 #else
+@:keep @:expose('__ASSET__OPENFL__assets_fonts_pixel_arial_11_bold_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_pixel_arial_11_bold_ttf extends openfl.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/Pixel Arial 11-Bold.ttf"; name = "Pixel Arial 11 Bold Latin"; super (); }}
 @:keep @:expose('__ASSET__OPENFL__assets_fonts_ds_digi_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_ds_digi_ttf extends openfl.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/DS-DIGI.TTF"; name = "DS-Digital"; super (); }}
 @:keep @:expose('__ASSET__OPENFL__assets_fonts_quantico_bold_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_quantico_bold_ttf extends openfl.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/Quantico-Bold.ttf"; name = "Quantico-Bold"; super (); }}
 @:keep @:expose('__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf extends openfl.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/Inconsolata-SemiBold.ttf"; name = "Inconsolata SemiBold"; super (); }}
@@ -1584,7 +1585,6 @@ import sys.FileSystem;
 @:keep @:expose('__ASSET__OPENFL__assets_fonts_inconsolata_light_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_inconsolata_light_ttf extends openfl.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/Inconsolata-Light.ttf"; name = "Inconsolata Light"; super (); }}
 @:keep @:expose('__ASSET__OPENFL__assets_fonts_inconsolata_regular_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_inconsolata_regular_ttf extends openfl.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/Inconsolata-Regular.ttf"; name = "Inconsolata Regular"; super (); }}
 @:keep @:expose('__ASSET__OPENFL__assets_fonts_quantico_regular_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_quantico_regular_ttf extends openfl.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/Quantico-Regular.ttf"; name = "Quantico"; super (); }}
-@:keep @:expose('__ASSET__OPENFL__assets_fonts_pixel_latin_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_pixel_latin_ttf extends openfl.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/pixel-latin.ttf"; name = "Pixel Arial 11 Bold Latin"; super (); }}
 @:keep @:expose('__ASSET__OPENFL__assets_fonts_quantico_italic_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__assets_fonts_quantico_italic_ttf extends openfl.text.Font { public function new () { __fontPath = ManifestResources.rootPath + "assets/fonts/Quantico-Italic.ttf"; name = "Quantico-Italic"; super (); }}
 @:keep @:expose('__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__flixel_fonts_nokiafc22_ttf extends openfl.text.Font { public function new () { __fromLimeFont (new __ASSET__flixel_fonts_nokiafc22_ttf ()); super (); }}
 @:keep @:expose('__ASSET__OPENFL__flixel_fonts_monsterrat_ttf') @:noCompletion #if display private #end class __ASSET__OPENFL__flixel_fonts_monsterrat_ttf extends openfl.text.Font { public function new () { __fromLimeFont (new __ASSET__flixel_fonts_monsterrat_ttf ()); super (); }}

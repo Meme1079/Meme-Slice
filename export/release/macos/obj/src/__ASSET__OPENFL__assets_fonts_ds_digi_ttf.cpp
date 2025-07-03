@@ -14,13 +14,13 @@
 #include <openfl/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_de9f3a8607abd28e_1571_new,"__ASSET__OPENFL__assets_fonts_ds_digi_ttf","new",0xf16d88f9,"__ASSET__OPENFL__assets_fonts_ds_digi_ttf.new","ManifestResources.hx",1571,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_de9f3a8607abd28e_1572_new,"__ASSET__OPENFL__assets_fonts_ds_digi_ttf","new",0xf16d88f9,"__ASSET__OPENFL__assets_fonts_ds_digi_ttf.new","ManifestResources.hx",1572,0xf77aa668)
 
 void __ASSET__OPENFL__assets_fonts_ds_digi_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_de9f3a8607abd28e_1571_new)
-HXDLIN(1571)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/DS-DIGI.TTF",a6,b9,b9,98));
-HXDLIN(1571)		this->name = HX_("DS-Digital",ba,e1,1c,21);
-HXDLIN(1571)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_de9f3a8607abd28e_1572_new)
+HXDLIN(1572)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/DS-DIGI.TTF",a6,b9,b9,98));
+HXDLIN(1572)		this->name = HX_("DS-Digital",ba,e1,1c,21);
+HXDLIN(1572)		super::__construct(null());
             	}
 
 Dynamic __ASSET__OPENFL__assets_fonts_ds_digi_ttf_obj::__CreateEmpty() { return new __ASSET__OPENFL__assets_fonts_ds_digi_ttf_obj; }

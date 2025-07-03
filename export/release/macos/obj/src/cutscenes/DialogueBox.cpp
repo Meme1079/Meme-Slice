@@ -24,7 +24,7 @@
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_8116a89da7f4c21e_14_new,"cutscenes.DialogueBox","new",0xc13df860,"cutscenes.DialogueBox.new","cutscenes/DialogueBox.hx",14,0x748ed2d1)
-HX_LOCAL_STACK_FRAME(_hx_pos_8116a89da7f4c21e_28_update,"cutscenes.DialogueBox","update",0x24e45e09,"cutscenes.DialogueBox.update","cutscenes/DialogueBox.hx",28,0x748ed2d1)
+HX_LOCAL_STACK_FRAME(_hx_pos_8116a89da7f4c21e_32_update,"cutscenes.DialogueBox","update",0x24e45e09,"cutscenes.DialogueBox.update","cutscenes/DialogueBox.hx",32,0x748ed2d1)
 namespace cutscenes{
 
 void DialogueBox_obj::__construct( ::Dynamic conversation, ::Dynamic speaker){
@@ -32,8 +32,8 @@ void DialogueBox_obj::__construct( ::Dynamic conversation, ::Dynamic speaker){
 HXLINE(  19)		this->onSkipDialogue = null();
 HXLINE(  18)		this->onNextDialogue = null();
 HXLINE(  21)		super::__construct(null(),null(),null());
-HXLINE(  23)		this->dialogueConversation =  ::cutscenes::Conversation_obj::__alloc( HX_CTX ,conversation);
-HXLINE(  24)		this->add(this->dialogueConversation);
+HXLINE(  27)		this->dialogueConversation =  ::cutscenes::Conversation_obj::__alloc( HX_CTX ,conversation);
+HXLINE(  28)		this->add(this->dialogueConversation);
             	}
 
 Dynamic DialogueBox_obj::__CreateEmpty() { return new DialogueBox_obj; }
@@ -64,8 +64,8 @@ bool DialogueBox_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void DialogueBox_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_8116a89da7f4c21e_28_update)
-HXDLIN(  28)		this->super::update(elapsed);
+            	HX_STACKFRAME(&_hx_pos_8116a89da7f4c21e_32_update)
+HXDLIN(  32)		this->super::update(elapsed);
             	}
 
 

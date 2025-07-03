@@ -173,7 +173,7 @@ static const ::String _hx_array_data_413ce3c1_4[] = {
 	HX_("PETALS ALL",0a,57,91,88),
 };
 static const ::String _hx_array_data_413ce3c1_5[] = {
-	HX_("coolswag",d3,7d,92,03),
+	HX_("Cut copper stairs are a cut copper variant of stairs.",a7,25,0e,da),HX_(" Unlike other types of stairs, cut copper stairs can oxidize over time.",c2,58,12,fc),
 };
 HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_99_beatHit,"states.stages.School","beatHit",0xb06d78d0,"states.stages.School.beatHit","states/stages/School.hx",99,0xfaa6b77d)
 HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_106_eventCalled,"states.stages.School","eventCalled",0x4b3f540a,"states.stages.School.eventCalled","states/stages/School.hx",106,0xfaa6b77d)
@@ -372,13 +372,14 @@ HXLINE(  90)			g =  ::haxe::format::JsonParser_obj::__alloc( HX_CTX ,::sys::io::
             		}
             		else {
 HXLINE(  90)			g =  ::Dynamic(::hx::Anon_obj::Create(4)
-            				->setFixed(0,HX_("dialogue",18,2d,94,a7),::Array_obj< ::Dynamic>::__new(1)->init(0, ::Dynamic(::hx::Anon_obj::Create(6)
-            					->setFixed(0,HX_("speed",87,97,69,81),((Float)1.0))
+            				->setFixed(0,HX_("dialogue",18,2d,94,a7),::Array_obj< ::Dynamic>::__new(1)->init(0, ::Dynamic(::hx::Anon_obj::Create(7)
+            					->setFixed(0,HX_("speed",87,97,69,81),((Float)0.05))
             					->setFixed(1,HX_("speakerAnimation",05,22,fe,c5),HX_("BF",c4,39,00,00))
             					->setFixed(2,HX_("speaker",ff,94,04,de),HX_("boyfriend",6a,29,b8,e6))
-            					->setFixed(3,HX_("box",0b,be,4a,00),HX_("default",c1,d8,c3,9b))
-            					->setFixed(4,HX_("boxAnimation",79,77,a8,1b),HX_("enter",18,6d,86,70))
-            					->setFixed(5,HX_("text",ad,cc,f9,4c),::Array_obj< ::String >::fromData( _hx_array_data_413ce3c1_5,1)))))
+            					->setFixed(3,HX_("speedChanges",3c,50,bf,f2), ::haxe::ds::StringMap_obj::__alloc( HX_CTX ))
+            					->setFixed(4,HX_("box",0b,be,4a,00),HX_("default",c1,d8,c3,9b))
+            					->setFixed(5,HX_("boxAnimation",79,77,a8,1b),HX_("enter",18,6d,86,70))
+            					->setFixed(6,HX_("text",ad,cc,f9,4c),::Array_obj< ::String >::fromData( _hx_array_data_413ce3c1_5,2)))))
             				->setFixed(1,HX_("music",a5,d0,5a,10), ::Dynamic(::hx::Anon_obj::Create(3)
             					->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)2.0))
             					->setFixed(1,HX_("asset",f0,69,39,26),HX_("",00,00,00,00))

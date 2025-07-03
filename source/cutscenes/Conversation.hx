@@ -9,29 +9,30 @@ import backend.Song;
 import backend.Paths;
 import backend.CoolUtil;
 
-typedef ConversationBackdrop = {
+private typedef ConversationBackdrop = {
      var type:String;
      var fadeTime:Float;
      var color:String;
 }
 
-typedef ConversationMusic = {
+private typedef ConversationMusic = {
      var asset:String;
      var fadeTime:Float;
      var looped:Bool;
 }
 
-typedef ConversationOutro = {
+private typedef ConversationOutro = {
      var type:String;
      var fadeTime:Float;
 }
 
-typedef ConversationDialogue = {
+private typedef ConversationDialogue = {
      var speaker:String;
      var speakerAnimation:String;
      var box:String;
      var boxAnimation:String;
      var speed:Float;
+     var speedChanges:Map<String, Float>;
      var text:Array<String>;
 }
 
@@ -57,6 +58,7 @@ class Conversation extends FlxSpriteGroup {
 
      var dialogueOpened:Bool  = false;
 	var dialogueStarted:Bool = false;
+     var dialoguePaused:Bool  = false;
 	var dialogueEnded:Bool   = false;
      public function new(conversation:ConversationData) {
           super();
@@ -70,7 +72,7 @@ class Conversation extends FlxSpriteGroup {
 		}
 
 	     convDialogue = new FlxTypeText(240, 500, Std.int(FlxG.width * 0.6), convTextContent[0].join(''), 32);
-		convDialogue.font = Paths.font('pixel-latin.ttf');
+		convDialogue.font = Paths.font('Pixel Arial 11-Bold.ttf');
 		convDialogue.color = 0xFF3F2021;
 		convDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 		convDialogue.borderStyle = SHADOW;
@@ -112,48 +114,38 @@ class Conversation extends FlxSpriteGroup {
                return;
           }
 
+          if (!dialogueStarted) {
+               dialogueStart();
+               dialogueStarted = true;
+          }
+
           if (convTextLength[pageIndex][textIndex] > 0) {
                if (convDialogue.text.length >= convTextLength[pageIndex][textIndex]) {
                     textIndex += 1;
                     convDialogue.paused = true;
+
+                    dialoguePaused = true;
                }
           }
-
-          dialogueStarted = true;
 
           if (Controls.instance.BACK) {
 
           } else if (Controls.instance.ACCEPT) {
                if (dialogueEnded) {
-                    if (convTextLength[pageIndex][textIndex] > 0) {
-                         convDialogue.paused = false;
-                    } else {
-                         textIndex = 0;
-                         pageIndex += 1;
+                    textIndex = 0;
+                    pageIndex += 1;
+                    dialoguePaused = false;
 
-                         if (convTextContent[pageIndex] == null) {
-                              kill();
-                              return;
-                         }
-
-                         convDialogue.resetText(convTextContent[pageIndex].join(''));
-                         convDialogue.start(0.04, true);
-                         convDialogue.completeCallback = function() {
-			               dialogueEnded = true;
-		               };
-
-                         dialogueEnded = false;
-                         FlxG.sound.play(Paths.sound('clickText'), 0.8);
-                    }
-               } else if (dialogueStarted) {
+                    dialogueStart();
                     FlxG.sound.play(Paths.sound('clickText'), 0.8);
-				convDialogue.skip();
-
-                    dialogueEnded = true;
+               } else if (dialoguePaused) {
+                    convDialogue.paused = false;
+                    dialoguePaused = false;
+               } else if (dialogueStarted) {
+                    convDialogue.skip();
+                    FlxG.sound.play(Paths.sound('clickText'), 0.8);
                }
-               
           }
-          
 
           /* if (convTextContent[pageIndex] != null) {
                if (convTextLength[pageIndex][textIndex] > 0) {
@@ -180,6 +172,25 @@ class Conversation extends FlxSpriteGroup {
                     }
                }
           } */
+     }
+
+     public function dialogueStart():Void {
+          if (convTextContent[pageIndex] == null) {
+               return;
+          }
+
+          convDialogue.resetText(convTextContent[pageIndex].join(''));
+          convDialogue.start(0.04, true);
+          convDialogue.delay = 0.05;
+          convDialogue.completeCallback = function() {
+			dialogueEnded = true;
+		};
+
+          dialogueEnded = false;
+     }
+
+     public function dialogueComplete():Void {
+
      }
 
      /**
@@ -224,9 +235,11 @@ class Conversation extends FlxSpriteGroup {
                          speakerAnimation: "BF",
                          box: "default",
                          boxAnimation: "enter",
-                         speed: 1.0,
+                         speed: 0.05,
+                         speedChanges: new Map(),
                          text: [
-                              "coolswag"
+                              "Cut copper stairs are a cut copper variant of stairs.",
+                              " Unlike other types of stairs, cut copper stairs can oxidize over time."
                          ]
                     }
                ]

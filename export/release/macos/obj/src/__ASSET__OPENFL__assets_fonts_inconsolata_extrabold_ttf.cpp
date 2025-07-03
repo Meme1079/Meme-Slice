@@ -14,13 +14,13 @@
 #include <openfl/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_277560067b86cb1a_1583_new,"__ASSET__OPENFL__assets_fonts_inconsolata_extrabold_ttf","new",0x6a6cb873,"__ASSET__OPENFL__assets_fonts_inconsolata_extrabold_ttf.new","ManifestResources.hx",1583,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_277560067b86cb1a_1584_new,"__ASSET__OPENFL__assets_fonts_inconsolata_extrabold_ttf","new",0x6a6cb873,"__ASSET__OPENFL__assets_fonts_inconsolata_extrabold_ttf.new","ManifestResources.hx",1584,0xf77aa668)
 
 void __ASSET__OPENFL__assets_fonts_inconsolata_extrabold_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_277560067b86cb1a_1583_new)
-HXDLIN(1583)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-ExtraBold.ttf",c4,11,56,08));
-HXDLIN(1583)		this->name = HX_("Inconsolata ExtraBold",90,0e,58,c3);
-HXDLIN(1583)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_277560067b86cb1a_1584_new)
+HXDLIN(1584)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Inconsolata-ExtraBold.ttf",c4,11,56,08));
+HXDLIN(1584)		this->name = HX_("Inconsolata ExtraBold",90,0e,58,c3);
+HXDLIN(1584)		super::__construct(null());
             	}
 
 Dynamic __ASSET__OPENFL__assets_fonts_inconsolata_extrabold_ttf_obj::__CreateEmpty() { return new __ASSET__OPENFL__assets_fonts_inconsolata_extrabold_ttf_obj; }

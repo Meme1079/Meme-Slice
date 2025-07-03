@@ -3,7 +3,7 @@ package objects;
 import backend.animation.PsychAnimationController;
 import shaders.RGBPalette;
 import flixel.system.FlxAssets.FlxShader;
-private typedef RGB = {
+typedef RGB = {
 	r:Null<Int>,
 	g:Null<Int>,
 	b:Null<Int>

@@ -19,6 +19,10 @@ class DialogueBox extends FlxSpriteGroup {
 	public var onSkipDialogue:Void -> Void = null;
 	public function new(conversation:ConversationData, ?speaker) {
 		super();
+
+		
+
+
 		
 		dialogueConversation = new Conversation(conversation);
 		add(dialogueConversation);

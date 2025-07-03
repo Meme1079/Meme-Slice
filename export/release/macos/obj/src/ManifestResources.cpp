@@ -46,8 +46,8 @@
 #ifndef INCLUDED___ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf
 #include <__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf.h>
 #endif
-#ifndef INCLUDED___ASSET__OPENFL__assets_fonts_pixel_latin_ttf
-#include <__ASSET__OPENFL__assets_fonts_pixel_latin_ttf.h>
+#ifndef INCLUDED___ASSET__OPENFL__assets_fonts_pixel_arial_11_bold_ttf
+#include <__ASSET__OPENFL__assets_fonts_pixel_arial_11_bold_ttf.h>
 #endif
 #ifndef INCLUDED___ASSET__OPENFL__assets_fonts_quantico_bold_ttf
 #include <__ASSET__OPENFL__assets_fonts_quantico_bold_ttf.h>
@@ -139,23 +139,23 @@ HXDLIN(  50)				::ManifestResources_obj::rootPath = (::ManifestResources_obj::ro
 HXLINE(  56)		if (::hx::IsNull( ::ManifestResources_obj::rootPath )) {
 HXLINE(  63)			::ManifestResources_obj::rootPath = ::lime::_hx_system::System_obj::get_applicationDirectory();
             		}
-HXLINE(  71)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_ds_digi_ttf >());
-HXLINE(  72)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_quantico_bold_ttf >());
-HXLINE(  73)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf >());
-HXLINE(  74)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_medium_ttf >());
-HXLINE(  75)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_black_ttf >());
-HXLINE(  76)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_vcr_ttf >());
-HXLINE(  77)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_ds_digib_ttf >());
-HXLINE(  78)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_ds_digit_ttf >());
-HXLINE(  79)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_extralight_ttf >());
-HXLINE(  80)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_ds_digii_ttf >());
-HXLINE(  81)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_bold_ttf >());
-HXLINE(  82)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_quantico_bolditalic_ttf >());
-HXLINE(  83)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_extrabold_ttf >());
-HXLINE(  84)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_light_ttf >());
-HXLINE(  85)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_regular_ttf >());
-HXLINE(  86)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_quantico_regular_ttf >());
-HXLINE(  87)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_pixel_latin_ttf >());
+HXLINE(  71)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_pixel_arial_11_bold_ttf >());
+HXLINE(  72)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_ds_digi_ttf >());
+HXLINE(  73)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_quantico_bold_ttf >());
+HXLINE(  74)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_semibold_ttf >());
+HXLINE(  75)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_medium_ttf >());
+HXLINE(  76)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_black_ttf >());
+HXLINE(  77)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_vcr_ttf >());
+HXLINE(  78)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_ds_digib_ttf >());
+HXLINE(  79)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_ds_digit_ttf >());
+HXLINE(  80)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_extralight_ttf >());
+HXLINE(  81)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_ds_digii_ttf >());
+HXLINE(  82)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_bold_ttf >());
+HXLINE(  83)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_quantico_bolditalic_ttf >());
+HXLINE(  84)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_extrabold_ttf >());
+HXLINE(  85)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_light_ttf >());
+HXLINE(  86)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_inconsolata_regular_ttf >());
+HXLINE(  87)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_quantico_regular_ttf >());
 HXLINE(  88)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_quantico_italic_ttf >());
 HXLINE(  89)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf >());
 HXLINE(  90)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__flixel_fonts_monsterrat_ttf >());

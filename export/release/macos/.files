@@ -1,3 +1,4 @@
+export/release/macos/bin/assets/fonts/Pixel Arial 11-Bold.ttf
 export/release/macos/bin/assets/fonts/DS-DIGI.TTF
 export/release/macos/bin/assets/fonts/Quantico-Bold.ttf
 export/release/macos/bin/assets/fonts/Inconsolata-SemiBold.ttf
@@ -15,7 +16,6 @@ export/release/macos/bin/assets/fonts/fonts-go-here.txt
 export/release/macos/bin/assets/fonts/Inconsolata-Light.ttf
 export/release/macos/bin/assets/fonts/Inconsolata-Regular.ttf
 export/release/macos/bin/assets/fonts/Quantico-Regular.ttf
-export/release/macos/bin/assets/fonts/pixel-latin.ttf
 export/release/macos/bin/assets/fonts/Quantico-Italic.ttf
 export/release/macos/bin/assets/shared/music/breakfast-(pico).ogg
 export/release/macos/bin/assets/shared/music/offsetSong.ogg
