@@ -46,10 +46,12 @@ typedef ConversationData = {
 
 private typedef TextContent = Array<Array<String>>;
 private typedef TextLength  = Array<Array<Int>>;
+private typedef TextSpeed   = Array<Map<String, Float>>;
 class Conversation extends FlxSpriteGroup {
      var convDialogue:FlxTypeText;
      var convTextContent:TextContent = [];
      var convTextLength:TextLength   = [];
+     var convTextSpeed:TextSpeed     = [];
 
      var pageIndex:Int = 0;
      var textIndex:Int = 0;
@@ -60,20 +62,22 @@ class Conversation extends FlxSpriteGroup {
 	var dialogueStarted:Bool = false;
      var dialoguePaused:Bool  = false;
 	var dialogueEnded:Bool   = false;
+
+     public var onFinish:Void -> Void;
+	public var onNextDialogue:Void -> Void = null;
+	public var onSkipDialogue:Void -> Void = null;
      public function new(conversation:ConversationData) {
           super();
 
           for (dialogues in conversation.dialogue) {
-               convTextContent.push(dialogues.text);
-
-              var hi = dialogues.speedChanges;
+               convTextContent.push(dialogues.text);       // text dialogue
+               convTextSpeed.push(dialogues.speedChanges); // text speed
           }
           for (dialogues in convTextContent) {
-			for (lines in dialogues) {
+			for (lines in dialogues)
 				textLengthList(dialogues, lines);
-			}
 		}
-
+     
 	     convDialogue = new FlxTypeText(240, 500, Std.int(FlxG.width * 0.6), convTextContent[0].join(''), 32);
 		convDialogue.font = Paths.font('Pixel Arial 11-Bold.ttf');
 		convDialogue.color = 0xFF3F2021;
@@ -129,6 +133,8 @@ class Conversation extends FlxSpriteGroup {
                     dialogueStart();
                     FlxG.sound.play(Paths.sound('clickText'), 0.8);
                } else if (dialoguePaused) {
+                    dialogueSpeedChange();
+
                     convDialogue.paused = false;
                     dialoguePaused = false;
                } else if (dialogueStarted) {
@@ -201,6 +207,19 @@ class Conversation extends FlxSpriteGroup {
 
                dialoguePaused = true;
           }
+     }
+
+     /**
+          Changes the dialogue speed, if it has any speed changes.
+          @return nothing.
+     **/
+     public function dialogueSpeedChange():Void {
+          var textSpeedLines:String = 'dialogueLineText${textIndex}';
+          var textSpeedIndex:Map<String, Float> = convTextSpeed[pageIndex];
+               
+          var textSpeedExists:Bool = textSpeedIndex.exists(textSpeedLines);
+          var textSpeedValue:Float = textSpeedExists == true ? textSpeedIndex[textSpeedLines] : 0.05;
+          convDialogue.delay = textSpeedValue;
      }
 
      /**

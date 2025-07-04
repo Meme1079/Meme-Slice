@@ -21,7 +21,7 @@
                "boxAnimation": "enter",
                "speed": 0.05,
                "speedChanges": {
-                    "text1": 0.1
+                    "dialogueLineText1": 0.08
                },
                "text": [
                     "Direct contact with real humans, after being trapped in here for so long...",
@@ -56,7 +56,9 @@
                "box": "thorns",
                "boxAnimation": "idle",
                "speed": 0.05,
-               "speedChanges": {},
+               "speedChanges": {
+                    "dialogueLineText1": 0.065
+               },
                "text": [
                     "You don't mind your bodies being borrowed right?",
                     " It's only fair..."

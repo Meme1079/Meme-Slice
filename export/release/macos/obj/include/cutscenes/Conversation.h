@@ -17,6 +17,8 @@ HX_DECLARE_CLASS3(flixel,addons,text,FlxTypeText)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedSpriteGroup)
 HX_DECLARE_CLASS2(flixel,text,FlxText)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
+HX_DECLARE_CLASS1(haxe,IMap)
+HX_DECLARE_CLASS2(haxe,ds,StringMap)
 
 namespace cutscenes{
 
@@ -63,6 +65,7 @@ class HXCPP_CLASS_ATTRIBUTES Conversation_obj : public  ::flixel::group::FlxType
 		 ::flixel::addons::text::FlxTypeText convDialogue;
 		::Array< ::Dynamic> convTextContent;
 		::Array< ::Dynamic> convTextLength;
+		::Array< ::Dynamic> convTextSpeed;
 		int pageIndex;
 		int textIndex;
 		int textIndexLength;
@@ -81,6 +84,9 @@ class HXCPP_CLASS_ATTRIBUTES Conversation_obj : public  ::flixel::group::FlxType
 
 		void dialogueContinue();
 		::Dynamic dialogueContinue_dyn();
+
+		void dialogueSpeedChange();
+		::Dynamic dialogueSpeedChange_dyn();
 
 };
 

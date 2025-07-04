@@ -86,57 +86,59 @@
 #include <sys/io/File.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_49_new,"cutscenes.Conversation","new",0x1c3e537a,"cutscenes.Conversation.new","cutscenes/Conversation.hx",49,0x04286255)
+HX_DEFINE_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_50_new,"cutscenes.Conversation","new",0x1c3e537a,"cutscenes.Conversation.new","cutscenes/Conversation.hx",50,0x04286255)
 HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_97_textLengthList,"cutscenes.Conversation","textLengthList",0xa0a71297,"cutscenes.Conversation.textLengthList","cutscenes/Conversation.hx",97,0x04286255)
 HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_112_update,"cutscenes.Conversation","update",0xe17e6f2f,"cutscenes.Conversation.update","cutscenes/Conversation.hx",112,0x04286255)
-HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_180_dialogueStart,"cutscenes.Conversation","dialogueStart",0xead567c4,"cutscenes.Conversation.dialogueStart","cutscenes/Conversation.hx",180,0x04286255)
-HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_171_dialogueStart,"cutscenes.Conversation","dialogueStart",0xead567c4,"cutscenes.Conversation.dialogueStart","cutscenes/Conversation.hx",171,0x04286255)
-HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_190_dialogueContinue,"cutscenes.Conversation","dialogueContinue",0x4e3fb645,"cutscenes.Conversation.dialogueContinue","cutscenes/Conversation.hx",190,0x04286255)
-HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_214_dialogueParse,"cutscenes.Conversation","dialogueParse",0x241f8395,"cutscenes.Conversation.dialogueParse","cutscenes/Conversation.hx",214,0x04286255)
-static const ::String _hx_array_data_1184ce88_10[] = {
+HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_182_dialogueStart,"cutscenes.Conversation","dialogueStart",0xead567c4,"cutscenes.Conversation.dialogueStart","cutscenes/Conversation.hx",182,0x04286255)
+HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_173_dialogueStart,"cutscenes.Conversation","dialogueStart",0xead567c4,"cutscenes.Conversation.dialogueStart","cutscenes/Conversation.hx",173,0x04286255)
+HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_192_dialogueContinue,"cutscenes.Conversation","dialogueContinue",0x4e3fb645,"cutscenes.Conversation.dialogueContinue","cutscenes/Conversation.hx",192,0x04286255)
+HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_212_dialogueSpeedChange,"cutscenes.Conversation","dialogueSpeedChange",0xe7872539,"cutscenes.Conversation.dialogueSpeedChange","cutscenes/Conversation.hx",212,0x04286255)
+HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_229_dialogueParse,"cutscenes.Conversation","dialogueParse",0x241f8395,"cutscenes.Conversation.dialogueParse","cutscenes/Conversation.hx",229,0x04286255)
+static const ::String _hx_array_data_1184ce88_11[] = {
 	HX_("Cut copper stairs are a cut copper variant of stairs.",a7,25,0e,da),HX_(" Unlike other types of stairs, cut copper stairs can oxidize over time.",c2,58,12,fc),
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_225_dialogueTemplate,"cutscenes.Conversation","dialogueTemplate",0xc8bebe18,"cutscenes.Conversation.dialogueTemplate","cutscenes/Conversation.hx",225,0x04286255)
-static const ::String _hx_array_data_1184ce88_12[] = {
+HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_240_dialogueTemplate,"cutscenes.Conversation","dialogueTemplate",0xc8bebe18,"cutscenes.Conversation.dialogueTemplate","cutscenes/Conversation.hx",240,0x04286255)
+static const ::String _hx_array_data_1184ce88_13[] = {
 	HX_("Cut copper stairs are a cut copper variant of stairs.",a7,25,0e,da),HX_(" Unlike other types of stairs, cut copper stairs can oxidize over time.",c2,58,12,fc),
 };
 namespace cutscenes{
 
 void Conversation_obj::__construct( ::Dynamic conversation){
-            	HX_GC_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_49_new)
-HXLINE(  62)		this->dialogueEnded = false;
-HXLINE(  61)		this->dialoguePaused = false;
-HXLINE(  60)		this->dialogueStarted = false;
-HXLINE(  59)		this->dialogueOpened = false;
-HXLINE(  57)		this->textIndexLengthList = ::Array_obj< int >::__new(0);
-HXLINE(  56)		this->textIndexLength = 0;
-HXLINE(  55)		this->textIndex = 0;
-HXLINE(  54)		this->pageIndex = 0;
-HXLINE(  52)		this->convTextLength = ::Array_obj< ::Dynamic>::__new(0);
-HXLINE(  51)		this->convTextContent = ::Array_obj< ::Dynamic>::__new(0);
-HXLINE(  64)		super::__construct(null(),null(),null());
-HXLINE(  66)		{
-HXLINE(  66)			int _g = 0;
-HXDLIN(  66)			::Array< ::Dynamic> _g1 = ( (::Array< ::Dynamic>)(conversation->__Field(HX_("dialogue",18,2d,94,a7),::hx::paccDynamic)) );
-HXDLIN(  66)			while((_g < _g1->length)){
-HXLINE(  66)				 ::Dynamic dialogues = _g1->__get(_g);
-HXDLIN(  66)				_g = (_g + 1);
-HXLINE(  67)				this->convTextContent->push( ::Dynamic(dialogues->__Field(HX_("text",ad,cc,f9,4c),::hx::paccDynamic)));
-HXLINE(  69)				 ::haxe::ds::StringMap hi = ( ( ::haxe::ds::StringMap)(dialogues->__Field(HX_("speedChanges",3c,50,bf,f2),::hx::paccDynamic)) );
+            	HX_GC_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_50_new)
+HXLINE(  64)		this->dialogueEnded = false;
+HXLINE(  63)		this->dialoguePaused = false;
+HXLINE(  62)		this->dialogueStarted = false;
+HXLINE(  61)		this->dialogueOpened = false;
+HXLINE(  59)		this->textIndexLengthList = ::Array_obj< int >::__new(0);
+HXLINE(  58)		this->textIndexLength = 0;
+HXLINE(  57)		this->textIndex = 0;
+HXLINE(  56)		this->pageIndex = 0;
+HXLINE(  54)		this->convTextSpeed = ::Array_obj< ::Dynamic>::__new(0);
+HXLINE(  53)		this->convTextLength = ::Array_obj< ::Dynamic>::__new(0);
+HXLINE(  52)		this->convTextContent = ::Array_obj< ::Dynamic>::__new(0);
+HXLINE(  66)		super::__construct(null(),null(),null());
+HXLINE(  68)		{
+HXLINE(  68)			int _g = 0;
+HXDLIN(  68)			::Array< ::Dynamic> _g1 = ( (::Array< ::Dynamic>)(conversation->__Field(HX_("dialogue",18,2d,94,a7),::hx::paccDynamic)) );
+HXDLIN(  68)			while((_g < _g1->length)){
+HXLINE(  68)				 ::Dynamic dialogues = _g1->__get(_g);
+HXDLIN(  68)				_g = (_g + 1);
+HXLINE(  69)				this->convTextContent->push( ::Dynamic(dialogues->__Field(HX_("text",ad,cc,f9,4c),::hx::paccDynamic)));
+HXLINE(  70)				this->convTextSpeed->push( ::Dynamic(dialogues->__Field(HX_("speedChanges",3c,50,bf,f2),::hx::paccDynamic)));
             			}
             		}
-HXLINE(  71)		{
-HXLINE(  71)			int _g2 = 0;
-HXDLIN(  71)			::Array< ::Dynamic> _g3 = this->convTextContent;
-HXDLIN(  71)			while((_g2 < _g3->length)){
-HXLINE(  71)				::Array< ::String > dialogues1 = _g3->__get(_g2).StaticCast< ::Array< ::String > >();
-HXDLIN(  71)				_g2 = (_g2 + 1);
-HXLINE(  72)				{
-HXLINE(  72)					int _g4 = 0;
-HXDLIN(  72)					while((_g4 < dialogues1->length)){
-HXLINE(  72)						::String lines = dialogues1->__get(_g4);
-HXDLIN(  72)						_g4 = (_g4 + 1);
-HXLINE(  73)						this->textLengthList(dialogues1,lines);
+HXLINE(  72)		{
+HXLINE(  72)			int _g2 = 0;
+HXDLIN(  72)			::Array< ::Dynamic> _g3 = this->convTextContent;
+HXDLIN(  72)			while((_g2 < _g3->length)){
+HXLINE(  72)				::Array< ::String > dialogues1 = _g3->__get(_g2).StaticCast< ::Array< ::String > >();
+HXDLIN(  72)				_g2 = (_g2 + 1);
+HXLINE(  73)				{
+HXLINE(  73)					int _g4 = 0;
+HXDLIN(  73)					while((_g4 < dialogues1->length)){
+HXLINE(  73)						::String lines = dialogues1->__get(_g4);
+HXDLIN(  73)						_g4 = (_g4 + 1);
+HXLINE(  74)						this->textLengthList(dialogues1,lines);
             					}
             				}
             			}
@@ -251,14 +253,15 @@ HXDLIN( 130)					_hx_tmp1->play(::backend::Paths_obj::returnSound((HX_("sounds/"
             				}
             				else {
 HXLINE( 131)					if (this->dialoguePaused) {
-HXLINE( 132)						this->convDialogue->paused = false;
-HXLINE( 133)						this->dialoguePaused = false;
+HXLINE( 132)						this->dialogueSpeedChange();
+HXLINE( 134)						this->convDialogue->paused = false;
+HXLINE( 135)						this->dialoguePaused = false;
             					}
             					else {
-HXLINE( 134)						if (this->dialogueStarted) {
-HXLINE( 135)							this->convDialogue->skip();
-HXLINE( 136)							 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp2 = ::flixel::FlxG_obj::sound;
-HXDLIN( 136)							_hx_tmp2->play(::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + HX_("clickText",15,39,f9,2b)),null(),true,null()),((Float)0.8),null(),null(),null(),null());
+HXLINE( 136)						if (this->dialogueStarted) {
+HXLINE( 137)							this->convDialogue->skip();
+HXLINE( 138)							 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp2 = ::flixel::FlxG_obj::sound;
+HXDLIN( 138)							_hx_tmp2->play(::backend::Paths_obj::returnSound((HX_("sounds/",eb,02,a5,b6) + HX_("clickText",15,39,f9,2b)),null(),true,null()),((Float)0.8),null(),null(),null(),null());
             						}
             					}
             				}
@@ -270,53 +273,71 @@ HXDLIN( 136)							_hx_tmp2->play(::backend::Paths_obj::returnSound((HX_("sounds
 void Conversation_obj::dialogueStart(){
             		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_0, ::cutscenes::Conversation,_gthis) HXARGC(0)
             		void _hx_run(){
-            			HX_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_180_dialogueStart)
-HXLINE( 180)			_gthis->dialogueEnded = true;
+            			HX_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_182_dialogueStart)
+HXLINE( 182)			_gthis->dialogueEnded = true;
             		}
             		HX_END_LOCAL_FUNC0((void))
 
-            	HX_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_171_dialogueStart)
-HXDLIN( 171)		 ::cutscenes::Conversation _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE( 172)		if (::hx::IsNull( this->convTextContent->__get(this->pageIndex).StaticCast< ::Array< ::String > >() )) {
-HXLINE( 173)			return;
+            	HX_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_173_dialogueStart)
+HXDLIN( 173)		 ::cutscenes::Conversation _gthis = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE( 174)		if (::hx::IsNull( this->convTextContent->__get(this->pageIndex).StaticCast< ::Array< ::String > >() )) {
+HXLINE( 175)			return;
             		}
-HXLINE( 176)		 ::flixel::addons::text::FlxTypeText _hx_tmp = this->convDialogue;
-HXDLIN( 176)		_hx_tmp->resetText(this->convTextContent->__get(this->pageIndex).StaticCast< ::Array< ::String > >()->join(HX_("",00,00,00,00)));
-HXLINE( 177)		this->convDialogue->start(((Float)0.04),true,null(),null(),null());
-HXLINE( 178)		this->convDialogue->delay = ((Float)0.05);
-HXLINE( 179)		this->convDialogue->completeCallback =  ::Dynamic(new _hx_Closure_0(_gthis));
-HXLINE( 183)		this->dialogueEnded = false;
+HXLINE( 178)		 ::flixel::addons::text::FlxTypeText _hx_tmp = this->convDialogue;
+HXDLIN( 178)		_hx_tmp->resetText(this->convTextContent->__get(this->pageIndex).StaticCast< ::Array< ::String > >()->join(HX_("",00,00,00,00)));
+HXLINE( 179)		this->convDialogue->start(((Float)0.04),true,null(),null(),null());
+HXLINE( 180)		this->convDialogue->delay = ((Float)0.05);
+HXLINE( 181)		this->convDialogue->completeCallback =  ::Dynamic(new _hx_Closure_0(_gthis));
+HXLINE( 185)		this->dialogueEnded = false;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(Conversation_obj,dialogueStart,(void))
 
 void Conversation_obj::dialogueContinue(){
-            	HX_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_190_dialogueContinue)
-HXLINE( 191)		if (::hx::IsNull( this->convTextContent->__get(this->pageIndex).StaticCast< ::Array< ::String > >() )) {
-HXLINE( 192)			return;
+            	HX_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_192_dialogueContinue)
+HXLINE( 193)		if (::hx::IsNull( this->convTextContent->__get(this->pageIndex).StaticCast< ::Array< ::String > >() )) {
+HXLINE( 194)			return;
             		}
-HXLINE( 194)		if ((this->convTextLength->__get(this->pageIndex).StaticCast< ::Array< int > >()->__get(this->textIndex) <= 0)) {
-HXLINE( 195)			return;
+HXLINE( 196)		if ((this->convTextLength->__get(this->pageIndex).StaticCast< ::Array< int > >()->__get(this->textIndex) <= 0)) {
+HXLINE( 197)			return;
             		}
-HXLINE( 198)		if ((this->convDialogue->text.length >= this->convTextLength->__get(this->pageIndex).StaticCast< ::Array< int > >()->__get(this->textIndex))) {
-HXLINE( 199)			 ::cutscenes::Conversation _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN( 199)			_hx_tmp->textIndex = (_hx_tmp->textIndex + 1);
-HXLINE( 200)			this->convDialogue->paused = true;
-HXLINE( 202)			this->dialoguePaused = true;
+HXLINE( 200)		if ((this->convDialogue->text.length >= this->convTextLength->__get(this->pageIndex).StaticCast< ::Array< int > >()->__get(this->textIndex))) {
+HXLINE( 201)			 ::cutscenes::Conversation _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 201)			_hx_tmp->textIndex = (_hx_tmp->textIndex + 1);
+HXLINE( 202)			this->convDialogue->paused = true;
+HXLINE( 204)			this->dialoguePaused = true;
             		}
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(Conversation_obj,dialogueContinue,(void))
 
- ::Dynamic Conversation_obj::dialogueParse(::String path){
-            	HX_GC_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_214_dialogueParse)
-HXDLIN( 214)		if (::sys::FileSystem_obj::exists(path)) {
-HXDLIN( 214)			return  ::haxe::format::JsonParser_obj::__alloc( HX_CTX ,::sys::io::File_obj::getContent(path))->doParse();
+void Conversation_obj::dialogueSpeedChange(){
+            	HX_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_212_dialogueSpeedChange)
+HXLINE( 213)		::String textSpeedLines = (HX_("dialogueLineText",f9,db,7f,f5) + this->textIndex);
+HXLINE( 214)		 ::haxe::ds::StringMap textSpeedIndex = this->convTextSpeed->__get(this->pageIndex).StaticCast<  ::haxe::ds::StringMap >();
+HXLINE( 216)		bool textSpeedExists = textSpeedIndex->exists(textSpeedLines);
+HXLINE( 217)		Float textSpeedValue;
+HXDLIN( 217)		if ((textSpeedExists == true)) {
+HXLINE( 217)			textSpeedValue = ( (Float)(textSpeedIndex->get(textSpeedLines)) );
             		}
             		else {
-HXDLIN( 214)			return  ::Dynamic(::hx::Anon_obj::Create(4)
+HXLINE( 217)			textSpeedValue = ((Float)0.05);
+            		}
+HXLINE( 218)		this->convDialogue->delay = textSpeedValue;
+            	}
+
+
+HX_DEFINE_DYNAMIC_FUNC0(Conversation_obj,dialogueSpeedChange,(void))
+
+ ::Dynamic Conversation_obj::dialogueParse(::String path){
+            	HX_GC_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_229_dialogueParse)
+HXDLIN( 229)		if (::sys::FileSystem_obj::exists(path)) {
+HXDLIN( 229)			return  ::haxe::format::JsonParser_obj::__alloc( HX_CTX ,::sys::io::File_obj::getContent(path))->doParse();
+            		}
+            		else {
+HXDLIN( 229)			return  ::Dynamic(::hx::Anon_obj::Create(4)
             				->setFixed(0,HX_("dialogue",18,2d,94,a7),::Array_obj< ::Dynamic>::__new(1)->init(0, ::Dynamic(::hx::Anon_obj::Create(7)
             					->setFixed(0,HX_("speed",87,97,69,81),((Float)0.05))
             					->setFixed(1,HX_("speakerAnimation",05,22,fe,c5),HX_("BF",c4,39,00,00))
@@ -324,7 +345,7 @@ HXDLIN( 214)			return  ::Dynamic(::hx::Anon_obj::Create(4)
             					->setFixed(3,HX_("speedChanges",3c,50,bf,f2), ::haxe::ds::StringMap_obj::__alloc( HX_CTX ))
             					->setFixed(4,HX_("box",0b,be,4a,00),HX_("default",c1,d8,c3,9b))
             					->setFixed(5,HX_("boxAnimation",79,77,a8,1b),HX_("enter",18,6d,86,70))
-            					->setFixed(6,HX_("text",ad,cc,f9,4c),::Array_obj< ::String >::fromData( _hx_array_data_1184ce88_10,2)))))
+            					->setFixed(6,HX_("text",ad,cc,f9,4c),::Array_obj< ::String >::fromData( _hx_array_data_1184ce88_11,2)))))
             				->setFixed(1,HX_("music",a5,d0,5a,10), ::Dynamic(::hx::Anon_obj::Create(3)
             					->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)2.0))
             					->setFixed(1,HX_("asset",f0,69,39,26),HX_("",00,00,00,00))
@@ -337,15 +358,15 @@ HXDLIN( 214)			return  ::Dynamic(::hx::Anon_obj::Create(4)
             					->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)1.0))
             					->setFixed(1,HX_("type",ba,f2,08,4d),HX_("none",b8,12,0a,49)))));
             		}
-HXDLIN( 214)		return null();
+HXDLIN( 229)		return null();
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Conversation_obj,dialogueParse,return )
 
  ::Dynamic Conversation_obj::dialogueTemplate(){
-            	HX_GC_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_225_dialogueTemplate)
-HXDLIN( 225)		return  ::Dynamic(::hx::Anon_obj::Create(4)
+            	HX_GC_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_240_dialogueTemplate)
+HXDLIN( 240)		return  ::Dynamic(::hx::Anon_obj::Create(4)
             			->setFixed(0,HX_("dialogue",18,2d,94,a7),::Array_obj< ::Dynamic>::__new(1)->init(0, ::Dynamic(::hx::Anon_obj::Create(7)
             				->setFixed(0,HX_("speed",87,97,69,81),((Float)0.05))
             				->setFixed(1,HX_("speakerAnimation",05,22,fe,c5),HX_("BF",c4,39,00,00))
@@ -353,7 +374,7 @@ HXDLIN( 225)		return  ::Dynamic(::hx::Anon_obj::Create(4)
             				->setFixed(3,HX_("speedChanges",3c,50,bf,f2), ::haxe::ds::StringMap_obj::__alloc( HX_CTX ))
             				->setFixed(4,HX_("box",0b,be,4a,00),HX_("default",c1,d8,c3,9b))
             				->setFixed(5,HX_("boxAnimation",79,77,a8,1b),HX_("enter",18,6d,86,70))
-            				->setFixed(6,HX_("text",ad,cc,f9,4c),::Array_obj< ::String >::fromData( _hx_array_data_1184ce88_12,2)))))
+            				->setFixed(6,HX_("text",ad,cc,f9,4c),::Array_obj< ::String >::fromData( _hx_array_data_1184ce88_13,2)))))
             			->setFixed(1,HX_("music",a5,d0,5a,10), ::Dynamic(::hx::Anon_obj::Create(3)
             				->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)2.0))
             				->setFixed(1,HX_("asset",f0,69,39,26),HX_("",00,00,00,00))
@@ -394,6 +415,7 @@ void Conversation_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(convDialogue,"convDialogue");
 	HX_MARK_MEMBER_NAME(convTextContent,"convTextContent");
 	HX_MARK_MEMBER_NAME(convTextLength,"convTextLength");
+	HX_MARK_MEMBER_NAME(convTextSpeed,"convTextSpeed");
 	HX_MARK_MEMBER_NAME(pageIndex,"pageIndex");
 	HX_MARK_MEMBER_NAME(textIndex,"textIndex");
 	HX_MARK_MEMBER_NAME(textIndexLength,"textIndexLength");
@@ -411,6 +433,7 @@ void Conversation_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(convDialogue,"convDialogue");
 	HX_VISIT_MEMBER_NAME(convTextContent,"convTextContent");
 	HX_VISIT_MEMBER_NAME(convTextLength,"convTextLength");
+	HX_VISIT_MEMBER_NAME(convTextSpeed,"convTextSpeed");
 	HX_VISIT_MEMBER_NAME(pageIndex,"pageIndex");
 	HX_VISIT_MEMBER_NAME(textIndex,"textIndex");
 	HX_VISIT_MEMBER_NAME(textIndexLength,"textIndexLength");
@@ -436,6 +459,7 @@ void Conversation_obj::__Visit(HX_VISIT_PARAMS)
 		if (HX_FIELD_EQ(inName,"convDialogue") ) { return ::hx::Val( convDialogue ); }
 		break;
 	case 13:
+		if (HX_FIELD_EQ(inName,"convTextSpeed") ) { return ::hx::Val( convTextSpeed ); }
 		if (HX_FIELD_EQ(inName,"dialogueEnded") ) { return ::hx::Val( dialogueEnded ); }
 		if (HX_FIELD_EQ(inName,"dialogueStart") ) { return ::hx::Val( dialogueStart_dyn() ); }
 		break;
@@ -455,6 +479,7 @@ void Conversation_obj::__Visit(HX_VISIT_PARAMS)
 		break;
 	case 19:
 		if (HX_FIELD_EQ(inName,"textIndexLengthList") ) { return ::hx::Val( textIndexLengthList ); }
+		if (HX_FIELD_EQ(inName,"dialogueSpeedChange") ) { return ::hx::Val( dialogueSpeedChange_dyn() ); }
 	}
 	return super::__Field(inName,inCallProp);
 }
@@ -482,6 +507,7 @@ bool Conversation_obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::
 		if (HX_FIELD_EQ(inName,"convDialogue") ) { convDialogue=inValue.Cast<  ::flixel::addons::text::FlxTypeText >(); return inValue; }
 		break;
 	case 13:
+		if (HX_FIELD_EQ(inName,"convTextSpeed") ) { convTextSpeed=inValue.Cast< ::Array< ::Dynamic> >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"dialogueEnded") ) { dialogueEnded=inValue.Cast< bool >(); return inValue; }
 		break;
 	case 14:
@@ -505,6 +531,7 @@ void Conversation_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_("convDialogue",2c,b7,03,aa));
 	outFields->push(HX_("convTextContent",78,82,92,26));
 	outFields->push(HX_("convTextLength",87,4c,ed,fa));
+	outFields->push(HX_("convTextSpeed",06,6f,80,39));
 	outFields->push(HX_("pageIndex",43,72,2b,64));
 	outFields->push(HX_("textIndex",25,2b,02,57));
 	outFields->push(HX_("textIndexLength",eb,9d,aa,75));
@@ -521,6 +548,7 @@ static ::hx::StorageInfo Conversation_obj_sMemberStorageInfo[] = {
 	{::hx::fsObject /*  ::flixel::addons::text::FlxTypeText */ ,(int)offsetof(Conversation_obj,convDialogue),HX_("convDialogue",2c,b7,03,aa)},
 	{::hx::fsObject /* ::Array< ::Dynamic> */ ,(int)offsetof(Conversation_obj,convTextContent),HX_("convTextContent",78,82,92,26)},
 	{::hx::fsObject /* ::Array< ::Dynamic> */ ,(int)offsetof(Conversation_obj,convTextLength),HX_("convTextLength",87,4c,ed,fa)},
+	{::hx::fsObject /* ::Array< ::Dynamic> */ ,(int)offsetof(Conversation_obj,convTextSpeed),HX_("convTextSpeed",06,6f,80,39)},
 	{::hx::fsInt,(int)offsetof(Conversation_obj,pageIndex),HX_("pageIndex",43,72,2b,64)},
 	{::hx::fsInt,(int)offsetof(Conversation_obj,textIndex),HX_("textIndex",25,2b,02,57)},
 	{::hx::fsInt,(int)offsetof(Conversation_obj,textIndexLength),HX_("textIndexLength",eb,9d,aa,75)},
@@ -538,6 +566,7 @@ static ::String Conversation_obj_sMemberFields[] = {
 	HX_("convDialogue",2c,b7,03,aa),
 	HX_("convTextContent",78,82,92,26),
 	HX_("convTextLength",87,4c,ed,fa),
+	HX_("convTextSpeed",06,6f,80,39),
 	HX_("pageIndex",43,72,2b,64),
 	HX_("textIndex",25,2b,02,57),
 	HX_("textIndexLength",eb,9d,aa,75),
@@ -550,6 +579,7 @@ static ::String Conversation_obj_sMemberFields[] = {
 	HX_("update",09,86,05,87),
 	HX_("dialogueStart",2a,40,f2,1e),
 	HX_("dialogueContinue",9f,a1,25,9d),
+	HX_("dialogueSpeedChange",1f,4e,63,c6),
 	::String(null()) };
 
 ::hx::Class Conversation_obj::__mClass;
