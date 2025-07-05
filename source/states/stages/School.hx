@@ -91,7 +91,9 @@ class School extends BaseStage {
 		
 		doof = new DialogueBox(g);
 		doof.cameras = [camHUD];
-
+		doof.scrollFactor.set();
+		doof.onFinish = startCountdown;
+		
 		setStartCallback(schoolIntro);
 	}
 

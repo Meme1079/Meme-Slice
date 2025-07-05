@@ -16,15 +16,29 @@
 #ifndef INCLUDED_flixel_FlxSprite
 #include <flixel/FlxSprite.h>
 #endif
+#ifndef INCLUDED_flixel_addons_text_FlxTypeText
+#include <flixel/addons/text/FlxTypeText.h>
+#endif
 #ifndef INCLUDED_flixel_group_FlxTypedSpriteGroup
 #include <flixel/group/FlxTypedSpriteGroup.h>
+#endif
+#ifndef INCLUDED_flixel_text_FlxText
+#include <flixel/text/FlxText.h>
+#endif
+#ifndef INCLUDED_flixel_util_FlxTimer
+#include <flixel/util/FlxTimer.h>
+#endif
+#ifndef INCLUDED_flixel_util_FlxTimerManager
+#include <flixel/util/FlxTimerManager.h>
 #endif
 #ifndef INCLUDED_flixel_util_IFlxDestroyable
 #include <flixel/util/IFlxDestroyable.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_8116a89da7f4c21e_14_new,"cutscenes.DialogueBox","new",0xc13df860,"cutscenes.DialogueBox.new","cutscenes/DialogueBox.hx",14,0x748ed2d1)
-HX_LOCAL_STACK_FRAME(_hx_pos_8116a89da7f4c21e_32_update,"cutscenes.DialogueBox","update",0x24e45e09,"cutscenes.DialogueBox.update","cutscenes/DialogueBox.hx",32,0x748ed2d1)
+HX_LOCAL_STACK_FRAME(_hx_pos_8116a89da7f4c21e_27_update,"cutscenes.DialogueBox","update",0x24e45e09,"cutscenes.DialogueBox.update","cutscenes/DialogueBox.hx",27,0x748ed2d1)
+HX_LOCAL_STACK_FRAME(_hx_pos_8116a89da7f4c21e_33_update,"cutscenes.DialogueBox","update",0x24e45e09,"cutscenes.DialogueBox.update","cutscenes/DialogueBox.hx",33,0x748ed2d1)
+HX_LOCAL_STACK_FRAME(_hx_pos_8116a89da7f4c21e_37_update,"cutscenes.DialogueBox","update",0x24e45e09,"cutscenes.DialogueBox.update","cutscenes/DialogueBox.hx",37,0x748ed2d1)
 namespace cutscenes{
 
 void DialogueBox_obj::__construct( ::Dynamic conversation, ::Dynamic speaker){
@@ -32,8 +46,8 @@ void DialogueBox_obj::__construct( ::Dynamic conversation, ::Dynamic speaker){
 HXLINE(  19)		this->onSkipDialogue = null();
 HXLINE(  18)		this->onNextDialogue = null();
 HXLINE(  21)		super::__construct(null(),null(),null());
-HXLINE(  27)		this->dialogueConversation =  ::cutscenes::Conversation_obj::__alloc( HX_CTX ,conversation);
-HXLINE(  28)		this->add(this->dialogueConversation);
+HXLINE(  23)		this->dialogueConversation =  ::cutscenes::Conversation_obj::__alloc( HX_CTX ,conversation);
+HXLINE(  24)		this->add(this->dialogueConversation);
             	}
 
 Dynamic DialogueBox_obj::__CreateEmpty() { return new DialogueBox_obj; }
@@ -64,8 +78,29 @@ bool DialogueBox_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void DialogueBox_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_8116a89da7f4c21e_32_update)
-HXDLIN(  32)		this->super::update(elapsed);
+            	HX_GC_STACKFRAME(&_hx_pos_8116a89da7f4c21e_27_update)
+HXDLIN(  27)		 ::cutscenes::DialogueBox _gthis = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE(  28)		this->super::update(elapsed);
+HXLINE(  30)		if ((this->dialogueConversation->pageIndex >= this->dialogueConversation->convTextContent->length)) {
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_0, ::cutscenes::DialogueBox,_gthis) HXARGC(1)
+            			void _hx_run( ::flixel::util::FlxTimer tmr){
+            				HX_GC_STACKFRAME(&_hx_pos_8116a89da7f4c21e_33_update)
+HXLINE(  34)				 ::flixel::addons::text::FlxTypeText fh = _gthis->dialogueConversation->convDialogue;
+HXDLIN(  34)				fh->set_alpha((fh->alpha - ((Float)0.2)));
+            			}
+            			HX_END_LOCAL_FUNC1((void))
+
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_1, ::cutscenes::DialogueBox,_gthis) HXARGC(1)
+            			void _hx_run( ::flixel::util::FlxTimer tmr){
+            				HX_GC_STACKFRAME(&_hx_pos_8116a89da7f4c21e_37_update)
+HXLINE(  38)				_gthis->dialogueConversation->kill();
+HXLINE(  39)				_gthis->onFinish();
+            			}
+            			HX_END_LOCAL_FUNC1((void))
+
+HXLINE(  33)			 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(((Float)0.2), ::Dynamic(new _hx_Closure_0(_gthis)),5);
+HXLINE(  37)			 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(((Float)1.5), ::Dynamic(new _hx_Closure_1(_gthis)),null());
+            		}
             	}
 
 

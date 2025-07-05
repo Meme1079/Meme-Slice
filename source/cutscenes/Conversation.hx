@@ -48,13 +48,13 @@ private typedef TextContent = Array<Array<String>>;
 private typedef TextLength  = Array<Array<Int>>;
 private typedef TextSpeed   = Array<Map<String, Float>>;
 class Conversation extends FlxSpriteGroup {
-     var convDialogue:FlxTypeText;
-     var convTextContent:TextContent = [];
-     var convTextLength:TextLength   = [];
-     var convTextSpeed:TextSpeed     = [];
+     public var convDialogue:FlxTypeText;
+     public var convTextContent:TextContent = [];
+     public var convTextLength:TextLength   = [];
+     public var convTextSpeed:TextSpeed     = [];
 
-     var pageIndex:Int = 0;
-     var textIndex:Int = 0;
+     public var pageIndex:Int = 0;
+     public var textIndex:Int = 0;
      var textIndexLength:Int = 0;
 	var textIndexLengthList:Array<Int> = [];
 
@@ -62,10 +62,6 @@ class Conversation extends FlxSpriteGroup {
 	var dialogueStarted:Bool = false;
      var dialoguePaused:Bool  = false;
 	var dialogueEnded:Bool   = false;
-
-     public var onFinish:Void -> Void;
-	public var onNextDialogue:Void -> Void = null;
-	public var onSkipDialogue:Void -> Void = null;
      public function new(conversation:ConversationData) {
           super();
 
@@ -126,9 +122,11 @@ class Conversation extends FlxSpriteGroup {
 
           } else if (Controls.instance.ACCEPT) {
                if (dialogueEnded) {
-                    textIndex = 0;
-                    pageIndex += 1;
-                    dialoguePaused = false;
+                    if (pageIndex < convTextContent.length) { // prevent overflowing when the dialogue ending (e.g. spamming)
+                         textIndex = 0;
+                         pageIndex += 1;
+                         dialoguePaused = false;
+                    }
 
                     dialogueStart();
                     FlxG.sound.play(Paths.sound('clickText'), 0.8);
@@ -214,6 +212,10 @@ class Conversation extends FlxSpriteGroup {
           @return nothing.
      **/
      public function dialogueSpeedChange():Void {
+          if (convTextContent[pageIndex] == null) {
+               return;
+          }
+
           var textSpeedLines:String = 'dialogueLineText${textIndex}';
           var textSpeedIndex:Map<String, Float> = convTextSpeed[pageIndex];
                

@@ -21,11 +21,21 @@ class DialogueBox extends FlxSpriteGroup {
 		super();
 		
 		dialogueConversation = new Conversation(conversation);
-		dialogueConversation.onFinish = onFinish;
 		add(dialogueConversation);
 	}
 
 	override function update(elapsed:Float) {
 		super.update(elapsed);
+
+		if (dialogueConversation.pageIndex >= dialogueConversation.convTextContent.length) {
+			new FlxTimer().start(0.2, function(tmr:FlxTimer) {
+				dialogueConversation.convDialogue.alpha -= 1 / 5;
+			}, 5);
+
+			new FlxTimer().start(1.5, function(tmr:FlxTimer) {
+				dialogueConversation.kill();
+				onFinish();
+			});
+		}
 	}
 }

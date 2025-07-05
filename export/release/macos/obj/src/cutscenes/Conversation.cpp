@@ -93,11 +93,11 @@ HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_182_dialogueStart,"cutscenes.Conve
 HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_173_dialogueStart,"cutscenes.Conversation","dialogueStart",0xead567c4,"cutscenes.Conversation.dialogueStart","cutscenes/Conversation.hx",173,0x04286255)
 HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_192_dialogueContinue,"cutscenes.Conversation","dialogueContinue",0x4e3fb645,"cutscenes.Conversation.dialogueContinue","cutscenes/Conversation.hx",192,0x04286255)
 HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_212_dialogueSpeedChange,"cutscenes.Conversation","dialogueSpeedChange",0xe7872539,"cutscenes.Conversation.dialogueSpeedChange","cutscenes/Conversation.hx",212,0x04286255)
-HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_229_dialogueParse,"cutscenes.Conversation","dialogueParse",0x241f8395,"cutscenes.Conversation.dialogueParse","cutscenes/Conversation.hx",229,0x04286255)
+HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_233_dialogueParse,"cutscenes.Conversation","dialogueParse",0x241f8395,"cutscenes.Conversation.dialogueParse","cutscenes/Conversation.hx",233,0x04286255)
 static const ::String _hx_array_data_1184ce88_11[] = {
 	HX_("Cut copper stairs are a cut copper variant of stairs.",a7,25,0e,da),HX_(" Unlike other types of stairs, cut copper stairs can oxidize over time.",c2,58,12,fc),
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_240_dialogueTemplate,"cutscenes.Conversation","dialogueTemplate",0xc8bebe18,"cutscenes.Conversation.dialogueTemplate","cutscenes/Conversation.hx",240,0x04286255)
+HX_LOCAL_STACK_FRAME(_hx_pos_8e3294b2a6d4e0c4_244_dialogueTemplate,"cutscenes.Conversation","dialogueTemplate",0xc8bebe18,"cutscenes.Conversation.dialogueTemplate","cutscenes/Conversation.hx",244,0x04286255)
 static const ::String _hx_array_data_1184ce88_13[] = {
 	HX_("Cut copper stairs are a cut copper variant of stairs.",a7,25,0e,da),HX_(" Unlike other types of stairs, cut copper stairs can oxidize over time.",c2,58,12,fc),
 };
@@ -315,29 +315,32 @@ HX_DEFINE_DYNAMIC_FUNC0(Conversation_obj,dialogueContinue,(void))
 
 void Conversation_obj::dialogueSpeedChange(){
             	HX_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_212_dialogueSpeedChange)
-HXLINE( 213)		::String textSpeedLines = (HX_("dialogueLineText",f9,db,7f,f5) + this->textIndex);
-HXLINE( 214)		 ::haxe::ds::StringMap textSpeedIndex = this->convTextSpeed->__get(this->pageIndex).StaticCast<  ::haxe::ds::StringMap >();
-HXLINE( 216)		bool textSpeedExists = textSpeedIndex->exists(textSpeedLines);
-HXLINE( 217)		Float textSpeedValue;
-HXDLIN( 217)		if ((textSpeedExists == true)) {
-HXLINE( 217)			textSpeedValue = ( (Float)(textSpeedIndex->get(textSpeedLines)) );
+HXLINE( 213)		if (::hx::IsNull( this->convTextContent->__get(this->pageIndex).StaticCast< ::Array< ::String > >() )) {
+HXLINE( 214)			return;
+            		}
+HXLINE( 217)		::String textSpeedLines = (HX_("dialogueLineText",f9,db,7f,f5) + this->textIndex);
+HXLINE( 218)		 ::haxe::ds::StringMap textSpeedIndex = this->convTextSpeed->__get(this->pageIndex).StaticCast<  ::haxe::ds::StringMap >();
+HXLINE( 220)		bool textSpeedExists = textSpeedIndex->exists(textSpeedLines);
+HXLINE( 221)		Float textSpeedValue;
+HXDLIN( 221)		if ((textSpeedExists == true)) {
+HXLINE( 221)			textSpeedValue = ( (Float)(textSpeedIndex->get(textSpeedLines)) );
             		}
             		else {
-HXLINE( 217)			textSpeedValue = ((Float)0.05);
+HXLINE( 221)			textSpeedValue = ((Float)0.05);
             		}
-HXLINE( 218)		this->convDialogue->delay = textSpeedValue;
+HXLINE( 222)		this->convDialogue->delay = textSpeedValue;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(Conversation_obj,dialogueSpeedChange,(void))
 
  ::Dynamic Conversation_obj::dialogueParse(::String path){
-            	HX_GC_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_229_dialogueParse)
-HXDLIN( 229)		if (::sys::FileSystem_obj::exists(path)) {
-HXDLIN( 229)			return  ::haxe::format::JsonParser_obj::__alloc( HX_CTX ,::sys::io::File_obj::getContent(path))->doParse();
+            	HX_GC_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_233_dialogueParse)
+HXDLIN( 233)		if (::sys::FileSystem_obj::exists(path)) {
+HXDLIN( 233)			return  ::haxe::format::JsonParser_obj::__alloc( HX_CTX ,::sys::io::File_obj::getContent(path))->doParse();
             		}
             		else {
-HXDLIN( 229)			return  ::Dynamic(::hx::Anon_obj::Create(4)
+HXDLIN( 233)			return  ::Dynamic(::hx::Anon_obj::Create(4)
             				->setFixed(0,HX_("dialogue",18,2d,94,a7),::Array_obj< ::Dynamic>::__new(1)->init(0, ::Dynamic(::hx::Anon_obj::Create(7)
             					->setFixed(0,HX_("speed",87,97,69,81),((Float)0.05))
             					->setFixed(1,HX_("speakerAnimation",05,22,fe,c5),HX_("BF",c4,39,00,00))
@@ -358,15 +361,15 @@ HXDLIN( 229)			return  ::Dynamic(::hx::Anon_obj::Create(4)
             					->setFixed(0,HX_("fadeTime",a9,1b,ba,e6),((Float)1.0))
             					->setFixed(1,HX_("type",ba,f2,08,4d),HX_("none",b8,12,0a,49)))));
             		}
-HXDLIN( 229)		return null();
+HXDLIN( 233)		return null();
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Conversation_obj,dialogueParse,return )
 
  ::Dynamic Conversation_obj::dialogueTemplate(){
-            	HX_GC_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_240_dialogueTemplate)
-HXDLIN( 240)		return  ::Dynamic(::hx::Anon_obj::Create(4)
+            	HX_GC_STACKFRAME(&_hx_pos_8e3294b2a6d4e0c4_244_dialogueTemplate)
+HXDLIN( 244)		return  ::Dynamic(::hx::Anon_obj::Create(4)
             			->setFixed(0,HX_("dialogue",18,2d,94,a7),::Array_obj< ::Dynamic>::__new(1)->init(0, ::Dynamic(::hx::Anon_obj::Create(7)
             				->setFixed(0,HX_("speed",87,97,69,81),((Float)0.05))
             				->setFixed(1,HX_("speakerAnimation",05,22,fe,c5),HX_("BF",c4,39,00,00))

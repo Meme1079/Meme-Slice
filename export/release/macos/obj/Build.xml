@@ -16745,7 +16745,11 @@
    <depend name="include/flixel/FlxBasic.h"/>
    <depend name="include/flixel/FlxObject.h"/>
    <depend name="include/flixel/FlxSprite.h"/>
+   <depend name="include/flixel/addons/text/FlxTypeText.h"/>
    <depend name="include/flixel/group/FlxTypedSpriteGroup.h"/>
+   <depend name="include/flixel/text/FlxText.h"/>
+   <depend name="include/flixel/util/FlxTimer.h"/>
+   <depend name="include/flixel/util/FlxTimerManager.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
   </file>
   <file name="src/cutscenes/CutsceneHandler.cpp" >

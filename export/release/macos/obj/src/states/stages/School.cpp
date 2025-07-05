@@ -175,10 +175,10 @@ static const ::String _hx_array_data_413ce3c1_4[] = {
 static const ::String _hx_array_data_413ce3c1_5[] = {
 	HX_("Cut copper stairs are a cut copper variant of stairs.",a7,25,0e,da),HX_(" Unlike other types of stairs, cut copper stairs can oxidize over time.",c2,58,12,fc),
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_99_beatHit,"states.stages.School","beatHit",0xb06d78d0,"states.stages.School.beatHit","states/stages/School.hx",99,0xfaa6b77d)
-HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_106_eventCalled,"states.stages.School","eventCalled",0x4b3f540a,"states.stages.School.eventCalled","states/stages/School.hx",106,0xfaa6b77d)
-HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_120_schoolIntro,"states.stages.School","schoolIntro",0x885a112b,"states.stages.School.schoolIntro","states/stages/School.hx",120,0xfaa6b77d)
-HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_113_schoolIntro,"states.stages.School","schoolIntro",0x885a112b,"states.stages.School.schoolIntro","states/stages/School.hx",113,0xfaa6b77d)
+HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_101_beatHit,"states.stages.School","beatHit",0xb06d78d0,"states.stages.School.beatHit","states/stages/School.hx",101,0xfaa6b77d)
+HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_108_eventCalled,"states.stages.School","eventCalled",0x4b3f540a,"states.stages.School.eventCalled","states/stages/School.hx",108,0xfaa6b77d)
+HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_122_schoolIntro,"states.stages.School","schoolIntro",0x885a112b,"states.stages.School.schoolIntro","states/stages/School.hx",122,0xfaa6b77d)
+HX_LOCAL_STACK_FRAME(_hx_pos_628fdf92be9f29ca_115_schoolIntro,"states.stages.School","schoolIntro",0x885a112b,"states.stages.School.schoolIntro","states/stages/School.hx",115,0xfaa6b77d)
 namespace states{
 namespace stages{
 
@@ -394,23 +394,29 @@ HXLINE(  90)			g =  ::Dynamic(::hx::Anon_obj::Create(4)
             		}
 HXLINE(  92)		this->doof =  ::cutscenes::DialogueBox_obj::__alloc( HX_CTX ,g,null());
 HXLINE(  93)		this->doof->set_cameras(::Array_obj< ::Dynamic>::__new(1)->init(0,( ( ::flixel::FlxCamera)(::flixel::FlxG_obj::game->_state->__Field(HX_("camHUD",e8,2b,76,b7),::hx::paccDynamic)) )));
-HXLINE(  95)		this->setStartCallback(this->schoolIntro_dyn());
+HXLINE(  94)		{
+HXLINE(  94)			 ::flixel::math::FlxBasePoint this4 = this->doof->scrollFactor;
+HXDLIN(  94)			this4->set_x(( (Float)(0) ));
+HXDLIN(  94)			this4->set_y(( (Float)(0) ));
+            		}
+HXLINE(  95)		this->doof->onFinish = this->startCountdown_dyn();
+HXLINE(  97)		this->setStartCallback(this->schoolIntro_dyn());
             	}
 
 
 void School_obj::beatHit(){
-            	HX_STACKFRAME(&_hx_pos_628fdf92be9f29ca_99_beatHit)
-HXDLIN(  99)		if (::hx::IsNotNull( this->bgGirls )) {
-HXLINE( 100)			this->bgGirls->dance();
+            	HX_STACKFRAME(&_hx_pos_628fdf92be9f29ca_101_beatHit)
+HXDLIN( 101)		if (::hx::IsNotNull( this->bgGirls )) {
+HXLINE( 102)			this->bgGirls->dance();
             		}
             	}
 
 
 void School_obj::eventCalled(::String eventName,::String value1,::String value2, ::Dynamic flValue1, ::Dynamic flValue2,Float strumTime){
-            	HX_STACKFRAME(&_hx_pos_628fdf92be9f29ca_106_eventCalled)
-HXDLIN( 106)		if ((eventName == HX_("BG Freaks Expression",4d,76,b1,17))) {
-HXLINE( 108)			if (::hx::IsNotNull( this->bgGirls )) {
-HXLINE( 109)				this->bgGirls->swapDanceType();
+            	HX_STACKFRAME(&_hx_pos_628fdf92be9f29ca_108_eventCalled)
+HXDLIN( 108)		if ((eventName == HX_("BG Freaks Expression",4d,76,b1,17))) {
+HXLINE( 110)			if (::hx::IsNotNull( this->bgGirls )) {
+HXLINE( 111)				this->bgGirls->swapDanceType();
             			}
             		}
             	}
@@ -419,33 +425,33 @@ HXLINE( 109)				this->bgGirls->swapDanceType();
 void School_obj::schoolIntro(){
             		HX_BEGIN_LOCAL_FUNC_S2(::hx::LocalFunc,_hx_Closure_0, ::states::stages::School,_gthis, ::flixel::FlxSprite,black1) HXARGC(1)
             		void _hx_run( ::flixel::util::FlxTimer tmr){
-            			HX_GC_STACKFRAME(&_hx_pos_628fdf92be9f29ca_120_schoolIntro)
-HXLINE( 121)			black1->set_alpha((black1->alpha - ((Float)0.15)));
-HXLINE( 123)			if ((black1->alpha <= 0)) {
-HXLINE( 125)				_gthis->add(_gthis->doof);
-HXLINE( 127)				_gthis->remove(black1,null());
-HXLINE( 128)				black1->destroy();
+            			HX_GC_STACKFRAME(&_hx_pos_628fdf92be9f29ca_122_schoolIntro)
+HXLINE( 123)			black1->set_alpha((black1->alpha - ((Float)0.15)));
+HXLINE( 125)			if ((black1->alpha <= 0)) {
+HXLINE( 127)				_gthis->add(_gthis->doof);
+HXLINE( 129)				_gthis->remove(black1,null());
+HXLINE( 130)				black1->destroy();
             			}
             			else {
-HXLINE( 130)				tmr->reset(((Float)0.3));
+HXLINE( 132)				tmr->reset(((Float)0.3));
             			}
             		}
             		HX_END_LOCAL_FUNC1((void))
 
-            	HX_GC_STACKFRAME(&_hx_pos_628fdf92be9f29ca_113_schoolIntro)
-HXDLIN( 113)		 ::states::stages::School _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE( 114)		::flixel::FlxG_obj::game->_state->__SetField(HX_("inCutscene",8f,21,01,56),true,::hx::paccDynamic);
-HXLINE( 115)		 ::flixel::FlxSprite black =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,-100,-100,null());
-HXDLIN( 115)		 ::flixel::FlxSprite black1 = black->makeGraphic((::flixel::FlxG_obj::width * 2),(::flixel::FlxG_obj::height * 2),-16777216,null(),null());
-HXLINE( 116)		{
-HXLINE( 116)			 ::flixel::math::FlxBasePoint this1 = black1->scrollFactor;
-HXDLIN( 116)			this1->set_x(( (Float)(0) ));
-HXDLIN( 116)			this1->set_y(( (Float)(0) ));
+            	HX_GC_STACKFRAME(&_hx_pos_628fdf92be9f29ca_115_schoolIntro)
+HXDLIN( 115)		 ::states::stages::School _gthis = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE( 116)		::flixel::FlxG_obj::game->_state->__SetField(HX_("inCutscene",8f,21,01,56),true,::hx::paccDynamic);
+HXLINE( 117)		 ::flixel::FlxSprite black =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,-100,-100,null());
+HXDLIN( 117)		 ::flixel::FlxSprite black1 = black->makeGraphic((::flixel::FlxG_obj::width * 2),(::flixel::FlxG_obj::height * 2),-16777216,null(),null());
+HXLINE( 118)		{
+HXLINE( 118)			 ::flixel::math::FlxBasePoint this1 = black1->scrollFactor;
+HXDLIN( 118)			this1->set_x(( (Float)(0) ));
+HXDLIN( 118)			this1->set_y(( (Float)(0) ));
             		}
-HXLINE( 117)		if ((( (::String)(::flixel::FlxG_obj::game->_state->__Field(HX_("songName",c0,d0,d7,36),::hx::paccDynamic)) ) == HX_("senpai",3c,df,8d,6b))) {
-HXLINE( 117)			this->add(black1);
+HXLINE( 119)		if ((( (::String)(::flixel::FlxG_obj::game->_state->__Field(HX_("songName",c0,d0,d7,36),::hx::paccDynamic)) ) == HX_("senpai",3c,df,8d,6b))) {
+HXLINE( 119)			this->add(black1);
             		}
-HXLINE( 119)		 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(((Float)0.3), ::Dynamic(new _hx_Closure_0(_gthis,black1)),null());
+HXLINE( 121)		 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(((Float)0.3), ::Dynamic(new _hx_Closure_0(_gthis,black1)),null());
             	}
 
 
